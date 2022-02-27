@@ -1,16 +1,16 @@
 # 엑스퍼트 아카데미 리뉴얼 프로젝트
 
-기존 홈페이지 http://www.excacademy.co.kr/  
+기존 홈페이지 http://www.excacademy.co.kr/
 
 ## ☆ commit 하기 전 pull 먼저!! ☆
 
 ## git 내려받는 방법 여기보세요
 
-https://otuin.tistory.com/370  
+https://otuin.tistory.com/370
 
 git 클론 후  
 최상위 폴더 말고 상위폴더로 VSCode에 폴더열기!!  
-그다음 터미널에 npm install 실행 후 npm start 실행  
+그다음 터미널에 npm install 실행 후 npm start 실행
 
 ## 공통사항
 
@@ -20,7 +20,7 @@ npm install axios
 npm install react-router-dom@5  
 npm install redux react-redux  
 npm install reactstrap  
-npm install bootstarp  
+npm install bootstarp
 
 ### 1depth 폴더명
 
@@ -28,13 +28,12 @@ npm install bootstarp
 취업과정(job)  
 Ex콘텐츠(excontents)  
 고객센터(customer)  
-아카데미(arademy)  
+아카데미(arademy)
 
 ### 공통 inner 적용
 
 -width : ???px  
 -class명 : inner-box  
--css : common.css  
+-css : common.css
 
-
-### 브런치
+### 브랜치
