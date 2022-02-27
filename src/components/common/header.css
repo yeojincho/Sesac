@@ -1,0 +1,68 @@
+.header-top .header-inner {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header-top .top-logo a{
+  display: block;
+  width: 180px;
+  height: 62px;
+  background: url(/public/images/logo.png) no-repeat;
+  background-size: 180px 62px;
+  text-indent: -9999px;
+}
+
+.header-top .top-search{
+  margin-right: auto;
+}
+
+.header-top .top-search-btn img{
+  width: 24px;
+}
+
+
+.header-bottom .gnb {
+  display: flex;
+  z-index: 1;
+  
+
+}
+
+.header-bottom .gnb .depth1 {
+  width: 200px;
+}
+
+.header-bottom .gnb .depth1>a {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.header-bottom .gnb > .depth1:hover>a {
+  color: lightseagreen;
+  border-radius: 6px 6px 0 0;
+}
+.header-bottom .gnb > .depth1:hover> .depth2{
+  background-color: lightseagreen;
+}
+
+.header-bottom .gnb .depth2 {
+  display: none;
+}
+
+.header-bottom .gnb:hover .depth2 {
+  display: block;
+  height: 150px;
+  background-color: #fffbfb;
+}
+
+.header-bottom .gnb .depth2>li:hover {
+  color: red;
+}
+
+
+

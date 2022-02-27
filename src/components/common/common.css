@@ -1,0 +1,22 @@
+/* common */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;color:inherit
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;font-size: 100%;
+}
+
+
+/* inner */
+.inner-box{
+  width: 1230px; 
+  margin: 0 auto;
+}

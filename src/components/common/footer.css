@@ -1,0 +1,7 @@
+.footer-wrapper {
+  border-top: 1px solid #eee;
+}
+.footer-wrapper .footer-inner{
+  background-color: #eee;
+  height: 150px;
+}
