@@ -14,9 +14,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: normal;font-size: 100%;
 }
 
+.wrapper {height:100%;}
 
 /* inner */
 .inner-box{
-  width: 1230px; 
+  width: 1300px; 
   margin: 0 auto;
 }
