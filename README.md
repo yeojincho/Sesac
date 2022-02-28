@@ -4,6 +4,10 @@
 
 ## ☆ commit 하기 전 pull 먼저!! ☆
 
+[add] : 새로운 파일 생성  
+[modify] : 파일 수정  
+[delete] : 파일 삭제
+
 ## git 내려받는 방법 여기보세요
 
 https://otuin.tistory.com/370
@@ -21,6 +25,8 @@ npm install react-router-dom@5
 npm install redux react-redux  
 npm install reactstrap  
 npm install bootstarp
+
+### commit
 
 ### 1depth 폴더명
 
