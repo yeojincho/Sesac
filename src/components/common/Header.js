@@ -16,7 +16,7 @@ export default function Header() {
         <div className="inner-box header-inner">
             <h1 className="top-logo"><Link to ="/">엑스퍼트아카데미</Link></h1>
             <div className="top-search">
-              <input type="search" />
+              <input type="search" className="top-search-input" />
               <button className="top-search-btn">
                 <img src="/images/searchicon.png" alt="search"/>
               </button>
