@@ -4,6 +4,11 @@
 
 ## ☆ commit 하기 전 pull 먼저!! ☆
 
+\*\*커밋메세지 작성시 맨앞에 붙여주세요.  
+[add] : 파일 추가시  
+[modify] : 파일 수정시  
+[delete] : 파알 삭제시
+
 ## git 내려받는 방법 여기보세요
 
 https://otuin.tistory.com/370
