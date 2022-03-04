@@ -12,72 +12,7 @@ export default function Intro() {
                     <li><a href="/ask">과정 문의</a></li>
                 </ul>
             </div>
-            <main className="contents">
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-                <div className="contentsBox">
-                    <img src="/images/logo.png" alt="과정 썸네일" className="thumImg" />
-                    <dl className="thumText">
-                        <dt className="thumTitle">사내강사 양성과정</dt>
-                        <dd className="thumDate">2022.02.22-2022.02.22</dd>
-                        <dd className="thumPeriod">2DAY 16시간</dd>
-                    </dl>
-                </div>
-            </main>
+            
 
         </div>
     )
