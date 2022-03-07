@@ -1,0 +1,139 @@
+.t_infoContainer {
+  padding-bottom: 70px;
+}
+.t_btn {
+  background-color: #5EBF92;
+  color: #fff;
+  border-radius: 34px;
+  width: 125px;  
+  height: 35px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: none;
+  background-image: url('/public/images/play.png');
+  background-repeat: no-repeat;
+  background-position: right 6px top 7px;
+  background-size: 20px;
+}
+
+
+
+/* .t_btn::after {
+  background: url('');
+} */
+
+.imgBox {
+  display: block;
+  width: 370px;
+  height: 250px;
+  background-color: rgba(111, 111, 111, 0.6);
+  margin-bottom: 13px;
+}
+
+.t_img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+.t_titleInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.t_titleInfo h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #6D6D6D;
+}
+
+
+.t_titleInfo .t_motto {
+  font-size: 15px;
+  color: #5EBF92;
+  position: absolute;
+  right: 0;
+}
+
+.t_historyBox {
+  margin-bottom: 26px;
+}
+
+.t_historyBox .t_history {
+  color: #6D6D6D;
+  margin-bottom: 4px;
+}
+
+.t_historyBox .t_history:last-child {
+  margin-bottom: 0;
+}
+
+.t_lectureBox {
+  display: flex;
+  align-items: center;
+}
+
+.t_lectureBox h3 {
+  font-size: 21px;
+  margin-right: 17px;
+  font-weight: 500;
+  color: #555;
+}
+
+#lectureList {
+  width: 155px;
+  height: 28px;
+  background-color: #F4F4F4;
+  color: #898989;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* #lectureList option:first-child:after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  color: #777;
+  display: block;
+} */
+
+/* Tablet */
+@media screen and  (max-width: 1023px)  {
+  .t_titleInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 9px;
+  }
+
+  .t_titleInfo .t_motto {
+    position: static;
+    font-size: 17px;
+  }
+
+  .t_titleInfo h2 {
+    margin-bottom: 3px;
+    font-size: 38px;
+  }
+
+  .t_lectureBox h3 {
+    font-size: 25px;
+    margin-right: 23px;
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width:767px) {
+
+}
+
