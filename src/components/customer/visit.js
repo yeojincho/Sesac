@@ -12,7 +12,7 @@ export default function Visit(){
             <ul className="menuList">
                 <li><a href="#">공지사항</a></li>
                 <li><a href="#">문의하기</a></li>
-                <li><a href="/fqa">자주 묻는 질문</a></li>
+                <li><a href="/faq">자주 묻는 질문</a></li>
                 <li><a href="/visit">오시는 길</a></li>
             </ul>
         </div>{/* e:menu */}
