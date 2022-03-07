@@ -1,0 +1,21 @@
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+.table {
+  width: 100%;
+}
+
+.pageNation ul li a {
+  width: 100%;
+  font-size: 25px;
+  color: #000;
+  border: none;
+}
+.pageNation ul li:nth-child(2) a {
+  border-left: 1px solid #000;
+}
+.pageNation ul li:nth-last-child(2) a {
+  border-right: 1px solid #000;
+}
