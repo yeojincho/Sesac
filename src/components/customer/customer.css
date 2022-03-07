@@ -1,0 +1,70 @@
+h3 {
+  font-size: 12px;
+}
+/* 항목별 페이지 구분 */
+.listSection {
+  width: 1300px;
+  margin: 0 auto;
+}
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.listItem {
+  display: block;
+  flex: 0 1 100%;
+  width: 260px;
+  height: 80px;
+  margin-right: 30px;
+  background-color: #dddddd;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #454545;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+}
+.listItem.on {
+  background-color: #03a65a;
+  color: #fff;
+}
+
+/* 검색창 */
+.searchBox {
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+  text-indent: 60px;
+  border: 2px solid #ddd;
+  font-size: 20px;
+  border-radius: 50px;
+  float: right;
+  outline: none;
+  background: url(../../../public/images/search.png) no-repeat;
+  background-position: 20px center;
+  background-size: 20px 20px;
+}
+.searchBox:focus {
+  background-image: none;
+  background-position: -10px center;
+  text-indent: 0;
+}
+.cf::after {
+  content: "";
+  width: 0;
+  height: 0;
+  font-size: 0;
+  display: block;
+  clear: both;
+}
+
+/* 게시판 */
+.table {
+  margin-top: 150px;
+}
+.pageNation {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
