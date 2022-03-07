@@ -1,0 +1,72 @@
+ul,li {
+  list-style-type: none;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btnBox li {
+  margin-right: 40px;
+
+}
+.btnBox .btn {
+  width: 200px;
+  height: 50px;
+  color: #454545;
+  background-color: #ddd;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnBox li:last-child {
+  margin-right: 0;
+}
+
+.btnBox .btn.on {
+  color: #fff;
+  background-color: #03A65A;
+  font-weight: bold;
+}
+
+
+.hrItemList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hrItemList li {
+  padding: 12px;
+}
+
+.hrItemList li a  {
+  display: block;
+}
+
+.hrItemList li a img {
+  width: 360px;
+  margin-bottom: 5px;
+}
+
+.itemDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemDesc .item {
+  font-size: 17px;
+  font-weight: 500;
+  color : #333;
+}
+
+.itemDesc .price {
+  font-size: 15px;
+  color : #444;
+}
