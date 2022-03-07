@@ -1,7 +1,68 @@
 .footer-wrapper {
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
 }
 .footer-wrapper .footer-inner{
   background-color: #eee;
-  height: 150px;
+  height: 250px;
+  padding: 20px 20px;
+  
+}
+
+/* 푸터 top */
+.footer-top{
+  padding-bottom: 40px;
+}
+.footer-top .footer-link-list{
+  display: flex;
+}
+.footer-top .footer-link-list li{
+  padding:4px 14px 5px;
+}
+.footer-top .footer-link-list li a{
+  font-size: 14px;
+}
+
+/* 푸터 middle */
+.footer-middle {
+  display: flex;
+  padding-left: 14px;
+  font-size: 13px;
+  color:#666;
+}
+
+.footer-right-box{
+  width: 53%;
+}
+.footer-right-box .info-top{
+  height: 80px;
+
+}
+.footer-right-box .info-bottom{
+  padding-top: 25px;
+}
+
+
+.footer-left-box{
+
+}
+.footer-left-box .info-top{
+  height: 80px;
+}
+.footer-left-box .info-bottom{
+  display: flex;
+  padding-top: 25px;
+}
+.footer-left-box .info-bottom .sns-box {
+  margin-right: 8px;
+}
+.footer-left-box .info-bottom .sns-box img{
+  padding: 0 3px;
+  cursor: pointer;
+}
+.footer-logo{
+  padding-left: 100px;
+}
+.footer-logo img{
+  width: 180px;
+  height: 62px;
 }
