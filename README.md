@@ -26,6 +26,8 @@ npm install react-router-dom@5
 npm install redux react-redux  
 npm install reactstrap  
 npm install bootstarp
+npm install swiper
+npm install jquery
 
 ### 1depth 폴더명
 
