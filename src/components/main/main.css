@@ -1,0 +1,293 @@
+ /* 메인 배너 */
+.main-wrapper .main-banner {
+  height: 500px;
+}
+.main-banner .swiper::before{
+  position: relative;
+  content: '';
+  display: block;
+  position:absolute;
+  width: 50px;
+  height: 23px;
+  background-color: rgba(49,51,56,.6);
+  padding: 5px 14px;
+  border-radius: 18px;
+  top: 23px;
+  right: 18px;
+  z-index: 2;
+}
+.main-banner .swiper-slide img{
+  width: 100%;
+  height: 500px;
+  border-radius: 7px;
+}
+.main-banner .swiper-button-prev::after,.swiper-button-next::after{
+  position: relative;
+  display: none;
+}
+
+.main-banner .swiper-button-prev{
+  top: 40px;
+  left: 93%;
+  background: url('/public/images/main/left-chevron.png') no-repeat center ;
+  background-size: 24px 14px;
+}
+.main-banner .swiper-button-next{
+  top: 40px;
+  right: 20px;
+  background: url('/public/images/main/right-chevron.png') no-repeat center ;
+  background-size: 24px 14px;
+}
+
+.main-banner .swiper-pagination-bullet {
+  width: 50px;
+  height: 4px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.swiper-pause {
+  position: absolute;
+  top: 29px;
+  right: 49px;
+  z-index: 10;
+  cursor: pointer;
+}
+.swiper-pause img{
+  width: 14px;
+  height: 15px;
+
+}
+
+
+/* 과정 카테고리 */
+.main-wrapper .program-category {
+  padding: 50px 0;
+}
+.program-category .main-text-box {
+
+}
+.main-text-box .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 5px 15px;
+  border-radius: 18px;
+  background-color: #5EBF92;
+  font-size: 17px;
+  color: #fff;
+}
+.main-text-box .p-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main-text-box .p-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 50px;
+}
+.main-text-box .p-list li {
+  position: relative;
+  padding: 0 8px;
+}
+.main-text-box .p-list li.on {
+  color: #5EBF92;
+}
+.main-text-box .p-list li::before {
+  content: '';
+  position: absolute;
+  top:4px;
+  bottom:4px;
+  right:0;
+  width:1px;
+  background:#ababab;
+}
+.main-text-box .p-list li:first-child {
+  padding-left: 0px;
+  padding-right: 8px;
+}
+.main-text-box .p-list li:last-child::before {
+  display: none;
+}
+
+.program-category .main-program-img {
+
+}
+.main-program-img .program-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.main-program-img .program-item {
+  vertical-align:top;
+  margin-right: 30px;
+}
+.main-program-img .program-item .item-img {
+  position: relative;
+}
+.main-program-img .program-item .item-img:hover {
+  opacity:0.7;
+}
+.main-program-img .program-item .item-img img{ 
+  width: 290px;
+  height: 230px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.main-program-img .program-item .item-img .item-img-desc{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  border-radius: 7px;
+  transition: height 0.35s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+  overflow: hidden;
+}
+.main-program-img .program-item .item-img:hover .item-img-desc{
+  opacity:1;
+  height: 201px;
+}
+.main-program-img .program-item .item-img .item-img-desc p{
+  
+}
+.main-program-img .item-text{
+  margin-top: 10px;
+  margin-bottom: 28px;
+
+}
+.main-program-img .item-title{
+  font-weight: 500;
+
+}
+.main-program-img .item-date{
+  font-weight: 100;
+
+}
+.main-program-img .item-days{
+  font-weight: 100;
+}
+
+
+/* EX 콘텐츠 */
+.main-wrapper .main-excontents {
+  padding-bottom: 100px;
+}
+.main-ex-img .ex-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-ex-img .ex-list .ex-item{
+  margin-right: 40px;
+  margin-bottom: 24px;
+}
+
+.main-ex-img .ex-list .ex-item .item-img img {
+  width: 390px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.main-ex-img .ex-list .ex-item .item-img:hover {
+  opacity:0.7;
+}
+
+/* 더보기 버튼 */
+.btn-box.more {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+.btn-more {
+  border:0;
+  background-color: #fff;
+  position:relative;
+  cursor: pointer;
+}
+.btn-more span {
+  display:inline-block;
+  padding-right:36px;
+  font-size:14px;
+  color:#000;
+  line-height:28px;
+  letter-spacing:-1.5px;
+  vertical-align:top;
+}
+.btn-more:after {
+  content:'';
+  position:absolute;
+  top:50%;
+  right:0;
+  width:28px;
+  height:28px;
+  margin-top:-14px;
+  background:url(/public/images/main/ico_btn_more.png) no-repeat center center;
+}
+
+/* 공지사항 & HR샵 */
+.main-bottom {
+  display: flex;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  border-top: 1px solid #ababab;
+
+}
+
+.main-bottom .main-notice {
+  padding: 0 100px;
+  width: 55%;
+}
+.main-bottom .text-box .b-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #858899;
+  
+}
+.main-bottom .text-box .b-comment {
+  display: block;
+  margin-bottom: 20px; 
+  font-weight: 100;
+  color: #ababab;
+}
+.main-notice .main-notice-list {
+
+} 
+.main-notice .main-notice-list li {
+  display: flex;
+  padding: 5px 0;
+
+} 
+.main-notice .main-notice-list li .list-text{
+  width: 57%;
+
+} 
+.main-bottom .main-hr {
+  padding: 0 100px;
+}
+
+.hr-list .swiper{
+  margin: 0;
+  width: 450px;
+  height: 150px;
+}
+.hr-list .swiper-slide img{
+  width: 200px;
+  height: 100px;
+  border-radius: 7px;
+}
+.hr-list .swiper-pagination-bullet {
+  background-color: #5EBF92;
+}
+
+
+
+

@@ -3,14 +3,28 @@
 */
 
 
-import React from 'react'
+import React from 'react';
+import $ from 'jquery';
+
+import MainBanner from './MainBanner';
+import MainContents from './MainContents';
+import MainBottom from './MainBottom';
+
+import "swiper/css"; 
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import './main.css';
+
+
 
 export default function Main() {
   return (
-    <div style={{height:'1200px'}}>
-      <div style={{height:'300px', background:'pink'}}>
-        Main 배너
-      </div>
+    <div className="main-wrapper">
+      <MainBanner />
+
+      <MainContents />
+
+      <MainBottom />
     </div>
   )
 }
