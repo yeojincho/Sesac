@@ -1,0 +1,81 @@
+* {
+    color: #636363;
+}
+
+.tableSection .tableTitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tableSection .tableSubTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tableSection .top {
+    position: relative;
+}
+
+.tableSection .top .downloadBtn {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+}
+
+.tableSection .top .date {
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.tableSection .top .date i {
+    margin: 0 15px;
+}
+
+.tableSection .top .searchbox {
+    text-align: right;
+    position: relative;
+}
+
+.tableSection .top .searchbox input {
+    width: 15%;
+    height: 30px;
+    background-color: #EFEFEF;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.tableSection .top .searchbox button {
+    text-indent: -9999px;
+    cursor: pointer;
+    background: url(../../../public/images/search.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+.listSection .btn li {
+    border-radius: 50px;
+    background-color: #F4F4F4;
+    margin-right: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+
+.listSection .btn li a {
+    color: inherit;
+}
+
+/* 나중에 .focusOn 등의 class를 js로 추가하기 */
+.listSection .btn li:hover { 
+    color: #fff;
+    font-weight: bold;
+    background-color: #5EBF92;
+}
