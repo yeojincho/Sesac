@@ -22,7 +22,10 @@
 }
 
 .menuList li {
-  border: 1px solid transparent;
+  display: block;
+  color: #454545;
+  font-size: 20px;
+  text-align: center;
   background-color: #dddddd;
   border-radius: 50px;
   width: 200px;
@@ -32,39 +35,44 @@
   margin-bottom: 50px;
 }
 
-.menuList li a {
-  display: block;
-  color: #454545;
-  font-size: 20px;
-  text-align: center;
-}
-
-.subMenu {
+.visitSubMenuBox {
   margin-top: 150px;
   margin-bottom: 94px;
 }
 
-.subMenuList {
+.visitSubMenuList {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.subMenuList li {
-  border: 1px solid transparent;
-  background-color: #dddddd;
-  border-radius: 50px;
-  margin-right: 50px;
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
-}
-
-.subMenuList li a {
+.visitSubMenuList li {
   display: block;
   color: #898989;
   font-size: 20px;
   text-align: center;
+  background-color: #dddddd;
+  border-radius: 50px;
+  margin-right: 50px;
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #dddddd;
+  color: #898989;
+}
+
+.subOn {
+  color: #ffffff;
+  background-color: #5ebf92;
+  font-weight: bold;
 }
 
 .address {
@@ -84,7 +92,7 @@
   height: 40px;
   line-height: 40px;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 50px;
   display: block;
   font-size: 20px;
   background: url(/public/images/share.png) no-repeat 50px center;
@@ -109,7 +117,7 @@
   border: 1px solid #666666;
 }
 
-.transportTitle h3 {
+.transport h3 {
   width: 150px;
   height: 50px;
   line-height: 50px;

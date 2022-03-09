@@ -2,6 +2,8 @@
   margin-bottom: 150px;
 }
 
+/* title */
+
 .title {
   margin: 106px 65px;
 }
@@ -15,95 +17,49 @@
   font-size: 28px;
 }
 
-.menuList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* submenuList */
 
-.menuList li {
-  border: 1px solid transparent;
-  background-color: #dddddd;
-  border-radius: 50px;
-  width: 260px;
-  height: 80px;
-  line-height: 80px;
-  margin-right: 30px;
-  margin-bottom: 50px;
-}
-
-.menuList li a {
-  color: #454545;
-  display: block;
-  font-size: 28px;
-  text-align: center;
-}
-
-.searchBar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.searchBox {
-  text-align: center;
-}
-
-.searchBoxInput {
-  width: 300px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50px;
-  border: 1px solid #636363;
-  outline: none;
-  margin: 10px 0;
-  padding-left: 50px;
-  background: url(/public/images/search.png) no-repeat 20px center;
-  background-size: 20px;
-}
-
-.subMenuBox {
-  margin-top: 50px;
+.fqaSubMenuBox {
+  margin-top: 150px;
   margin-bottom: 150px;
 }
 
-.subMenuList {
+.fqaSubMenuList {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.subMenuList li {
-  border: 1px solid transparent;
+.fqaSubMenuList li {
   background-color: #dddddd;
   border-radius: 50px;
-  width: 208px;
-  height: 50px;
-  line-height: 50px;
-}
-
-.subMenuList li a {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
   display: block;
   color: #898989;
   font-size: 20px;
   text-align: center;
+  margin-right: 20px;
 }
 
-.on {
-  color: #ffffff;
-  background-color: #03a65a;
+button {
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #dddddd;
+  color: #898989;
 }
 
 .subOn {
   color: #ffffff;
   background-color: #5ebf92;
+  font-weight: bold;
 }
 
-/* .menuList li:hover {
-  background-color: #03a65a;
-}
-.menuList li a:hover {
-  color: #ffffff;
-} */
+/* FaqAcco.js */
 
 .accoImg {
   width: 25px;
