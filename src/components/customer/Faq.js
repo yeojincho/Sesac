@@ -1,42 +1,75 @@
 /*customer > FQA 페이지 */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './faq.css'
 import FaqAcco from './FaqAcco';
+import Customer from './Customer';
 
 
 export default function Faq() {
+
+    const [ currentClick, setcurrentClick ] = useState(null);
+    const [ prevClick, setPrevClick ] = useState(null);
+
+    const handleClick = (e) => {
+        setcurrentClick(e.target.id);
+      };
+
+      useEffect(
+          (e) => {
+              if(currentClick !== null){
+                  let current = document.getElementById(currentClick);
+                  current.classList.add('subOn');
+              }
+              if(prevClick !== null){
+                  let prev = document.getElementById(prevClick);
+                  prev.classList.remove('subOn');
+              }
+              setPrevClick(currentClick);
+          }, [currentClick]);
+
     return(
+        <>
         <div className="wrapper inner-box">
-            <div className="title">
+            <div className='title'>
                 <h2>고객센터</h2>
                 <h3>__무엇이든 물어보세요.</h3>
             </div>
-        <div className="menu">
-        <ul className="menuList">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">문의하기</a></li>
-            <li><a href="/faq">자주 묻는 질문</a></li>
-            <li><a href="/visit">오시는 길</a></li>
-        </ul>
-        </div>{/* e:menu */}
-        <div className="searchBar">
-            <div className="searchBox">
-                <input type="search" placeholder="Search" className="searchBoxInput" title="검색어" />
-            </div>    
-        </div>{/* e: searchbar */}
-        <div className="subMenuBox">
-            <ul className="subMenuList">
-                <li><a href="#">회원정보</a></li>
-                <li><a href="#">결제관련</a></li>
-                <li><a href="#">환불규정</a></li>
-                <li><a href="#">신청/취소</a></li>
-                <li><a href="#">기타</a></li>
-            </ul>
-        </div>{/* e: submenu */}
+                
+            <Customer />
+            <div className="fqaSubMenuBox">
+                <ul className="fqaSubMenuList">
+                    <li >
+                        <button id = "subMenu1" onClick={ handleClick }>
+                            회원정보
+                        </button>                
+                    </li>
+                    <li >
+                        <button id = "subMenu2" onClick={ handleClick }>
+                            결제관련
+                        </button>                
+                    </li>
+                    <li >
+                        <button id = "subMenu3" onClick={ handleClick } >
+                            환불규정
+                        </button>                
+                    </li>
+                    <li >
+                        <button id = "subMenu4" onClick={ handleClick }>
+                            신청/취소
+                        </button>                
+                    </li>
+                    <li >
+                        <button id = "subMenu5" onClick={ handleClick }>
+                            기타
+                        </button>                
+                    </li>
+                </ul>
+            </div>{/* e: submenu */}
 
         <FaqAcco />
         
         </div>
+        </>
     )
 }
