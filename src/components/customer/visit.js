@@ -1,6 +1,7 @@
 import React,  { useState, useEffect } from "react";
 import './visit.css'
 import Customer from './Customer';
+import VisitMap from './VisitMap';
 
 export default function Visit(){
 
@@ -11,21 +12,21 @@ export default function Visit(){
         setcurrentClick(e.target.id);
     };
 
-    useEffect(
-        (e) => {
-        if (currentClick !== null) {
-            let current = document.getElementById(currentClick);
-            current.classList.add('subOn');
-        }
-        if (prevClick !== null) {
-            let prev = document.getElementById(prevClick);
-            prev.classList.remove('subOn');
-        }
-        setPrevClick(currentClick);                  
-        },[currentClick]); 
+        useEffect(
+            (e) => {
+                if(currentClick !== null){
+                    let current = document.getElementById(currentClick);
+                    current.classList.add('subOn');
+                }
+                if(prevClick !== null){
+                    let prev = document.getElementById(prevClick);
+                    prev.classList.remove('subOn');
+                }
+                setPrevClick(currentClick);
+            }, [currentClick]);
 
     const copyAddress = () => {
-        const addressText = document.getElementById('addressText').textContent;
+        const addressText = document.querySelector('#addressText span').textContent;
         const textArea = document.createElement('textArea');
         textArea.textContent = addressText;
         document.body.append(textArea);
@@ -40,10 +41,10 @@ export default function Visit(){
     return(
         <>
             <div className="wrapper inner-box">
-                <div className='title'>
-                    <h2>고객센터</h2>
-                    <h3>__오시는 길</h3>
-                </div>
+                <section className='title'>
+                    <h1>고객센터</h1>
+                    <h2>__오시는 길</h2>
+                </section>
                 
             <Customer />            
                 <div className="visitSubMenuBox">
@@ -67,7 +68,7 @@ export default function Visit(){
                 </div>{/* e: submenu */}
                 <main className="visitInfo">
                     <div className="address">
-                        <h3 id="addressText">주소 : 서울특별시 중대로 121 롯데캐슬파인힐 2층</h3>
+                        <h3 id="addressText">주소 : <span>서울특별시 중대로 121 롯데캐슬파인힐</span>2층</h3>
                         <button className='share' onClick={copyAddress}>
                             공유
                         </button>
@@ -76,9 +77,7 @@ export default function Visit(){
                         <div className="officeImg">
                             회사 전경 사진 영역
                         </div>
-                        <div className="map">
-                            지도 영역
-                        </div>
+                        <VisitMap />
                     </div>        
                 </main>{/* e: visitInfo */}
                 <div className="transport">

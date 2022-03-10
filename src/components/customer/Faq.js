@@ -31,10 +31,10 @@ export default function Faq() {
     return(
         <>
         <div className="wrapper inner-box">
-            <div className='title'>
-                <h2>고객센터</h2>
-                <h3>__무엇이든 물어보세요.</h3>
-            </div>
+            <section className='title'>
+                <h1>고객센터</h1>
+                <h2>__무엇이든 물어보세요.</h2>
+            </section>
                 
             <Customer />
             <div className="fqaSubMenuBox">
