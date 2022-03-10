@@ -5,12 +5,12 @@
 .title {
   margin: 106px 65px;
 }
-.title h2 {
+.title h1 {
   color: #777777;
   font-size: 30px;
 }
 
-.title h3 {
+.title h2 {
   color: #aaaaaa;
   font-size: 20px;
 }
@@ -109,12 +109,6 @@ button {
   height: 555px;
   border: 1px solid #666666;
   margin-right: 67px;
-}
-
-.mapBox .map {
-  width: 1060px;
-  height: 555px;
-  border: 1px solid #666666;
 }
 
 .transport h3 {
