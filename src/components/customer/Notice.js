@@ -1,50 +1,24 @@
 import React from "react";
-import { BrowserRouter as Link } from "react-router-dom";
-import { Table, Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import Customer from "./Customer";
-// import { tab } from "@testing-library/user-event/dist/tab";
+import NoticeList from "./NoticeList";
+import "./notice.css";
 
 function Notice() {
   return (
     <React.Fragment>
       <section className="container">
-        <h1>Notice 컴포넌트</h1>
-        <h2>고객센터</h2>
-        <h3>__엑스퍼트아카데미 공지사항 입니다</h3>
-        <Customer notice={Notice} />
+        <section className="title">
+          <h1>고객센터</h1>
+          <h2>__엑스퍼트아카데미 공지사항 입니다</h2>
+        </section>
+        <Customer />
         <article className="tableContainer">
-          <Table striped>
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>제 목</th>
-                <th>작성자</th>
-                <th>작성일</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>공지사항 입니다.</td>
-                <td>관리자</td>
-                <td>2022.01.03</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>공지사항 입니다.</td>
-                <td>관리자</td>
-                <td>2022.02.22</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>방역지침 안내입니다.</td>
-                <td>관리자</td>
-                <td>2022.02.28</td>
-              </tr>
-            </tbody>
-          </Table>
+          <div>
+            <NoticeList />
+          </div>
         </article>
-        <section className="pageNation">
+        <section className="pagiNation">
           <Pagination aria-label="Page navigation" size="sm">
             <PaginationItem>
               <PaginationLink first href="#" />
@@ -67,9 +41,11 @@ function Notice() {
             <PaginationItem>
               <PaginationLink href="#">5</PaginationLink>
             </PaginationItem>
+
             <PaginationItem>
               <PaginationLink href="#" next />
             </PaginationItem>
+
             <PaginationItem>
               <PaginationLink href="#" last />
             </PaginationItem>
