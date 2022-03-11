@@ -1,3 +1,4 @@
+
  /* 메인 배너 */
 .main-wrapper .main-banner {
   height: 500px;
@@ -15,6 +16,7 @@
   top: 23px;
   right: 18px;
   z-index: 2;
+  box-sizing: content-box;
 }
 .main-banner .swiper-slide img{
   width: 100%;
@@ -47,7 +49,7 @@
 }
 .swiper-pause {
   position: absolute;
-  top: 29px;
+  top: 26px;
   right: 49px;
   z-index: 10;
   cursor: pointer;
@@ -164,6 +166,9 @@
   margin-bottom: 28px;
 
 }
+.main-program-img .item-text p {
+  margin-bottom: 0;
+}
 .main-program-img .item-title{
   font-weight: 500;
 
@@ -184,6 +189,8 @@
 .main-ex-img .ex-list{
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .main-ex-img .ex-list .ex-item{
   margin-right: 40px;
@@ -258,8 +265,9 @@
   font-weight: 100;
   color: #ababab;
 }
-.main-notice .main-notice-list {
-
+.main-notice .main-notice-list ul{
+  margin: 0;
+  padding: 0;
 } 
 .main-notice .main-notice-list li {
   display: flex;

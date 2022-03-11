@@ -1,0 +1,354 @@
+.join-wrapper{
+
+}
+.join-wrapper .join-inner{
+
+}
+
+
+/* 회원가입 01.회원구분 */
+section .join-cont{
+  width: 600px;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+.join-inner .top-title{
+  margin: 90px 65px;
+}
+.join-inner .top-title h2{
+  font-weight: 700;
+  color: #777777;
+  font-size: 30px;
+}
+.join-inner .top-title h3{
+  color: #aaaaaa;
+  font-size: 20px;
+  padding: 8px 0;
+}
+
+.join-step {
+  margin: 0 auto;
+}
+.join-step ol{
+  display: flex;
+}
+.join-step ol li {
+  position: relative;
+  flex: 1;
+  margin-right: -1px;
+  text-align: center;
+  line-height: 52px;
+  padding: 0 0 0 14px;
+  background: #f5f5f5;
+  font-size: 16px;
+  color: #999;
+  border: 1px solid #ccc;
+}
+.join-step ol li:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #f5f5f5;
+  z-index: 1;
+}
+.join-step ol li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #ccc;
+  z-index: 0;
+}
+.join-step ol li.on {
+  color: #fff;
+  background: #47AD1A;
+  border-color: #47AD1A;
+}
+.join-step ol li.on:before, 
+.join-step ol li.on:after {
+  border-color: transparent transparent transparent #f5f5f5;
+}
+.join-step ol li:first-child:before, 
+.join-step ol li:first-child:after, 
+.join-step ol li.is-active:first-child:before, 
+.join-step ol li.is-active:first-child:after {
+  display: none;
+}
+.join-step ol li.on + li:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #47AD1A;
+  z-index: 1;
+}
+.join-step ol li.on .num {
+  font-weight: 500;
+  font-size: 20px;
+}
+.join-gubun{
+  padding: 60px 0;
+  border-bottom: 1px solid #b5b5b5;
+  margin-bottom: 20px;
+}
+.join-gubun p{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.join-gubun .join-gubun-btn{
+  display: flex;
+  justify-content: space-around;
+}
+.join-gubun .join-gubun-btn a{
+  display: block;
+  width: 210px;
+  height: 235px;
+  border: 1px solid #c3c3c3;
+  border-radius: 28px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.join-gubun .join-gubun-btn a:hover{
+  transform: scale(1.05);
+}
+.join-gubun .join-gubun-btn a img{
+  display: block;
+  margin: 40px auto 30px;
+  width: 88px;
+  height: 88px;
+}
+.join-gubun .join-gubun-btn a span{
+  display: block;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+.dot-list li {
+  position: relative;
+  padding: 2px 0 1px 9px;
+  font-size: 14px;
+  color: #999;
+}
+.dot-list li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background: #999;
+  border-radius: 3px;
+}
+
+
+
+
+
+/* 회원가입 02.회원정보 */
+.join-form {
+  margin: 30px 0;
+}
+.join-form input{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 7px 15px 8px;
+  border: 1px solid #dddddd;
+  color: #000;
+  background-color: #fff;
+  font-size: 15px;
+  vertical-align: top;
+  line-height: 16px;
+  box-sizing: border-box;
+}
+.ip-btn-wrap{
+  margin-bottom: 10px;
+}
+.ip-btn-wrap input{
+  width: calc(100% - 124px);
+}
+.ip-btn-wrap .btn-pos{
+  display: inline-block;
+  min-width: 115px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  margin-left: 4px;
+  text-align: center;
+  font-size: 14px !important;
+  color: #333;
+  border: 1px solid #333;
+  background: #fff;
+  vertical-align: top;
+  transition: all 0.1s;
+}
+.ip-email-wrap{
+  display: flex;
+}
+.ip-email-wrap .gap{
+  margin: 6px 3px 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  color: #555;
+  
+}
+.ip-email-wrap select{
+  height: 40px;
+  margin-left: 4px;
+  padding: 0 32px 0 15px;
+  color: #999;
+  font-size: 15px;
+  cursor: pointer;
+  border: solid 1px #d5d5d5;
+  width: 170px;
+}
+.btn-wrap{
+  margin-top: 50px;
+  text-align: center;
+}
+.btn-wrap .btn-lg{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  padding: 0 20px;
+  line-height: 58px;
+  text-align: center;
+  border-color: #47ad1a;
+  background: #47ad1a;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 27px;
+  border: 1px solid #47ad1a;
+  vertical-align: top;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+
+
+
+
+/* 이용약관 */
+.agree-wrap{
+  border-top: 2px solid #000;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.agree-wrap>.agree-container[aria-expanded="false"] {
+  height: 0px;
+  transition: all .4s ease-out;
+}
+.agree-wrap>.agree-container[aria-expanded="true"] {
+  height: 100%;
+  transition: all 0.35s ease-in-out;
+}
+
+.agree-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 24px;
+}
+.agree-wrap>.agree-header{
+  border-bottom: 1px solid #b5b5b5;
+}
+.agree-all{
+  position: relative;
+}
+.agree-all input {
+  display:none;
+}
+.agree-all input + label {
+  position:relative;
+  display:inline-block;
+  padding-left:30px;
+  font-size:16px;
+  font-weight: 500;
+  line-height:22px;
+  color:#000;
+  letter-spacing:-1.5px;
+  cursor:pointer;
+}
+.agree-all input + label:before {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:-1px;
+  width:20px;
+  height:20px;
+  margin-top:-12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  background:#fff;
+}
+.agree-all input + label:after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:3px;
+  width:14px;
+  height:10px;
+  margin-top:-6px;
+  background:url(/public/images/main/ico_chk_off.png) no-repeat center center;
+  z-index:2;
+}
+.agree-all input:checked + label:before {
+  border-color:#000;
+}
+.agree-all input:checked + label:after {
+  background-image:url(/public/images/main/ico_chk_on.png) ;
+}
+.arr-icon {
+  display: block;
+  overflow: hidden;
+  width: 60px;
+  height: 24px;
+  cursor: pointer;
+}
+.arr-icon.big{
+  background:url(/public/images/ico_accordion_default.png) no-repeat center center;
+}
+.arr-icon.small {
+  background:url(/public/images/member/ico_down_arr.png) no-repeat center center;
+}
+.agree-item{
+  border-bottom: 1px solid #b5b5b5;
+  overflow: hidden;
+}
+.agree-item>.agree-container[aria-expanded="false"]{
+  height: 0px;
+  transition: height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.agree-item .agree-header{
+  padding-left: 50px;
+}
+.agree-item .agree-header input + label{
+  font-size: 15px;
+  color: #777;
+}
+
+.agree-item .agree-cont {
+  overflow-x: auto;
+  min-height: 126px;
+  max-height: 180px;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #777;
+}
+

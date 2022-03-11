@@ -4,12 +4,28 @@
 
 
 import React from 'react'
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import LoginPop from '../main/popup/Login';
 import './header.css'
 
 
-export default function Header() {
+export default function Header({isLogin}) {
+  /* 로그인 팝업 */
+  const [LoginPopOpen, setLoginPopOpen] = useState(false);
+  const openLoginPopFn = ()=> setLoginPopOpen(true);
+  const closeLoginPopFn = ()=> setLoginPopOpen(false);
+
+  /* 로그아웃 */
+  const logoutFn = ()=> {
+    // 로그인 세션 삭제
+    sessionStorage.removeItem('user_id');
+    document.location.replace('/');
+  };
+
   return (
+    <>
     <header className="header-wrapper">
       
       <div className="header-top">
@@ -22,8 +38,18 @@ export default function Header() {
               </a>
             </div>
             <div className="top-btn">
-              <a href="#">로그인</a>
-              <a href="">회원가입</a>
+              {
+                !isLogin ? 
+                <>
+                  <a href="#" onClick={openLoginPopFn}>로그인</a>
+                  <Link to="/join">회원가입</Link>
+                </>
+                :
+                <>
+                  <Link to="/mypage">마이페이지</Link>
+                  <a href="#" onClick={logoutFn}>로그아웃</a>
+                </>
+              }
               <button className="sitemap">+sitemap</button>
             </div>
         </div>
@@ -78,9 +104,10 @@ export default function Header() {
             </li>
           </ul>
       </nav>{/* 헤더 bottom */}
-
-      
-    
     </header>
+
+
+    <LoginPop open={LoginPopOpen} close={closeLoginPopFn} />
+  </>
   )
 }
