@@ -1,5 +1,9 @@
-.footer-wrapper {
+.footer-wrapper *{
   /* border-top: 1px solid #eee; */
+  box-sizing: content-box;
+}
+.footer-wrapper p{
+  margin: 0;
 }
 .footer-wrapper .footer-inner{
   background-color: #eee;
@@ -13,6 +17,8 @@
   padding-bottom: 40px;
 }
 .footer-top .footer-link-list{
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 .footer-top .footer-link-list li{

@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+/* 로그인 세션 */
+const sessionLogin = sessionStorage.getItem('user_id');
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <App sessionLogin={sessionLogin} />
     </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')

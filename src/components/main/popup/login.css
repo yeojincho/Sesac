@@ -1,0 +1,243 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.layerpopup-wrap *{
+  box-sizing: border-box;
+}
+.layerpopup-wrap {
+  position:fixed;
+  display:table;
+  top:0;bottom:0;left:0;right:0;
+  z-index:110;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.4);
+}
+.layerpopup-align {
+  display:table-cell;
+  vertical-align:middle;
+}
+.layerpopup-cont {
+  position:relative;
+  max-width:400px;
+  min-height:400px;
+  margin:0 auto;
+  padding:53px 46px 0;
+  border-radius:5px;
+  box-shadow:0 1px 40px 0 rgba(0,0,0,.2);
+  background:#fff;
+}
+.layerpopup-body .pop-title {
+  font-size:28px;
+  font-weight:700;
+  color:#000;
+  line-height:40px;
+  letter-spacing:-1.5px;
+}
+.layerpopup-body .pop-title strong {
+  font-weight:700;
+}
+.layerpopup-body .login-box {
+  position:relative;
+  overflow:visible;
+  margin-top:21px;
+}
+.login-box:after {content:'';display:block;clear:both;}
+.login-box div {
+  position:relative;
+  border-bottom:2px solid #000;
+}
+.login-box div:before {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:6px;
+  width:18px;
+  height:18px;
+  margin-top:-9px;
+}
+.login-box .inp-box {
+  margin: 0;
+  border: 0;
+  background: none;
+  width:100%;
+  height:40px;
+  padding:4px 10px 4px 32px;
+  font-size:14px;
+  color:#000;
+  line-height:normal;
+}
+.login-box .inp-box:last-child {
+  height:41px;
+}
+.login-box .inp-box::-webkit-input-placeholder {
+  color:#000;
+}
+.login-box .inp-box::placeholder {
+  color:#000;
+}
+.login-box .inp-box:-ms-input-placeholder {
+  color:#000;
+}
+.login-box .id-box,
+.login-box .pw-box {
+  float:none;width:100%;
+}
+.login-box .id-box:before {
+  background-image:url(/public/images/main/ico_id_box.png);
+}
+.login-box .pw-box {
+  margin:12px 0 0 0;
+}
+.login-box .pw-box:before {
+  background-image:url(/public/images/main/ico_pw_box.png);
+}
+.login-box .error-msg {
+  position:absolute;
+  bottom:-35px;
+  left:0;
+  margin:0;
+  padding-left: 21px;
+  background: url(/public/images/main/ico_error.png) no-repeat left center;
+  font-size: 12px;
+  color: #ec1f2f;
+  line-height: 18px;
+}
+.login-chk-box {
+  margin-top:0;
+  padding-top:0;
+  text-align: right;
+}
+.login-chk-box:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.login-chk-box .inp-chk-box {
+  position: relative;
+  float:none;
+  margin: 10px 0 0 0;
+}
+.login-chk-box .inp-chk-box .inp-chk {
+  display:none;
+}
+.login-chk-box .inp-chk-box .inp-chk + label {
+  position:relative;
+  display:inline-block;
+  padding-left:30px;
+  font-size:13px;
+  line-height:22px;
+  color:#000;
+  letter-spacing:-1.5px;
+  cursor:pointer;
+}
+.login-chk-box .inp-chk-box .inp-chk + label:before {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:-1px;
+  width:20px;
+  height:20px;
+  margin-top:-12px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  background:#fff;
+}
+.login-chk-box .inp-chk-box .inp-chk + label:after {
+  content:'';
+  position:absolute;
+  top:50%;
+  left:3px;
+  width:14px;
+  height:10px;
+  margin-top:-6px;
+  background:url(/public/images/main/ico_chk_off.png) no-repeat center center;
+  z-index:2;
+}
+.login-chk-box .inp-chk-box .inp-chk:checked + label:before {
+  border-color:#000;
+}
+.login-chk-box .inp-chk-box .inp-chk:checked + label:after {
+  background-image:url(/public/images/main/ico_chk_on.png) ;
+}
+.login-chk-box .btn-login {
+  width:100%;
+  margin-top:15px;
+}
+.login-chk-box .btn-login {
+  padding:12px 10px;
+  border-radius:23px;
+  background:#5EBF92;
+  font-size:16px;
+  font-weight:700;
+  color:#fff;
+  line-height:22px;
+  letter-spacing:-1.5px;
+}
+.layerpopup-body .underline-text-box {
+  text-align:center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.underline-text-box li {
+  position:relative;
+  display:inline-block;
+}
+.underline-text-box li + li {
+  margin-left:12px;
+  padding-left:12px;
+}
+.underline-text-box li + li:before {
+  content:'';
+  position:absolute;
+  top:8px;bottom:8px;left:0;
+  width:1px;
+  background:#aaa;
+}
+.btn-popup-close {
+  position:absolute;
+  top:30px;
+  right:30px;
+  overflow:hidden;
+  width:23px;
+  height:23px;
+  background:url(/public/images/main/img_popup_close.png) no-repeat center center;
+  text-indent:101%;
+  white-space:nowrap;
+}

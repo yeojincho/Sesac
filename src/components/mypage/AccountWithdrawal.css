@@ -1,0 +1,51 @@
+.wrap1 {
+  box-sizing: border-box;
+  display: flex;
+}
+
+h3,
+.hello {
+  color: gray;
+  position: absolute;
+  right: 10px;
+  display: block;
+  margin-bottom: 30px;
+  justify-self: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+  font-style: none;
+}
+.info button {
+  border: none;
+  background-color: transparent;
+}
+.Imp {
+  font-weight: 700;
+}
+.FormText {
+  width: 400px;
+  height: 200px;
+}
+.FormPw {
+  width: 200px;
+}
+.sideBar {
+  width: 200px;
+  height: 250px;
+  background-color: aliceblue;
+  color: gray;
+  position: fixed;
+  position: relative;
+}
+.contentBox {
+  margin-top: 100px;
+  line-height: 30px;
+}
+.title {
+  display: flex;
+}
