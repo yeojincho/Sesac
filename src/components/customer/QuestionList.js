@@ -1,8 +1,7 @@
 import React from "react";
 import { Table } from "reactstrap";
-import "./question.css";
 
-function NoticeList() {
+function QuestionList() {
   const date = new Date();
   const yyyy = date.getFullYear();
   const mm = date.getMonth();
@@ -10,32 +9,32 @@ function NoticeList() {
   const notices = [
     {
       id: 1,
-      writer: "관리자",
-      content: "공지사항 입니다.",
+      writer: "나희도",
+      content: "3월 교육프로그램 문의드려요!",
       date: `${yyyy}.${mm}.${dd}`,
     },
     {
       id: 2,
-      writer: "관리자",
-      content: "방역지침 안내",
+      writer: "백이진",
+      content: "환불 언제되나요?",
       date: `${yyyy}.${mm}.${dd}`,
     },
     {
       id: 3,
-      writer: "관리자",
-      content: "3월 식대 제출 안내",
+      writer: "고유림",
+      content: "회원가입 했습니다.",
       date: `${yyyy}.${mm}.${dd}`,
     },
     {
       id: 4,
-      writer: "관리자",
-      content: "비대면수업 Zoom 주소 공지",
+      writer: "지승완",
+      content: "하반기 교육일정 문의입니다.",
       date: `${yyyy}.${mm}.${dd}`,
     },
     {
       id: 5,
-      writer: "관리자",
-      content: "공지사항 입니다.",
+      writer: "문지웅",
+      content: "지난 교육 관련 문의",
       date: `${yyyy}.${mm}.${dd}`,
     },
   ];
@@ -65,4 +64,4 @@ function NoticeList() {
     </div>
   );
 }
-export default NoticeList;
+export default QuestionList;

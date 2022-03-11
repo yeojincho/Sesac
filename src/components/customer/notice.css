@@ -1,6 +1,8 @@
-/* notice board */
+/* notice, question page style */
 .container {
-  width: 100%;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .title h1 {
@@ -24,12 +26,20 @@
   justify-content: center;
   margin: 150px 0;
 }
+
 .pagiNation ul li {
   margin: 5px;
 }
+.pagiNation ul li a {
+  border: none;
+  color: #000;
+}
+
 .pagiNation ul li:nth-child(2) a {
-  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding-right: 20px;
 }
 .pagiNation ul li:nth-last-child(2) a {
-  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  padding-left: 20px;
 }
