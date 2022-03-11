@@ -1,6 +1,35 @@
-h2 {
-  font-size: 20px;
-}
+/* notice board */
 .container {
   width: 100%;
+}
+
+.title h1 {
+  color: #777777;
+  font-size: 30px;
+}
+
+.title h2 {
+  color: #aaaaaa;
+  font-size: 20px;
+}
+.table {
+  margin-top: 150px;
+}
+.writeBtn {
+  width: 100px;
+  height: 30px;
+}
+.pagiNation ul {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0;
+}
+.pagiNation ul li {
+  margin: 5px;
+}
+.pagiNation ul li:nth-child(2) a {
+  border-left: 1px solid #000;
+}
+.pagiNation ul li:nth-last-child(2) a {
+  border-right: 1px solid #000;
 }
