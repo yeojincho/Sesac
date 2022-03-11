@@ -1,12 +1,14 @@
 import './components/common/common.css';
 import './components/program/curriculum.css';
 
-import React from "react";
+import React, {useState} from "react";
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 
 function Curriculum(){
+    const [like, setLike] = useState(0);
+    
     return(
         <div className="wrapper inner-box">
             <Header />

@@ -1,0 +1,25 @@
+* {
+    color: #636363;
+}
+
+.textBox {
+    text-align: center;
+    padding: 50px;
+    background-color: #E6E6E6;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 30px;
+}
+
+.text p {
+    padding-bottom: 20px;
+}
+
+.text button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
