@@ -2,18 +2,34 @@
     color: #636363;
 }
 
-.tableSection .tableTitle {
-    font-size: 30px;
-    margin-bottom: 10px;
+table{
+    padding:0;
+    border:0;
+    border-spacing:0px;
+    border-collapse:collapse;
+}
+th, td{
+    padding:0;
 }
 
-.tableSection .tableSubTitle {
-    font-size: 20px;
+.mainTitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subTitle {
+    font-size: 18px;
     margin-bottom: 20px;
+}
+
+.tableSection {
+    margin: 100px auto;
 }
 
 .tableSection .top {
     position: relative;
+    margin-top: 50px;
 }
 
 .tableSection .top .downloadBtn {
@@ -25,39 +41,72 @@
     font-size: 16px;
     position: absolute;
 }
-
 .tableSection .top .date {
     font-size: 30px;
     text-align: center;
-    
 }
 
-.tableSection .top .date i {
-    margin: 0 15px;
+.tableSection .top .date h3 {
+    display: inline;
 }
 
-.tableSection .top .searchbox {
-    text-align: right;
-    position: relative;
-}
-
-.tableSection .top .searchbox input {
-    width: 15%;
-    height: 30px;
-    background-color: #EFEFEF;
-    border-radius: 50px;
+.tableSection .top .date button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
     border: none;
-
-}
-
-.tableSection .top .searchbox button {
     text-indent: -9999px;
     cursor: pointer;
+}
+
+.tableSection .top .date .btnPrev {
+    background: url(../../../public/images/arrow_prev.png) no-repeat center;
+    background-size: 25px;
+    padding-top: 10px;
+}
+.tableSection .top .date .btnNext {
+    background: url(../../../public/images/arrow_next.png) no-repeat center;
+    background-size: 25px;
+    padding-top: 10px;
+}
+
+.tableSection .top .searchBox {
+    width: 250px;
+    height: 50px;
+    margin: 20px 0;
+    text-indent: 60px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    float: right;
+    outline: none;
     background: url(../../../public/images/search.png) no-repeat;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 10px;
+    background-position: 20px center;
+    background-size: 20px 20px;
+    background-color: #f3f3f3;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #f3f3f3;
+}
+
+thead {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+table tr:nth-child(odd) {
+    background-color: #F4F4F4;
+}
+
+table tr th, table tr td {
+    padding: 20px;
+}
+
+table th {
+    text-align: left;
+    font-weight: bold;
 }
 
 .listSection .btn li {

@@ -1,0 +1,80 @@
+.wrapper {
+  margin-bottom: 150px;
+}
+
+/* title */
+
+.title {
+  margin: 106px 65px;
+}
+.title h2 {
+  color: #777777;
+  font-size: 30px;
+}
+
+.title h3 {
+  color: #aaaaaa;
+  font-size: 28px;
+}
+
+/* submenuList */
+
+.fqaSubMenuBox {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.fqaSubMenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fqaSubMenuList li {
+  background-color: #dddddd;
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #898989;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: #dddddd;
+  color: #898989;
+}
+
+.subOn {
+  color: #ffffff;
+  background-color: #5ebf92;
+  font-weight: bold;
+}
+
+/* FaqAcco.js */
+
+.accoImg {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 10px;
+}
+
+.answerBox {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.font-weight-bold {
+  height: 70px;
+  line-height: 70px;
+}

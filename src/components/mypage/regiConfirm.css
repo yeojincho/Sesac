@@ -1,0 +1,188 @@
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cancelBtn {
+  border: none;
+  padding: 5px 10px;
+  background-color: #5EBF92;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.classConfirmPage {
+  padding: 0 10px;
+}
+
+
+/* 테이블 css */
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+th, td {
+  border: 1px solid #eee;
+}
+
+th {
+  text-align: center;
+  font-weight: 500;
+  background-color: #eee;
+}
+
+tr {
+  height: 40px;
+  font-size: 15px;
+}
+
+td {
+  padding: 0 10px;
+  font-weight: 300;
+}
+
+tr td:nth-child(1) {
+  text-align: center;
+}
+tr td:nth-child(2) {
+  text-align: center;
+}
+tr td:nth-child(3) {
+  text-align: left;
+}
+tr td:nth-child(4) {
+  text-align: center;
+}
+tr td:nth-child(5) {
+  text-align: right;
+}
+tr td:nth-child(6) {
+  text-align: right;
+}
+tr td:nth-child(7) {
+  text-align: center;
+}
+tr td:nth-child(8) {
+  text-align: center;
+}
+
+.pageTitle {
+  color: #999;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* left-menu area */
+.left-menu {
+  width: 20%;
+  padding: 20px 20px;
+}
+
+.left-menu .depth1 a:hover {
+  border-bottom: 1px solid #5EBF92;
+} 
+
+.left-menu li.depth1 {
+  color: #000;
+}
+
+
+.depth1{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.depth1>a {
+  font-weight: 500;
+}
+.depth1>ul {
+  margin-top: 10px;
+}
+.depth1>ul>li.depth2 {
+  margin-bottom: 5px;
+}
+
+.depth2{
+  font-size: 17px;
+  text-indent: 40px;
+  font-weight: 300;
+}
+
+.depth2 a.active {
+  color: #03A65A;
+  font-weight: 800;
+}
+
+
+
+/* 수강신청 취소버튼 클릭 후 팝업버튼 */
+.popup-cancel {
+  position: relative;
+  display: none;
+  color: #333;
+  background-color: #E6E6E6;
+  border-radius: 20px;
+  padding: 20px 20px 55px;
+  width: 350px;
+}
+
+/* on 클래스 붙이면 보임 */
+.popup-cancel.on {
+  display: block;
+}
+
+
+.popup-cancel .btn {
+  display: block;
+  padding: 5px 8px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background-color: #5EBF92;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.popup-cancel {
+  display: none;
+}
+
+/* 교육내역이 없는 경우 보여지는 페이지 */
+.notice-noClass  {
+  border: 1px solid #E6E6E6;
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 40px 40px;
+  width: 550px;
+}
+
+.notice-noClass h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notice-noClass p {
+  line-height: 25px;
+} 
+
+
+
+
+
