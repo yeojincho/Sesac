@@ -1,0 +1,64 @@
+.wrap1 {
+  box-sizing: border-box;
+  display: flex;
+  height: 1700px;
+}
+
+.sideBar {
+  width: 200px;
+  height: 250px;
+  background-color: lightgrey;
+  color: gray;
+  position: fixed;
+  position: relative;
+}
+.contentBox {
+  width: 1000px;
+}
+
+#title {
+  color: gray;
+  font-size: 20px;
+}
+.inform {
+  color: #191b20;
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+.infoTitle {
+  font-weight: 800;
+  font-size: 18px;
+  color: #191b20;
+}
+
+.infoForm {
+  font-size: 15px;
+}
+.infoForm input {
+  width: 800px;
+}
+#select {
+  width: 250px;
+}
+#checkbox {
+  width: 15px;
+  margin-bottom: 80px;
+}
+
+.service {
+  font-weight: 500;
+  font-size: 16px;
+  color: #191b20;
+}
+.bottomBtn {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.bottomBtn > button {
+  margin-left: 100px;
+  width: 200px;
+}
