@@ -1,15 +1,11 @@
-import './components/common/common.css';
-import './components/program/termsofuse.css';
+import '../common/common.css';
+import './termsofuse.css';
 
 import React from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 
 function TermsOfUse(){
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="content">
                 <div className="step">
                     <ul>
@@ -47,7 +43,6 @@ function TermsOfUse(){
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

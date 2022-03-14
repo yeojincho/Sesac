@@ -1,15 +1,11 @@
-import './components/common/common.css';
-import './components/program/infoinput.css';
+import '../common/common.css';
+import './infoinput.css';
 
 import React from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 
 function InfoInput(){
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="content">
                 <div className="step">
                     <ul>
@@ -224,7 +220,6 @@ function InfoInput(){
                     <a href="#">신청하기</a>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
