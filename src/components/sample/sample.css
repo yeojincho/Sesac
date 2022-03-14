@@ -1,0 +1,476 @@
+/* 01.상단 공통 타이틀 */
+.c-top-title{
+  margin: 90px 65px;
+}
+.c-top-title h2{
+  font-weight: bold;
+  color: #777777;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.c-top-title h3{
+  color: #aaaaaa;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* 02.상단 공통 메뉴 1 */
+.c-cont{
+  width: 600px;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+.c-step {
+  margin: 0 auto;
+}
+.c-step ol{
+  display: flex;
+}
+.c-step ol li {
+  position: relative;
+  flex: 1;
+  margin-right: -1px;
+  text-align: center;
+  line-height: 52px;
+  padding: 0 0 0 14px;
+  background: #fff;
+  font-size: 16px;
+  color: #999;
+  border: 1px solid #ccc;
+}
+.c-step ol li:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #fff;
+  z-index: 1;
+}
+.c-step ol li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #ccc;
+  z-index: 0;
+}
+.c-step ol li.c-on {
+  color: #fff;
+  background: #03A65A;
+  border-color: #03A65A;
+}
+.c-step ol li.c-on:before, 
+.c-step ol li.c-on:after {
+  border-color: transparent transparent transparent #fff;
+}
+.c-step ol li:first-child:before, 
+.c-step ol li:first-child:after, 
+.c-step ol li.is-active:first-child:before, 
+.c-step ol li.is-active:first-child:after {
+  display: none;
+}
+.c-step ol li.c-on + li:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 0 28px 20px;
+  border-color: transparent transparent transparent #03A65A;
+  z-index: 1;
+}
+.c-step ol li.c-on .c-num {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* 03.상단 공통 메뉴 2  */
+.c-menu {
+  margin: 90px auto;
+}
+.c-menu ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.c-menu ul li{
+  text-align: center;
+  line-height: 55px;
+  margin-left: 20px;
+  background: #fff;
+  font-size: 16px;
+  color: #999;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+.c-menu ul li.c-on{
+  background-color: #03A65A;
+  color: #fff;
+}
+.c-menu ul li a{
+  display: block;
+  width: 200px;
+  height: 55px;
+  text-decoration: none;
+  color:inherit
+}
+
+
+
+
+
+
+/* 04. 탭 메뉴 */
+.hor-tab-box {
+  margin-top: 33px;
+  box-sizing: border-box;
+}
+.hor-tab {
+  display: flex;
+}
+.hor-tab li:first-child .c-on:before {
+  border-radius: 7px 0 0 7px;
+}
+.hor-tab li .c-on {
+  position: relative;
+  border-color: #000;
+  background-color: #03A65A;
+  color: #fff;
+}
+.hor-tab li .c-on:before {
+  content: '';
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 3px solid #03A65A;
+}
+.hor-tab li:first-child a {
+  border-radius: 7px 0 0 7px;
+  border-left: 1px solid #ddd;
+}
+.hor-tab li a {
+  display: block;
+  width: 168px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  font-size: 16px;
+  color: #999;
+  line-height: 20px;
+  padding: 18px 0;
+  text-align: center;
+}
+.hor-tab li:last-child a {
+  border-radius: 0 7px 7px 0;
+}
+
+
+
+
+
+
+/* 05. 버튼 */
+.c-btn-box {
+  /* text-align: center; 버튼 화면 중앙 정렬 */
+}
+.btn-type1 {
+  min-width: 190px;
+  height: 60px;
+  margin-top: 40px;
+  padding: 0 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+.btn-type2 {
+  min-width: 190px;
+  height: 60px;
+  margin-top: 40px;
+  padding: 0 20px;
+  background-color: #03A65A;
+  border-radius: 30px;
+  border: none;
+}
+.btn-type2 span,.btn-type3 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.btn-type3 {
+  min-width: 190px;
+  height: 60px;
+  margin-top: 40px;
+  padding: 0 20px;
+  background-color: #ec2333;
+  border-radius: 30px;
+  border: none;
+}
+.btn-type2:disabled, .btn-type3:disabled  {
+  opacity: 0.5;
+  cursor: auto;
+}
+.btn-type1.small {
+  min-width: 110px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+.btn-type2.small, .btn-type3.small {
+  min-width: 110px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 7px;
+}
+.btn-type1.small span, .btn-type2.small span, .btn-type3.small span {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.btn-write span {
+  position: relative;
+  padding-left: 19px;
+}
+.btn-write span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  background: url(/public/images/ico_write.png) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+/* 06.페이지네이션 */
+.cont-list-pagination {
+  overflow: hidden;
+  margin-top: 42px;
+  font-size: 0;
+  text-align: center;
+}
+.cont-list-pagination > a, .cont-list-pagination > span {
+  display: inline-block;
+  padding: 8px 0 11px;
+  vertical-align: top;
+}
+.cont-list-pagination .prev, .cont-list-pagination .last {
+  margin-left: 11px;
+}
+.cont-list-pagination > a, .cont-list-pagination > span {
+  display: inline-block;
+  padding: 8px 0 11px;
+  vertical-align: top;
+}
+.pagination-list {
+  display: inline-block;
+  padding: 0 29px;
+  font-size: 0;
+  vertical-align: top;
+}
+.pagination-list li {
+  display: inline-block;
+  vertical-align: top;
+}
+.pagination-list li:first-child a, .pagination-list li:first-child span {
+  margin-left: 0;
+}
+.pagination-list li.c-on>a {
+  color: #000;
+  cursor: default;
+}
+.pagination-list li a, .pagination-list li span {
+  margin-left: 21px;
+  font-size: 15px;
+  color: #999;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  vertical-align: top;
+}
+
+
+
+
+
+
+/* 07.체크박스 */
+.c-inp-chk-box{
+  position: relative;
+}
+.c-inp-chk-box .inp-chk {
+  display: none;
+}
+.c-inp-chk-box .inp-chk + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #000;
+  letter-spacing: -1.5px;
+  cursor: pointer;
+}
+.c-inp-chk-box .inp-chk + label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  margin-top: -12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+.c-inp-chk-box .inp-chk + label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 14px;
+  height: 10px;
+  margin-top: -6px;
+  background: url(/public/images/main/ico_chk_off.png) no-repeat center center;
+  z-index: 2;
+}
+.c-inp-chk-box .inp-chk:checked + label:after {
+  background-image: url(/public/images/main/ico_chk_on.png);
+}
+
+
+
+
+
+
+
+
+
+/* 08.라디오버튼 */
+.radio-set{
+  padding: 0;
+}
+.radio-set li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.ipt-rdo {
+  display: none;
+}
+.ipt-rdo + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+.ipt-rdo + label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  background: url(/public/images/ico_radio.png) no-repeat 0 -22px;
+}
+.ipt-rdo:disabled + label {
+  cursor: auto;
+}
+.ipt-rdo:disabled + label:before {
+  background-position: 0 -44px;
+}
+.ipt-rdo:checked + label:before {
+  background-position: 0 0;
+}
+
+
+
+
+/* 09. 서치 input */
+.date-search-option {
+  position: relative;
+  display: flex;
+}
+
+.date-search-option .item-search:last-child {
+  margin-right: 0;
+}
+.item-search {
+  position: relative;
+}
+.date-search-option .item-search .ipt-search {
+  width: 220px;
+}
+.item-search .ipt-search {
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 10px 40px 10px 10px;
+  width: 210px;
+  height: 38px;
+}
+.item-search .btn-search {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 38px;
+  height: 38px;
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+  background: url(/public/images/ico_cont_search.png) no-repeat center center;
+}
+
+
+
+
+
+
+/* 10.select 박스 */
+.c-inp-select-box select {
+  width: 300px;
+  border: 1px solid #ddd;
+  height: 38px;
+  border-radius: 5px;
+  padding-left: 13px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #fff url(/public/images/ico_down_arrow.png) no-repeat right center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}

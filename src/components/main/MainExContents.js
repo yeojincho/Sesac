@@ -15,7 +15,7 @@ export default function MainExContents() {
           <span className="eyebrow">EX 콘텐츠</span>
           <span className="p-title">엑스퍼트아카데미 이벤트와 다양한 콘텐츠를 만나보세요! </span>
           <ul className="p-list">
-            <li className="on"><a href="#">전체보기</a></li>
+            <li className="active"><a href="#">전체보기</a></li>
             <li><a href="#">이벤트</a></li>
             <li><a href="#">과정후기</a></li>
             <li><a href="#">EX뷰</a></li>

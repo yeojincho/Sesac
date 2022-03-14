@@ -1,10 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useHistory } from 'react-router-dom';
 
 import './join.css';
 
 export default function JoinForm() {
+	let history = useHistory();
   return (
     <div className="join-wrapper">
       <div className="inner-box join-inner">
@@ -104,7 +104,7 @@ export default function JoinForm() {
 							</div>
 							<div className="btn-wrap">
 								<Link to="/join/complete">
-									<button className="btn-lg" type="button" id="nextBtn">다음</button>
+									<button className="btn-lg" type="button" id="nextBtn" onclick={()=>{history.push('/join/complete')}}>다음</button>
 								</Link>
 							</div>
 						</div>

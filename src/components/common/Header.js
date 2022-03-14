@@ -41,7 +41,13 @@ export default function Header({ isLogin }) {
               </a>
             </div>
             <div className="top-btn">
+<<<<<<< HEAD
               {!isLogin ? (
+=======
+            <Link to="/sample">공통샘플</Link>
+              {
+                !isLogin ? 
+>>>>>>> ec0c226c2aa97352125425c500d232c05cee5d7a
                 <>
                   <a href="#" onClick={openLoginPopFn}>
                     로그인
@@ -55,8 +61,12 @@ export default function Header({ isLogin }) {
                     로그아웃
                   </a>
                 </>
+<<<<<<< HEAD
               )}
               <button className="sitemap">+sitemap</button>
+=======
+              }
+>>>>>>> ec0c226c2aa97352125425c500d232c05cee5d7a
             </div>
           </div>
         </div>
@@ -65,6 +75,7 @@ export default function Header({ isLogin }) {
         <nav className="header-bottom">
           <ul className="inner-box gnb">
             <li className="depth1">
+<<<<<<< HEAD
               <Link to="/sample1">공개과정</Link>
               <ul class="depth2">
                 <li>
@@ -96,11 +107,29 @@ export default function Header({ isLogin }) {
                 <li>
                   <Link to="/sample2">모집중인 과정</Link>
                 </li>
+=======
+              <Link to ="">공개과정</Link>
+              <ul class="depth2">
+                <li><Link to ="/program">월간교육일정</Link></li>
+                <li><Link to ="">계층교육</Link></li>
+                <li><Link to ="">직무역량</Link></li>
+                <li><Link to ="">DX교육</Link></li>
+                <li><Link to ="">진단</Link></li>
+                <li><Link to ="">일반</Link></li>
+              </ul>
+            </li>
+            <li className="depth1">
+              <Link to ="">취업과정</Link>
+              <ul class="depth2">
+                <li><Link to ="">소개</Link></li>
+                <li><Link to ="">모집중인 과정</Link></li>
+>>>>>>> ec0c226c2aa97352125425c500d232c05cee5d7a
               </ul>
             </li>
             <li className="depth1">
               <Link to="/">Ex콘텐츠</Link>
               <ul class="depth2">
+<<<<<<< HEAD
                 <li>
                   <Link to="/">이벤트</Link>
                 </li>
@@ -127,11 +156,26 @@ export default function Header({ isLogin }) {
                 <li>
                   <Link to="/">오시는 길</Link>
                 </li>
+=======
+                <li><Link to ="/">이벤트</Link></li>
+                <li><Link to ="/">과정후기</Link></li>
+                <li><Link to ="/">EXC뷰</Link></li>
+              </ul>
+            </li>
+            <li className="depth1">
+              <Link to ="/notice">고객센터</Link>
+              <ul class="depth2">
+                <li><Link to ="/notice">공지사항</Link></li>
+                <li><Link to ="/question">문의하기</Link></li>
+                <li><Link to ="/faq">자주묻는 질문</Link></li>
+                <li><Link to ="/visit">오시는 길</Link></li>
+>>>>>>> ec0c226c2aa97352125425c500d232c05cee5d7a
               </ul>
             </li>
             <li className="depth1">
               <Link to="/">아카데미</Link>
               <ul class="depth2">
+<<<<<<< HEAD
                 <li>
                   <Link to="/">아카데미 소개</Link>
                 </li>
@@ -147,6 +191,13 @@ export default function Header({ isLogin }) {
                 <li>
                   <Link to="/change">비번변경</Link>
                 </li>
+=======
+                <li><Link to ="/">아카데미 소개</Link></li>
+                <li><Link to ="/teacherinfo">강사소개</Link></li>
+                <li><Link to ="/hrstore">HR샵</Link></li>
+                <li><Link to ="/Partnership">제휴제안</Link></li>
+                <li><Link to ="/Recruit">인재채용</Link></li>
+>>>>>>> ec0c226c2aa97352125425c500d232c05cee5d7a
               </ul>
             </li>
           </ul>

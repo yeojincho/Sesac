@@ -1,64 +1,11 @@
-
- /* 메인 배너 */
-.main-wrapper .main-banner {
-  height: 500px;
-}
-.main-banner .swiper::before{
-  position: relative;
-  content: '';
-  display: block;
-  position:absolute;
-  width: 50px;
-  height: 23px;
-  background-color: rgba(49,51,56,.6);
-  padding: 5px 14px;
-  border-radius: 18px;
-  top: 23px;
-  right: 18px;
-  z-index: 2;
-  box-sizing: content-box;
-}
-.main-banner .swiper-slide img{
-  width: 100%;
-  height: 500px;
-  border-radius: 7px;
-}
-.main-banner .swiper-button-prev::after,.swiper-button-next::after{
-  position: relative;
-  display: none;
-}
-
-.main-banner .swiper-button-prev{
-  top: 40px;
-  left: 93%;
-  background: url('/public/images/main/left-chevron.png') no-repeat center ;
-  background-size: 24px 14px;
-}
-.main-banner .swiper-button-next{
-  top: 40px;
-  right: 20px;
-  background: url('/public/images/main/right-chevron.png') no-repeat center ;
-  background-size: 24px 14px;
-}
-
+/* 메인 배너 */
 .main-banner .swiper-pagination-bullet {
   width: 50px;
   height: 4px;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.swiper-pause {
-  position: absolute;
-  top: 26px;
-  right: 49px;
-  z-index: 10;
-  cursor: pointer;
-}
-.swiper-pause img{
-  width: 14px;
-  height: 15px;
 
-}
 
 
 /* 과정 카테고리 */
@@ -93,7 +40,7 @@
   position: relative;
   padding: 0 8px;
 }
-.main-text-box .p-list li.on {
+.main-text-box .p-list li.active {
   color: #5EBF92;
 }
 .main-text-box .p-list li::before {
@@ -213,6 +160,7 @@
   padding-bottom: 20px;
 }
 .btn-more {
+  width: 71px;
   border:0;
   background-color: #fff;
   position:relative;
@@ -297,5 +245,76 @@
 }
 
 
+/* PC Main CSS */
+@media screen and (min-width:768px){
+   /* 메인 배너 */
+  .main-banner .swiper-slide img{
+    width: 100%;
+    height: 500px;
+    border-radius: 7px;
+  }
+  .main-banner .swiper::before{
+    position: relative;
+    content: '';
+    display: block;
+    position:absolute;
+    width: 50px;
+    height: 23px;
+    background-color: rgba(49,51,56,.6);
+    padding: 5px 14px;
+    border-radius: 18px;
+    top: 23px;
+    right: 18px;
+    z-index: 2;
+    box-sizing: content-box;
+  }
+  
+  .main-banner .swiper-button-prev::after,.swiper-button-next::after{
+    position: relative;
+    display: none;
+  }
+  
+  .main-banner .swiper-button-prev{
+    top: 40px;
+    left: 93%;
+    background: url('/public/images/main/left-chevron.png') no-repeat center ;
+    background-size: 24px 14px;
+  }
+  .main-banner .swiper-button-next{
+    top: 40px;
+    right: 20px;
+    background: url('/public/images/main/right-chevron.png') no-repeat center ;
+    background-size: 24px 14px;
+  }
+  .swiper-pause {
+    position: absolute;
+    top: 26px;
+    right: 49px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .swiper-pause img{
+    width: 14px;
+    height: 15px;
+  
+  }
+}
+
+/* 모바일 Main CSS */
+@media screen and (max-width:767px){
+  .main-wrapper{
+    padding-top: 65.59px;
+  }
+   /* 메인 배너 */
+  .main-banner .swiper-slide img {
+    width: 100%;
+    height: 200px;
+  }
+  .main-banner .swiper-button-prev,
+  .main-banner .swiper-button-next,
+  .swiper-pause{
+    display: none;
+  }
+}
 
 

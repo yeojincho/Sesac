@@ -18,7 +18,7 @@ export default function MainProgram() {
           <span className="eyebrow">과정 카테고리</span>
           <span className="p-title">엑스퍼트 전문적인 강사진과 차별화된 교육 프로그램을 제공 합니다.</span>
           <ul className="p-list">
-            <li className="on"><a href="#">개강순</a></li>
+            <li className="active"><a href="#">개강순</a></li>
             <li><a href="#">계층교육</a></li>
             <li><a href="#">직무역량</a></li>
             <li><a href="#">DX</a></li>
