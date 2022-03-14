@@ -1,10 +1,8 @@
-import './components/common/common.css';
-import './components/program/confirm.css';
+import '../common/common.css';
+import './confirm.css';
 
 import { Route, Router, Switch ,useHistory, Link } from 'react-router-dom';
 
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 import Main from './components/main/Main';
 
 function Confirm(){    
@@ -12,7 +10,6 @@ function Confirm(){
 
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="textBox">
                 <div className="text">
                     교육과정이 정상적으로 신청되었습니다.
@@ -21,7 +18,6 @@ function Confirm(){
                     <Route exact path="/" component={Main}></Route>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

@@ -1,23 +1,28 @@
-import './components/common/common.css';
-import './components/program/program.css';
+import './program.css';
 
-import React from "react";
-import $ from 'jquery';
+import React, {useState} from "react";
 
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
-import MainBanner from './components/main/MainBanner';
-import MainContents from './components/main/MainContents';
+import MainBanner from '../../components/main/MainBanner';
+import MainContents from '../../components/main/MainContents';
 
 import "swiper/css"; 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import './components/main/main.css';
+import '../../components/main/main.css';
 
 function Program(){
+    // 강의 날짜 변경 버튼
+    const onIncrease = () => {
+        setMonth(month + 1);
+    }
+    const onDecrease = () => {
+        setMonth(month - 1);
+    }
+
+    const [month, setMonth] = useState(1); /* if문 작성해둔거 복붙 */ 
+
     return(
         <div className="wrapper inner-box">
-            <Header />
             <MainBanner />
             <div className="tableSection">
                 <h2 className='mainTitle'>월간교육일정</h2>
@@ -27,9 +32,9 @@ function Program(){
                         공개교육 연간일정표 다운로드
                     </button>
                     <div className='date'>
-                        <button className='btnPrev'>prev</button>
-                        <h3>2022년 1월</h3>
-                        <button className='btnNext'>next</button>
+                        <button className='btnPrev' onClick={onDecrease}>prev</button>
+                        <h3>2022년 {month}월</h3>
+                        <button className='btnNext' onClick={onIncrease}>next</button>
                     </div>
                     <input type="text" placeholder="Search" className="searchBox focus" />
                 </div>
@@ -79,7 +84,7 @@ function Program(){
                         </tr>
                         <tr>
                         <th>
-                            계층교육
+                            DX교육
                         </th>
                         <td>
                             사내강사 양성과정
@@ -88,18 +93,18 @@ function Program(){
                             1DAY 8H
                         </td>
                         <td>
-                            1.19~1.20
+                            1.19
                         </td>
                         <td>
                             290,000원
                         </td>
                         <td>
-                            송파러닝센터
+                            비대면 교육
                         </td>
                         </tr>
                         <tr>
                         <th>
-                            계층교육
+                            직무역량
                         </th>
                         <td>
                             사내강사 양성과정
@@ -108,13 +113,13 @@ function Program(){
                             1DAY 8H
                         </td>
                         <td>
-                            1.19~1.20
+                            1.20
                         </td>
                         <td>
                             290,000원
                         </td>
                         <td>
-                            송파러닝센터
+                            문정러닝센터
                         </td>
                         </tr>
                     </tbody>
@@ -130,7 +135,6 @@ function Program(){
                 </ul>
                 <MainContents />
             </div>
-            <Footer />
         </div>
     )
 }
