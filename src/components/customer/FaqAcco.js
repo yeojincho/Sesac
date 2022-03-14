@@ -3,11 +3,11 @@ import './faq.css';
 import { Collapse, CardBody, Card, CardHeader} from 'reactstrap';
 
 export default function FaqAcco(){
-    const [toggleQuestion, setToggequestion] = useState(0);
+    const [toggleQuestion, setToggequestion] = useState(1);
     return(
         
         <div className='wrapper inner-box'>
-            <div className='accBox'>
+            <div className='accoBox'>
             <Card>
                 <CardHeader onClick={() => setToggequestion(1)}>
                     <span className="font-weight-bold">

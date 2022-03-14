@@ -23,11 +23,12 @@ import { Route, Switch } from "react-router-dom";
 // import Confirm from "../../components/program/Confirm";
 
 //마이페이지
+import MyPageAll from "../mypage/MyPageAll";
 // import Management from "../../components/mypage/Management";
 // import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
 // import ChangePw from "../../components/mypage/ChangePw";
-import RegiConfirm from "../../components/mypage/RegiConfirm";
-import MyClassList from "../../components/mypage/MyClassList";
+// import RegiConfirm from "../../components/mypage/RegiConfirm";
+// import MyClassList from "../../components/mypage/MyClassList";
 
 import Header from "../../components/common/Header";
 import Footer from "../../components/common/Footer";
@@ -79,9 +80,12 @@ export default function PCLayout({ isLogin }) {
         {/* <Route exact path="/teacherinfo" component={TeacherInfo}></Route> */}
 
         {/* 마이페이지 */}
+        <Route exact path="/MyPageAll" component={MyPageAll}></Route>
         {/* <Route exact path='/Manage' component={Management}></Route> */}
         {/* <Route exact path='/AccountWithdrawal' component={AccountWithdrawal}></Route> */}
         {/* <Route exact path='/ChangePw' component={ChangePw}></Route> */}
+        {/* <Route exact path="/RegiConfirm" component={RegiConfirm}></Route> */}
+        {/* <Route exact path="/MyClassList" component={MyClassList}></Route> */}
 
         <Route>
           <NotFound />

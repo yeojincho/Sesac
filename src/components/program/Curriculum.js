@@ -1,17 +1,13 @@
-import './components/common/common.css';
-import './components/program/curriculum.css';
+import '../common/common.css';
+import './curriculum.css';
 
 import React, {useState} from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 
 function Curriculum(){
     const [like, setLike] = useState(0);
     
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="topDetailpage">
                 <div className="left">
                     <div className="detailpageImg">
@@ -46,7 +42,9 @@ function Curriculum(){
                         <div className="btnUl">
                             <ul className="programBtn">
                                 <li><a href="#">문의하기</a></li>
-                                <li><a href="#">관심과정</a></li>
+                                <li>
+                                    <a href="#" onClick={()=>{setLike(like+1)}}><span>{like} &hearts; </span>관심과정</a>
+-                               </li>
                                 <li><a href="#">과정신청</a></li>
                             </ul>
                         </div>
@@ -68,7 +66,6 @@ function Curriculum(){
                 </ul>
                 <div className="contents"></div>
             </div>
-            <Footer />
         </div>
     )
 }

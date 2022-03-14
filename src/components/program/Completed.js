@@ -1,15 +1,11 @@
-import './components/common/common.css';
-import './components/program/completed.css';
+import '../common/common.css';
+import './completed.css';
 
 import React from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 
 function Completed(){
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="content">
                 <div className="step">
                     <ul>
@@ -80,7 +76,6 @@ function Completed(){
                     </ul>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

@@ -1,43 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./myClassList.css";
 
 const MyClassList = () => {
+  let [notice, setNotice] = useState(true);
   return (
     <div className="myClassList-container">
       <div className="inner-box">
-        <div className="menuTitle-box">
-          <h1>마이페이지</h1>
-          <p>{}님 엑스퍼트아카데미에 오실걸 환영 합니다.</p>
-        </div>
         <div className="flexbox">
-          <div className="left-menu">
-            <ul>
-              <li className="user-info depth1">
-                <a href="#">회원정보</a>
-                <ul>
-                  <li className="depth2">
-                    <a href="#">회원정보관리</a>
-                  </li>
-                  <li className="depth2">
-                    <a href="#">비밀번호변경</a>
-                  </li>
-                </ul>
-              </li>
-              <li className="class-info depth1">
-                <a href="#">수강정보</a>
-                <ul>
-                  <li className="depth2">
-                    <a href="#">수강신청 확인/취소</a>
-                  </li>
-                  <li className="depth2">
-                    <a href="#" className="active">
-                      수강내역
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
           <div className="myClassListPage">
             <h2 className="pageTitle">수강내역</h2>
             <table className="table">
@@ -69,21 +38,27 @@ const MyClassList = () => {
                 <td>1,000,000원</td>
                 <td>수료</td>
                 <td>
-                  <button>다운로드</button>
+                  <button className="down-btn">다운로드</button>
                 </td>
               </tr>
             </table>
-            <div className="notice-noClass on">
-              <h3>교육내역이 없습니다.</h3>
-              <p>
-                문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로 연락
-                주십시오.
-              </p>
-            </div>
+            {notice === true ? <Notice /> : null}
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+function Notice() {
+  return (
+    <div className="notice-noClass on">
+      <h3>교육내역이 없습니다.</h3>
+      <p>
+        문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로 연락
+        주십시오.
+      </p>
+    </div>
+  );
+}
 export default MyClassList;
