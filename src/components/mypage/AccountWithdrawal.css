@@ -1,37 +1,20 @@
-.wrap1 {
+.account-wrap1 {
   box-sizing: border-box;
   display: flex;
 }
 
-h3,
-.hello {
-  color: gray;
-  position: absolute;
-  right: 10px;
-  display: block;
-  margin-bottom: 30px;
-  justify-self: start;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 20px;
-  font-style: none;
-}
-.info button {
+.account-info button {
   border: none;
   background-color: transparent;
 }
-.Imp {
+.account-Imp {
   font-weight: 700;
 }
-.FormText {
+.account-FormText {
   width: 400px;
   height: 200px;
 }
-.FormPw {
+.account-FormPw {
   width: 200px;
 }
 .sideBar {

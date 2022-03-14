@@ -1,17 +1,9 @@
-.wrap1 {
+.Management-wrap1 {
   box-sizing: border-box;
   display: flex;
   height: 1700px;
 }
 
-.sideBar {
-  width: 200px;
-  height: 250px;
-  background-color: lightgrey;
-  color: gray;
-  position: fixed;
-  position: relative;
-}
 .contentBox {
   width: 1000px;
 }
