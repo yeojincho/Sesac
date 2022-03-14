@@ -1,66 +1,69 @@
-.wrapper {
-  margin-bottom: 150px;
-}
-
 /* title */
 
-.title {
-  margin: 106px 65px;
+.fqaTitle {
+  margin: 90px 65px;
 }
-.title h2 {
+.fqaTitle h1 {
+  font-weight: bold;
   color: #777777;
-  font-size: 30px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-.title h3 {
+.fqaTitle h2 {
   color: #aaaaaa;
-  font-size: 28px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* submenuList */
 
 .fqaSubMenuBox {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .fqaSubMenuList {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .fqaSubMenuList li {
-  background-color: #dddddd;
+  background: #dddddd;
   border-radius: 50px;
-  width: 200px;
+  width: 180px;
   height: 40px;
   line-height: 40px;
   display: block;
-  color: #898989;
-  font-size: 20px;
+  color: #999;
+  font-size: 16px;
   text-align: center;
-  margin-right: 20px;
+  margin-left: 30px;
 }
 
-button {
+.fqaSubMenuListBtn {
   border: none;
   border-radius: 50px;
   box-shadow: none;
   cursor: pointer;
   width: 100%;
-  background-color: #dddddd;
-  color: #898989;
+  background: #dddddd;
+  color: #999;
 }
 
 .subOn {
   color: #ffffff;
   background-color: #5ebf92;
-  font-weight: bold;
 }
 
 /* FaqAcco.js */
 
+.accoBox {
+  margin-bottom: 150px;
+}
 .accoImg {
   width: 25px;
   height: 25px;
