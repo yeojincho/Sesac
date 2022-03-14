@@ -1,13 +1,13 @@
-.wrap {
+.recruit-wrap {
   width: 1000px;
 }
-FormGroup {
+.recruit-FormGroup {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-h3 {
+.recruit-header {
   width: 200px;
   height: 30px;
   font-size: 35px;
@@ -15,26 +15,26 @@ h3 {
   margin-bottom: 50px;
   margin-top: 50px;
 }
-span {
+.recruit-span {
   width: 1000px;
   height: 30px;
   font-size: 20px;
   color: #aaaaaa;
 }
-.subTitle {
+.recruit-subTitle {
   font-size: 14px;
   font-weight: 700px;
 }
-.TextBox {
+.recruit-TextBox {
   margin-top: 30px;
 }
-.submitBtn {
+.recruit-submitBtn {
   width: 70px;
   height: 30px;
   background-color: #aaaaaa;
   border: none;
 }
-.lectureImg {
+.recruit-lectureImg {
   width: 300px;
   height: 300px;
 }
