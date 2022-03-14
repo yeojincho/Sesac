@@ -6,8 +6,8 @@ export default function MainContents() {
    
   return (
     <>
-      <MainExContents />
       <MainProgram />
+      <MainExContents />
     </>
   )
 }

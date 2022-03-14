@@ -38,6 +38,7 @@ export default function Header({isLogin}) {
               </a>
             </div>
             <div className="top-btn">
+            <Link to="/sample">공통샘플</Link>
               {
                 !isLogin ? 
                 <>
@@ -50,7 +51,6 @@ export default function Header({isLogin}) {
                   <a href="#" onClick={logoutFn}>로그아웃</a>
                 </>
               }
-              <button className="sitemap">+sitemap</button>
             </div>
         </div>
       </div>{/* 헤더 top */}
@@ -58,48 +58,48 @@ export default function Header({isLogin}) {
       <nav className="header-bottom">
           <ul className="inner-box gnb">
             <li className="depth1">
-              <Link to ="/sample1">공개과정</Link>
+              <Link to ="">공개과정</Link>
               <ul class="depth2">
-                <li><Link to ="/sample1">월간교육일정</Link></li>
-                <li><Link to ="/sample1">계층교육</Link></li>
-                <li><Link to ="/sample1">직무역량</Link></li>
-                <li><Link to ="/sample1">DX교육</Link></li>
-                <li><Link to ="/sample1">진단</Link></li>
-                <li><Link to ="/sample1">일반</Link></li>
+                <li><Link to ="/program">월간교육일정</Link></li>
+                <li><Link to ="">계층교육</Link></li>
+                <li><Link to ="">직무역량</Link></li>
+                <li><Link to ="">DX교육</Link></li>
+                <li><Link to ="">진단</Link></li>
+                <li><Link to ="">일반</Link></li>
               </ul>
             </li>
             <li className="depth1">
-              <Link to ="/sample2">취업과정</Link>
+              <Link to ="">취업과정</Link>
               <ul class="depth2">
-                <li><Link to ="/sample2">소개</Link></li>
-                <li><Link to ="/sample2">모집중인 과정</Link></li>
+                <li><Link to ="">소개</Link></li>
+                <li><Link to ="">모집중인 과정</Link></li>
               </ul>
             </li>
             <li className="depth1">
               <Link to ="/">Ex콘텐츠</Link>
               <ul class="depth2">
                 <li><Link to ="/">이벤트</Link></li>
-                <li><Link to ="/test">과정후기</Link></li>
+                <li><Link to ="/">과정후기</Link></li>
                 <li><Link to ="/">EXC뷰</Link></li>
               </ul>
             </li>
             <li className="depth1">
-              <Link to ="/">고객센터</Link>
+              <Link to ="/notice">고객센터</Link>
               <ul class="depth2">
-                <li><Link to ="/">공지사항</Link></li>
-                <li><Link to ="/test">문의하기</Link></li>
-                <li><Link to ="/">자주묻는 질문</Link></li>
-                <li><Link to ="/">오시는 길</Link></li>
+                <li><Link to ="/notice">공지사항</Link></li>
+                <li><Link to ="/question">문의하기</Link></li>
+                <li><Link to ="/faq">자주묻는 질문</Link></li>
+                <li><Link to ="/visit">오시는 길</Link></li>
               </ul>
             </li>
             <li className="depth1">
               <Link to ="/">아카데미</Link>
               <ul class="depth2">
                 <li><Link to ="/">아카데미 소개</Link></li>
-                <li><Link to ="/test">강사소개</Link></li>
-                <li><Link to ="/">HR샵</Link></li>
-                <li><Link to ="/">제휴제안</Link></li>
-                <li><Link to ="/">인재채용</Link></li>
+                <li><Link to ="/teacherinfo">강사소개</Link></li>
+                <li><Link to ="/hrstore">HR샵</Link></li>
+                <li><Link to ="/Partnership">제휴제안</Link></li>
+                <li><Link to ="/Recruit">인재채용</Link></li>
               </ul>
             </li>
           </ul>

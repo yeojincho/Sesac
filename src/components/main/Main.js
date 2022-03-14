@@ -17,14 +17,23 @@ import './main.css';
 
 
 
-export default function Main() {
+export default function Main({isMobile}) {
   return (
     <div className="main-wrapper">
       <MainBanner />
+      {
+        isMobile ? 
+        <>
+        </>
 
-      <MainContents />
+        :
+        <>
+          <MainContents />
+          <MainBottom />
+        </>
+      }
 
-      <MainBottom />
+      
     </div>
   )
 }

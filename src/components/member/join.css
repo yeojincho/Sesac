@@ -39,7 +39,7 @@ section .join-cont{
   text-align: center;
   line-height: 52px;
   padding: 0 0 0 14px;
-  background: #f5f5f5;
+  background: #fff;
   font-size: 16px;
   color: #999;
   border: 1px solid #ccc;
@@ -53,7 +53,7 @@ section .join-cont{
   height: 0;
   border-style: solid;
   border-width: 28px 0 28px 20px;
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #fff;
   z-index: 1;
 }
 .join-step ol li:after {
@@ -75,7 +75,7 @@ section .join-cont{
 }
 .join-step ol li.on:before, 
 .join-step ol li.on:after {
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #fff;
 }
 .join-step ol li:first-child:before, 
 .join-step ol li:first-child:after, 
