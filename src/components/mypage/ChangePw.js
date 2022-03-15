@@ -11,9 +11,11 @@ function ChangePw() {
         <HeadTitle />
         <div className="flex-box">
           <SideMenu />
-          <div className=".ChangePw-contentBox">
-            <h2 className="Imp">비밀번호변경</h2>
-            <p>비밀번호 변경을 위해 현재 비밀번호를 입력해 주세요</p>
+          <div className="ChangePw-contentBox">
+            <h2 className="ChangePw-title">비밀번호변경</h2>
+            <p className="ChangePw-subtitle">
+              비밀번호 변경을 위해 현재 비밀번호를 입력해 주세요
+            </p>
 
             <FormGroup className="ChangePwFormNow">
               <Label for="exampleEmail" className="Imp">

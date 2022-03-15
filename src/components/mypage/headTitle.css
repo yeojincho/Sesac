@@ -1,16 +1,17 @@
-.menuTitle-box {
+.menu-titlebox {
   width: 100%;
+  margin: 0 15px;
 }
 
-h1.head-title {
+h1.menu-headtitle {
   font-size: 30px;
   color: #777;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 }
 
-p.sub-title {
+p.menu-subtitle {
   font-size: 20px;
   color: #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }

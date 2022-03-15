@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./sidemenu.css";
 
 const SideMenu = () => {
   return (
     <>
       <div className="sideMenuBox">
         <ul className="info">
-          회원정보
+          <em>회원정보</em>
           <li>
             <Link to="/manage">- 회원정보관리</Link>
           </li>
@@ -15,7 +16,7 @@ const SideMenu = () => {
           </li>
         </ul>
         <ul className="info">
-          수강정보
+          <em>수강정보</em>
           <li>
             <Link to="/confirmclass">- 수강신청 확인/취소</Link>
           </li>
