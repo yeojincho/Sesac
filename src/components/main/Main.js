@@ -23,17 +23,9 @@ export default function Main({isMobile}) {
       <MainBanner />
       <MainContents />
       {
-        isMobile ? 
-        <>
-        </>
-
-        :
-        <>
-          <MainBottom />
-        </>
+        !isMobile && 
+        <MainBottom />
       }
-
-      
     </div>
   )
 }
