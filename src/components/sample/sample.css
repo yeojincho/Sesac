@@ -474,3 +474,29 @@
   line-height: 20px;
   color: #000;
 }
+
+
+/* 11.완료페이지 */
+.complete-page .complete-contents {
+  padding: 70px 15px 86px;
+  border-radius: 7px;
+  background: #f5f5f5;
+  text-align: center;
+}
+.complete-page .complete-contents .complete-title {
+  margin-top: 22px;
+  font-size: 28px;
+  color: #222;
+  line-height: 36px;
+}
+.complete-page .complete-contents .complete-desc {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #444;
+  line-height: 24px;
+}
+
+.complete-main-btn{
+  text-align: center;
+  margin: -80px 0 30px;
+}
