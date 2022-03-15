@@ -23,12 +23,9 @@ import { Route, Switch } from "react-router-dom";
 // import Confirm from "../../components/program/Confirm";
 
 //마이페이지
-import MyPageAll from "../mypage/MyPageAll";
 // import Management from "../../components/mypage/Management";
 // import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
 // import ChangePw from "../../components/mypage/ChangePw";
-// import RegiConfirm from "../../components/mypage/RegiConfirm";
-// import MyClassList from "../../components/mypage/MyClassList";
 
 import Header from "../../components/common/Header";
 import Footer from "../../components/common/Footer";
@@ -39,6 +36,12 @@ import JoinForm from "../../components/member/JoinForm";
 import JoinComplete from "../../components/member/JoinComplete";
 
 import Sample1 from "../../components/sample/Sample1";
+
+import Notice from "../../components/customer/Notice";
+import Question from "./../customer/Question";
+import Faq from "./../customer/Faq";
+import Visit from "./../customer/visit";
+import WritingQuestion from "../customer/WritingQuestion";
 
 export default function PCLayout({ isLogin }) {
   return (
@@ -67,10 +70,11 @@ export default function PCLayout({ isLogin }) {
         {/* Ex콘텐츠 */}
 
         {/* 고객센터 */}
-        {/* <Route exact path="/notice" component={Notice}></Route> */}
-        {/* <Route exact path="/question" component={Question}></Route> */}
-        {/* <Route exact path="/faq" component={Faq}></Route> */}
-        {/* <Route exact path="/visit" component={Visit}></Route> */}
+        <Route exact path="/notice" component={Notice}></Route>
+        <Route exact path="/question" component={Question}></Route>
+        <Route exact path="/writing" component={WritingQuestion}></Route>
+        <Route exact path="/faq" component={Faq}></Route>
+        <Route exact path="/visit" component={Visit}></Route>
 
         {/* 아카데미 */}
         {/* <Route exact path='/OrderPage' component={OrderPage}></Route> */}
@@ -80,12 +84,9 @@ export default function PCLayout({ isLogin }) {
         {/* <Route exact path="/teacherinfo" component={TeacherInfo}></Route> */}
 
         {/* 마이페이지 */}
-        <Route exact path="/MyPageAll" component={MyPageAll}></Route>
         {/* <Route exact path='/Manage' component={Management}></Route> */}
         {/* <Route exact path='/AccountWithdrawal' component={AccountWithdrawal}></Route> */}
         {/* <Route exact path='/ChangePw' component={ChangePw}></Route> */}
-        {/* <Route exact path="/RegiConfirm" component={RegiConfirm}></Route> */}
-        {/* <Route exact path="/MyClassList" component={MyClassList}></Route> */}
 
         <Route>
           <NotFound />
