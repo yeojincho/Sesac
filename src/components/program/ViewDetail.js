@@ -1,7 +1,6 @@
 import '../common/common.css';
 import './view-details.css';
 
-
 // Curriculum.js 파일에 component 형식으로 들어갈 예정
 // 탭 아래 컨텐츠 부분만 작성
 // css 시작하기 전 이미 작성된 className들은 영어로 변경
