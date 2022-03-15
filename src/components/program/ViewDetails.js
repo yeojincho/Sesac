@@ -11,59 +11,57 @@ import './view-details.css';
 function ViewDetails() {
     return(
         <div className='view-details'>
-            <div className='과정개요'>
-                <h4>과정개요</h4>
-                <div>
+            <div className='outlineProcess'>
+                <h4 className="detailTitle">과정개요</h4>
+                <div className='outlineProcess-left'>
                     <p>조직 내 신입사원으로서 올바른 역할 수행을 위한 마인드 함양과 직장 내 필요한 직무 중심적 커뮤니케이션 능력을 배양하는 과정입니다. 성공적인 직장생활을 위한 관리 방법을 습득하고 다양한 진단 활용, 자기 성찰을 통한 참여, 실습형 교육입니다.</p>
                 </div>
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                    </div>
-                    <p>효율적인 교육 시스템을 통한 PRO 신입사원 만들기</p>
-                </div>
-            </div>
-            <div className='과정목표'>
-                <h4>과정목표</h4>
-                <div>
-                    <ul>
-                        <li>조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.</li>
-                        <li>유형 진단을 통해 나와 타인의 다름을 인정하고, 타인과 맞춰갈 수 있는 행동적 특징을 파악할 수 있습니다.</li>
-                        <li>논리적 사고를 통한 보고법을 습득하여 탁월한 팔로워의 역할을 수행하도록 합니다.</li>
-                    </ul>
-                </div>
-                <div>
-                    <div>
-                        <p>사랑받는 신입사원으로 거듭나기</p>
-                        <p>Self Motivation 워라밸 실행<br></br>유형별 소통 대응 전략 달인</p>
-                    </div>
-                </div>
-                <div></div> {/* 아이콘 제작? */}
-            </div>
-            <div className='교육대상'>
-                <h4>교육대상</h4>
-                <div>
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    <ul>
+                <div className='outlineProcess-right'>
+                    <ul className='iconList'>
                         <li>
-                            <div>예비강사 및 현업강사</div>
-                            <div>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
+                            <img src="" alt="노트북 들고있는 아이콘" />
+                            <p>교육/진단/성찰</p>
                         </li>
+                        <li><img src="" alt="오른쪽 화살표" /></li>
                         <li>
-                            <div>예비강사 및 현업강사</div>
-                            <div>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
-                        </li>
-                        <li>
-                            <div>예비강사 및 현업강사</div>
-                            <div>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
+                            <img src="" alt="설명중인 아이콘" />
+                            <p>PRO 신입사원</p>
                         </li>
                     </ul>
+                    <p>효율적인 교육 시스템을 통한<br></br>PRO 신입사원 만들기</p>
                 </div>
             </div>
+            <div className='processObjective'>
+                <h4 className="detailTitle">과정목표</h4>
+                <ul className='processObjective-top'>
+                    <li>조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.</li>
+                    <li>유형 진단을 통해 나와 타인의 다름을 인정하고, 타인과 맞춰갈 수 있는 행동적 특징을 파악할 수 있습니다.</li>
+                    <li>논리적 사고를 통한 보고법을 습득하여 탁월한 팔로워의 역할을 수행하도록 합니다.</li>
+                </ul>
+                <div className='processObjective-left'>
+                    <p>사랑받는 신입사원으로 거듭나기</p>
+                    <p>Self Motivation 워라밸 실행<br></br>유형별 소통 대응 전략 달인</p>
+                </div>
+                <div className='processObjective-right'></div> {/* 아이콘 제작? */}
+            </div>
+            <div className='educationTarget'>
+                <h4 className="detailTitle">교육대상</h4>
+                <ul className='targetList'>
+                    <li>
+                        <div className='targetList-title'>예비강사 및 현업강사</div>
+                        <div className='targetList-text'>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
+                    </li>
+                    <li>
+                        <div className='targetList-title'>예비강사 및 현업강사</div>
+                        <div className='targetList-text'>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
+                    </li>
+                    <li>
+                        <div className='targetList-title'>예비강사 및 현업강사</div>
+                        <div className='targetList-text'>전문강사 활동을 희망하고<br></br>강의스킬을 올리고 싶은 분</div>
+                    </li>
+                </ul>
+            </div>
+            {/* 아래부터 승연 파트 */}
             <div className='커리큘럼'>
                 <h4>커리큘럼</h4>
                 <div>
