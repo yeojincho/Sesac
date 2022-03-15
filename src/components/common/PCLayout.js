@@ -85,15 +85,15 @@ export default function PCLayout({ isLogin }) {
         {/* <Route exact path="/teacherinfo" component={TeacherInfo}></Route> */}
 
         {/* 마이페이지 */}
-        {/* <Route exact path="/manage" component={Management}></Route> */}
-        {/* <Route
+        <Route exact path="/manage" component={Management}></Route>
+        <Route
           exact
           path="/manage/withdrawal"
           component={AccountWithdrawal}
-        ></Route> */}
-        {/* <Route exact path="/changepw" component={ChangePw}></Route> */}
-        {/* <Route exact path="/classlist" component={MyClassList}></Route> */}
-        {/* <Route exact path="/confirmclass" component={RegiConfirm}></Route> */}
+        ></Route>
+        <Route exact path="/changepw" component={ChangePw}></Route>
+        <Route exact path="/classlist" component={MyClassList}></Route>
+        <Route exact path="/confirmclass" component={RegiConfirm}></Route>
 
         <Route>
           <NotFound />
