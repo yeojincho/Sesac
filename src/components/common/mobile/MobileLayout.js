@@ -1,10 +1,12 @@
 import React from 'react';
+import { Route, Switch } from "react-router-dom";
 import { useState } from 'react';
 
 import MHeader from './MHeader';
 import MFooter from './MFooter';
 import Main from '../../main/Main';
 import Menu from './Menu';
+import Join from '../../member/Join';
 
 
 
@@ -33,9 +35,12 @@ export default function MobileLayout({isMobile}) {
         !MenuPopOpen ? 
         <>
           <MHeader open={openMenuPopFn} />
+            <Switch>
+            </Switch>
+              <Route exact path="/" render={(props) => <Main isMobile={isMobile} {...props} />}></Route>
               {/* 메인 */}
-              <Main isMobile={isMobile}/>
               {/* 회원가입 */}
+              <Route exact path="/join" component={Join}></Route>
               {/* 공개과정 */}
               {/* 취업과정 */}
               {/* Ex콘텐츠 */}
