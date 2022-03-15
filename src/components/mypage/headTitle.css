@@ -1,0 +1,16 @@
+.menuTitle-box {
+  width: 100%;
+}
+
+h1.head-title {
+  font-size: 30px;
+  color: #777;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+p.sub-title {
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 20px;
+}

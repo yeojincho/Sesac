@@ -1,0 +1,11 @@
+.sideMenuBox {
+  max-width: 250px;
+  height: 300px;
+  background-color: lightgrey;
+  color: gray;
+  margin-top: 50px;
+}
+
+.sideMenuBox ul.info li {
+  border: none;
+}

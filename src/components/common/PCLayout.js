@@ -23,20 +23,21 @@ import { Route, Switch } from "react-router-dom";
 // import Confirm from "../../components/program/Confirm";
 
 //마이페이지
-// import Management from "../../components/mypage/Management";
-// import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
-// import ChangePw from "../../components/mypage/ChangePw";
-
 import Header from "../../components/common/Header";
 import Footer from "../../components/common/Footer";
 import Main from "../../components/main/Main";
 import NotFound from "../../components/common/NotFound";
+
+import Management from "../../components/mypage/Management";
+import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
+import ChangePw from "../../components/mypage/ChangePw";
+import MyClassList from "../mypage/MyClassList";
+import RegiConfirm from "../mypage/RegiConfirm";
 import Join from "../../components/member/Join";
 import JoinForm from "../../components/member/JoinForm";
 import JoinComplete from "../../components/member/JoinComplete";
 
 import Sample1 from "../../components/sample/Sample1";
-
 import Notice from "../../components/customer/Notice";
 import Question from "./../customer/Question";
 import Faq from "./../customer/Faq";
@@ -84,9 +85,15 @@ export default function PCLayout({ isLogin }) {
         {/* <Route exact path="/teacherinfo" component={TeacherInfo}></Route> */}
 
         {/* 마이페이지 */}
-        {/* <Route exact path='/Manage' component={Management}></Route> */}
-        {/* <Route exact path='/AccountWithdrawal' component={AccountWithdrawal}></Route> */}
-        {/* <Route exact path='/ChangePw' component={ChangePw}></Route> */}
+        <Route exact path="/manage" component={Management}></Route>
+        <Route
+          exact
+          path="/manage/withdrawal"
+          component={AccountWithdrawal}
+        ></Route>
+        <Route exact path="/changepw" component={ChangePw}></Route>
+        <Route exact path="/classlist" component={MyClassList}></Route>
+        <Route exact path="/confirmclass" component={RegiConfirm}></Route>
 
         <Route>
           <NotFound />
