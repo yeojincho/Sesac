@@ -66,7 +66,7 @@ function Management() {
           </Form>
           <div className="Management-bottomBtn">
             <Button>확인</Button>
-            <Link to="/mypage/manage/withdrawal">회원탈퇴</Link>
+            <Link to="/manage/withdrawal">회원탈퇴</Link>
           </div>
         </div>
       </div>

@@ -3,21 +3,27 @@
 }
 
 .ChangePw-contentBox {
+  width: 40%;
+  padding-left: 20px;
 }
 
-.ChangePw-contentBox h2 {
-  margin-top: 80px;
+.ChangePw-contentBox .ChangePw-title {
+  font-size: 30px;
+  color: #333;
 }
-.ChangePw-inputEnd {
-  position: relative;
+.ChangePw-contentBox .ChangePw-subtitle {
+  font-size: 20px;
+    color: #777;
 }
-.contentBox button {
+
+
+
+.ChangePw-contentBox button.form-btn {
   margin: 50px 0;
-  position: absolute;
-  left: 45%;
   width: 150px;
   height: 40px;
   border-radius: 40px;
+  border: none;
 }
 
 .ChangePw-FormNow {
@@ -26,15 +32,8 @@
   width: 700px;
 }
 
-.ChangePw-contentBox button.form-btn {
-  border: none;
-  background-color: transparent;
-}
 
-.ChangePw-contentBox {
-  width: 1100px;
-  padding-left: 40px;
-}
+
 
 /* flex 정렬 */
 .inner-box .flex-box {
