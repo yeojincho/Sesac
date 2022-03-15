@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./myClassList.css";
-import SideMenu from "./sidebar/SideMenu";
+import SideMenu from "./SideMenu";
 
 const MyClassList = () => {
   let [notice, setNotice] = useState(false);

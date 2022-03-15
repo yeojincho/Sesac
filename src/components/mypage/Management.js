@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Label, FormGroup, Input, Button, Form } from "reactstrap";
 import "./Management.css";
-import SideMenu from "./sidebar/SideMenu";
+import SideMenu from "./SideMenu";
 
 function Management() {
   return (

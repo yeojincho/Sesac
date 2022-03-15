@@ -1,5 +1,5 @@
 import React from "react";
-import SideMenu from "./sidebar/SideMenu";
+import SideMenu from "./SideMenu";
 
 const RegiConfirm = () => {
   return (
