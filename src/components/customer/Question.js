@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import Customer from "./Customer";
 import "./notice.css";
 import QuestionList from "./QuestionList";
+import WritingQuestion from "./WritingQuestion";
 
 function Question() {
   return (
@@ -14,10 +17,14 @@ function Question() {
         </section>
         <Customer />
         <article className="tableContainer">
-          <div>
-            <QuestionList />
+          <QuestionList />
+          <div className="writeBtn">
+            <Link to="/writing">
+              <button>작성하기</button>
+            </Link>
           </div>
         </article>
+
         <section className="pagiNation">
           <Pagination aria-label="Page navigation" size="sm">
             <PaginationItem>
