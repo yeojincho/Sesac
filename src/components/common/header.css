@@ -154,18 +154,23 @@
 
 /* 모바일 헤더 */
 @media screen and (max-width:767px){
+  .m-header{
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 15; */
+
+  }
   .m-header-cont {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 15;
+    
     padding: 0 11px;
     border-bottom: 1px solid #ddd;
     background: rgba(255,255,255,.95);
+    box-sizing: border-box;
   }
   .m-header-cont .btn-gnb-main {
     padding: 16px 4px 15px;

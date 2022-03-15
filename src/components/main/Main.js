@@ -21,6 +21,7 @@ export default function Main({isMobile}) {
   return (
     <div className="main-wrapper">
       <MainBanner />
+      <MainContents />
       {
         isMobile ? 
         <>
@@ -28,7 +29,6 @@ export default function Main({isMobile}) {
 
         :
         <>
-          <MainContents />
           <MainBottom />
         </>
       }

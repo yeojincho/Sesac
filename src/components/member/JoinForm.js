@@ -104,7 +104,8 @@ export default function JoinForm() {
 							</div>
 							<div className="btn-wrap">
 								<Link to="/join/complete">
-									<button className="btn-lg" type="button" id="nextBtn" onclick={()=>{history.push('/join/complete')}}>다음</button>
+									<button className="btn-lg" type="button" id="nextBtn" >다음</button>
+									{/* onclick={()=>{history.push('/join/complete')} */}
 								</Link>
 							</div>
 						</div>
