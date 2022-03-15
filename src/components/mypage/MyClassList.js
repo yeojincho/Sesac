@@ -1,48 +1,54 @@
 import React, { useState } from "react";
 import "./myClassList.css";
+import SideMenu from "./sidebar/SideMenu";
 
 const MyClassList = () => {
-  let [notice, setNotice] = useState(true);
+  let [notice, setNotice] = useState(false);
   return (
     <div className="myClassList-container">
+      <SideMenu />
       <div className="inner-box">
         <div className="flexbox">
           <div className="myClassListPage">
             <h2 className="pageTitle">수강내역</h2>
-            <table className="table">
-              <colgroup>
-                <col width={40} />
-                <col width={350} />
-                <col width={200} />
-                <col width={40} />
-                <col width={150} />
-                <col width={80} />
-                <col width={90} />
-              </colgroup>
-              <tr>
-                <th scope="col">No</th>
-                <th scope="col">교육과정</th>
-                <th scope="col">교육일정</th>
-                <th scope="col">인원</th>
-                <th scope="col">교육비</th>
-                <th scope="col">상태</th>
-                <th scope="col" className="">
-                  수료증
-                </th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>사내강사 양성과정(강사가 되는 방법)</td>
-                <td>2022.01.01~2022.01.01</td>
-                <td>2</td>
-                <td>1,000,000원</td>
-                <td>수료</td>
-                <td>
-                  <button className="down-btn">다운로드</button>
-                </td>
-              </tr>
-            </table>
-            {notice === true ? <Notice /> : null}
+
+            {notice === true ? (
+              <table className="table">
+                <colgroup>
+                  <col width={40} />
+                  <col width={350} />
+                  <col width={200} />
+                  <col width={40} />
+                  <col width={150} />
+                  <col width={80} />
+                  <col width={90} />
+                </colgroup>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">교육과정</th>
+                  <th scope="col">교육일정</th>
+                  <th scope="col">인원</th>
+                  <th scope="col">교육비</th>
+                  <th scope="col">상태</th>
+                  <th scope="col" className="">
+                    수료증
+                  </th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>사내강사 양성과정(강사가 되는 방법)</td>
+                  <td>2022.01.01~2022.01.01</td>
+                  <td>2</td>
+                  <td>1,000,000원</td>
+                  <td>수료</td>
+                  <td>
+                    <button className="down-btn">다운로드</button>
+                  </td>
+                </tr>
+              </table>
+            ) : (
+              <Notice />
+            )}
           </div>
         </div>
       </div>
