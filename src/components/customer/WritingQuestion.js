@@ -8,17 +8,17 @@ function WritingQuestion(props) {
       <div>
         <Customer />
       </div>
-      <div className="question-container">
+      <div className="question-writing-container">
         <form id="question-writing-form">
           <div className="question-form-item">
             <div className="question-item-box">
-              <label for="name" className="question-title">
+              <label for="name" className="writing-question-title">
                 작성자
               </label>
               <input type="text" id="question-name" />
             </div>
             <div className="question-item-box">
-              <label for="pw" className="question-title">
+              <label for="pw" className="writing-question-title">
                 비밀번호
               </label>
               <input type="password" id="question-password" />
@@ -26,14 +26,14 @@ function WritingQuestion(props) {
           </div>
           <div className="question-form-item">
             <div className="question-item-box">
-              <label for="contact" className="question-title">
-                연락처
+              <label for="contact" className="writing-question-title">
+                연락처*
               </label>
               <input type="" id="question-contact" />
             </div>
             <div className="question-item-box">
-              <label for="mail" className="question-title">
-                E-mail
+              <label for="mail" className="writing-question-title">
+                E-mail*
               </label>
               <input type="email" id="question-email" />
             </div>

@@ -43,7 +43,6 @@ function QuestionList({ action }) {
 
   return (
     <div>
-      <input type="text" placeholder="Search" className="searchBox focus" />
       <Table striped>
         <thead>
           <tr>

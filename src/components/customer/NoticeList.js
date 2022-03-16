@@ -42,6 +42,9 @@ function NoticeList() {
 
   return (
     <div>
+      <div className="question-search-box">
+        <input type="text" placeholder="Search" className="searchBox focus" />
+      </div>
       <Table striped>
         <thead>
           <tr>
