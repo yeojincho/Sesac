@@ -1,45 +1,62 @@
-/* notice, question page style */
-.container {
+/* Notice, Question Page Style */
+.notice-container,
+.question-container {
   width: 1300px;
   margin: 0 auto;
   padding: 0;
 }
-
-.title h1 {
+.notice-title,
+.question-title {
+  margin: 90px 65px;
+}
+.notice-title h1,
+.question-title h1 {
+  font-weight: bold;
   color: #777777;
-  font-size: 30px;
+  font-size: 28px;
+  margin-top: 10px;
 }
-
-.title h2 {
+.notice-title h2,
+.question-title h2 {
   color: #aaaaaa;
-  font-size: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
-.table {
-  margin-top: 150px;
+.question-table {
+  margin-top: 185px;
 }
-.writeBtn {
-  width: 100px;
-  height: 30px;
+/* Writing Button Style in Question Page */
+.write-question-btn {
+  float: right;
+  margin-top: 30px;
 }
-.pagiNation ul {
+.write-question-btn button {
+  color: #fff;
+  background-color: #03a65a;
+  font-size: inherit;
+  width: 190px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border: none;
+}
+.pagination {
   display: flex;
   justify-content: center;
-  margin: 150px 0;
+  margin: 70px 0;
 }
-
-.pagiNation ul li {
+.pagination ul li {
   margin: 5px;
 }
-.pagiNation ul li a {
+.pagination ul li a {
   border: none;
   color: #000;
 }
-
-.pagiNation ul li:nth-child(2) a {
+.pagination ul li:nth-child(2) a {
   border-right: 1px solid #000;
   padding-right: 20px;
 }
-.pagiNation ul li:nth-last-child(2) a {
+.pagination ul li:nth-last-child(2) a {
   border-left: 1px solid #000;
   padding-left: 20px;
 }

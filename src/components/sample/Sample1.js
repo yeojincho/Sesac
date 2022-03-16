@@ -4,7 +4,7 @@ import './sample.css';
 
 export default function Sample1() {
   return (
-    <div className="inner-box" style={{height:'1200px'}}>
+    <div className="inner-box" >
       {/* 
           <주의사항>
           1. div만 통째로 들고가면됨
@@ -170,6 +170,19 @@ export default function Sample1() {
             <option>1</option>
             <option>1</option>
           </select>
+        </div>
+
+
+        {/* 11. 완료 페이지 */}
+        <div class="inner-box complete-page">
+          <div class="complete-contents">
+            <div class="img"><img src="/images/img_care_03_01.png" alt="완료" /></div>
+            <div class="complete-title">신청이 완료되었습니다.</div>
+            <p class="complete-desc">서브내용서브내용<br/>서브내용서브내용서브내용서브내용서브내용서브내용</p>
+          </div>
+          <div className="c-btn-box complete-main-btn">
+            <button className="btn-type2"><span>메인으로</span></button>
+          </div>
         </div>
 
 

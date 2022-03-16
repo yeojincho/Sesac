@@ -1,7 +1,7 @@
 import React from "react";
 import { Table } from "reactstrap";
 
-function QuestionList() {
+function QuestionList({ action }) {
   const date = new Date();
   const yyyy = date.getFullYear();
   const mm = date.getMonth();
@@ -39,6 +39,8 @@ function QuestionList() {
     },
   ];
 
+  console.log(action);
+
   return (
     <div>
       <Table striped>
@@ -61,6 +63,9 @@ function QuestionList() {
           ))}
         </tbody>
       </Table>
+      {/* <div className="writeBtn">
+        <button>작성하기</button>
+      </div> */}
     </div>
   );
 }

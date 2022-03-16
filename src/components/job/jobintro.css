@@ -1,0 +1,23 @@
+.jobIntroTitle {
+  display: flex;
+  justify-content: center;
+  background: url("/public/images/job-search.png") no-repeat top left 100px;
+  background-size: 50px;
+  margin-bottom: 30px;
+}
+
+.jobIntroTitle h3 {
+  color: #454545;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.jobIntroBox {
+  margin: auto;
+  width: 900px;
+  background-color: #dddd;
+  padding: 20px 50px;
+  border-radius: 7px;
+  margin-bottom: 100px;
+}

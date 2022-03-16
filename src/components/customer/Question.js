@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import Customer from "./Customer";
 import "./notice.css";
@@ -7,18 +9,22 @@ import QuestionList from "./QuestionList";
 function Question() {
   return (
     <React.Fragment>
-      <section className="container">
-        <section className="title">
+      <section className="question-container">
+        <section className="question-title">
           <h1>고객센터</h1>
-          <h2>__무엇이든 물어보세요</h2>
+          <h2>— 무엇이든 물어보세요</h2>
         </section>
         <Customer />
-        <article className="tableContainer">
-          <div>
-            <QuestionList />
+        <article className="question-table">
+          <QuestionList />
+          <div className="write-question-btn">
+            <Link to="/writing">
+              <button>작성하기</button>
+            </Link>
           </div>
         </article>
-        <section className="pagiNation">
+
+        <section className="pagination">
           <Pagination aria-label="Page navigation" size="sm">
             <PaginationItem>
               <PaginationLink first href="#" />

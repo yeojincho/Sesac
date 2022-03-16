@@ -3,62 +3,46 @@ import { Link } from "react-router-dom";
 import "./customer.css";
 
 function Customer() {
-    const [ currentClick, setcurrentClick ] = useState(null);
-    const [ prevClick, setPrevClick ] = useState(null);
+  const [currentClick, setcurrentClick] = useState(null);
+  const [prevClick, setPrevClick] = useState(null);
 
-    const handleClick = (e) => {
-      setcurrentClick(e.target.id);
-    };
+  const handleClick = (e) => {
+    setcurrentClick(e.target.id);
+  };
 
-    useEffect(
-        (e) => {
-          if (currentClick !== null) {
-            let current = document.getElementById(currentClick);
-            current.classList.add('on');
-          }
-          if (prevClick !== null) {
-            let prev = document.getElementById(prevClick);
-            prev.classList.remove('on');
-          }
-          setPrevClick(currentClick);
-                  
-        },[currentClick]);
-
+  useEffect(
+    (e) => {
+      if (currentClick !== null) {
+        let current = document.getElementById(currentClick);
+        current.classList.add("on");
+      }
+      if (prevClick !== null) {
+        let prev = document.getElementById(prevClick);
+        prev.classList.remove("on");
+      }
+      setPrevClick(currentClick);
+    },
+    [currentClick]
+  );
 
   return (
     <React.Fragment>
-      <section className="listSection cf">
-        <ul className="listContainer">
-          <li >
-            <Link to= "/notice">        
-              <button id = "menu1" onClick={ handleClick }>                
-                공지사항                
-              </button>   
-            </Link>       
+      <section className="customerListSection cf">
+        <ul className="customerListContainer">
+          <li id="menu1" onClick={handleClick} className="customerList">
+            <Link to="/notice">공지사항</Link>
           </li>
-          <li>
-           <Link to= "/question"> 
-              <button id = "menu2" onClick={ handleClick }>
-                문의하기
-              </button>   
-            </Link>    
+          <li id="menu2" onClick={handleClick} className="customerList">
+            <Link to="/question">문의하기</Link>
           </li>
-          <li>
-            <Link to= "/faq"> 
-              <button id = "menu3" onClick={ handleClick }>
-                자주 묻는 질문
-              </button>
-              </Link>  
+          <li id="menu3" onClick={handleClick} className="customerList">
+            <Link to="/faq">자주 묻는 질문</Link>
           </li>
-          <li>
-          <Link to= "/visit"> 
-              <button id = "menu4" onClick={ handleClick }>
-                오시는 길
-              </button>
-              </Link>  
+          <li id="menu4" onClick={handleClick} className="customerList">
+            <Link to="/visit">오시는 길</Link>
           </li>
         </ul>
-        <input type="text" placeholder="Search" className="searchBox focus" />
+        {/* <input type="text" placeholder="Search" className="searchBox focus" /> */}
       </section>
     </React.Fragment>
   );
