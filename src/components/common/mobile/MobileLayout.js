@@ -24,7 +24,7 @@ import JoinComplete from "../../member/JoinComplete";
   }
 
 */
-export default function MobileLayout({isMobile}) {
+export default function MobileLayout({isMobile,isLogin}) {
   /* 전체 메뉴 팝업 */
   const [MenuPopOpen, setMenuPopOpen] = useState(false);
   const openMenuPopFn = ()=> setMenuPopOpen(true);
@@ -56,7 +56,7 @@ export default function MobileLayout({isMobile}) {
 
         :
 
-        <Menu close={closeMenuPopFn}/>
+        <Menu close={closeMenuPopFn} isLogin={isLogin} />
       }
     </>
   )
