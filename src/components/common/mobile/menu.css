@@ -44,7 +44,7 @@
   .header-gnb-menu .gnb-menu-left {
     width: 100%;
   }
-  .gnb-left-depth2 li button {
+  .gnb-left-depth1 li button {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -52,8 +52,9 @@
     background: none;
     border: none;
     letter-spacing: -1px;
+    background-color:#ccc;
   }
-  .gnb-left-depth2 li button span {
+  .gnb-left-depth1 li button span {
     display: block;
     padding: 2px 15px;
     font-size: 14px;
@@ -65,10 +66,10 @@
     width: 100%;
     border-left: 1px solid #ddd;
   }
-  .gnb-menu-depth3 > li {
+  .gnb-menu-depth2 > li {
     border-bottom: 1px solid #ddd;
   }
-  .gnb-menu-depth3 > li > a, .header-gnb-menu .gnb-menu-right .gnb-menu-depth3 > li > button span {
+  .gnb-menu-depth2 > li > a, .header-gnb-menu .gnb-menu-right .gnb-menu-depth2 > li > button span {
     position: relative;
     display: block;
     padding: 0 15px;
