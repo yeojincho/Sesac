@@ -7,7 +7,8 @@ import MFooter from './MFooter';
 import Main from '../../main/Main';
 import Menu from './Menu';
 import Join from '../../member/Join';
-
+import JoinForm from '../../member/JoinForm';
+import JoinComplete from "../../member/JoinComplete";
 
 
 /* 
@@ -41,6 +42,8 @@ export default function MobileLayout({isMobile}) {
               {/* 메인 */}
               {/* 회원가입 */}
               <Route exact path="/join" component={Join}></Route>
+              <Route exact path="/join/form" component={JoinForm}></Route>
+              <Route exact path="/join/complete" component={JoinComplete}></Route>
               {/* 공개과정 */}
               {/* 취업과정 */}
               {/* Ex콘텐츠 */}
