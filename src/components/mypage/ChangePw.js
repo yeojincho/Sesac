@@ -12,7 +12,7 @@ function ChangePw() {
         <div className="flex-box">
           <SideMenu />
           <div className="ChangePw-contentBox">
-            <h2 className="ChangePw-title">비밀번호변경</h2>
+            <h2 className="pageTitle">비밀번호변경</h2>
             <p className="ChangePw-subtitle">
               비밀번호 변경을 위해 현재 비밀번호를 입력해 주세요
             </p>
@@ -21,21 +21,21 @@ function ChangePw() {
               <Label for="exampleEmail" className="Imp">
                 현재비밀번호
               </Label>
-              <Input type="text" />
+              <Input type="password" />
             </FormGroup>
 
             <FormGroup className="FormNow">
               <Label for="examplePassword" className="Imp">
                 새로운 비밀번호
               </Label>
-              <Input type="text" />
+              <Input type="password" />
             </FormGroup>
 
             <FormGroup className="FormNow">
               <Label for="examplePassword" className="Imp">
                 새로운 비밀번호 확인
               </Label>
-              <Input type="text" className="ChangePw-inputEnd" />
+              <Input type="password" className="ChangePw-inputEnd" />
             </FormGroup>
 
             <Button className="form-btn">확인</Button>

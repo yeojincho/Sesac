@@ -1,14 +1,15 @@
-.myClassListPage {
-  padding: 0 10px;
-}
+
+
+
+
 
 .pageTitle {
-  color: #999;
+  color: #666;
   font-size: 25px;
   font-weight: bold;
 }
 
-.flexbox {
+.flex-box {
   display: flex;
 }
 
@@ -19,35 +20,12 @@
   padding: 20px 20px;
 }
 
-.depth1{
-  font-size: 20px;
-  margin-bottom: 25px;
+#under {
+  border-bottom: 1px solid #000;
 }
-
-.depth1>a {
-  font-weight: 500;
-}
-.depth1>ul {
-  margin-top: 10px;
-}
-.depth1>ul>li.depth2 {
-  margin-bottom: 5px;
-}
-
-.depth2{
-  font-size: 17px;
-  text-indent: 40px;
-  font-weight: 300;
-}
-
-.depth2 a.active {
-  color: #03A65A;
-  font-weight: 800;
-}
-
 
 /* 테이블 css */
-table {
+.myClassList-table {
   border-collapse: collapse;
   margin: 10px 0;
 }
@@ -94,14 +72,19 @@ tr td:nth-child(7) {
 }
 
 tr td:nth-child(7) .down-btn {
-  min-width: 110px;
-  height: 38px;
-  padding: 0 10px;
+  min-width: 72px;
+  width: 15px;
+  height: 32px;
+  padding: 0 0px;
   border-radius: 7px;
   color: #fff;
-  background-color: #03A65A;
+  background-color: #5EBF92;
   border: none;
   font-size: 14px;
+}
+
+tr td:nth-child(7) .down-btn:hover {
+  background-color: #03A65A;
 }
 
 

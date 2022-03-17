@@ -2,29 +2,33 @@
   box-sizing: border-box;
 }
 
+/* contentBox */
 .ChangePw-contentBox {
   width: 40%;
-  padding-left: 20px;
 }
 
-.ChangePw-contentBox .ChangePw-title {
-  font-size: 30px;
-  color: #333;
+/* flex 정렬 */
+.inner-box .flex-box {
+  display: flex;
 }
+
+
+
+/* contentBox title 공통 */
+.ChangePw-contentBox .pageTitle {
+  color: #999;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* contentBox sub-title 공통 */
 .ChangePw-contentBox .ChangePw-subtitle {
   font-size: 20px;
     color: #777;
+    margin-bottom: 30px;
 }
 
 
-
-.ChangePw-contentBox button.form-btn {
-  margin: 50px 0;
-  width: 150px;
-  height: 40px;
-  border-radius: 40px;
-  border: none;
-}
 
 .ChangePw-FormNow {
   margin-top: 30px;
@@ -33,9 +37,39 @@
 }
 
 
+.ChangePw-contentBox button.form-btn {
+  margin: 50px 0;
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 7px;
+  background-color: #5EBF92;;
+}
+
+.ChangePw-contentBox button.form-btn:hover {
+  background-color: #03A65A;
+}
 
 
-/* flex 정렬 */
-.inner-box .flex-box {
-  display: flex;
+
+
+
+
+
+@media screen and (max-width: 768px){
+  .ChangePw-contentBox {
+    width: 30%;
+    padding-left: 20px;
+  }
+
+}
+
+
+@media screen and (min-width: 768px){
+  .ChangePw-contentBox button.form-btn {
+
+  }
+
 }
