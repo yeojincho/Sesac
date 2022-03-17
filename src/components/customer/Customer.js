@@ -27,22 +27,21 @@ function Customer() {
 
   return (
     <React.Fragment>
-      <section className="customerListSection cf">
-        <ul className="customerListContainer">
-          <li id="menu1" onClick={handleClick} className="customerList">
+      <section className="customer-list-container cf">
+        <ul className="customer-list-container">
+          <li id="menu1" onClick={handleClick} className="customer-list">
             <Link to="/notice">공지사항</Link>
           </li>
-          <li id="menu2" onClick={handleClick} className="customerList">
+          <li id="menu2" onClick={handleClick} className="customer-list">
             <Link to="/question">문의하기</Link>
           </li>
-          <li id="menu3" onClick={handleClick} className="customerList">
+          <li id="menu3" onClick={handleClick} className="customer-list">
             <Link to="/faq">자주 묻는 질문</Link>
           </li>
-          <li id="menu4" onClick={handleClick} className="customerList">
+          <li id="menu4" onClick={handleClick} className="customer-list">
             <Link to="/visit">오시는 길</Link>
           </li>
         </ul>
-        {/* <input type="text" placeholder="Search" className="searchBox focus" /> */}
       </section>
     </React.Fragment>
   );

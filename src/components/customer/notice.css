@@ -1,62 +1,130 @@
-/* Notice, Question Page Style */
-.notice-container,
-.question-container {
-  width: 1300px;
-  margin: 0 auto;
-  padding: 0;
+/* Notice, Question 페이지 */
+@media screen and (min-width: 768px) {
+  .notice-container,
+  .question-container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .notice-title,
+  .question-title {
+    margin: 90px 65px;
+  }
+  .notice-title h1,
+  .question-title h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  .notice-title h2,
+  .question-title h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .question-table {
+    margin-top: 185px;
+  }
+  /* Question 페이지, 작성하기 버튼 */
+  .write-question-btn {
+    float: right;
+    margin-top: 30px;
+  }
+  .write-question-btn button {
+    color: #fff;
+    background-color: #03a65a;
+    font-size: inherit;
+    width: 190px;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+  }
+  .pagination ul li {
+    margin: 5px;
+  }
+  .pagination ul li a {
+    border: none;
+    color: #000;
+  }
+  .pagination ul li:nth-child(2) a {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+  }
+  .pagination ul li:nth-last-child(2) a {
+    border-left: 1px solid #000;
+    padding-left: 20px;
+  }
 }
-.notice-title,
-.question-title {
-  margin: 90px 65px;
-}
-.notice-title h1,
-.question-title h1 {
-  font-weight: bold;
-  color: #777777;
-  font-size: 28px;
-  margin-top: 10px;
-}
-.notice-title h2,
-.question-title h2 {
-  color: #aaaaaa;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.question-table {
-  margin-top: 185px;
-}
-/* Writing Button Style in Question Page */
-.write-question-btn {
-  float: right;
-  margin-top: 30px;
-}
-.write-question-btn button {
-  color: #fff;
-  background-color: #03a65a;
-  font-size: inherit;
-  width: 190px;
-  height: 60px;
-  padding: 0 20px;
-  border-radius: 30px;
-  border: none;
-}
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin: 70px 0;
-}
-.pagination ul li {
-  margin: 5px;
-}
-.pagination ul li a {
-  border: none;
-  color: #000;
-}
-.pagination ul li:nth-child(2) a {
-  border-right: 1px solid #000;
-  padding-right: 20px;
-}
-.pagination ul li:nth-last-child(2) a {
-  border-left: 1px solid #000;
-  padding-left: 20px;
+
+/* 모바일 Notice 페이지 CSS */
+@media screen and (max-width: 767px) {
+  .notice-container {
+    width: 100%;
+  }
+  .notice-title,
+  .question-title {
+    margin-left: 65px;
+  }
+  .notice-title h1,
+  .question-title h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-top: 90px;
+  }
+  .notice-title h2,
+  .question-title h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 70px;
+  }
+  .notice-table {
+    margin: 0 auto;
+  }
+  .question-list-table tbody tr {
+    font-size: 0.8em;
+  }
+  .write-question-btn {
+    float: right;
+    margin-top: 15px;
+  }
+  .write-question-btn button {
+    color: #fff;
+    background-color: #03a65a;
+    font-size: 12px;
+    width: 70px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px;
+  }
+  .pagination ul li {
+    margin: 5px;
+  }
+  .pagination ul li a {
+    border: none;
+    color: #000;
+  }
+  .pagination ul li:nth-child(2) a {
+    border-right: 1px solid #000;
+    padding-right: 20px;
+  }
+  .pagination ul li:nth-last-child(2) a {
+    border-left: 1px solid #000;
+    padding-left: 20px;
+  }
 }
