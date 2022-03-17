@@ -92,8 +92,8 @@
 }
 .join-step ol li.on {
   color: #fff;
-  background: #47AD1A;
-  border-color: #47AD1A;
+  background: #03A65A;
+  border-color: #03A65A;
 }
 .join-step ol li.on:before, 
 .join-step ol li.on:after {
@@ -114,7 +114,7 @@
   height: 0;
   border-style: solid;
   border-width: 28px 0 28px 20px;
-  border-color: transparent transparent transparent #47AD1A;
+  border-color: transparent transparent transparent #03A65A;
   z-index: 1;
 }
 .join-step ol li.on .num {
@@ -250,15 +250,15 @@
   padding: 0 20px;
   line-height: 58px;
   text-align: center;
-  border-color: #47ad1a;
-  background: #47ad1a;
+  border-color: #03A65A;
+  background: #03A65A;
   color: #fff;
-  font-size: 16px;
   border-radius: 27px;
-  border: 1px solid #47ad1a;
+  border: 1px solid #03A65A;
   vertical-align: top;
   transition: all 0.1s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 

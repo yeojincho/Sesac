@@ -3,8 +3,9 @@
 */
 
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import $ from 'jquery';
 
 import LoginPop from "../main/popup/Login";
 import "./header.css";
@@ -21,6 +22,18 @@ export default function Header({ isLogin }) {
     sessionStorage.removeItem("user_id");
     document.location.replace("/");
   };
+
+
+
+  /* 메뉴 닫힘 (임시)*/
+  const[subMenuClose,setSubMenuClose] = useState(false);
+  const subMenuCloseFn = () => {
+    setSubMenuClose(!subMenuClose);
+    $('.gnb').css('pointer-events','none');
+  }
+  useEffect(()=>{
+    setTimeout(()=>{ $('.gnb').css('pointer-events','auto'); }, 1000);
+  }, [subMenuClose]);
 
   return (
     <>
@@ -41,7 +54,7 @@ export default function Header({ isLogin }) {
               </a>
             </div>
             <div className="top-btn">
-              <Link to="/sample">공통샘플</Link>
+              <Link to="/sample" onClick={subMenuCloseFn}>공통샘플</Link>
               {!isLogin ? (
                 <>
                   <a href="#" onClick={openLoginPopFn}>
@@ -51,7 +64,7 @@ export default function Header({ isLogin }) {
                 </>
               ) : (
                 <>
-                  <Link to="/mypage">마이페이지</Link>
+                <Link to="/manage">마이페이지</Link>
                   <a href="#" onClick={logoutFn}>
                     로그아웃
                   </a>
@@ -63,89 +76,89 @@ export default function Header({ isLogin }) {
         {/* 헤더 top */}
 
         <nav className="header-bottom">
-          <ul className="inner-box gnb">
+          <ul className="inner-box gnb" >
             <li className="depth1">
-              <Link to="">공개과정</Link>
-              <ul class="depth2">
+              <Link to="/">공개과정</Link>
+              <ul className="depth2" >
                 <li>
-                  <Link to="/program">월간교육일정</Link>
+                  <Link to="/program" onClick={subMenuCloseFn}>월간교육일정</Link>
                 </li>
                 <li>
-                  <Link to="">계층교육</Link>
+                  <Link to="" onClick={subMenuCloseFn}>계층교육</Link>
                 </li>
                 <li>
-                  <Link to="">직무역량</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>직무역량</Link>
                 </li>
                 <li>
-                  <Link to="">DX교육</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>DX교육</Link>
                 </li>
                 <li>
-                  <Link to="">진단</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>진단</Link>
                 </li>
                 <li>
-                  <Link to="">일반</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>일반</Link>
                 </li>
               </ul>
             </li>
             <li className="depth1">
-              <Link to="">취업과정</Link>
+              <Link to="/job">취업과정</Link>
               <ul class="depth2">
                 <li>
-                  <Link to="">소개</Link>
+                  <Link to="/job" onClick={subMenuCloseFn}>소개</Link>
                 </li>
                 <li>
-                  <Link to="">모집중인 과정</Link>
+                  <Link to="/jobrecruit" onClick={subMenuCloseFn}>모집중인 과정</Link>
                 </li>
               </ul>
             </li>
             <li className="depth1">
               <Link to="/">Ex콘텐츠</Link>
-              <ul class="depth2">
+              <ul className="depth2">
                 <li>
-                  <Link to="/">이벤트</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>이벤트</Link>
                 </li>
                 <li>
-                  <Link to="/">과정후기</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>과정후기</Link>
                 </li>
                 <li>
-                  <Link to="/">EXC뷰</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>EXC뷰</Link>
                 </li>
               </ul>
             </li>
             <li className="depth1">
               <Link to="/notice">고객센터</Link>
-              <ul class="depth2">
+              <ul className="depth2">
                 <li>
-                  <Link to="/notice">공지사항</Link>
+                  <Link to="/notice" onClick={subMenuCloseFn}>공지사항</Link>
                 </li>
                 <li>
-                  <Link to="/question">문의하기</Link>
+                  <Link to="/question" onClick={subMenuCloseFn}>문의하기</Link>
                 </li>
                 <li>
-                  <Link to="/faq">자주묻는 질문</Link>
+                  <Link to="/faq" onClick={subMenuCloseFn}>자주묻는 질문</Link>
                 </li>
                 <li>
-                  <Link to="/visit">오시는 길</Link>
+                  <Link to="/visit" onClick={subMenuCloseFn}>오시는 길</Link>
                 </li>
               </ul>
             </li>
             <li className="depth1">
               <Link to="/">아카데미</Link>
-              <ul class="depth2">
+              <ul className="depth2">
                 <li>
-                  <Link to="/">아카데미 소개</Link>
+                  <Link to="/" onClick={subMenuCloseFn}>아카데미 소개</Link>
                 </li>
                 <li>
-                  <Link to="/teacherinfo">강사소개</Link>
+                  <Link to="/teacherinfo" onClick={subMenuCloseFn}>강사소개</Link>
                 </li>
                 <li>
-                  <Link to="/hrstore">HR샵</Link>
+                  <Link to="/hrstore" onClick={subMenuCloseFn}>HR샵</Link>
                 </li>
                 <li>
-                  <Link to="/Partnership">제휴제안</Link>
+                  <Link to="/Partnership" onClick={subMenuCloseFn}>제휴제안</Link>
                 </li>
                 <li>
-                  <Link to="/Recruit">인재채용</Link>
+                  <Link to="/Recruit" onClick={subMenuCloseFn}>인재채용</Link>
                 </li>
               </ul>
             </li>
