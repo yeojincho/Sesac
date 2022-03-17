@@ -1,7 +1,15 @@
 * {
   color: #636363;
 }
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
 
+.wrapper {
+  position: relative;
+}
 .jobTopDetailpage {
   display: flex;
   justify-content: space-evenly;
@@ -46,6 +54,7 @@
   border: 1px solid #636363;
   border-radius: 5px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .jobTopDetailpage .right .shareBtn {
@@ -63,7 +72,11 @@
   background-size: 20px;
 }
 
-.jobBottomDetailpage ul li {
+.jobBottomDetailpage .category {
+  width: 100%;
+}
+
+.jobBottomDetailpage .category li {
   border-radius: 15px;
   background-color: #f4f4f4;
   display: inline-block;
@@ -71,16 +84,30 @@
   margin-right: 20px;
   font-size: 14px;
 }
-
-/* 나중에 .on class를 js로 추가하기 */
-.jobBottomDetailpage ul li:first-child {
+.jobBottomDetailpage .category li.scrollOn {
   color: #fff;
   background-color: #5ebf92;
   font-weight: bold;
   box-sizing: border-box;
 }
 
-.jobBottomDetailpage .contents {
-  width: 100%;
-  height: 500px;
+/* 상단 고정탭 */
+.jobBottomDetailpage .category.fix {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 0 none;
+  color: #fff;
+  background-color: #5ebf92;
 }
