@@ -10,7 +10,7 @@ import './view-detail.css';
 function ViewDetail() {
     return(
         <div className='view-detail inner-box'>
-            <div className='outlineProcess marginBottomStyle'>
+            <div id='outlineProcess' className='marginBottomStyle'>
                 <h4 className="detailTitle">과정개요</h4>
                 <div className="flexStyle">
                     <div className='outlineProcess-left'>
@@ -34,7 +34,7 @@ function ViewDetail() {
                     </div>
                 </div>
             </div>
-            <div className='processObjective marginBottomStyle'>
+            <div id='processObjective' className='marginBottomStyle'>
                 <h4 className="detailTitle">과정목표</h4>
                 <ul className='processObjective-top'>
                     <li>조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.</li>
@@ -65,7 +65,7 @@ function ViewDetail() {
                     </div>
                 </div>
             </div>
-            <div className='educationTarget marginBottomStyle'>
+            <div id='educationTarget' className='marginBottomStyle'>
                 <h4 className="detailTitle">교육대상</h4>
                 <ul className='targetList'>
                     <li>
@@ -82,7 +82,7 @@ function ViewDetail() {
                     </li>
                 </ul>
             </div>
-            <div className='curriculum marginBottomStyle'>
+            <div id='curriculum' className='marginBottomStyle'>
                 <h4 className='detailTitle'>커리큘럼</h4>
                 <div className='curriBox'>
                     <div className='curriTitle'>
@@ -130,7 +130,7 @@ function ViewDetail() {
                     </div>
                 </div>
             </div>{/* e: curriculum */}
-            <div className='mainTutor marginBottomStyle'>
+            <div id='mainTutor' className='marginBottomStyle'>
                 <h4 className='detailTitle'>대표강사</h4>
                 <div className='mainTutorBox'>
                     <div className='mainTutorLeft'>
@@ -165,7 +165,7 @@ function ViewDetail() {
                     </div>{/* e: mainTutorRight */}
                 </div>{/* e: mainTutorBox */}
             </div>{/* e: mainTutor */}
-            <div className='applyInfo marginBottomStyle'>
+            <div id='applyInfo' className='marginBottomStyle'>
                 <h4 className='detailTitle'>접수안내</h4>
                 <div className='applyInfoStepBox'>
                     <ul className='applyInfoStep'>

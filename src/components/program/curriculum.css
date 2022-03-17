@@ -1,3 +1,9 @@
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
 * {
     color: #636363;
 }
@@ -46,6 +52,7 @@
     border: 1px solid #636363;
     border-radius: 5px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .topDetailpage .right .shareBtn {
@@ -63,24 +70,32 @@
     background-size: 20px;
 }
 
-.bottomDetailpage ul li {
+.bottomDetailpage .category {
+    width: 100%;
+}
+
+.bottomDetailpage .category li {
     border-radius: 15px;
     background-color: #F4F4F4;
     display: inline-block;
     padding: 8px 30px;
     margin-right: 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 
-/* 나중에 .on class를 js로 추가하기 */
-.bottomDetailpage ul li:first-child { 
+.bottomDetailpage .category li:first-child { 
     color: #fff;
     background-color: #5EBF92;
     font-weight: bold;
     box-sizing: border-box;
 }
 
-.bottomDetailpage .contents {
-    width: 100%;
-    height: 500px;
+/* 상단 고정탭 */
+.bottomDetailpage .category.fix {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 20px 0;
+    background-color:rgba(255, 255, 255, 0.9);
 }

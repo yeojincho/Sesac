@@ -18,36 +18,36 @@
 
 
 /* 과정개요 */
-.outlineProcess {
+#outlineProcess {
     margin-top: 60px;
 }
 
-.outlineProcess .outlineProcess-left {
+#outlineProcess .outlineProcess-left {
     flex-basis: 40%;
 }
 
-.outlineProcess .outlineProcess-left p {
+#outlineProcess .outlineProcess-left p {
     word-break: keep-all;
 }
 
-.outlineProcess .outlineProcess-right {
+#outlineProcess .outlineProcess-right {
     flex-basis: 40%;
 }
 
-.outlineProcess .outlineProcess-right .iconList li {
+#outlineProcess .outlineProcess-right .iconList li {
     margin: 0 20px;
     text-align: center;
 }
 
-.outlineProcess .outlineProcess-right .iconList li:nth-of-type(2) img {
+#outlineProcess .outlineProcess-right .iconList li:nth-of-type(2) img {
     opacity: 20%;
 }
 
-.outlineProcess .outlineProcess-right .iconList li img {
+#outlineProcess .outlineProcess-right .iconList li img {
     width: 100px;
 }
 
-.outlineProcess .outlineProcess-right .iconList li p {
+#outlineProcess .outlineProcess-right .iconList li p {
     background-color: #000;
     border-radius: 10px;
     font-size: 12px;
@@ -59,44 +59,44 @@
     width: 140px;
 }
 
-.outlineProcess .outlineProcess-right p.text_right {
+#outlineProcess .outlineProcess-right p.text_right {
     text-align: center;
 }
 
 
 /* 과정목표 */
-.processObjective .processObjective-top li {
+#processObjective .processObjective-top li {
     list-style: disc;
 }
 
-.processObjective .processObjective-left p {
+#processObjective .processObjective-left p {
     font-size: 20px;
 }
 
-.processObjective .processObjective-right {
+#processObjective .processObjective-right {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.processObjective .processObjective-right .readingIcon {
+#processObjective .processObjective-right .readingIcon {
     width: 50%;
     height: 50%;
 }
 
-.processObjective .processObjective-right ul li {
+#processObjective .processObjective-right ul li {
     text-align: center;
 }
 
-.processObjective .processObjective-right ul li img {
+#processObjective .processObjective-right ul li img {
     width: 80px;
 }
 
-.processObjective .processObjective-right ul li:last-child img {
+#processObjective .processObjective-right ul li:last-child img {
     width: 70px;
 }
 
-.processObjective .processObjective-right ul li p {
+#processObjective .processObjective-right ul li p {
     background-color: #000;
     border-radius: 10px;
     font-size: 12px;
@@ -109,25 +109,25 @@
 }
 
 /* 교육대상 */
-.educationTarget .targetList {
+#educationTarget .targetList {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
 
-.educationTarget .targetList li {
+#educationTarget .targetList li {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.educationTarget .targetList .targetList-title {
+#educationTarget .targetList .targetList-title {
     background-color: #666;
     color: #fff;
     font-weight: bold;
     padding: 10px 50px;
 }
 
-.educationTarget .targetList .targetList-text {
+#educationTarget .targetList .targetList-text {
     padding: 15px 0;
 }
 
@@ -259,7 +259,7 @@
   font-weight: bold;
 }
 .applyInfoStep li:after {
-  content: “”;
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
