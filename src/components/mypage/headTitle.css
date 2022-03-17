@@ -4,14 +4,15 @@
 }
 
 h1.menu-headtitle {
-  font-size: 30px;
-  color: #777;
-  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -0.8;
+  color: #03A65A;
+  /* font-weight: 800; */
   margin-bottom: 7px;
 }
 
 p.menu-subtitle {
   font-size: 20px;
-  color: #aaa;
-  margin-bottom: 30px;
+  color: #5EBF92;
+  margin-bottom: 50px;
 }

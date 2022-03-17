@@ -1,25 +1,51 @@
 .sideMenuBox {
-  max-width: 400px;
+  width: 300px;
+  min-width: 220px;
   background-color: #eee;
   color: #555;
- padding: 30px 20px 30px 0;
+  padding: 30px 20px 30px 0;
+  margin-right: 20px;
 }
 
+/* 사이드메뉴 큰메뉴 */
+.sideMenuBox .info em {
+  color: #212529;
+  /* font-weight: 600; */
+  font-size: 22px;
+  font-style: normal;
+}
+
+.sideMenuBox ul.info {
+  margin-bottom: 30px;
+}
+
+/* 사이드메뉴 작은메뉴 */
 .sideMenuBox ul.info li {
   border: none;
+  color: #212529;
+  font-size: 16px;
+  text-indent: 30px;
+  margin-top: 5px;
 }
 
-.sideMenuBox .info em {
-  color: #555;
-  font-weight: 888;
-  font-size: 18px;
-  font-style: normal;
-  margin-bottom: 15px;
+.sideMenuBox ul.info li.here {
+  /* font-weight: 800; */
+  color: #03A65A;
 }
 
-.sideMenuBox .info li {
-  color: #666;
-  font-weight: 300;
+
+.sideMenuBox ul.info li:hover {
+  text-decoration: underline;
+  color: #03A65A;
 }
+
+.sideMenuBox ul.info li a {
+  color: inherit;
+}
+
+
+
+
+
 
 

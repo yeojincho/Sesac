@@ -1,15 +1,17 @@
 import React from "react";
+import HeadTitle from "./HeadTitle";
 import SideMenu from "./SideMenu";
 
 const RegiConfirm = () => {
   return (
     <div className="regiConfirm-container">
       <div className="inner-box">
-        <div className="flexbox">
+        <HeadTitle />
+        <div className="flex-box">
           <SideMenu />
-          <div className="classConfirmPage">
+          <div className="classConfirm-contentBox">
             <h2 className="pageTitle">수강신청 확인/취소</h2>
-            <table className="table">
+            <table className="myclass-table">
               <colgroup>
                 <col width={40} />
                 <col width={40} />
@@ -20,7 +22,7 @@ const RegiConfirm = () => {
                 <col width={80} />
                 <col width={80} />
               </colgroup>
-              <tr>
+              <tr id="confirm-under">
                 <th scope="col">선택</th>
                 <th scope="col">No</th>
                 <th scope="col">교육과정</th>
@@ -34,7 +36,12 @@ const RegiConfirm = () => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" />
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
                 </td>
                 <td>1</td>
                 <td>사내강사 양성과정(강사가 되는 방법)</td>
@@ -45,8 +52,8 @@ const RegiConfirm = () => {
                 <td>대기</td>
               </tr>
             </table>
-
             <button className="cancelBtn">취소하기</button>
+
             <div className="notice-noClass">
               <h3>신청하신 교육과정이 없습니다.</h3>
               <p>

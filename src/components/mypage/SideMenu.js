@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./sidemenu.css";
+import { NavLink } from "react-router-dom";
 
 const SideMenu = () => {
   return (
@@ -9,19 +10,39 @@ const SideMenu = () => {
         <ul className="info">
           <em>회원정보</em>
           <li>
-            <Link to="/manage">- 회원정보관리</Link>
+            <NavLink
+              to="/manage"
+              activeStyle={{ fontWeight: "bold", color: "#03A65A" }}
+            >
+              회원정보관리
+            </NavLink>
           </li>
           <li>
-            <Link to="/changepw">- 비밀번호 변경</Link>
+            <NavLink
+              to="/changepw"
+              activeStyle={{ fontWeight: "bold", color: "#03A65A" }}
+            >
+              비밀번호 변경
+            </NavLink>
           </li>
         </ul>
         <ul className="info">
           <em>수강정보</em>
           <li>
-            <Link to="/confirmclass">- 수강신청 확인/취소</Link>
+            <NavLink
+              to="/confirmclass"
+              activeStyle={{ fontWeight: "bold", color: "#03A65A" }}
+            >
+              수강신청 확인/취소
+            </NavLink>
           </li>
           <li>
-            <Link to="/classlist">- 수강 내역</Link>
+            <NavLink
+              to="/classlist"
+              activeStyle={{ fontWeight: "bold", color: "#03A65A" }}
+            >
+              수강 내역
+            </NavLink>
           </li>
         </ul>
       </div>
