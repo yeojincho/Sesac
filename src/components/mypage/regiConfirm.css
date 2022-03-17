@@ -1,131 +1,91 @@
 
-a {
-  text-decoration: none;
-  color: inherit;
+* {
+  box-sizing: border-box;
 }
 
-.cancelBtn {
+/* 페이지타이틀 */
+.classConfirmPage .pageTitle {
+  color: #666;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* 사이드바 플렉스 공통 */
+.regiConfirm-container .flexbox {
+  display: flex;
+}
+
+.regiConfirm-container .classConfirm-contentBox .cancelBtn {
+  display: block;
   border: none;
   padding: 5px 10px;
   background-color: #5EBF92;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 7px;
   cursor: pointer;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 
-* {
-  box-sizing: border-box;
+#confirm-under {
+  border-bottom: 1px solid #000;
 }
 
-.classConfirmPage {
-  padding: 0 10px;
-}
 
 
 /* 테이블 css */
-table {
+.myclass-table {
   border-collapse: collapse;
   margin: 10px 0;
+  color: red;
+  /* color: #313338; */
 }
-th, td {
+.myclass-table th, 
+.myclass-table td {
   border: 1px solid #eee;
 }
 
-th {
+.myclass-table th {
   text-align: center;
   font-weight: 500;
   background-color: #eee;
 }
 
-tr {
+.myclass-table tr {
   height: 40px;
   font-size: 15px;
 }
 
-td {
+.myclass-table td {
   padding: 0 10px;
   font-weight: 300;
 }
 
-tr td:nth-child(1) {
+.myclass-table tr td:nth-child(1) {
   text-align: center;
 }
-tr td:nth-child(2) {
+.myclass-table tr td:nth-child(2) {
   text-align: center;
 }
-tr td:nth-child(3) {
+.myclass-table tr td:nth-child(3) {
   text-align: left;
 }
-tr td:nth-child(4) {
+.myclass-table tr td:nth-child(4) {
   text-align: center;
 }
-tr td:nth-child(5) {
+.myclass-table tr td:nth-child(5) {
   text-align: right;
 }
-tr td:nth-child(6) {
+.myclass-table tr td:nth-child(6) {
   text-align: right;
 }
-tr td:nth-child(7) {
+.myclass-table tr td:nth-child(7) {
   text-align: center;
 }
-tr td:nth-child(8) {
+.myclass-table tr td:nth-child(8) {
   text-align: center;
 }
-
-.pageTitle {
-  color: #999;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.flexbox {
-  display: flex;
-}
-
-/* left-menu area */
-.left-menu {
-  width: 20%;
-  padding: 20px 20px;
-}
-
-.left-menu .depth1 a:hover {
-  border-bottom: 1px solid #5EBF92;
-} 
-
-.left-menu li.depth1 {
-  color: #000;
-}
-
-
-.depth1{
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.depth1>a {
-  font-weight: 500;
-}
-.depth1>ul {
-  margin-top: 10px;
-}
-.depth1>ul>li.depth2 {
-  margin-bottom: 5px;
-}
-
-.depth2{
-  font-size: 17px;
-  text-indent: 40px;
-  font-weight: 300;
-}
-
-.depth2 a.active {
-  color: #03A65A;
-  font-weight: 800;
-}
-
 
 
 /* 수강신청 취소버튼 클릭 후 팝업버튼 */

@@ -1,56 +1,154 @@
 .Management-wrap1 {
   box-sizing: border-box;
+}
+
+
+/* flex 정렬 */
+.inner-box .flex-box {
   display: flex;
-  height: 1700px;
 }
 
-.contentBox {
-  width: 1000px;
+
+/* contentBox title 공통 */
+.Management-contentBox .pageTitle {
+  color: #212529;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 
-#title {
-  color: gray;
-  font-size: 20px;
-}
-.inform {
-  color: #191b20;
-  font-size: 14px;
-  margin-top: 80px;
-}
 
-.infoTitle {
-  font-weight: 800;
-  font-size: 18px;
+/* subtitle */
+.Management-contentBox .Management-infoTitle {
+  font-size: 21px;
   color: #191b20;
 }
+.Management-infoTitle {
+}
 
-.infoForm {
-  font-size: 15px;
+
+
+.Management-contentBox .Management-infoTitle::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: -5px 10px 0 0;
+  vertical-align: middle;
+  background: #191b20;
+  border-radius: 50%;
 }
-.infoForm input {
-  width: 800px;
+
+.mrgn-left {
+  padding-left: 17px;
+  margin-bottom: 50px;
 }
-#select {
-  width: 250px;
+
+.mrgn-left .manage-userinfo {
+  display: block;
+  color: #191b20;
+  font-weight: lighter;
+  font-size: 16px;
 }
-#checkbox {
-  width: 15px;
-  margin-bottom: 80px;
+
+.mrgn-left .manage-userinfo::before {
+  content:'';
+  display:inline-block;
+  width:6px;
+  height:6px;
+  margin:-5px 10px auto 4px;
+  vertical-align:middle;
+  border-right:1px solid #27aa84;
+  border-top:1px solid #27aa84;
+  transform:rotate(45deg)
 }
+
+
+.mrgn-left .manage-userinfo span {
+  margin-left: 5px;
+}
+
+
+.Management-inform label {
+  font-weight: lighter;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.Management-inform {
+  color: #191b20;
+  font-size: 16px;
+}
+
+
+#mailing-service {
+  margin-left: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 4px;
+
+}
+
 
 .service {
   font-weight: 500;
   font-size: 16px;
   color: #191b20;
 }
-.bottomBtn {
+
+.Management-bottomBtn {
   width: 500px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-items: center;
+  padding-left: 17px;
 }
-.bottomBtn > button {
-  margin-left: 100px;
-  width: 200px;
+.Management-bottomBtn #check-btn {
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  margin: 50px 0;
+  padding: 0 10px;
+  border: none;
+  border-radius: 7px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #5EBF92;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.Management-bottomBtn #check-btn:hover {
+  background-color: #03A65A ;
+}
+
+
+/* 탈퇴버튼 */
+.Management-bottomBtn #byeBtn {
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  margin: 50px 0;
+  padding: 0 10px;
+  border: 1px solid #DDDDDD;
+  border-radius: 7px;
+  line-height: 38px;
+  text-align: center;
+  color: #999;
+  margin-right: 10px;
+}
+
+.Management-bottomBtn #byeBtn:hover {
+  background-color: #eee ;
+}
+
+.Management-bottomBtn #check-btn {
+
+}
+
+
+.testyj {
+  margin-bottom: 10px;
 }

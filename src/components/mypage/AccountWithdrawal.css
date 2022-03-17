@@ -1,7 +1,64 @@
-.account-wrap1 {
-  box-sizing: border-box;
+/* flex 정렬 */
+.inner-box .flex-box {
   display: flex;
 }
+
+/* contentBox  */
+.account-contentBox {
+  width: 40%;
+}
+/* button 공통 */
+.account-contentBox button.form-btn {
+  margin: 50px 0;
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 7px;
+  background-color: #03A65A;;
+}
+
+
+/* contentBox title */
+.account-contentBox .pageTitle {
+  color: #999;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* contentBox sub-title */
+.account-contentBox .account-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 2px;
+}
+
+
+.account-userinfo p {
+  margin-bottom: 5px;
+  color: #03A65A;
+}
+
+.account-contentBox .form {
+  margin-top: 30px;
+}
+
+.account-contentBox .form Label {
+  
+}
+
+
+
+.account-wrap1 {
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+.account-myTitle {
+  font-size: 18px;
+}
+
 
 .account-info button {
   border: none;
@@ -32,3 +89,4 @@
 .title {
   display: flex;
 }
+
