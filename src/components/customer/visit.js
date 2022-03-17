@@ -51,21 +51,15 @@ export default function Visit(){
                 
             <Customer />            
                 <div className="visitSubMenuBox">
-                    <ul className="visitSubMenuList">
-                        <li >
-                            <button id = "subMenu1"  className= "visitSubMenuListBtn" onClick={ handleClick }>
+                    <ul className="visitSubMenuContainer">
+                        <li id = "subMenu1"  className= "visitSubMenuList" onClick={ handleClick }>
                             송파러닝센터
-                            </button>                
                         </li>
-                        <li >
-                            <button id = "subMenu2" className= "visitSubMenuListBtn"  onClick={ handleClick }>
+                        <li id = "subMenu2" className= "visitSubMenuList"  onClick={ handleClick }>
                             가락러닝센터
-                            </button>                
                         </li>
-                        <li >
-                            <button id = "subMenu3" className= "visitSubMenuListBtn"  onClick={ handleClick }>
+                        <li id = "subMenu3" className= "visitSubMenuList"  onClick={ handleClick }>
                             문정러닝센터
-                            </button>                
                         </li>
                     </ul>
                 </div>{/* e: submenu */}

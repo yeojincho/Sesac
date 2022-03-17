@@ -21,14 +21,14 @@
   margin-top: 100px;
   margin-bottom: 80px;
 }
-.visitSubMenuList {
+.visitSubMenuContainer {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.visitSubMenuList li {
+.visitSubMenuList {
   display: block;
   color: #999;
   font-size: 20px;
@@ -40,16 +40,8 @@
   height: 40px;
   line-height: 40px;
 }
-.visitSubMenuListBtn {
-  border: none;
-  border-radius: 50px;
-  box-shadow: none;
-  cursor: pointer;
-  width: 100%;
-  background-color: #dddddd;
-  color: #999;
-}
-.subOn {
+
+.visitSubMenuList.subOn {
   color: #ffffff;
   background-color: #5ebf92;
 }
@@ -62,10 +54,10 @@
   color: #666666;
   margin-bottom: 30px;
 }
-.address h3 {
+.visitInfo .address h3 {
   font-size: 25px;
 }
-.share {
+.visitInfo .share {
   width: 100px;
   height: 40px;
   line-height: 40px;
@@ -77,11 +69,11 @@
   background: url(/public/images/share.png) no-repeat 50px center;
   background-size: 20px;
 }
-.mapBox {
+.visitInfo .mapBox {
   display: flex;
   margin-bottom: 150px;
 }
-.mapBox .officeImg {
+.visitInfo .mapBox .officeImg {
   width: 473px;
   height: 500px;
   margin-right: 67px;

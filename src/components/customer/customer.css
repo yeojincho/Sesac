@@ -17,7 +17,7 @@
   text-align: center;
   line-height: 55px;
 }
-.on {
+.customerList.on {
   background-color: #03a65a;
   color: #fff;
   font-weight: bold;
