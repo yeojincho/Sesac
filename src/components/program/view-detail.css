@@ -1,0 +1,314 @@
+/* common */
+.detailTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #454545;
+}
+
+.flexStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.marginBottomStyle {
+    margin-bottom: 100px;
+}
+
+
+/* 과정개요 */
+#outlineProcess {
+    margin-top: 60px;
+}
+
+#outlineProcess .outlineProcess-left {
+    flex-basis: 40%;
+}
+
+#outlineProcess .outlineProcess-left p {
+    word-break: keep-all;
+}
+
+#outlineProcess .outlineProcess-right {
+    flex-basis: 40%;
+}
+
+#outlineProcess .outlineProcess-right .iconList li {
+    margin: 0 20px;
+    text-align: center;
+}
+
+#outlineProcess .outlineProcess-right .iconList li:nth-of-type(2) img {
+    opacity: 20%;
+}
+
+#outlineProcess .outlineProcess-right .iconList li img {
+    width: 100px;
+}
+
+#outlineProcess .outlineProcess-right .iconList li p {
+    background-color: #000;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 140px;
+}
+
+#outlineProcess .outlineProcess-right p.text_right {
+    text-align: center;
+}
+
+
+/* 과정목표 */
+#processObjective .processObjective-top li {
+    list-style: disc;
+}
+
+#processObjective .processObjective-left p {
+    font-size: 20px;
+}
+
+#processObjective .processObjective-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#processObjective .processObjective-right .readingIcon {
+    width: 50%;
+    height: 50%;
+}
+
+#processObjective .processObjective-right ul li {
+    text-align: center;
+}
+
+#processObjective .processObjective-right ul li img {
+    width: 80px;
+}
+
+#processObjective .processObjective-right ul li:last-child img {
+    width: 70px;
+}
+
+#processObjective .processObjective-right ul li p {
+    background-color: #000;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+}
+
+/* 교육대상 */
+#educationTarget .targetList {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#educationTarget .targetList li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#educationTarget .targetList .targetList-title {
+    background-color: #666;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+
+#educationTarget .targetList .targetList-text {
+    padding: 15px 0;
+}
+
+
+/* 승연 파트 */
+/*  curriculum */
+.curriBox {
+  display: flex;
+  margin-bottom: 20px;
+}
+.curriBox .curriTitle {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+}
+.curriBox .curriTitle p {
+  padding: 10px 0;
+}
+.curriBox .curriTitle p:first-child {
+  font-size: 28px;
+  color: #fff;
+  background: #666;
+}
+.curriBox .curriContents {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-radius: 5px;
+  width: 850px;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+.curriContentsList {
+  padding-top: 10px;
+}
+/*  mainTutor */
+.mainTutorBox {
+  display: flex;
+  margin: 0 auto;
+}
+.mainTutorLeft img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  height: 350px;
+  margin-bottom: 10px;
+}
+.mainTutorLeft p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.mainTutorRight {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.mainTutorRight .mainTutorInfo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 600px;
+  height: 200px;
+}
+.mainTutorRight .mainTutorInfo p:first-child {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.mainTutorRight .mainTutorInfo p:last-child {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.mainTutorRight .mainTutorInfo p:last-child span {
+  font-size: 28px;
+}
+.mainTutorRight .mainTutorRigthBottom {
+  display: flex;
+  height: 195px;
+}
+.mainTutorRight .mainTutorRigthBottom p {
+  font-size: 20px;
+  padding: 15px 0 0 15px;
+}
+.mainTutorRight .mainTutorRigthBottom .mainTutorCareer {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 290px;
+  margin-right: 10px;
+}
+.mainTutorRight .mainTutorRigthBottom .mainTutorPlace {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 290px;
+  margin-left: 10px;
+}
+/*  applyInfo */
+.applyInfoStepBox {
+  width: 100%;
+  z-index: 1;
+}
+.applyInfoStep {
+  display: flex;
+  justify-content: center;
+  counter-reset: step;
+  margin-bottom: 20px;
+}
+.applyInfoStep li {
+  width: 20%;
+  position: relative;
+  text-align: center;
+}
+.applyInfoStep li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 37px;
+  background: #fff;
+  color: #ccc;
+  text-align: center;
+  font-weight: bold;
+}
+.applyInfoStep li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #5EBF92;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.applyInfoStep li:first-child::after {
+  content: none;
+}
+.applyInfoList {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.applyInfoList li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  padding: 10px 30px;
+  margin-left: 20px;
+}
+.applyInfoList li p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+.applyInfoAsk {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 50px;
+}
+.applyInfoAsk ul {
+  padding-top: 10px;
+}
+.applyInfoAsk img {
+  width: 100px;
+  height: 100px;
+}
+.applyInfoAsk a {
+  color: inherit;
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-top: 20px;
+}

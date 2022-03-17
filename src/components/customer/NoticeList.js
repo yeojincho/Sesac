@@ -41,11 +41,11 @@ function NoticeList() {
   ];
 
   return (
-    <div>
-      <div className="question-search-box">
+    <div className="notice-list-container">
+      <div className="notice-search-box">
         <input type="text" placeholder="Search" className="searchBox focus" />
       </div>
-      <Table striped>
+      <Table striped className="notice-list-table">
         <thead>
           <tr>
             <th>No</th>

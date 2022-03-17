@@ -40,7 +40,7 @@ export default function Menu({close, isLogin}) {
               ) : 
               (
                 <>
-                <li><Link to="/" onClick={close}><img src="/images/main/ico_my_info.png" alt="마이페이지" />마이페이지</Link></li>
+                <li><Link to="/manage" onClick={close}><img src="/images/main/ico_my_info.png" alt="마이페이지" />마이페이지</Link></li>
                 <li><Link to="/" onClick={logoutFn}><img src="/images/main/ico_edit.png" alt="로그아웃" />로그아웃</Link></li>
                 </>
               )
@@ -55,7 +55,7 @@ export default function Menu({close, isLogin}) {
             <ul className="gnb-left-depth1">
               <li className="on"><button><span>공개과정</span></button></li>
               <ul className="gnb-menu-depth2">
-                <li><Link to="/" onClick={close}>월간교육일정</Link></li>
+                <li><Link to="/program" onClick={close}>월간교육일정</Link></li>
                 <li><Link to="/" onClick={close}>계층교육</Link></li>
                 <li><Link to="/" onClick={close}>직무역량</Link></li>
                 <li><Link to="/" onClick={close}>DX교육</Link></li>
@@ -66,8 +66,8 @@ export default function Menu({close, isLogin}) {
             <ul className="gnb-left-depth1">
               <li><button><span>취업과정</span></button></li>
               <ul className="gnb-menu-depth2">
-                <li><Link to="/" onClick={close}>소개</Link></li>
-                <li><Link to="/" onClick={close}>모집중인 과정</Link></li>
+                <li><Link to="/job" onClick={close}>소개</Link></li>
+                <li><Link to="/jobrecruit" onClick={close}>모집중인 과정</Link></li>
               </ul>
             </ul>
             <ul className="gnb-left-depth1">
@@ -83,20 +83,20 @@ export default function Menu({close, isLogin}) {
             <ul className="gnb-left-depth1">
               <li><button><span>고객센터</span></button></li>
               <ul className="gnb-menu-depth2">
-                <li><Link to="/" onClick={close}>공지사항</Link></li>
-                <li><Link to="/" onClick={close}>문의하기</Link></li>
-                <li><Link to="/" onClick={close}>자주묻는 질문</Link></li>
-                <li><Link to="/" onClick={close}>오시는 길</Link></li>
+                <li><Link to="/notice" onClick={close}>공지사항</Link></li>
+                <li><Link to="/question" onClick={close}>문의하기</Link></li>
+                <li><Link to="/faq" onClick={close}>자주묻는 질문</Link></li>
+                <li><Link to="/visit" onClick={close}>오시는 길</Link></li>
               </ul>
             </ul>
             <ul className="gnb-left-depth1">
               <li><button><span>아카데미</span></button></li>
               <ul className="gnb-menu-depth2">
                 <li><Link to="/" onClick={close}>아카데미 소개</Link></li>
-                <li><Link to="/" onClick={close}>강사소개</Link></li>
-                <li><Link to="/" onClick={close}>HR샵</Link></li>
-                <li><Link to="/" onClick={close}>제휴제안</Link></li>
-                <li><Link to="/" onClick={close}>인재채용</Link></li>
+                <li><Link to="/teacherinfo" onClick={close}>강사소개</Link></li>
+                <li><Link to="/hrstore" onClick={close}>HR샵</Link></li>
+                <li><Link to="/Partnership" onClick={close}>제휴제안</Link></li>
+                <li><Link to="/Recruit" onClick={close}>인재채용</Link></li>
               </ul>
             </ul>
 
