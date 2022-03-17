@@ -3,7 +3,7 @@ import './program.css';
 import React, {useState} from "react";
 
 import MainBanner from '../../components/main/MainBanner';
-import MainContents from '../../components/main/MainContents';
+import MainProgram from '../../components/main/MainProgram';
 
 import "swiper/css"; 
 import "swiper/css/navigation";
@@ -133,7 +133,7 @@ function Program(){
                     <li><a href="#">비대면 교육</a></li>
                     <li><a href="#">과정문의</a></li>
                 </ul>
-                <MainContents />
+                <MainProgram />
             </div>
         </div>
     )
