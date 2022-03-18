@@ -39,7 +39,7 @@ function Management() {
                   type="tel"
                   placeholder="000-0000-0000"
                   aria-label="phone number"
-                ></input>
+                />
 
                 <label for="mail-address"> 메일주소 </label>
                 <input
@@ -48,7 +48,7 @@ function Management() {
                   type="email"
                   placeholder="abc@expert.com"
                   aria-label="email address"
-                ></input>
+                />
 
                 <label for="birthday"> 생년월일 </label>
                 <input
@@ -57,7 +57,7 @@ function Management() {
                   type="date"
                   placeholder="0000/00/00"
                   aria-label="birthday"
-                ></input>
+                />
 
                 <label for="user-division">회원구분</label>
 
@@ -79,7 +79,7 @@ function Management() {
                   id="mailing-service"
                   type="checkbox"
                   aria-label="check mailing service"
-                ></input>
+                />
 
                 <label for="mailing-service">수신받음</label>
                 <br />
@@ -94,7 +94,7 @@ function Management() {
                   type="text"
                   placeholder="회사명"
                   aria-label="your company name"
-                ></input>
+                />
 
                 <label for="department"> 부서명 </label>
                 <input
@@ -103,7 +103,7 @@ function Management() {
                   type="text"
                   placeholder="부서명"
                   aria-label="your company name"
-                ></input>
+                />
 
                 <label for="job-title"> 직함 </label>
                 <input
@@ -112,7 +112,7 @@ function Management() {
                   type="text"
                   placeholder="직함"
                   aria-label="job title"
-                ></input>
+                />
 
                 <label for="company-phone"> 회사전화 </label>
                 <input
@@ -121,7 +121,7 @@ function Management() {
                   type="tel"
                   placeholder="회사전화"
                   aria-label="company phone number"
-                ></input>
+                />
 
                 <label for="company-address"> 회사주소 </label>
                 <input
@@ -130,16 +130,15 @@ function Management() {
                   type="text"
                   placeholder="회사주소"
                   aria-label="company address"
-                ></input>
+                />
+              </div>
+              <div className="Management-bottomBtn flex-box">
+                <Button id="check-btn">확인</Button>
+                <Link to="/manage/withdrawal" id="byeBtn">
+                  회원탈퇴
+                </Link>
               </div>
             </form>
-
-            <div className="Management-bottomBtn flex-box">
-              <Button id="check-btn">확인</Button>
-              <Link to="/manage/withdrawal" id="byeBtn">
-                회원탈퇴
-              </Link>
-            </div>
           </div>
         </div>
       </div>

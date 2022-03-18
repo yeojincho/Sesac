@@ -1,5 +1,5 @@
 import React from "react";
-import { Label, FormGroup, Input, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import "./ChangePw.css";
 import SideMenu from "./SideMenu";
 import HeadTitle from "./HeadTitle";
@@ -17,28 +17,33 @@ function ChangePw() {
               비밀번호 변경을 위해 현재 비밀번호를 입력해 주세요
             </p>
 
-            <FormGroup className="ChangePwFormNow">
-              <Label for="exampleEmail" className="Imp">
-                현재비밀번호
-              </Label>
-              <Input type="password" />
-            </FormGroup>
+            <div className="mrgn-left">
+              <form className="ChangePwFormNow">
+                <label for="recent-password"> 현재 비밀번호 </label>
+                <input
+                  class="form-control"
+                  id="recent-password"
+                  type="password"
+                  aria-label="email address"
+                />
+                <label for="recent-password"> 새로운 비밀번호 </label>
+                <input
+                  class="form-control"
+                  id="recent-password"
+                  type="password"
+                  aria-label="email address"
+                />
+                <label for="recent-password"> 새로운 비밀번호 확인</label>
+                <input
+                  class="form-control"
+                  id="recent-password"
+                  type="password"
+                  aria-label="email address"
+                />
+              </form>
 
-            <FormGroup className="FormNow">
-              <Label for="examplePassword" className="Imp">
-                새로운 비밀번호
-              </Label>
-              <Input type="password" />
-            </FormGroup>
-
-            <FormGroup className="FormNow">
-              <Label for="examplePassword" className="Imp">
-                새로운 비밀번호 확인
-              </Label>
-              <Input type="password" className="ChangePw-inputEnd" />
-            </FormGroup>
-
-            <Button className="form-btn">확인</Button>
+              <Button className="form-btn">확인</Button>
+            </div>
           </div>
         </div>
       </div>

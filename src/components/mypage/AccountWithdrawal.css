@@ -22,15 +22,16 @@
 
 /* contentBox title */
 .account-contentBox .pageTitle {
-  color: #999;
+  color: #212529;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 
 /* contentBox sub-title */
 .account-contentBox .account-subtitle {
   font-size: 16px;
-  color: #777;
+  color: #212529;
   margin-bottom: 2px;
 }
 

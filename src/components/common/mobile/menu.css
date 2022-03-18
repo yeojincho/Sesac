@@ -5,17 +5,33 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 8px;
   }
   .header-top-area {
-    padding: 50px 15px 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 0 15px 15px;
     background: #fff;
   }
-
-
-
-
-
+  .header-top-area .header-top-sub {
+    display: flex;
+    justify-content: center;
+  }
+  .header-top-area .header-top-sub li {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .header-top-area .header-top-sub li a {
+    font-size: 13px;
+    color: #000;
+    line-height: 25px;
+  }
+  .header-top-area .header-top-sub li a img {
+    overflow: hidden;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
   .header-gnb-menu {
     display: flex;
     justify-content: center;
@@ -26,9 +42,9 @@
   }
   
   .header-gnb-menu .gnb-menu-left {
-    width: 35%;
+    width: 100%;
   }
-  .gnb-left-depth2 li button {
+  .gnb-left-depth1 li button {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -36,8 +52,9 @@
     background: none;
     border: none;
     letter-spacing: -1px;
+    background-color:#ccc;
   }
-  .gnb-left-depth2 li button span {
+  .gnb-left-depth1 li button span {
     display: block;
     padding: 2px 15px;
     font-size: 14px;
@@ -46,12 +63,13 @@
     line-height: 36px;
   }
   .header-gnb-menu .gnb-menu-right {
+    width: 100%;
     border-left: 1px solid #ddd;
   }
-  .gnb-menu-depth3 > li {
+  .gnb-menu-depth2 > li {
     border-bottom: 1px solid #ddd;
   }
-  .gnb-menu-depth3 > li > a, .header-gnb-menu .gnb-menu-right .gnb-menu-depth3 > li > button span {
+  .gnb-menu-depth2 > li > a, .header-gnb-menu .gnb-menu-right .gnb-menu-depth2 > li > button span {
     position: relative;
     display: block;
     padding: 0 15px;
