@@ -11,6 +11,16 @@ import LoginPop from "../main/popup/Login";
 import "./header.css";
 
 export default function Header({ isLogin }) {
+  $(window).on('scroll',function() {
+      var window = $(this).scrollTop();
+
+      if(70 <= window) {
+        $("nav").addClass("fixed");
+      } else {
+        $("nav").removeClass("fixed");
+      }
+  })
+
   /* 로그인 팝업 */
   const [LoginPopOpen, setLoginPopOpen] = useState(false);
   const openLoginPopFn = () => setLoginPopOpen(true);

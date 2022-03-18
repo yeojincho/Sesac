@@ -2,13 +2,7 @@
 /* PC 헤더 */
 @media screen and (min-width:768px){
   .header-wrapper{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 15;
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
   }
   .header-top .header-inner {
     display: flex;
@@ -79,14 +73,18 @@
   
   
   /* gnb */
-  nav.header-bottom {
-    position: relative;
+  nav.header-bottom.fixed {
+    position: fixed; left: 0; top: 0; width: 100%;
+    z-index: 99;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
   }
+ 
   .header-bottom ul.gnb::before{
     content: '';
     display: block;
     position: absolute;
-    top: 60px;
+    top: 180px;
     left: 0;
     width: 100%;
     height: 0px;
@@ -96,6 +94,9 @@
     z-index: 9999;
   
   }
+  .header-bottom.fixed ul.gnb::before{
+    top: 60px;
+  }
   .header-bottom ul.gnb:hover::before{
     height: 250px;
     transition: height .4s ease-out;
@@ -103,12 +104,13 @@
   
   .header-bottom ul.gnb {
     display: flex;
-    height: 60px;
+    height: 70px;
   }
   
   .header-bottom ul.gnb li.depth1 {
     flex : auto;
-    height: 60px;
+    height: 70px;
+    color: #2b2d36;
   }
   .header-bottom ul.gnb > li.depth1:hover>a {
     color: #27aa84;
@@ -154,9 +156,12 @@
     margin-left: 50px;
   }
   .header-bottom ul.gnb li.depth1 ul.depth2 li:hover a{
-    color: #666;
+    color: black;
     text-decoration: underline;
     text-decoration-color: #27aa84;
+    font-size: 16px;
+    transition: all .2s linear;
+    transform: scale(1.01);
   }
   
 } 
