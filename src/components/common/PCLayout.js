@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-// 아카데미
+
 import OrderPage from "../../components/academy/OrderPage";
 import Partnership from "../../components/academy/Partnership";
 import Recruit from "../../components/academy/OrderPage";
@@ -34,11 +34,13 @@ import Footer from "../../components/common/Footer";
 import Main from "../../components/main/Main";
 import NotFound from "../../components/common/NotFound";
 
+
 import Management from "../../components/mypage/Management";
 import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
 import ChangePw from "../../components/mypage/ChangePw";
 import MyClassList from "../mypage/MyClassList";
 import RegiConfirm from "../mypage/RegiConfirm";
+
 import Join from "../../components/member/Join";
 import JoinForm from "../../components/member/JoinForm";
 import JoinComplete from "../../components/member/JoinComplete";
@@ -53,9 +55,10 @@ export default function PCLayout({ isLogin }) {
 
       <Switch>
         {/* 메인 */}
-        <Route exact path="/" component={Main}></Route>
-        <Route exact path="/sample" component={Sample1}></Route>
+        {/*  <Route exact path='/' component={Main}></Route> */}
+        {/*     <Route exact path='/sample' component={Sample1}></Route> */}
         {/* 회원가입 */}
+
         <Route exact path="/join" component={Join}></Route>
         <Route exact path="/join/form" component={JoinForm}></Route>
         <Route exact path="/join/complete" component={JoinComplete}></Route>
@@ -67,6 +70,7 @@ export default function PCLayout({ isLogin }) {
         <Route exact path="/infoInput" component={InfoInput}></Route>
         <Route exact path="/completed" component={Completed}></Route>
         <Route exact path="/confirm" component={Confirm}></Route>
+
 
         {/* 취업과정 */}
         <Route exact path="/job" component={Job}></Route>
@@ -84,6 +88,8 @@ export default function PCLayout({ isLogin }) {
         <Route exact path="/visit" component={Visit}></Route>
 
         {/* 아카데미 */}
+
+
         <Route exact path='/OrderPage' component={OrderPage}></Route>
         <Route exact path='/Partnership' component={Partnership}></Route>
         <Route exact path='/Recruit' component={Recruit}></Route>
