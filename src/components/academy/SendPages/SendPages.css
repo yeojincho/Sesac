@@ -1,0 +1,63 @@
+.SendContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SendContents .boxContents {
+  padding: 20px;
+  background-color: transparent;
+  width: 900px;
+  height: 700px;
+  border-radius: 14px;
+  border: 2px solid lightgray;
+  color: gray;
+  margin: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SendContents p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.SendContents .sendPageBoxTitle {
+  font-size: 30px;
+}
+
+.SendContents input,
+.SendContents .textBox {
+  width: 800px;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+}
+
+.SendContents .contact-button {
+  margin-left: 35%;
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  color: gray;
+}
+/*# sourceMappingURL=SendPages.css.map */

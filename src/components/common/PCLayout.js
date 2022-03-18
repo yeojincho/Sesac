@@ -1,8 +1,8 @@
-import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
 // 아카데미
-// import OrderPage from "../../components/academy/OrderPage";
+/* import OrderPage from "../../components/academy/OrderPage"; */
 // import Partnership from "../../components/academy/Partnership";
 // import Recruit from "../../components/academy/OrderPage";
 // import HrStore from "../../components/academy/HrStore";
@@ -21,38 +21,36 @@ import {Route, Switch} from 'react-router-dom';
 // import InfoInput from "../../components/program/InfoInput";
 // import Completed from "../../components/program/Completed";
 // import Confirm from "../../components/program/Confirm";
-
+/* import SendPage from "../academy/SendPages/SendPages.jsx"; */
 //마이페이지
 // import Management from "../../components/mypage/Management";
 // import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
 // import ChangePw from "../../components/mypage/ChangePw";
 
-import Header from '../../components/common/Header';
-import Footer from '../../components/common/Footer';
-import Main from '../../components/main/Main';
-import NotFound from '../../components/common/NotFound';
-import Join from '../../components/member/Join';
-import JoinForm from '../../components/member/JoinForm';
-import JoinComplete from '../../components/member/JoinComplete';
+import Header from "../../components/common/Header";
+import Footer from "../../components/common/Footer";
+import Main from "../../components/main/Main";
+import NotFound from "../../components/common/NotFound";
+import Join from "../../components/member/Join";
+import JoinForm from "../../components/member/JoinForm";
+import JoinComplete from "../../components/member/JoinComplete";
 
-import Sample1 from '../../components/sample/Sample1';
+/* import Sample1 from "../../components/sample/Sample1"; */
 
-
-
-export default function PCLayout({isLogin}) {
+export default function PCLayout({ isLogin }) {
   return (
     <>
       <Header isLogin={isLogin} />
 
       <Switch>
         {/* 메인 */}
-        <Route exact path="/" component={Main}></Route>
-        <Route exact path="/sample" component={Sample1}></Route>
+        {/*  <Route exact path='/' component={Main}></Route> */}
+        {/*     <Route exact path='/sample' component={Sample1}></Route> */}
         {/* 회원가입 */}
-        <Route exact path="/join" component={Join}></Route>
-        <Route exact path="/join/form" component={JoinForm}></Route>
-        <Route exact path="/join/complete" component={JoinComplete}></Route>
-        
+        {/*  <Route exact path='/join' component={Join}></Route> */}
+        {/*    <Route exact path='/join/form' component={JoinForm}></Route> */}
+        {/*   <Route exact path='/join/complete' component={JoinComplete}></Route> */}
+
         {/* 공개과정 */}
         {/* <Route exact path="/program" component={Program}></Route> */}
         {/* <Route exact path="/curriculum" component={Curriculum}></Route> */}
@@ -60,7 +58,6 @@ export default function PCLayout({isLogin}) {
         {/* <Route exact path="/infoInput" component={InfoInput}></Route> */}
         {/* <Route exact path="/completed" component={Completed}></Route> */}
         {/* <Route exact path="/confirm" component={Confirm}></Route> */}
-
 
         {/* 취업과정 */}
 
@@ -73,7 +70,8 @@ export default function PCLayout({isLogin}) {
         {/* <Route exact path="/visit" component={Visit}></Route> */}
 
         {/* 아카데미 */}
-        {/* <Route exact path='/OrderPage' component={OrderPage}></Route> */}
+        {/*  <Route exact path='/OrderPage' component={OrderPage}></Route> */}
+        {/*   <Route exact path='/sendpage' component={SendPage}></Route> */}
         {/* <Route exact path='/Partnership' component={Partnership}></Route> */}
         {/* <Route exact path='/Recruit' component={Recruit}></Route> */}
         {/* <Route exact path="/hrstore" component={HrStore}></Route> */}
@@ -83,14 +81,13 @@ export default function PCLayout({isLogin}) {
         {/* <Route exact path='/Manage' component={Management}></Route> */}
         {/* <Route exact path='/AccountWithdrawal' component={AccountWithdrawal}></Route> */}
         {/* <Route exact path='/ChangePw' component={ChangePw}></Route> */}
-        
+
         <Route>
           <NotFound />
         </Route>
-        
       </Switch>
-          
+
       <Footer />
     </>
-  )
+  );
 }
