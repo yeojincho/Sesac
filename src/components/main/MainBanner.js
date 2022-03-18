@@ -22,7 +22,7 @@ export default function MainBanner() {
 
   }
   return (
-    <div className="main-banner inner-box">
+    <div className="main-banner ">
       <Swiper className="main-banner-swiper"
         spaceBetween={50}
         slidesPerView={1}
@@ -35,9 +35,38 @@ export default function MainBanner() {
           
         }}
       >
-        <SwiperSlide><img src="http://www.excacademy.co.kr/images/main_banner/BN20211005173717FE73891M.jpg" alt="1" /></SwiperSlide>
-        <SwiperSlide><img src="http://www.excacademy.co.kr/images/main_banner/BN20210517184142Z7LLRJHE.gif" alt="2" /></SwiperSlide>
-        <SwiperSlide><img src="	http://www.excacademy.co.kr/images/main_banner/BN20220107112150AA4L2RMJ.jpg" alt="3" /></SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/green.png" alt="재생" className="banner-img"/>
+          <div className="main-frame">
+            <div className="panel">
+              <h1 className="panel-top-title">Power BI</h1>
+              <p className="panel-desc">데이터 활용과 시각화를 위한</p>
+              <h3 className="panel-title">누구나 쉽게 데이터 시각화!<br/>데이터 보고서 전문가처럼!</h3>
+            </div>
+            <img src="/images/main/data-science.png" alt="Power BI" className="panel-img"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="/images/main/blue-banner.jpg" alt="재생" className="banner-img"/>
+          <div className="main-frame">
+            <div className="panel">
+              <h1 className="panel2-top-title">사내강사 양성과정</h1>
+              <p className="panel-desc"></p>
+              <h3 className="panel2-title">체계적인 교안작성부터<br/>고급스러운 보이스 트레이닝까지 한번에!</h3>
+            </div>
+            <img src="/images/main/classroom.png" alt="Power BI" className="panel-img"/>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="/images/main/banner2.jpg" alt="재생" className="banner-img"/>
+          <div className="main-frame">
+            <div className="panel">
+              <h1 className="panel2-top-title">Power BI</h1>
+              <p className="panel2-desc">데이터 활용과 시각화를 위한</p>
+              <h3 className="panel-title">누구나 쉽게 데이터 시각화!<br/>데이터 보고서 전문가처럼!</h3>
+            </div>
+          </div>
+        </SwiperSlide>
         
         <div className="swiper-pause" onClick={swiperPauseFn}>
           <img src="/images/main/pause.png" alt="재생" />
