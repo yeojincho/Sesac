@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-
 import OrderPage from "../../components/academy/OrderPage";
 import Partnership from "../../components/academy/Partnership";
 import Recruit from "../../components/academy/OrderPage";
@@ -23,17 +22,16 @@ import Completed from "../../components/program/Completed";
 import Confirm from "../../components/program/Confirm";
 
 // 취업과정
-import Job from '../job/Job';
-import JobIntro from '../job/JobIntro';
-import JobRecruit from '../job/JobRecruit';
-// import ProgramDetail from '../job/ProgramDetail';
+import Job from "../job/Job";
+import JobIntro from "../job/JobIntro";
+import JobRecruit from "../job/JobRecruit";
+import ProgramDetail from "../job/ProgramDetail";
 
 //마이페이지
 import Header from "../../components/common/Header";
 import Footer from "../../components/common/Footer";
 import Main from "../../components/main/Main";
 import NotFound from "../../components/common/NotFound";
-
 
 import Management from "../../components/mypage/Management";
 import AccountWithdrawal from "../../components/mypage/ AccountWithdrawal";
@@ -55,8 +53,8 @@ export default function PCLayout({ isLogin }) {
 
       <Switch>
         {/* 메인 */}
-        {/*  <Route exact path='/' component={Main}></Route> */}
-        {/*     <Route exact path='/sample' component={Sample1}></Route> */}
+        <Route exact path="/" component={Main}></Route>
+        <Route exact path="/sample" component={Sample1}></Route>
         {/* 회원가입 */}
 
         <Route exact path="/join" component={Join}></Route>
@@ -71,12 +69,11 @@ export default function PCLayout({ isLogin }) {
         <Route exact path="/completed" component={Completed}></Route>
         <Route exact path="/confirm" component={Confirm}></Route>
 
-
         {/* 취업과정 */}
         <Route exact path="/job" component={Job}></Route>
         <Route exact path="/jobIntro" component={JobIntro}></Route>
         <Route exact path="/jobRecruit" component={JobRecruit}></Route>
-        {/* <Route exact path="/programDetail" component={ProgramDetail}></Route> */}
+        <Route exact path="/programDetail" component={ProgramDetail}></Route>
 
         {/* Ex콘텐츠 */}
 
@@ -89,10 +86,9 @@ export default function PCLayout({ isLogin }) {
 
         {/* 아카데미 */}
 
-
-        <Route exact path='/OrderPage' component={OrderPage}></Route>
-        <Route exact path='/Partnership' component={Partnership}></Route>
-        <Route exact path='/Recruit' component={Recruit}></Route>
+        <Route exact path="/OrderPage" component={OrderPage}></Route>
+        <Route exact path="/Partnership" component={Partnership}></Route>
+        <Route exact path="/Recruit" component={Recruit}></Route>
         <Route exact path="/hrstore" component={HrStore}></Route>
         <Route exact path="/teacherinfo" component={TeacherInfo}></Route>
 
