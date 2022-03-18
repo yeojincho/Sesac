@@ -41,8 +41,11 @@ function NoticeList() {
   ];
 
   return (
-    <div>
-      <Table striped>
+    <div className="notice-list-container">
+      <div className="notice-search-box">
+        <input type="text" placeholder="Search" className="searchBox focus" />
+      </div>
+      <Table striped className="notice-list-table">
         <thead>
           <tr>
             <th>No</th>

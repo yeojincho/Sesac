@@ -30,39 +30,38 @@ export default function Faq() {
 
     return(
         <>
-        <div className="wrapper inner-box">
-            <section className='title'>
+        <div className="inner-box">
+            <section className='fqaTitle'>
                 <h1>고객센터</h1>
-                <h2>__무엇이든 물어보세요.</h2>
+                <h2>— 자주 질문해 주시는 내용을 모아 보다 편리하게 궁금증을 해결하실 수 있습니다.</h2>
             </section>
                 
             <Customer />
             <div className="fqaSubMenuBox">
-                <ul className="fqaSubMenuList">
-                    <li >
-                        <button id = "subMenu1" onClick={ handleClick }>
+                <ul className="fqaSubMenuContainer">
+                    <li className= "fqaSubMenuList" id = "subMenu1" onClick={ handleClick }>
+
                             회원정보
-                        </button>                
+                                
                     </li>
-                    <li >
-                        <button id = "subMenu2" onClick={ handleClick }>
+                    <li className= "fqaSubMenuList" id = "subMenu2" onClick={ handleClick }>
+                        
                             결제관련
-                        </button>                
+                        
                     </li>
-                    <li >
-                        <button id = "subMenu3" onClick={ handleClick } >
+                    <li className= "fqaSubMenuList" id = "subMenu3" onClick={ handleClick }>
+                        
                             환불규정
-                        </button>                
+                        
                     </li>
-                    <li >
-                        <button id = "subMenu4" onClick={ handleClick }>
+                    <li className= "fqaSubMenuList" id = "subMenu4" onClick={ handleClick }>
+                        
                             신청/취소
-                        </button>                
+                                
                     </li>
-                    <li >
-                        <button id = "subMenu5" onClick={ handleClick }>
-                            기타
-                        </button>                
+                    <li className= "fqaSubMenuList" id = "subMenu5" onClick={ handleClick }>
+                        
+                            기타             
                     </li>
                 </ul>
             </div>{/* e: submenu */}

@@ -1,0 +1,113 @@
+* {
+  color: #636363;
+}
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  position: relative;
+}
+.jobTopDetailpage {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.jobTopDetailpage .left {
+  display: flex;
+}
+
+.jobTopDetailpage .detailpageImg img {
+  border-radius: 10px;
+}
+.jobTopDetailpage .detailpageTxt {
+  padding-left: 50px;
+}
+
+.jobTopDetailpage .detailpageTxt .detailpageTitle {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.jobTopDetailpage .detailpageTxt .detailpageUl {
+  display: flex;
+}
+
+.jobTopDetailpage .detailpageTxt .detailpageUl ul li {
+  padding-bottom: 10px;
+}
+
+.jobTopDetailpage .detailpageTxt .detailpageUl .subtitle {
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.jobTopDetailpage .detailpageTxt .btnUl ul li {
+  display: inline-block;
+  padding: 5px 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border: 1px solid #636363;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.jobTopDetailpage .right .shareBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.jobTopDetailpage .right .shareBtn {
+  padding-left: 10px;
+  padding-right: 20px;
+  display: block;
+  font-size: 20px;
+  background: url(/public/images/share.png) no-repeat 50px center;
+  background-size: 20px;
+}
+
+.jobBottomDetailpage .category {
+  width: 100%;
+}
+
+.jobBottomDetailpage .category li {
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  display: inline-block;
+  padding: 8px 30px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.jobBottomDetailpage .category li.scrollOn {
+  color: #fff;
+  background-color: #5ebf92;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* 상단 고정탭 */
+.jobBottomDetailpage .category.fix {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.scrollTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 0 none;
+  color: #fff;
+  background-color: #5ebf92;
+}

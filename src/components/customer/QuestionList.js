@@ -1,12 +1,12 @@
 import React from "react";
 import { Table } from "reactstrap";
 
-function QuestionList() {
+function QuestionList({ action }) {
   const date = new Date();
   const yyyy = date.getFullYear();
   const mm = date.getMonth();
   const dd = date.getDate();
-  const notices = [
+  const questions = [
     {
       id: 1,
       writer: "나희도",
@@ -39,9 +39,11 @@ function QuestionList() {
     },
   ];
 
+  console.log(action);
+
   return (
     <div>
-      <Table striped>
+      <Table striped className="question-list-table">
         <thead>
           <tr>
             <th>No</th>
@@ -51,16 +53,19 @@ function QuestionList() {
           </tr>
         </thead>
         <tbody>
-          {notices.map((notice) => (
+          {questions.map((question) => (
             <tr>
-              <th scope="row">{notice.id}</th>
-              <td>{notice.content}</td>
-              <td>{notice.writer}</td>
-              <td>{notice.date}</td>
+              <th scope="row">{question.id}</th>
+              <td>{question.content}</td>
+              <td>{question.writer}</td>
+              <td>{question.date}</td>
             </tr>
           ))}
         </tbody>
       </Table>
+      {/* <div className="writeBtn">
+        <button>작성하기</button>
+      </div> */}
     </div>
   );
 }

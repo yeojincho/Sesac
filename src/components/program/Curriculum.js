@@ -1,17 +1,36 @@
-import './components/common/common.css';
-import './components/program/curriculum.css';
+import '../common/common.css';
+import './curriculum.css';
+import ViewDetail from './ViewDetail';
 
-import React, {useState} from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-scroll"
+import $ from 'jquery';
 
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
+const ScrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 function Curriculum(){
     const [like, setLike] = useState(0);
+
+    // 탭 스크롤링
+    const myRef = useRef(null)
+    const executeScroll = () => ScrollToRef(myRef)
+
+    // 탭 상단 고정
+    useEffect(()=> {
+        $(window).on('scroll',function(){
+            const categoryPos=$('.category').position().top;
+            const nowScroll=$(window).scrollTop();
+            if(nowScroll>categoryPos){
+                $('.category').addClass('fix') 
+            }else{
+                $('.category').removeClass('fix') 
+            }
+        }) 
+    },[])
+    
     
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="topDetailpage">
                 <div className="left">
                     <div className="detailpageImg">
@@ -45,9 +64,11 @@ function Curriculum(){
                         </div>
                         <div className="btnUl">
                             <ul className="programBtn">
-                                <li><a href="#">문의하기</a></li>
-                                <li><a href="#">관심과정</a></li>
-                                <li><a href="#">과정신청</a></li>
+                                <li><button>문의하기</button></li>
+                                <li>
+                                    <button onClick={()=>{setLike(like+1)}}><span>{like} &hearts; </span>관심과정</button>
+-                               </li>
+                                <li><button>과정신청</button></li>
                             </ul>
                         </div>
                     </div>
@@ -60,15 +81,17 @@ function Curriculum(){
             </div>
             <div className="bottomDetailpage">
                 <ul className="category">
-                    <li><a href="#">과정개요</a></li>
-                    <li><a href="#">과정목표</a></li>
-                    <li><a href="#">교육대상</a></li>
-                    <li><a href="#">교육대상</a></li>
-                    <li><a href="#">교육대상</a></li>
+                    <li><Link activeClass="scrollActive" to="outlineProcess" spy={true}>과정개요</Link></li>
+                    <li><Link to="processObjective" spy={true}>과정목표</Link></li>
+                    <li><Link to="educationTarget" spy={true}>교육대상</Link></li>
+                    <li><Link to="curriculum" spy={true}>커리큘럼</Link></li>
+                    <li><Link to="mainTutor" spy={true}>대표강사</Link></li>
+                    <li><Link to="applyInfo" spy={true}>접수안내</Link></li>
                 </ul>
-                <div className="contents"></div>
+                <div className="contents">
+                    <ViewDetail />
+                </div>
             </div>
-            <Footer />
         </div>
     )
 }

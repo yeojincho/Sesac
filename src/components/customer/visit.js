@@ -14,6 +14,9 @@ export default function Visit(){
 
         useEffect(
             (e) => {
+                let current = document.getElementById('subMenu1');
+                current.classList.add('subOn')
+
                 if(currentClick !== null){
                     let current = document.getElementById(currentClick);
                     current.classList.add('subOn');
@@ -40,29 +43,23 @@ export default function Visit(){
 
     return(
         <>
-            <div className="wrapper inner-box">
-                <section className='title'>
+            <div className="inner-box">
+                <section className='visitTitle'>
                     <h1>고객센터</h1>
-                    <h2>__오시는 길</h2>
+                    <h2>— 오시는 길</h2>
                 </section>
                 
             <Customer />            
                 <div className="visitSubMenuBox">
-                    <ul className="visitSubMenuList">
-                        <li >
-                            <button id = "subMenu1" onClick={ handleClick }>
-                                송파러닝센터
-                            </button>                
+                    <ul className="visitSubMenuContainer">
+                        <li id = "subMenu1"  className= "visitSubMenuList" onClick={ handleClick }>
+                            송파러닝센터
                         </li>
-                        <li >
-                            <button id = "subMenu2" onClick={ handleClick }>
+                        <li id = "subMenu2" className= "visitSubMenuList"  onClick={ handleClick }>
                             가락러닝센터
-                            </button>                
                         </li>
-                        <li >
-                            <button id = "subMenu3" onClick={ handleClick }>
+                        <li id = "subMenu3" className= "visitSubMenuList"  onClick={ handleClick }>
                             문정러닝센터
-                            </button>                
                         </li>
                     </ul>
                 </div>{/* e: submenu */}
@@ -74,9 +71,7 @@ export default function Visit(){
                         </button>
                     </div>
                     <div className="mapBox">
-                        <div className="officeImg">
-                            회사 전경 사진 영역
-                        </div>
+                            <img src='/images/visit/office.png' className="officeImg"></img>
                         <VisitMap />
                     </div>        
                 </main>{/* e: visitInfo */}
@@ -85,17 +80,27 @@ export default function Visit(){
                     <div className="transportList">
                         <div className="car">
                             <p className="transportListTitle carTitle">승용차</p>
-                            <p className="transportListContents carContents">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, eget non scelerisque bibendum.                    
-                            </p>                  
+                            <div className="transportListContents">
+                                <p>※ 교육생들을 위한 주차장 시설이 제공되지 않습니다.</p>
+                                <p>승용차 이용 시 주차장 비용을 부담하셔야 합니다.</p>
+                                <p>(가락2 공영 주차장 / 1일 24,000원)</p>
+                            </div>
                         </div>
                         <div className="subway">
                             <p className="transportListTitle subwayTitle">지하철</p>
-                            <p className="transportListContents subwatContents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, eget non scelerisque bibendum.</p>                    
+                            <div className="transportListContents">
+                                <p>- 가락시장역 4번 출구</p> 
+                                <p>- 경찰병원역 1번 출구</p> 
+                            </div>
+                                            
                         </div>
                         <div className="bus">
                             <p className="transportListTitle busTitle">버스</p>
-                            <p className="transportListContents busContents">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, eget non scelerisque bibendum.</p>                    
+                            <div className="transportListContents">
+                                <p>- 간선버스 : 301, 302, 303, 360, 362, 363</p>
+                                <p>- 지선버스 : 2317, 3413, 3415, 3422</p>
+                                <p>- 광역버스 : 9403</p>
+                            </div>                  
                         </div>
                     </div>{/* e:transportList */}
                 </div>{/* e:transport */}

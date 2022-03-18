@@ -1,34 +1,56 @@
-.join-wrapper{
-
+@media screen and (min-width:768px){ 
+  /* 회원가입 01.회원구분 */
+  .join-inner .top-title{
+    margin: 90px 65px;
+  }
+  section .join-cont{
+    width: 600px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
+  .join-inner .top-title h2{
+    font-weight: 700;
+    color: #777777;
+    font-size: 30px;
+  }
+  .join-inner .top-title h3{
+    color: #aaaaaa;
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  .join-step {
+    margin: 0 auto;
+  }
 }
-.join-wrapper .join-inner{
+@media screen and (max-width:767px){
+  .join-wrapper{
+    padding: 0 15px;
+    margin-bottom: 50px;
 
+  }
+  /* 회원가입 01.회원구분 */
+  .join-inner .top-title{
+    margin: 30px 0;
+  }
+  .join-inner .top-title h2{
+    font-weight: 700;
+    color: #777777;
+    font-size: 25px;
+  }
+  .join-inner .top-title h3{
+    color: #aaaaaa;
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  .join-step ol{
+    padding: 0; 
+    margin: 0;
+  }
 }
+
 
 
 /* 회원가입 01.회원구분 */
-section .join-cont{
-  width: 600px;
-  margin: 50px auto;
-  margin-bottom: 100px;
-}
-.join-inner .top-title{
-  margin: 90px 65px;
-}
-.join-inner .top-title h2{
-  font-weight: 700;
-  color: #777777;
-  font-size: 30px;
-}
-.join-inner .top-title h3{
-  color: #aaaaaa;
-  font-size: 20px;
-  padding: 8px 0;
-}
-
-.join-step {
-  margin: 0 auto;
-}
 .join-step ol{
   display: flex;
 }
@@ -70,8 +92,8 @@ section .join-cont{
 }
 .join-step ol li.on {
   color: #fff;
-  background: #47AD1A;
-  border-color: #47AD1A;
+  background: #03A65A;
+  border-color: #03A65A;
 }
 .join-step ol li.on:before, 
 .join-step ol li.on:after {
@@ -92,7 +114,7 @@ section .join-cont{
   height: 0;
   border-style: solid;
   border-width: 28px 0 28px 20px;
-  border-color: transparent transparent transparent #47AD1A;
+  border-color: transparent transparent transparent #03A65A;
   z-index: 1;
 }
 .join-step ol li.on .num {
@@ -228,15 +250,15 @@ section .join-cont{
   padding: 0 20px;
   line-height: 58px;
   text-align: center;
-  border-color: #47ad1a;
-  background: #47ad1a;
+  border-color: #03A65A;
+  background: #03A65A;
   color: #fff;
-  font-size: 16px;
   border-radius: 27px;
-  border: 1px solid #47ad1a;
+  border: 1px solid #03A65A;
   vertical-align: top;
   transition: all 0.1s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 

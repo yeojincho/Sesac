@@ -21,19 +21,11 @@ export default function Main({isMobile}) {
   return (
     <div className="main-wrapper">
       <MainBanner />
+      <MainContents />
       {
-        isMobile ? 
-        <>
-        </>
-
-        :
-        <>
-          <MainContents />
-          <MainBottom />
-        </>
+        !isMobile && 
+        <MainBottom />
       }
-
-      
     </div>
   )
 }
