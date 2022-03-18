@@ -43,7 +43,7 @@ export default function MainBanner() {
               <p className="panel-desc">데이터 활용과 시각화를 위한</p>
               <h3 className="panel-title">누구나 쉽게 데이터 시각화!<br/>데이터 보고서 전문가처럼!</h3>
             </div>
-            <img src="/images/main/data-science.png" alt="Power BI" className="panel-img"/>
+            <img src="/images/main/data-science.png" alt="Power BI" className="panel-img" style={{width:'240px',height:'240px'}}/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -54,7 +54,7 @@ export default function MainBanner() {
               <p className="panel-desc"></p>
               <h3 className="panel2-title">체계적인 교안작성부터<br/>고급스러운 보이스 트레이닝까지 한번에!</h3>
             </div>
-            <img src="/images/main/classroom.png" alt="Power BI" className="panel-img"/>
+            <img src="/images/main/classroom.png" alt="Power BI" className="panel-img" style={{width:'240px',height:'240px'}}/>
           </div>
         </SwiperSlide>
         <SwiperSlide>

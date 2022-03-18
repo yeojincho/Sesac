@@ -355,7 +355,7 @@
     padding-bottom: 20px;
   }
   .btn-more {
-    width: 71px;
+    width: 75px;
     border:0;
     background-color: #fff;
     position:relative;
@@ -468,8 +468,8 @@
     color: #fff;
   }
   .panel-img{
-    width: 100px;
-    height:100px;
+    width: 100px !important;
+    height:100px !important;
     
   }
   
