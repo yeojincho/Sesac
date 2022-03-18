@@ -40,6 +40,10 @@ function NoticeList() {
     },
   ];
 
+  const sortedNotices = notices.sort((a, b) => {
+    return b.id - a.id;
+  });
+
   return (
     <div className="notice-list-container">
       <div className="notice-search-box">
@@ -55,7 +59,7 @@ function NoticeList() {
           </tr>
         </thead>
         <tbody>
-          {notices.map((notice) => (
+          {sortedNotices.map((notice) => (
             <tr>
               <th scope="row">{notice.id}</th>
               <td>{notice.content}</td>

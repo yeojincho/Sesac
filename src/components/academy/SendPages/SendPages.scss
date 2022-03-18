@@ -1,0 +1,45 @@
+.SendContents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .boxContents {
+    padding: 20px;
+    background-color: transparent;
+    width: 900px;
+    height: 700px;
+    border-radius: 14px;
+    border: 2px solid lightgray;
+    color: gray;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+  .sendPageBoxTitle {
+    font-size: 30px;
+  }
+  input,
+  .textBox {
+    width: 800px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+  }
+  .contact-button {
+    margin-left: 35%;
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: gray;
+  }
+}

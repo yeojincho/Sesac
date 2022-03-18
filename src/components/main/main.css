@@ -1,21 +1,46 @@
+
 /* 메인 배너 */
+.main-banner{
+  /* position: relative; */
+}
 .main-banner .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.main-banner .swiper-pagination-bullet-active{
   width: 50px;
-  height: 4px;
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  transition: all .4s linear;
 }
 
 
 
 /* 과정 카테고리 */
+.program-contents {
+  
+}
+.main-text-box {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.main-text-box .nav-link{
+  text-decoration: none;color:inherit;
+  cursor: pointer;
 
+}
+.main-text-box .nav-link.active{
+  color: #03A65A;
+  font-weight: 500;
+
+}
 .main-text-box .eyebrow {
   display: inline-block;
   margin-bottom: 14px;
   padding: 5px 15px;
   border-radius: 18px;
-  background-color: #5EBF92;
+  background-color: #03A65A;
   font-size: 17px;
   color: #fff;
 }
@@ -30,7 +55,7 @@
   padding: 0 8px;
 }
 .main-text-box .p-list li.active {
-  color: #5EBF92;
+  color: #03A65A;
 }
 .main-text-box .p-list li::before {
   content: '';
@@ -70,7 +95,7 @@
   display: flex;
   padding-top: 80px;
   margin-bottom: 80px;
-  border-top: 1px solid #ababab;
+  /* border-top: 1px solid #ababab; */
 
 }
 
@@ -120,17 +145,69 @@
   border-radius: 7px;
 }
 .hr-list .swiper-pagination-bullet {
-  background-color: #5EBF92;
+  background-color: #03A65A;
 }
 
 
 /* PC Main CSS */
 @media screen and (min-width:768px){
    /* 메인 배너 */
-  .main-banner .swiper-slide img{
+   .main-frame{
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 700px;
+      max-width: 98rem;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .main-banner .swiper-slide-active .panel-img{
+    transition: all 1s linear;
+    transform: scale(1.2);
+  }
+  .main-frame .panel-title{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .main-frame .panel2-title{
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .main-frame .panel-desc{
+    font-size: 20px;
+  }
+  .main-frame .panel2-desc{
+    font-size: 20px;
+    color: #fff;
+  }
+  .main-frame .panel-top-title{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .main-frame .panel2-top-title{
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .panel-img{
+    width: 240px;
+    height:240px;
+    
+  }
+  
+  .main-banner .swiper-slide .banner-img{
     width: 100%;
-    height: 500px;
-    border-radius: 7px;
+    height: 380px;
   }
   .main-banner .swiper::before{
     position: relative;
@@ -155,7 +232,7 @@
   
   .main-banner .swiper-button-prev{
     top: 40px;
-    left: 93%;
+    left: 94%;
     background: url('/public/images/main/left-chevron.png') no-repeat center ;
     background-size: 24px 14px;
   }
@@ -165,14 +242,14 @@
     background: url('/public/images/main/right-chevron.png') no-repeat center ;
     background-size: 24px 14px;
   }
-  .swiper-pause {
+  .main-banner .swiper-pause {
     position: absolute;
     top: 26px;
     right: 49px;
     z-index: 10;
     cursor: pointer;
   }
-  .swiper-pause img{
+  .main-banner .swiper-pause img{
     width: 14px;
     height: 15px;
   
@@ -182,8 +259,20 @@
   .main-wrapper .program-category {
     padding: 50px 0;
   }
-  .program-category .main-text-box {
-
+  .main-text-box .nav-link{
+    text-decoration: none;color:inherit;
+    cursor: pointer;
+  }
+  .tab-pane{
+    animation: fadein .7s ease-in ;
+  }
+  @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
   }
   
   .main-text-box .p-title {
@@ -237,6 +326,9 @@
   .main-program-img .program-item .item-img .item-img-desc p{
     
   }
+  .main-program-img{
+    overflow: hidden;
+  }
   .main-program-img .item-text{
     margin-top: 10px;
     margin-bottom: 28px;
@@ -246,7 +338,7 @@
   }
   .main-program-img .item-title{
     font-weight: 500;
-  
+    color: #424242;
   }
   .main-program-img .item-date{
     font-weight: 100;
@@ -263,7 +355,7 @@
     padding-bottom: 20px;
   }
   .btn-more {
-    width: 71px;
+    width: 75px;
     border:0;
     background-color: #fff;
     position:relative;
@@ -296,25 +388,99 @@
     margin: 0;
     padding: 0;
   }
+  .main-ex-img .ex-list .ex-item .item-img{
+    overflow: hidden;
+  }
   .main-ex-img .ex-list .ex-item .item-img img {
     width: 390px;
     border-radius: 7px;
     cursor: pointer;
+    
   }
-  .main-ex-img .ex-list .ex-item .item-img:hover {
-    opacity:0.7;
+  .main-ex-img .ex-list .ex-item .item-img img:hover {
+    transition: all 0.2s linear;
+    transform: scale(1.05);
   }
   
+  /* 메인 중간배너 */
+  .main-middle-banner{
+    position: relative;
+  }
+  .main-middle-banner img{
+    height: 200px;
+    width: 100%;
+  }
+  .main-middel-banner-btn{
+    position: absolute;
+    top: 10px;
+    left: 300px;
+  }
   
 }
 
 /* 모바일 Main CSS */
 @media screen and (max-width:767px){
+  .main-frame{
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      max-width: 98rem;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .main-banner .swiper-slide-active .panel-img{
+    transition: all 1s linear;
+    transform: scale(1.2);
+  }
+  .main-frame .panel-title{
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .main-frame .panel2-title{
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .main-frame .panel-desc{
+    font-size: 10px;
+  }
+  .main-frame .panel2-desc{
+    font-size: 10px;
+    color: #fff;
+  }
+  .main-frame .panel-top-title{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .main-frame .panel2-top-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .panel-img{
+    width: 100px !important;
+    height:100px !important;
+    
+  }
+  
+  .main-frame{
+    width: 300px;
+  }
   .main-wrapper{
     padding-top: 65.59px;
   }
    /* 메인 배너 */
-  .main-banner .swiper-slide img {
+  .main-banner .swiper-slide .banner-img {
     width: 100%;
     height: 200px;
   }

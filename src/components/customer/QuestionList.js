@@ -39,7 +39,10 @@ function QuestionList({ action }) {
     },
   ];
 
-  console.log(action);
+  // 문의사항 배열을 sort 내림차순 정렬
+  const sortedQuestions = questions.sort((a, b) => {
+    return b.id - a.id;
+  });
 
   return (
     <div>
@@ -53,7 +56,7 @@ function QuestionList({ action }) {
           </tr>
         </thead>
         <tbody>
-          {questions.map((question) => (
+          {sortedQuestions.map((question) => (
             <tr>
               <th scope="row">{question.id}</th>
               <td>{question.content}</td>
@@ -63,9 +66,6 @@ function QuestionList({ action }) {
           ))}
         </tbody>
       </Table>
-      {/* <div className="writeBtn">
-        <button>작성하기</button>
-      </div> */}
     </div>
   );
 }
