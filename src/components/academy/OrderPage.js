@@ -10,8 +10,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
+import SendPages from "./SendPages/SendPages.jsx";
 import "./OrderPages.css";
+import ShareBtn from "./ShareBtn/ShareBtn.jsx";
 
 function OrderPage() {
   const [ProductData, setProductData] = useState([
@@ -46,7 +47,7 @@ function OrderPage() {
       </div>
       <div className='orderPage-right'>
         <div className='shareBtn'>
-          <button>공유</button>
+          <ShareBtn />
         </div>
 
         <div className='orderInfo'>
