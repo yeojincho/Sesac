@@ -61,12 +61,12 @@ export default function MainBottom() {
                 
               }}
             >
-              <SwiperSlide><img src="/images/main/1.jpg" alt="1" /></SwiperSlide>
-              <SwiperSlide><img src="/images/main/2.jpg" alt="2" /></SwiperSlide>
-              <SwiperSlide><img src="/images/main/3.jpg" alt="3" /></SwiperSlide>
-              <SwiperSlide><img src="/images/main/1.jpg" alt="3" /></SwiperSlide>
-              <SwiperSlide><img src="/images/main/2.jpg" alt="3" /></SwiperSlide>
-              <SwiperSlide><img src="/images/main/3.jpg" alt="3" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem1.jpg" alt="1" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem2.jpg" alt="2" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem3.jpg" alt="3" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem1.jpg" alt="3" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem2.jpg" alt="3" /></SwiperSlide>
+              <SwiperSlide><img src="/images/shopitem3.jpg" alt="3" /></SwiperSlide>
             </Swiper>
           </div>
         </div>

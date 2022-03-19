@@ -11,6 +11,14 @@ import "swiper/css/pagination";
 import '../../components/main/main.css';
 
 function Program(){
+    function monthBtn() {
+        if(month < 1){
+            month = 12;
+        } else if(month > 12) {
+            
+        }
+    }
+
     // 강의 날짜 변경 버튼
     const onIncrease = () => {
         setMonth(month + 1);
@@ -19,7 +27,7 @@ function Program(){
         setMonth(month - 1);
     }
 
-    const [month, setMonth] = useState(1); /* if문 작성해둔거 복붙 */ 
+    const [month, setMonth] = useState(3);
 
     return(
         <div className="wrapper inner-box">
@@ -38,7 +46,7 @@ function Program(){
                     </div>
                     <input type="text" placeholder="Search" className="searchBox focus" />
                 </div>
-                <table>
+                <table className='programTable'>
                     <thead>
                         <tr>
                         <th>

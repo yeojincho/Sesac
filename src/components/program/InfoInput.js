@@ -17,7 +17,7 @@ function InfoInput(){
                 <div className='tableSection'>
                     <div className="tableSectionPart">
                         <h4 className='title'>1. 기본사항</h4>
-                        <table>
+                        <table className='infoTable'>
                             <tbody>
                                 <tr>
                                     <th>
@@ -58,7 +58,7 @@ function InfoInput(){
                             <a href="#">선택 삭제</a>
                         </div>
                         <div className="table_info">
-                            <table>
+                            <table className='infoTable'>
                                 <tbody>
                                     <tr>
                                         <td rowSpan={4}>
@@ -115,7 +115,7 @@ function InfoInput(){
                                     </tr>
                                 </tbody>
                             </table>
-                            <table>
+                            <table className='infoTable'>
                                 <tbody>
                                     <tr>
                                         <td rowSpan={4}>
@@ -176,7 +176,7 @@ function InfoInput(){
                     </div>
                     <div className="tableSectionPart">
                         <h4 className='title'>3. 결제 금액</h4>
-                        <table className='tablePrice'>
+                        <table className='tablePrice infoTable'>
                             <tbody>
                                 <tr>
                                     <th colSpan="2">

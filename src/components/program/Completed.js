@@ -15,7 +15,7 @@ function Completed(){
                     </ul>
                 </div>
                 <div className='tableSection'>
-                    <table>
+                    <table className='compTable'>
                         <tbody>
                             <tr>
                                 <th>

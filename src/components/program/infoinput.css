@@ -46,21 +46,21 @@ th, td{
     font-size: 24px;
 }
 
-table {
+.infoTable {
     margin: 100px auto;
     width: 90%;
     border: 1px solid #f3f3f3;
 }
 
-table tr:nth-child(odd) {
+.infoTable tr:nth-child(odd) {
     background-color: #F4F4F4;
 }
 
-table tr th, table tr td {
+.infoTable tr th, table tr td {
     padding: 20px;
 }
 
-table th {
+.infoTable th {
     text-align: left;
     font-weight: bold;
 }

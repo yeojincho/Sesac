@@ -25,12 +25,14 @@
   
   .header-top .top-search{
     position: relative;
+    margin-right: auto;
+   
+  }
+  .header-top .top-search .top-search-box{
     display: flex;
     align-items: center;
     height: 62px;
     margin-left: 50px;
-    margin-right: auto;
-   
   }
   
   .header-top .top-search-input {
@@ -53,7 +55,52 @@
   .header-top .top-search-btn img{
     width: 24px;
   }
-  
+  /* 롤링 */
+  .header-top:focus{
+    background-color: red;
+  }
+  .top-rolling{
+    height: 23px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    
+  }
+  .top-rolling .rolling-item{
+    display: block;
+    animation: scroll 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+  }
+  @keyframes scroll {
+    0% {
+        transform: translateY(20px)
+    }
+    20% {
+      transform: translateY(0px)
+    }
+    30%{
+      transform: translateY(0px)
+    }
+    40% {
+        transform: translateY(-23px)
+    }
+    60%{
+      transform: translateY(-23px)
+    }
+    70%{
+      transform: translateY(-45px)
+    }
+    90%{
+      transform: translateY(-45px)
+    }
+    99.9%{
+      transform: translateY(-70px)
+    }
+    100% {
+      transform: translateY(-70px)
+    }
+}
+
   .header-top .top-btn{
     
   
@@ -111,9 +158,11 @@
     flex : auto;
     height: 70px;
     color: #2b2d36;
+    font-weight: normal;
   }
   .header-bottom ul.gnb > li.depth1:hover>a {
     color: #27aa84;
+    font-weight: bold;
     /* background-color: #27aa84;
     border-radius: 6px 6px 0 0; */
   }
@@ -126,12 +175,15 @@
     text-align: center;
     font-size: 20px;
     font-weight: 500;
+    color: #2b2d36;
   }
   
   .header-bottom ul.gnb li.depth1 ul.depth2 {
     position: absolute;
     height: 0px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
   
   .header-bottom ul.gnb:hover li.depth1 ul.depth2 {
@@ -154,14 +206,14 @@
     height: 100%;
     padding: 5px 0;
     margin-left: 50px;
+    color: #2b2d36;
   }
   .header-bottom ul.gnb li.depth1 ul.depth2 li:hover a{
     color: black;
     text-decoration: underline;
     text-decoration-color: #27aa84;
     font-size: 16px;
-    transition: all .2s linear;
-    transform: scale(1.01);
+    font-weight: bold;
   }
   
 } 

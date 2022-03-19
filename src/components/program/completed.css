@@ -40,21 +40,21 @@ th, td{
     padding: 0 15px;
 }
 
-table {
+.compTable {
     margin: 100px auto;
     width: 90%;
     border: 1px solid #f3f3f3;
 }
 
-table tr:nth-child(odd) {
+.compTable tr:nth-child(odd) {
     background-color: #F4F4F4;
 }
 
-table tr th, table tr td {
+.compTable tr th, .compTable tr td {
     padding: 20px;
 }
 
-table th {
+.compTable th {
     text-align: left;
     font-weight: bold;
 }

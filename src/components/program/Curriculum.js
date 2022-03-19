@@ -2,35 +2,80 @@ import '../common/common.css';
 import './curriculum.css';
 import ViewDetail from './ViewDetail';
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll"
 import $ from 'jquery';
-
-const ScrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 function Curriculum(){
     const [like, setLike] = useState(0);
 
-    // 탭 스크롤링
-    const myRef = useRef(null)
-    const executeScroll = () => ScrollToRef(myRef)
-
-    // 탭 상단 고정
+    //스크롤시 탭메뉴 고정
     useEffect(()=> {
-        $(window).on('scroll',function(){
-            const categoryPos=$('.category').position().top;
-            const nowScroll=$(window).scrollTop();
-            if(nowScroll>categoryPos){
-                $('.category').addClass('fix') 
-            }else{
-                $('.category').removeClass('fix') 
-            }
-        }) 
+    $(window).on('scroll',()=>{
+        const categoryPos=$('.category').position().top;
+        const nowScroll=$(window).scrollTop();
+        if(nowScroll>categoryPos){
+            $('.category').addClass('fix') 
+        }else{
+            $('.category').removeClass('fix') 
+        }
+    }) 
     },[])
+  // 스크롤시 해당 탭메뉴 색 변경
+    useEffect(()=> {
+        $(window).on('scroll',()=>{
+            const nowScroll=$(window).scrollTop();
+            var idx
+            if(nowScroll>=0 && nowScroll<700){idx=0}
+            if(nowScroll>=700 && nowScroll<1400){idx=1}
+            if(nowScroll>=1400 && nowScroll<1800){idx=2}
+            if(nowScroll>=1800 && nowScroll<2500){idx=3}
+            if(nowScroll>=2500 && nowScroll<3200){idx=4}
+            if(nowScroll>=3200 && nowScroll<4000){idx=5}
+
+            $('.category li').eq(idx).addClass('scrollOn')
+            $('.category li').eq(idx).siblings().removeClass('scrollOn')
+        })
+    },[])
+
+  //TOP 이동 버튼
+    const [ScrollY, setScrollY] = useState(0);
+    const [BtnStatus, setBtnStatus] = useState(false);
+
+    const handleBtn = ()=> {
+        setScrollY(window.pageYOffset);
+        if(ScrollY > 500) {
+            // 500 이상이면 버튼이 보이게
+            setBtnStatus(true);
+        } else {
+            // 500 이하면 버튼이 사라지게
+            setBtnStatus(false);
+    }
+    }
+
+    const handleTop = () => {
+        window.scrollTo({
+            top:0,
+            behavior: "smooth"
+        })
+        setScrollY(0);
+        setBtnStatus(false);
+    }
+    useEffect(() => {
+        const watch = () => {
+            window.addEventListener('scroll', handleBtn)
+        }
+        watch();
+        return () => {
+            window.removeEventListener('scroll', handleBtn)
+        }
+    })
+
     
     
     return(
         <div className="wrapper inner-box">
+            { BtnStatus &&<button className="scrollTopBtn" onClick={handleTop}>TOP</button> }
             <div className="topDetailpage">
                 <div className="left">
                     <div className="detailpageImg">
@@ -54,10 +99,10 @@ function Curriculum(){
                                 <li>
                                     <select name="programSelect" id="program_select">
                                         <option value>::::::::::::::::: 날짜 선택 :::::::::::::::::</option>
-                                        <option value="">2022-03-10 (목)</option>
-                                        <option value="">2022-03-10 (목)</option>
-                                        <option value="">2022-03-10 (목)</option>
-                                        <option value="">2022-03-10 (목)</option>
+                                        <option value="">2022-04-08 (금)</option>
+                                        <option value="">2022-04-11 (월)</option>
+                                        <option value="">2022-04-12 (화)</option>
+                                        <option value="">2022-04-13 (수)</option>
                                     </select>
                                 </li>
                             </ul>
@@ -67,16 +112,16 @@ function Curriculum(){
                                 <li><button>문의하기</button></li>
                                 <li>
                                     <button onClick={()=>{setLike(like+1)}}><span>{like} &hearts; </span>관심과정</button>
--                               </li>
+                                </li>
                                 <li><button>과정신청</button></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className='right'>
-                    <a href='#' className='shareBtn'>
-                        <p>공유</p>
-                    </a>
+                    <button className='shareBtn'>
+                        공유
+                    </button>
                 </div>
             </div>
             <div className="bottomDetailpage">

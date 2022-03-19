@@ -44,7 +44,6 @@ export default function MainExContents() {
       </div>
       <div class="tab-content program-contents">
         <div
-          tabId="1"
           className={tabId % 2 === 1 ? "tab-pane active" : "tab-pane"}
         >
           <div class="row">
@@ -181,7 +180,6 @@ export default function MainExContents() {
           </div>
         </div>
         <div
-          tabId="2"
           className={tabId % 2 === 0 ? "tab-pane active" : "tab-pane"}
         >
           <div class="row">
