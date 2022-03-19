@@ -11,13 +11,18 @@ import LoginPop from "../main/popup/Login";
 import "./header.css";
 
 export default function Header({ isLogin }) {
+  /* 헤더 메뉴 fixed */
   $(window).on('scroll',function() {
       var window = $(this).scrollTop();
 
       if(70 <= window) {
         $("nav").addClass("fixed");
+        $(".btn-screen-top").addClass("show");
+        $(".btn-screen-top").removeClass("hide");
       } else {
         $("nav").removeClass("fixed");
+        $(".btn-screen-top").removeClass("show");
+        $(".btn-screen-top").addClass("hide");
       }
   })
 
@@ -45,6 +50,18 @@ export default function Header({ isLogin }) {
     setTimeout(()=>{ $('.gnb').css('pointer-events','auto'); }, 1000);
   }, [subMenuClose]);
 
+
+  /* 검색 롤링*/
+  const [searchTxt, setSearchTxt] = useState("");
+  const isRollingFn = () => {
+    $(".top-rolling").hide();
+  }
+  const rollingShowFn = () => {
+    if(searchTxt === ""){
+      $(".top-rolling").show();
+    }
+  }
+
   return (
     <>
       <header className="header-wrapper">
@@ -53,15 +70,16 @@ export default function Header({ isLogin }) {
             <h1 className="top-logo">
               <a href="/">엑스퍼트아카데미</a>
             </h1>
-            <div className="top-search">
-              <input
-                type="text"
-                className="top-search-input"
-                placeholder="빅테이터"
-              />
-              <a className="top-search-btn">
-                <img src="/images/search.png" alt="search" />
-              </a>
+            <div className="top-search" onBlur={rollingShowFn} onClick={isRollingFn}>
+              <div className="top-search-box">
+                <input type="text" className="top-search-input" id="search" onChange={(e)=>{setSearchTxt(e.target.value)}} />
+                <a className="top-search-btn"><img src="/images/search.png" alt="search" /></a>
+                <div className="top-rolling">
+                    <span className="rolling-item">빅테이터</span>
+                    <span className="rolling-item">파이썬</span>
+                    <span className="rolling-item">프론트엔드</span>
+                </div>
+              </div>
             </div>
             <div className="top-btn">
               <Link to="/sample" onClick={subMenuCloseFn}>공통샘플</Link>
@@ -175,6 +193,7 @@ export default function Header({ isLogin }) {
           </ul>
         </nav>
         {/* 헤더 bottom */}
+        <a className="btn-screen-top" href='#'><span>TOP</span></a>
       </header>
 
       <LoginPop open={LoginPopOpen} close={closeLoginPopFn} />
