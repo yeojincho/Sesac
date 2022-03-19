@@ -9,7 +9,7 @@ export default function MainBottom() {
   return (
     <>
     <div className="inner-box main-middle-banner">
-      <img src="	http://www.excacademy.co.kr/images/layout/sub2_visual.jpg" alt="" />
+      <img src="/images/banner3.jpg" alt="배너" />
       <div className='c-btn-box main-middel-banner-btn'>
         <button className="btn-type1 small" ><span>자세히 보기</span></button>
       </div>

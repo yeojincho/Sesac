@@ -50,7 +50,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  margin-top: 20px;
 }
 .main-text-box .p-list li {
   position: relative;
@@ -87,10 +88,12 @@
   padding-bottom: 100px;
 }
 .main-ex-img .ex-list .ex-item{
-  margin-right: 40px;
+  margin-right: 50px;
   margin-bottom: 24px;
 }
-
+.main-ex-img .ex-list .ex-item:last-child{
+  margin-right: 0;
+}
 
 /* 공지사항 & HR샵 */
 .main-bottom {
@@ -213,6 +216,7 @@
   .main-banner .swiper-slide .banner-img{
     width: 100%;
     height: 380px;
+    border-radius: 0;
   }
   .main-banner .swiper::before{
     position: relative;
@@ -261,6 +265,11 @@
   }
 
   /* 과정 카테고리 */
+  .program-category,
+  .main-excontents{
+    width: 1085px;
+    margin: 0 auto;
+  }
   .main-wrapper .program-category {
     padding: 50px 0;
   }
@@ -284,7 +293,7 @@
     display: block;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #424242;
   }
   .main-program-img .program-list {
@@ -295,9 +304,12 @@
   }
   .main-program-img .program-item {
     vertical-align:top;
-    margin-right: 30px;
+    margin-right: 40px;
     overflow: hidden;
-    width: 290px;
+    width: 240px;
+  }
+  .main-program-img .program-item:nth-child(4n){
+    margin-right: 0;
   }
   .main-program-img .program-item .item-img {
     position: relative;
@@ -306,8 +318,8 @@
     opacity:0.7;
   }
   .main-program-img .program-item .item-img img{ 
-    width: 290px;
-    height: 230px;
+    width: 240px;
+    height: 140px;
     border-radius: 7px;
     cursor: pointer;
   }
@@ -315,7 +327,6 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.9);
     width: 100%;
     height: 0;
     padding: 15px;
@@ -325,13 +336,38 @@
     transition: height 0.35s ease-in-out;
     cursor: pointer;
     overflow: hidden;
+    font-size: 14px;
+  }
+  .main-program-img .program-item:nth-child(1) .item-img-desc{
+    background: rgba(0,0,0,0.9);
+  }
+  .main-program-img .program-item:nth-child(2) .item-img-desc{
+    background: rgba(0,0,0,0.8);
+  }
+  .main-program-img .program-item:nth-child(3) .item-img-desc{
+    background: rgba(0,0,0,0.7);
+  }
+  .main-program-img .program-item:nth-child(4) .item-img-desc{
+    background: rgba(0,0,0,0.6);
+  }
+  .main-program-img .program-item:nth-child(5) .item-img-desc{
+    background: rgba(12, 150, 85, 0.9);
+  }
+  .main-program-img .program-item:nth-child(6) .item-img-desc{
+    background: rgba(12, 150, 85, 0.8);
+  }
+  .main-program-img .program-item:nth-child(7) .item-img-desc{
+    background: rgba(12, 150, 85, 0.7);
+  }
+  .main-program-img .program-item:nth-child(8) .item-img-desc{
+    background: rgba(12, 150, 85, 0.6);
   }
   .main-program-img .program-item .item-img .item-img-desc p{
     color: #fff !important;
   }
   .main-program-img .program-item .item-img:hover .item-img-desc{
     opacity:1;
-    height: 201px;
+    height: 140px;
   }
   .main-program-img .program-item .item-img .item-img-desc p{
     
@@ -361,12 +397,14 @@
   }
   .main-program-img .item-days{
     font-weight: 100;
+    font-size: 11px;
   }
   .main-program-img .item-top {
     margin: 0;
     padding: 0;
     display: flex;
     margin-bottom: 8px;
+    margin-top: 8px;
   }
   .main-program-img .item-top li{
     margin-right: 8px;
@@ -375,9 +413,9 @@
     text-align: center;
     color: #6e6e73;
     background: #f2f2f2;
-    font-size: 12px;
-    padding: 1px 0.8rem;
-    border-radius: 0.4rem;
+    font-size: 10px;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.2rem;
     font-weight: bold;
     align-items: center;
   }
@@ -426,7 +464,7 @@
     overflow: hidden;
   }
   .main-ex-img .ex-list .ex-item .item-img img {
-    width: 390px;
+    width: 325px;
     border-radius: 7px;
     cursor: pointer;
     

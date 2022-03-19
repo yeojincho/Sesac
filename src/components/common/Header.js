@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import $ from 'jquery';
 
 import LoginPop from "../main/popup/Login";
+import DarkModeToggle from "../Darkmode/Darkmode";
 import "./header.css";
 
 export default function Header({ isLogin }) {
@@ -98,6 +99,8 @@ export default function Header({ isLogin }) {
                   </a>
                 </>
               )}
+
+                <DarkModeToggle />
             </div>
           </div>
         </div>

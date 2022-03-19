@@ -1,6 +1,12 @@
 
 /* PC 헤더 */
 @media screen and (min-width:768px){
+  .header-wrapper .switch {
+    cursor: pointer;
+    width: 80px;
+    height: 54px;
+    margin: 0;
+  }
   .header-wrapper{
     background-color: #fff;
   }

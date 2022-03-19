@@ -14,7 +14,7 @@ export default function MainExContents() {
   const [tabId, setTabId] = useState(1);
 
   return (
-    <div className="inner-box main-excontents">
+    <div className="main-excontents">
       <div className="main-text-box">
         <span className="eyebrow">EX 콘텐츠</span>
         <span className="p-title">
