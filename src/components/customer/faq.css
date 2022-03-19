@@ -32,7 +32,7 @@
 }
 
 .fqaSubMenuList {
-  background: #dddddd;
+  background-color: #ddd;
   border-radius: 50px;
   width: 180px;
   height: 40px;
@@ -43,18 +43,12 @@
   text-align: center;
   margin-left: 30px;
 }
-/* 
-.fqaSubMenuListBtn {
-  border: none;
-  border-radius: 50px;
-  box-shadow: none;
-  cursor: pointer;
-  width: 100%;
-  background: #dddddd;
-  color: #999;
-} */
-
 .fqaSubMenuList.subOn {
+  color: #ffffff;
+  background-color: #5ebf92;
+  font-weight: bold;
+}
+.fqaSubMenuList:hover {
   color: #ffffff;
   background-color: #5ebf92;
 }
@@ -64,20 +58,23 @@
 .accoBox {
   margin-bottom: 150px;
 }
-.accoImg {
+.accoBox .accoImg {
   width: 25px;
   height: 25px;
-  margin: 0 20px 10px;
+  margin: 10px 20px 10px;
 }
-
+.accoBox .questionBox {
+  display: flex;
+  align-items: center;
+}
+.accoBox .questionBox p {
+  padding-top: 10px;
+}
 .accoBox .answerBox {
   display: flex;
   align-items: center;
-  height: 100px;
-  line-height: 100px;
 }
 
-.font-weight-bold {
-  height: 70px;
-  line-height: 70px;
+.accoBox .answerBox p {
+  padding-top: 15px;
 }
