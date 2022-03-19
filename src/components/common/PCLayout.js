@@ -61,7 +61,7 @@ export default function PCLayout({ isLogin }) {
         {/* 회원가입 */}
 
         <Route exact path='/join' component={Join}></Route>
-        <Route exact path='/join/form:type' component={JoinForm}></Route>
+        <Route exact path='/join/form/:type' component={JoinForm}></Route>
         <Route exact path='/join/complete' component={JoinComplete}></Route>
 
         {/* 공개과정 */}
