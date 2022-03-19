@@ -24,11 +24,11 @@ export default function Join() {
             <div className="join-gubun">
               <p>회원가입 유형을 선택해 주세요.</p>
               <div className="join-gubun-btn">
-                <Link to="/join/form">
+                <Link to="/join/form/manager">
                   <img src="/images/member/group.png" alt="교육담당자" />
                   <span>기업 및 단체 교육 담당자</span>
                 </Link>
-                <Link to="/join/form">
+                <Link to="/join/form/personal">
                   <img src="/images/member/person.png" alt="개인" />
                   <span>일반 개인회원</span>
                 </Link>

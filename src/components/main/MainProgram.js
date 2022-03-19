@@ -72,7 +72,6 @@ export default function MainProgram() {
         </div>
         <div class="tab-content program-contents">
           <div
-            tabId="1"
             className={tabId % 2 === 0 ? "tab-pane active" : "tab-pane"}
           >
             <div class="row">
@@ -86,20 +85,19 @@ export default function MainProgram() {
                       />
                       <div className="item-img-desc">
                         <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                         </p>
                       </div>
                     </div>
                     <div className="item-text">
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
                       </ul>
-                      <p className="item-title">사내강사 양성과정 </p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -116,9 +114,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -135,9 +138,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -154,9 +162,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -173,9 +186,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -192,9 +210,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -211,9 +234,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -230,9 +258,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   {programMore && (
@@ -252,9 +285,39 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                      </li>
+                      <li className="program-item">
+                        <div className="item-img">
+                          <img
+                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
+                            alt="강의"
+                          />
+                          <div className="item-img-desc">
+                            <p>
+                              사내강사 경험이 부족한 학습자에게 꼭 필요한
+                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
+                              소개
+                            </p>
+                          </div>
+                        </div>
+                        <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                       <li className="program-item">
@@ -272,9 +335,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                       <li className="program-item">
@@ -292,29 +360,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                     </>
@@ -333,7 +386,6 @@ export default function MainProgram() {
             </div>
           </div>
           <div
-            tabId="2"
             className={tabId % 2 === 1 ? "tab-pane active" : "tab-pane"}
           >
             <div class="row">
@@ -353,9 +405,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
-                      <p className="item-title">사내강사 양성과정</p>
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정 사내강사 양성과정 사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -372,9 +429,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -391,9 +453,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -410,9 +477,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -429,9 +501,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -448,9 +525,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -467,9 +549,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   <li className="program-item">
@@ -486,9 +573,14 @@ export default function MainProgram() {
                       </div>
                     </div>
                     <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        <li>메타버스</li>
+                      </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                      <p className="item-days">2DAY 16시간</p>
                     </div>
                   </li>
                   {programMore && (
@@ -508,9 +600,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                       <li className="program-item">
@@ -528,9 +625,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                       <li className="program-item">
@@ -548,9 +650,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                       <li className="program-item">
@@ -568,9 +675,14 @@ export default function MainProgram() {
                           </div>
                         </div>
                         <div className="item-text">
+                          <ul className="item-top">
+                            <li>2DAY</li>
+                            <li>16시간</li>
+                            <li>Live</li>
+                            <li>메타버스</li>
+                          </ul>
                           <p className="item-title">사내강사 양성과정</p>
                           <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                          <p className="item-days">2DAY 16시간</p>
                         </div>
                       </li>
                     </>

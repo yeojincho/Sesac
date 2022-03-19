@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './components/common/ScrollToTop';
 
 /* 로그인 세션 */
 const sessionLogin = sessionStorage.getItem('user_id');
@@ -11,6 +12,7 @@ const sessionLogin = sessionStorage.getItem('user_id');
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <App sessionLogin={sessionLogin} />
     </BrowserRouter>  
   </React.StrictMode>,
