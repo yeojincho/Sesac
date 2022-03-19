@@ -5,29 +5,19 @@ import VisitMap from './VisitMap';
 
 export default function Visit(){
 
-    const [ currentClick, setcurrentClick ] = useState(null);
-    const [ prevClick, setPrevClick ] = useState(null);
+    //서브메뉴 타이틀
+    const subMenuArr = [
+        {title: '송파러닝센터'},
+        {title: '가락러닝센터'},
+        {title: '문정러닝센터'},
+    ]
+    //서브메뉴 클릭시 색 변경
+    const [currentMenu,setCurrentMenu] = useState(0)
+    const clickHandler = (index)=>{
+        setCurrentMenu(index)
+    }
 
-    const handleClick = (e) => {
-        setcurrentClick(e.target.id);
-    };
-
-        useEffect(
-            (e) => {
-                let current = document.getElementById('subMenu1');
-                current.classList.add('subOn')
-
-                if(currentClick !== null){
-                    let current = document.getElementById(currentClick);
-                    current.classList.add('subOn');
-                }
-                if(prevClick !== null){
-                    let prev = document.getElementById(prevClick);
-                    prev.classList.remove('subOn');
-                }
-                setPrevClick(currentClick);
-            }, [currentClick]);
-
+    //주소 복사하기
     const copyAddress = () => {
         const addressText = document.querySelector('#addressText span').textContent;
         const textArea = document.createElement('textArea');
@@ -52,15 +42,18 @@ export default function Visit(){
             <Customer />            
                 <div className="visitSubMenuBox">
                     <ul className="visitSubMenuContainer">
-                        <li id = "subMenu1"  className= "visitSubMenuList" onClick={ handleClick }>
-                            송파러닝센터
-                        </li>
-                        <li id = "subMenu2" className= "visitSubMenuList"  onClick={ handleClick }>
-                            가락러닝센터
-                        </li>
-                        <li id = "subMenu3" className= "visitSubMenuList"  onClick={ handleClick }>
-                            문정러닝센터
-                        </li>
+                        {subMenuArr.map((menu,index)=>{
+                            return(
+                                <li
+                                key={index}
+                                className={currentMenu === index ? 'visitSubMenuList subOn' : 'visitSubMenuList'}
+                                onClick={()=>clickHandler(index)}
+                                >
+                                {menu.title}    
+                                </li>
+                                
+                            )
+                        })}
                     </ul>
                 </div>{/* e: submenu */}
                 <main className="visitInfo">
@@ -81,7 +74,7 @@ export default function Visit(){
                         <div className="car">
                             <p className="transportListTitle carTitle">승용차</p>
                             <div className="transportListContents">
-                                <p>※ 교육생들을 위한 주차장 시설이 제공되지 않습니다.</p>
+                                <p>※ 교육생들을 위한 주차장 시설이 제공되지<br/> 않습니다.</p>
                                 <p>승용차 이용 시 주차장 비용을 부담하셔야 합니다.</p>
                                 <p>(가락2 공영 주차장 / 1일 24,000원)</p>
                             </div>

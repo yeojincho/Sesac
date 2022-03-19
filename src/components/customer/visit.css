@@ -31,9 +31,9 @@
 .visitSubMenuList {
   display: block;
   color: #999;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
-  background-color: #dddddd;
+  background-color: #ddd;
   border-radius: 50px;
   margin-left: 50px;
   width: 200px;
@@ -42,6 +42,11 @@
 }
 
 .visitSubMenuList.subOn {
+  color: #ffffff;
+  background-color: #5ebf92;
+  font-weight: bold;
+}
+.visitSubMenuList:hover {
   color: #ffffff;
   background-color: #5ebf92;
 }
@@ -111,9 +116,13 @@
   display: flex;
   justify-content: center;
 }
+
+.car,
 .subway {
-  margin-left: 20px;
+  border-right: 1px solid #dddddd;
+  padding-right: 20px;
 }
+
 .transportListTitle {
   width: 80px;
   height: 180px;
@@ -146,6 +155,7 @@
 .car .transportListContents p:nth-child(2),
 .car .transportListContents p:last-child {
   font-size: 14px;
+  margin-bottom: 0.2rem;
 }
 .subway .transportListContents {
   width: 200px;

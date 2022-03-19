@@ -8,25 +8,21 @@ import Customer from './Customer';
 
 export default function Faq() {
 
-    const [ currentClick, setcurrentClick ] = useState(null);
-    const [ prevClick, setPrevClick ] = useState(null);
+    
+    //서브메뉴 타이틀
+    const subMenuArr = [
+        {title:'회원정보', contents:'accoMemberInfo'},
+        {title: '결제관련', contetns:'accoPay' },
+        {title: '환불규정', contetns:'accoPay' },
+        {title: '신청/취소', contetns:'accoPay' },
+        {title: '기타', contetns:'accoPay' },
+    ]
+    //서브메뉴 클릭시 색 변경
+    const [currentMenu, setCurrentMenu] = useState(0)
+    const clickHandler = (index)=>{
+        setCurrentMenu(index)
+    }
 
-    const handleClick = (e) => {
-        setcurrentClick(e.target.id);
-      };
-
-      useEffect(
-          (e) => {
-              if(currentClick !== null){
-                  let current = document.getElementById(currentClick);
-                  current.classList.add('subOn');
-              }
-              if(prevClick !== null){
-                  let prev = document.getElementById(prevClick);
-                  prev.classList.remove('subOn');
-              }
-              setPrevClick(currentClick);
-          }, [currentClick]);
 
     return(
         <>
@@ -39,34 +35,21 @@ export default function Faq() {
             <Customer />
             <div className="fqaSubMenuBox">
                 <ul className="fqaSubMenuContainer">
-                    <li className= "fqaSubMenuList" id = "subMenu1" onClick={ handleClick }>
-
-                            회원정보
-                                
-                    </li>
-                    <li className= "fqaSubMenuList" id = "subMenu2" onClick={ handleClick }>
-                        
-                            결제관련
-                        
-                    </li>
-                    <li className= "fqaSubMenuList" id = "subMenu3" onClick={ handleClick }>
-                        
-                            환불규정
-                        
-                    </li>
-                    <li className= "fqaSubMenuList" id = "subMenu4" onClick={ handleClick }>
-                        
-                            신청/취소
-                                
-                    </li>
-                    <li className= "fqaSubMenuList" id = "subMenu5" onClick={ handleClick }>
-                        
-                            기타             
-                    </li>
+                    {subMenuArr.map((menu,index)=>{
+                        return(
+                            <li
+                            key={index}
+                            className={currentMenu === index ? 'fqaSubMenuList subOn'  : 'fqaSubMenuList'}
+                            onClick={()=>clickHandler(index)}
+                            >
+                            {menu.title}   
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>{/* e: submenu */}
 
-        <FaqAcco />
+            <FaqAcco currentMenu={currentMenu}/>
         
         </div>
         </>
