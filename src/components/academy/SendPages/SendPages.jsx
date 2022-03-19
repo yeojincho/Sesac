@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import "./SendPages.css";
+import Darkmode from "../../Darkmode/Darkmode";
 
 export default function SendPage() {
   function sendEmail(e) {
@@ -24,6 +25,7 @@ export default function SendPage() {
   }
   return (
     <div className='inner-box SendContents'>
+      <Darkmode />
       <form onSubmit={sendEmail} className='boxContents'>
         <div>
           <p className='sendPageBoxTitle'>Write your information</p>

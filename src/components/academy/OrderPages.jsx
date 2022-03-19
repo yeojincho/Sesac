@@ -23,28 +23,28 @@ export default function OrderPages() {
         className='productSlider inner-box swiper-slide'
       >
         <SwiperSlide>
-          <img src='/images/main/1.jpg' />
+          <img src='/images/bigdata.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/coding2.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/coding.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/desktop.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/ui.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/ui_ux.jpg' />
         </SwiperSlide>
         <SwiperSlide>
           <img src='/images/main/2.jpg' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-3.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-4.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-5.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-6.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-7.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-8.jpg' />
+          <img src='/images/main/1.jpg' />
         </SwiperSlide>
         <SwiperSlide>
           <img src='https://swiperjs.com/demos/images/nature-1.jpg' />
@@ -66,28 +66,28 @@ export default function OrderPages() {
         className='productSlider -box swiper-slide smallProducts '
       >
         <SwiperSlide>
-          <img src='/images/main/1.jpg' />
+          <img src='/images/bigdata.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/coding2.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/coding.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/desktop.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/ui.jpg' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src='/images/ui_ux.jpg' />
         </SwiperSlide>
         <SwiperSlide>
           <img src='/images/main/2.jpg' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-3.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-4.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-5.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-6.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-7.jpg' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src='https://swiperjs.com/demos/images/nature-8.jpg' />
+          <img src='/images/main/1.jpg' />
         </SwiperSlide>
         <SwiperSlide>
           <img src='https://swiperjs.com/demos/images/nature-1.jpg' />
