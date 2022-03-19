@@ -8,6 +8,10 @@ button {
     color: #636363;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .topDetailpage {
     display: flex;
     justify-content: space-evenly;
@@ -84,18 +88,32 @@ button {
     cursor: pointer;
 }
 
-.bottomDetailpage .category li:first-child { 
+
+/* 상단 고정탭 */
+
+.bottomDetailpage .category li.scrollOn {
     color: #fff;
-    background-color: #5EBF92;
+    background-color: #5ebf92;
     font-weight: bold;
     box-sizing: border-box;
 }
 
-/* 상단 고정탭 */
 .bottomDetailpage .category.fix {
     position: fixed;
     top: 0;
-    z-index: 1;
-    padding: 20px 0;
+    z-index: 1000;
+    padding-top: 20px;
     background-color:rgba(255, 255, 255, 0.9);
+}
+
+.scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 0 none;
+    color: #fff;
+    background-color: #5ebf92;
 }
