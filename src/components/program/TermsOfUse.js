@@ -2,6 +2,7 @@ import '../common/common.css';
 import './termsofuse.css';
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function TermsOfUse(){
     return(
@@ -39,7 +40,9 @@ function TermsOfUse(){
                         <input type="checkbox" /><span className='span_bold'>위 이용약관에 전체동의</span>합니다
                     </div>
                     <div className="ok_btn">
-                        <a href="#">확인</a>
+                        <Link to="/infoinput">
+                            <button>확인</button>
+                        </Link>
                     </div>
                 </div>
             </div>
