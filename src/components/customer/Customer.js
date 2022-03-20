@@ -1,64 +1,34 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./customer.css";
 
 function Customer() {
-    const [ currentClick, setcurrentClick ] = useState(null);
-    const [ prevClick, setPrevClick ] = useState(null);
-
-    const handleClick = (e) => {
-      setcurrentClick(e.target.id);
-    };
-
-    useEffect(
-        (e) => {
-          if (currentClick !== null) {
-            let current = document.getElementById(currentClick);
-            current.classList.add('on');
-          }
-          if (prevClick !== null) {
-            let prev = document.getElementById(prevClick);
-            prev.classList.remove('on');
-          }
-          setPrevClick(currentClick);
-                  
-        },[currentClick]);
-
+  
+  const menuStyle = {
+    display: 'block',
+    backgroundColor: '#03a65a',
+    color: '#fff',
+    fontWeight: 'bold',
+    borderRadius: '50px',
+  }
 
   return (
     <React.Fragment>
-      <section className="listSection cf">
-        <ul className="listContainer">
-          <li >
-            <Link to= "/notice">        
-              <button id = "menu1" onClick={ handleClick }>                
-                공지사항                
-              </button>   
-            </Link>       
+      <section className="customer-list-container cf">
+        <ul className="customer-list-container">
+          <li className="customer-list">
+            <NavLink to="/notice" activeStyle={menuStyle}>공지사항</NavLink>
           </li>
-          <li>
-           <Link to= "/question"> 
-              <button id = "menu2" onClick={ handleClick }>
-                문의하기
-              </button>   
-            </Link>    
+          <li className="customer-list">
+            <NavLink to="/question" activeStyle={menuStyle}>문의하기</NavLink>
           </li>
-          <li>
-            <Link to= "/faq"> 
-              <button id = "menu3" onClick={ handleClick }>
-                자주 묻는 질문
-              </button>
-              </Link>  
+          <li className="customer-list">
+            <NavLink to="/faq" activeStyle={menuStyle}>자주 묻는 질문</NavLink>
           </li>
-          <li>
-          <Link to= "/visit"> 
-              <button id = "menu4" onClick={ handleClick }>
-                오시는 길
-              </button>
-              </Link>  
+          <li className="customer-list">
+            <NavLink to="/visit" activeStyle={menuStyle}>오시는 길</NavLink>
           </li>
         </ul>
-        <input type="text" placeholder="Search" className="searchBox focus" />
       </section>
     </React.Fragment>
   );

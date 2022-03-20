@@ -1,131 +1,95 @@
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.cancelBtn {
-  border: none;
-  padding: 5px 10px;
-  background-color: #5EBF92;
-  color: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 * {
   box-sizing: border-box;
 }
 
-.classConfirmPage {
-  padding: 0 10px;
+/* 페이지타이틀 */
+.classConfirm-contentBox .pageTitle {
+  color: #212529;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
+
+/* 사이드바 플렉스 공통 */
+.regiConfirm-container .flexbox {
+  display: flex;
+}
+
+
+.regiConfirm-container #cancelBtn {
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #5EBF92;
+}
+
+.regiConfirm-container #cancelBtn:hover {
+  background-color: #03A65A;
+}
+
+
+#confirm-under {
+  border-bottom: 1px solid #000;
+}
+
 
 
 /* 테이블 css */
-table {
+.myclass-table {
   border-collapse: collapse;
   margin: 10px 0;
+  color: #313338;
 }
-th, td {
+.myclass-table th, 
+.myclass-table td {
   border: 1px solid #eee;
 }
 
-th {
+.myclass-table th {
   text-align: center;
   font-weight: 500;
   background-color: #eee;
 }
 
-tr {
+.myclass-table tr {
   height: 40px;
   font-size: 15px;
 }
 
-td {
+.myclass-table td {
   padding: 0 10px;
   font-weight: 300;
 }
 
-tr td:nth-child(1) {
+.myclass-table tr td:nth-child(1) {
   text-align: center;
 }
-tr td:nth-child(2) {
+.myclass-table tr td:nth-child(2) {
   text-align: center;
 }
-tr td:nth-child(3) {
+.myclass-table tr td:nth-child(3) {
   text-align: left;
 }
-tr td:nth-child(4) {
+.myclass-table tr td:nth-child(4) {
   text-align: center;
 }
-tr td:nth-child(5) {
+.myclass-table tr td:nth-child(5) {
   text-align: right;
 }
-tr td:nth-child(6) {
+.myclass-table tr td:nth-child(6) {
   text-align: right;
 }
-tr td:nth-child(7) {
+.myclass-table tr td:nth-child(7) {
   text-align: center;
 }
-tr td:nth-child(8) {
+.myclass-table tr td:nth-child(8) {
   text-align: center;
 }
-
-.pageTitle {
-  color: #999;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.flexbox {
-  display: flex;
-}
-
-/* left-menu area */
-.left-menu {
-  width: 20%;
-  padding: 20px 20px;
-}
-
-.left-menu .depth1 a:hover {
-  border-bottom: 1px solid #5EBF92;
-} 
-
-.left-menu li.depth1 {
-  color: #000;
-}
-
-
-.depth1{
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.depth1>a {
-  font-weight: 500;
-}
-.depth1>ul {
-  margin-top: 10px;
-}
-.depth1>ul>li.depth2 {
-  margin-bottom: 5px;
-}
-
-.depth2{
-  font-size: 17px;
-  text-indent: 40px;
-  font-weight: 300;
-}
-
-.depth2 a.active {
-  color: #03A65A;
-  font-weight: 800;
-}
-
 
 
 /* 수강신청 취소버튼 클릭 후 팝업버튼 */
@@ -133,44 +97,58 @@ tr td:nth-child(8) {
   position: relative;
   display: none;
   color: #333;
-  background-color: #E6E6E6;
-  border-radius: 20px;
-  padding: 20px 20px 55px;
-  width: 350px;
+  background-color: #ddd;
+  border-radius: 30px;
+  padding: 40px 40px;
+  width: 400px;
 }
 
 /* on 클래스 붙이면 보임 */
-.popup-cancel.on {
+#popup-cancel {
+  /* display: none; */
+}
+
+.yes#popup-cancel {
   display: block;
 }
 
 
-.popup-cancel .btn {
+
+#popup-cancel .cancel-btn {
   display: block;
   padding: 5px 8px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   position: absolute;
   right: 15px;
   bottom: 15px;
-  background-color: #5EBF92;
+  background-color: #fff;
   border: none;
-  color: #fff;
   border-radius: 5px;
+  color: #212529;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s linear;
 }
 
-.popup-cancel {
-  display: none;
+#popup-cancel .cancel-btn:hover{
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.1);
 }
+#popup-cancel .cancel-btn:active {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /* 교육내역이 없는 경우 보여지는 페이지 */
-.notice-noClass  {
-  border: 1px solid #E6E6E6;
-  background-color: #eee;
-  border-radius: 20px;
+.notice-noRegiClass  {
+  background-color: #ddd;
+  border-radius: 40px;
   padding: 40px 40px;
   width: 550px;
 }
 
-.notice-noClass h3 {
+.notice-noRegiClass h3 {
   font-size: 20px;
   font-weight: 800;
   color: #444;
@@ -178,7 +156,7 @@ tr td:nth-child(8) {
   text-align: center;
 }
 
-.notice-noClass p {
+.notice-noRegiClass p {
   line-height: 25px;
 } 
 

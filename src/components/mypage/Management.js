@@ -1,95 +1,144 @@
 import React from "react";
-import { Label, FormGroup, Input, Button, Form } from "reactstrap";
+import { Link } from "react-router-dom";
+import { label, FormGroup, Button } from "reactstrap";
+import HeadTitle from "./HeadTitle";
 import "./Management.css";
+import SideMenu from "./SideMenu";
 
 function Management() {
+  const user1 = { name: "강동원", id: "expert", gender: "남" };
   return (
-    <div className='inner-box wrap1'>
-      <div className='sideBar'>
-        <ul className='info'>
-          회원정보
-          <li>
-            <button>- 회원정보관리</button>
-          </li>
-          <li>
-            <button>- 비밀번호 변경</button>
-          </li>
-        </ul>
-        <ul className='info'>
-          수강정보
-          <li>
-            <button>- 수강신청 확인/취소</button>
-          </li>
-          <li>
-            <button>- 수강 내역</button>
-          </li>
-        </ul>
-      </div>
-      <div className='contentBox'>
-        <p id='title' className='Imp'>
-          마이페이지
-        </p>
-        <p id='title' className='Imp'>
-          _____님 엑스퍼트 아카데미에 오신걸 환영합니다.
-        </p>
-        <div className='inform'>
-          <p className='infoTitle'>회원정보 관리</p>
-          <p className='infoTitle'>필수정보</p>
-          <p>성명 : 홍길동 </p>
-          <p>아이디 : expert</p>
-          <p> 성별:남</p>
-          <Form className='infoForm'>
-            <FormGroup>
-              <p className='infoTitle'>부가정보1</p>
-              <Label for='exampleEmail'>휴대전화</Label>
-              <Input type='text' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 메일주소 </Label>
-              <Input type='email' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 생년월일 </Label>
-              <Input type='date' id='select' />
-            </FormGroup>
-            <p className='service'>메일링서비스</p>
-            <FormGroup check>
-              <Input type='checkbox' id='checkbox' />
-              수신받음
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'>회원구분 </Label>
-              <Label for='exampleSelect'></Label>
-              <Input id='select' name='select' type='select'>
-                <option>교육담당자</option>
-                <option>일반</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
-              <p className='infoTitle'>부가정보2</p>
-              <Label for='exampleEmail'>회사명</Label>
-              <Input id='exampleEmail' name='email' type='email' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 부서명 </Label>
-              <Input id='examplePassword' name='password' type='password' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 직함 </Label>
-              <Input id='examplePassword' name='password' type='text' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 회사전화 </Label>
-              <Input id='examplePassword' name='password' type='text' />
-            </FormGroup>
-            <FormGroup>
-              <Label for='examplePassword'> 회사주소 </Label>
-              <Input id='examplePassword' name='password' type='text' />
-            </FormGroup>
-          </Form>
-          <div className='bottomBtn'>
-            <Button>확인</Button>
-            <Button>회원탈퇴</Button>
+    <div className="inner-box">
+      <HeadTitle />
+      <div className="flex-box">
+        <SideMenu />
+        <div className="Management-contentBox">
+          <div className="Management-inform">
+            <h2 className="pageTitle">회원정보 관리</h2>
+
+            <h3 className="Management-infoTitle">필수정보</h3>
+            <div className="mrgn-left">
+              <strong className="manage-userinfo">
+                성명: <span>{user1.name}</span>
+              </strong>
+              <strong className="manage-userinfo">
+                아이디: <span>{user1.id}</span>
+              </strong>
+              <strong className="manage-userinfo">
+                성별: <span>{user1.gender}</span>
+              </strong>
+            </div>
+
+            <form className="Management-infoForm">
+              <h3 className="Management-infoTitle">부가정보1</h3>
+              <div className="mrgn-left">
+                <label for="phone-number">휴대전화</label>
+                <input
+                  class="form-control col-sm-4"
+                  id="phone-number"
+                  type="tel"
+                  placeholder="000-0000-0000"
+                  aria-label="phone number"
+                />
+
+                <label for="mail-address"> 메일주소 </label>
+                <input
+                  class="form-control"
+                  id="mail-address"
+                  type="email"
+                  placeholder="abc@expert.com"
+                  aria-label="email address"
+                />
+
+                <label for="birthday"> 생년월일 </label>
+                <input
+                  class="form-control"
+                  id="birthday"
+                  type="date"
+                  placeholder="0000/00/00"
+                  aria-label="birthday"
+                />
+
+                <label for="user-division">회원구분</label>
+
+                <select
+                  class="form-select"
+                  id="user-division"
+                  aria-label="Default select example"
+                >
+                  <option selected disabled>
+                    회원구분
+                  </option>
+                  <option value="teacher">교육담당자</option>
+                  <option value="user">일반</option>
+                </select>
+
+                <label for="mailing-service">메일링서비스 : </label>
+                <input
+                  class="form-check-input"
+                  id="mailing-service"
+                  type="checkbox"
+                  aria-label="check mailing service"
+                />
+
+                <label for="mailing-service">수신받음</label>
+                <br />
+              </div>
+
+              <h3 className="Management-infoTitle">부가정보2</h3>
+              <div className="mrgn-left">
+                <label for="company-name">회사명</label>
+                <input
+                  class="form-control"
+                  id="company-name"
+                  type="text"
+                  placeholder="회사명"
+                  aria-label="your company name"
+                />
+
+                <label for="department"> 부서명 </label>
+                <input
+                  class="form-control"
+                  id="department"
+                  type="text"
+                  placeholder="부서명"
+                  aria-label="your company name"
+                />
+
+                <label for="job-title"> 직함 </label>
+                <input
+                  class="form-control"
+                  id="job-title"
+                  type="text"
+                  placeholder="직함"
+                  aria-label="job title"
+                />
+
+                <label for="company-phone"> 회사전화 </label>
+                <input
+                  class="form-control"
+                  id="company-phone"
+                  type="tel"
+                  placeholder="회사전화"
+                  aria-label="company phone number"
+                />
+
+                <label for="company-address"> 회사주소 </label>
+                <input
+                  class="form-control"
+                  id="company-address"
+                  type="text"
+                  placeholder="회사주소"
+                  aria-label="company address"
+                />
+              </div>
+              <div className="Management-bottomBtn flex-box">
+                <Button id="check-btn">확인</Button>
+                <Link to="/manage/withdrawal" id="byeBtn">
+                  회원탈퇴
+                </Link>
+              </div>
+            </form>
           </div>
         </div>
       </div>

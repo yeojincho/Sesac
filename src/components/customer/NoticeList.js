@@ -40,9 +40,16 @@ function NoticeList() {
     },
   ];
 
+  const sortedNotices = notices.sort((a, b) => {
+    return b.id - a.id;
+  });
+
   return (
-    <div>
-      <Table striped>
+    <div className="notice-list-container">
+      <div className="notice-search-box">
+        <input type="text" placeholder="Search" className="searchBox focus" />
+      </div>
+      <Table striped className="notice-list-table">
         <thead>
           <tr>
             <th>No</th>
@@ -52,7 +59,7 @@ function NoticeList() {
           </tr>
         </thead>
         <tbody>
-          {notices.map((notice) => (
+          {sortedNotices.map((notice) => (
             <tr>
               <th scope="row">{notice.id}</th>
               <td>{notice.content}</td>

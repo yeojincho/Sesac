@@ -1,15 +1,12 @@
-import './components/common/common.css';
-import './components/program/termsofuse.css';
+import '../common/common.css';
+import './termsofuse.css';
 
 import React from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
+import { Link } from "react-router-dom";
 
 function TermsOfUse(){
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="content">
                 <div className="step">
                     <ul>
@@ -43,11 +40,12 @@ function TermsOfUse(){
                         <input type="checkbox" /><span className='span_bold'>위 이용약관에 전체동의</span>합니다
                     </div>
                     <div className="ok_btn">
-                        <a href="#">확인</a>
+                        <Link to="/infoinput">
+                            <button>확인</button>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

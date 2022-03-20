@@ -1,0 +1,42 @@
+// 액션 정의
+const ADD_QUESTION = "ADD_QUESTION";
+
+// 액션 생성
+export const addQuestion = (payload) => {
+  return {
+    type: ADD_QUESTION,
+    payload,
+  };
+};
+
+const initialState = {
+  questions: [],
+};
+
+// 리듀서 생성
+export default function questionReducer(state = initialState, action) {
+  switch (action.type) {
+    case ADD_QUESTION: {
+      const currentId = state.questions.length + 1 || 1;
+      const question = [
+        ...state.questions,
+        {
+          id: currentId,
+          writer: action.payload.newWriter,
+          password: action.payload.newPassword,
+          phone: action.payload.newPhone,
+          email: action.payload.newEmail,
+          content: action.payload.newContent,
+        },
+      ];
+      question.sort((a, b) => b.id - a.id);
+      return {
+        ...state,
+        questions: question,
+      };
+    }
+    default: {
+      return state;
+    }
+  }
+}

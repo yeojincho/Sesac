@@ -25,9 +25,11 @@ npm install axios
 npm install react-router-dom@5  
 npm install redux react-redux  
 npm install reactstrap  
-npm install bootstarp
-npm install swiper
-npm install jquery
+npm install bootstarp  
+npm install swiper  
+npm install jquery  
+npm install react-responsive   
+npm install react-scroll   
 
 ### 1depth 폴더명
 

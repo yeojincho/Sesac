@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './visitMap.css';
+import './visit.css';
 
 
 const { kakao } = window;
@@ -41,10 +41,8 @@ export default function VisitMap(){
   }, []);
 
   return(
-    <>
       <div id="map">
         
       </div>
-    </>
   )
 }

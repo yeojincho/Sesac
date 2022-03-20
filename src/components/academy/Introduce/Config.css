@@ -1,0 +1,10 @@
+.IntroduceBox {
+  height: 800px;
+}
+.IntroduceBox div {
+  margin: 30px 30px;
+}
+.IntroduceBox span {
+  font-size: 100px;
+  font-weight: 900;
+}

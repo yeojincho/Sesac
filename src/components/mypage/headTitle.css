@@ -1,0 +1,19 @@
+.menu-titlebox {
+  width: 100%;
+  margin: 0 15px;
+}
+
+h1.menu-headtitle {
+  font-size: 40px;
+  letter-spacing: -0.8;
+  color: #212529;
+  /* font-weight: 800; */
+  margin-bottom: 7px;
+  margin-top: 30px;
+}
+
+p.menu-subtitle {
+  font-size: 20px;
+  color: #212529;
+  margin-bottom: 50px;
+}

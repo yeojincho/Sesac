@@ -1,10 +1,77 @@
 import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Link ,useHistory ,useParams} from 'react-router-dom';
+import $ from 'jquery';
 
 import './join.css';
 
 export default function JoinForm() {
+	let {type} = useParams();
+	let history = useHistory();
+	/* 약관 토글 */
+	const [agreeToggle, setAgreeToggle] = useState(true);
+	const isToggle = () => setAgreeToggle(!agreeToggle);
+	
+	/* 전체 선택 */
+	const allChkFn = () =>{
+		if($('#agreeAll').is(":checked")){
+			$("#agree1,#agree2").prop('checked',true);
+		}else{
+			$("#agree1,#agree2").prop('checked',false);
+		}
+	}
+	const chkFn = () =>{
+		console.log($('#agree1').is(":checked"),"?");
+		if($('#agree1').is(":checked") && $('#agree2').is(":checked")){
+			$("#agreeAll").prop('checked',true);
+		}else{
+			$("#agreeAll").prop('checked',false);
+		}
+	}
+
+	/* 아이디 중복확인 */
+	const idChkFn = () => {
+		if($("#joinId").val() === "test" || $("#joinId").val() === ""){
+			//중복일경우
+			$("#memberIdError").removeClass("green");
+			$("#memberIdError").text("사용 불가능한 아이디입니다.").show();
+		}else if($("#joinId").val() != ""){
+			$("#memberIdError").addClass("green");
+			$("#memberIdError").text("사용 가능한 아이디입니다.").show();
+		}
+
+	}
+
+	/* 이메일 선택 */
+	const emailSelectFn = (email)=> {
+		$("#joinEmail").prop('disabled',false).val(email);
+	}
+
+	/* 회원가입 유효성검사*/
+	const joinFn = () =>{
+		if($('#joinId').val() === "") {
+			$('#memberIdError').text("아이디를 입력해주세요.").show();
+			return;
+		} else {
+			$('#memberIdError').hide();
+		}
+		if($('#joinPwd').val() === "" || $('#joinPwdChk').val() === ""){
+			 $('#memberPwdError').show();
+			 return;
+		}else {
+			$('#memberPwdError').hide();
+		}
+		if($('#joinName').val() === ""){
+			$('#memberNameError').show();
+			 return;
+		}else{
+			$('#memberNameError').hide();
+		}
+		
+
+		document.location.href = '/join/complete';
+	}
+
   return (
     <div className="join-wrapper">
       <div className="inner-box join-inner">
@@ -27,22 +94,20 @@ export default function JoinForm() {
 						<div className="agree-wrap"> 
 							<div className="agree-header">
 								<span className="agree-all">
-									<input id="agreeAll" type="checkbox"/>
+									<input id="agreeAll" type="checkbox" onClick={allChkFn}/>
 									<label htmlFor="agreeAll">이용약관,개인정보 수집 및 이용 메일링 서비스(선택)에 모두 동의 합니다.</label>
 								</span>
-								<i className="arr-icon big"></i>
+								<i className={agreeToggle ? "arr-icon down" : "arr-icon up"} onClick={isToggle} ></i>
 							</div> 
 
-								
-							<div className="agree-container" >
+							<div className="agree-container" aria-expanded={agreeToggle}>
 								<div className="agree-cont">
 									<div className="agree-item">
 										<div className="agree-header">
 											<span className="agree-all">
-												<input id="agree1" type="checkbox" />
+												<input id="agree1" type="checkbox" onChange={chkFn} />
 												<label htmlFor="agree1">이용약관 동의 (필수)</label>
 											</span>
-											<i className="arr-icon small"></i>
 										</div>
 										<div className="agree-container">
 											<div className="agree-cont">
@@ -58,8 +123,8 @@ export default function JoinForm() {
 									<div className="agree-item js-fold-wrap">
 										<div className="agree-header">
 											<span className="agree-all">
-												<input id="agree4" type="checkbox" />
-												<label htmlFor="agree4">메일링 서비스(선택)</label>
+												<input id="agree2" type="checkbox" onChange={chkFn}  />
+												<label htmlFor="agree2">메일링 서비스 (선택)</label>
 											</span>
 										</div>
 									</div>
@@ -72,45 +137,92 @@ export default function JoinForm() {
 
 						{/* Form */}
 						<div className="join-form">
+							<div className="join-form-title">
+								<h2>필수정보</h2>	
+							</div>
 							<div className="ip-btn-wrap">
-								<input title="아이디 입력" type="text" placeholder="아이디 (영문/숫자 조합 3~15자)" maxLength="15" />
-								<button className="btn-pos" type="button" id="duplicateCheckId">중복확인</button>
-								<span id="memberIdError" className="message"></span>
+								<input title="아이디 입력" type="text" id="joinId" placeholder="아이디 (영문/숫자 조합 3~15자)" maxLength="15" />
+								<button className="btn-pos" type="button" id="duplicateCheckId" onClick={idChkFn}>중복확인</button>
+								<p className="error-msg" id="memberIdError" style={{display:'none'}}>아이디를 입력해주세요.</p>
 							</div>
 							<div className="ip-wrap">
-								<input title="비밀번호 입력" type="password" maxLength="10" placeholder="비밀번호(영문/숫자 조합 3~10자)" autoComplete="off" />
-								<span id="memberPwdError" className="message"></span>
+								<input title="비밀번호 입력" type="password" id="joinPwd" maxLength="10" placeholder="비밀번호(영문/숫자 조합 3~10자)" autoComplete="off" />
 							</div>
 							<div className="ip-wrap">
-								<input title="비밀번호 입력" type="password" maxLength="10" placeholder="비밀번호 확인" autoComplete="off" />
-								<span id="memberPwdCheckError" className="message"></span>
+								<input title="비밀번호 확인" type="password" id="joinPwdChk" maxLength="10" placeholder="비밀번호 확인" autoComplete="off" />
+								<span className="error-msg" id="memberPwdError" style={{display:'none'}}>비밀번호를 입력해주세요.</span>
+							</div>
+							<div className="ip-btn-wrap">
+								<input title="이름" type="text" id="joinName" placeholder="이름" maxLength="15" />
+								<select title="성별 선택">
+									<option value="">선택</option>
+									<option value="">여자</option>
+									<option value="">남자</option>
+								</select>
+								<span className="error-msg" id="memberNameError" style={{display:'none'}}>이름를 입력해주세요.</span>
+							</div>
+							
+
+							<div className="join-form-title">
+								<h2>부가정보1</h2>	
+							</div>
+							<div className="ip-wrap">
+								<input title="휴대번호 입력" type="text"  maxLength="15" placeholder="휴대전화 번호" />
 							</div>
 							<div className="ip-wrap">
 								<div className="ip-email-wrap">
-									<input title="이메일 아이디 입력" type="text" placeholder="이메일" />
+									<input title="이메일 아이디 입력" type="text" placeholder="이메일" id="joinEmailId" />
 									<span className="gap">@</span>
-									<input title="이메일 도메인 직접입력" disabled="disabled" type="text" />
-									<select title="이메일 도메인 선택" id="hostSelect">
+									<input title="이메일 도메인 직접입력" disabled="disabled" type="text" id="joinEmail" />
+									<select title="이메일 도메인 선택" id="hostSelect" onChange={(e)=>emailSelectFn(e.target.value)}>
 										<option value="">선택</option>
 										<option value="naver.com">naver.com</option>
 										<option value="daum.net">daum.net</option>
 										<option value="hanmail.net">hanmail.net</option>
 										<option value="gmail.com">gmail.com</option>
 										<option value="nate.com">nate.com</option>
-										<option value="1">직접 입력</option>
+										<option value="">직접 입력</option>
 									</select>
 								</div>
-								<span id="emailError" className="message"></span>
+								<span className="error-msg" id="emailError" style={{display:'none'}}>이메일을 입력해주세요.</span>
 							</div>
-							<div className="btn-wrap">
-								<Link to="/join/complete">
-									<button className="btn-lg" type="button" id="nextBtn">다음</button>
-								</Link>
+							<div className="ip-wrap">
+								<input title="생년월일입력" type="text" placeholder="생년월일" />
 							</div>
-						</div>
 
+						{
+							type === "manager" ?
+							(<>
+									<div className="join-form-title">
+										<h2>부가정보2</h2>	
+									</div>
+									<div className="ip-wrap">
+										<input type="text" placeholder="회사명" />
+									</div>
+									<div className="ip-wrap">
+										<input type="text" placeholder="부사명" />
+									</div>
+									<div className="ip-wrap">
+										<input type="text" placeholder="직함" />
+									</div>
+									<div className="ip-wrap">
+										<input type="text" placeholder="회사 전화" />
+									</div>
+									<div className="ip-btn-wrap">
+										<input type="text" placeholder="회사 주소"  />
+										<button className="btn-pos" type="button" >우편번호</button>
+									</div>
+							</>)
+							:
+							null
+						}
 							
 
+							<div className="c-btn-box join-btn">
+								<button className="btn-type1" onClick={() => history.push("/join")}><span>이전</span></button>
+								<button className="btn-type2" id="nextBtn" onClick={joinFn}><span>가입하기</span></button>
+							</div>
+						</div>
 
 							
           </div>

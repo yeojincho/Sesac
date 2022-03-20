@@ -7,18 +7,16 @@ import "./notice.css";
 function Notice() {
   return (
     <React.Fragment>
-      <section className="container">
-        <section className="title">
+      <section className="notice-container">
+        <section className="notice-title">
           <h1>고객센터</h1>
-          <h2>__엑스퍼트아카데미 공지사항 입니다</h2>
+          <h2>— 엑스퍼트아카데미 공지사항 입니다</h2>
         </section>
         <Customer />
-        <article className="tableContainer">
-          <div>
-            <NoticeList />
-          </div>
+        <article className="notice-table">
+          <NoticeList />
         </article>
-        <section className="pagiNation">
+        <section className="pagination">
           <Pagination aria-label="Page navigation" size="sm">
             <PaginationItem>
               <PaginationLink first href="#" />

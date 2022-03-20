@@ -5,66 +5,140 @@
   list-style: none;
   font-family: Noto Sans KR;
 }
-.contents {
+.shareBtn {
+  display: flex;
+  justify-content: end;
+}
+.shareBtn button {
+  font-size: 12px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.orderPage-contents {
+  color: #484745;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-around;
 }
-.left {
-  align-items: center;
+.orderPage-left {
+  width: 500px;
 }
-.right {
+.orderPage-right {
   margin-top: 50px;
 }
-.orderInfo.h2,
-p,
-ul {
-  padding: 24px 0;
+.orderInfo.orderPage-h2,
+.orderPage-p,
+.orderPage-ul {
+  font-weight: 800;
+  display: flex;
 }
-select {
+.swiper-slide img {
+  border-radius: 12px;
+}
+.orderPage-p {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.orderPage- {
+  margin: auto;
+}
+.orderPage-select {
   width: 70px;
   height: 20px;
 }
-.para {
+.orderPage-input {
   width: 300px;
   height: 150px;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
 }
-h3 {
+.orderPage-h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.orderPage-h3 {
   width: 200px;
   height: 30px;
   font-size: 35px;
-  color: #aaaaaa;
   margin-bottom: 30px;
 }
-span {
+.orderPage-span {
   width: 1000px;
   height: 30px;
   font-size: 20px;
-  color: #aaaaaa;
 }
 
-.Box {
+.orderPage-ul {
+  display: flex;
+}
+.orderPage-infoBtn {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orderPage-infoBtn button {
+  margin: 20px 12px;
+}
+.totalInfo dd {
+  margin-top: 10px;
+  width: 270px;
+  height: 30px;
+}
+
+.totalInfo {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+}
+.OrderPage-select {
+  width: 200px;
+}
+.plusMinusBtn {
+  width: 25px;
+  height: 25px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+.alertMsg {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.totalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 硫붿씤 諛곕꼫 */
+.orderPage-swiper {
+  width: 50px;
+  height: 4px;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 40px;
   width: 400px;
   height: 400px;
   background: #e8e8e8;
   border-radius: 20px;
-}
-ul {
-  display: flex;
-}
-.miniBox {
-  align-content: space-between;
-  margin-left: 22px;
-  width: 100px;
-  height: 100px;
-  background: #e8e8e8;
-  border-radius: 20px;
-}
-.infoBtn {
-  font-size: 15px;
-  margin-top: 30px;
-  margin-bottom: 50px;
 }

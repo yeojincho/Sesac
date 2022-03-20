@@ -1,34 +1,56 @@
-.join-wrapper{
-
+@media screen and (min-width:768px){ 
+  /* 회원가입 01.회원구분 */
+  .join-inner .top-title{
+    margin: 90px 65px;
+  }
+  section .join-cont{
+    width: 600px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+  }
+  .join-inner .top-title h2{
+    font-weight: 700;
+    color: #777777;
+    font-size: 30px;
+  }
+  .join-inner .top-title h3{
+    color: #aaaaaa;
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  .join-step {
+    margin: 0 auto;
+  }
 }
-.join-wrapper .join-inner{
+@media screen and (max-width:767px){
+  .join-wrapper{
+    padding: 0 15px;
+    margin-bottom: 50px;
 
+  }
+  /* 회원가입 01.회원구분 */
+  .join-inner .top-title{
+    margin: 30px 0;
+  }
+  .join-inner .top-title h2{
+    font-weight: 700;
+    color: #777777;
+    font-size: 25px;
+  }
+  .join-inner .top-title h3{
+    color: #aaaaaa;
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  .join-step ol{
+    padding: 0; 
+    margin: 0;
+  }
 }
+
 
 
 /* 회원가입 01.회원구분 */
-section .join-cont{
-  width: 600px;
-  margin: 50px auto;
-  margin-bottom: 100px;
-}
-.join-inner .top-title{
-  margin: 90px 65px;
-}
-.join-inner .top-title h2{
-  font-weight: 700;
-  color: #777777;
-  font-size: 30px;
-}
-.join-inner .top-title h3{
-  color: #aaaaaa;
-  font-size: 20px;
-  padding: 8px 0;
-}
-
-.join-step {
-  margin: 0 auto;
-}
 .join-step ol{
   display: flex;
 }
@@ -39,7 +61,7 @@ section .join-cont{
   text-align: center;
   line-height: 52px;
   padding: 0 0 0 14px;
-  background: #f5f5f5;
+  background: #fff;
   font-size: 16px;
   color: #999;
   border: 1px solid #ccc;
@@ -53,7 +75,7 @@ section .join-cont{
   height: 0;
   border-style: solid;
   border-width: 28px 0 28px 20px;
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #fff;
   z-index: 1;
 }
 .join-step ol li:after {
@@ -70,12 +92,12 @@ section .join-cont{
 }
 .join-step ol li.on {
   color: #fff;
-  background: #47AD1A;
-  border-color: #47AD1A;
+  background: #03A65A;
+  border-color: #03A65A;
 }
 .join-step ol li.on:before, 
 .join-step ol li.on:after {
-  border-color: transparent transparent transparent #f5f5f5;
+  border-color: transparent transparent transparent #fff;
 }
 .join-step ol li:first-child:before, 
 .join-step ol li:first-child:after, 
@@ -92,12 +114,13 @@ section .join-cont{
   height: 0;
   border-style: solid;
   border-width: 28px 0 28px 20px;
-  border-color: transparent transparent transparent #47AD1A;
+  border-color: transparent transparent transparent #03A65A;
   z-index: 1;
 }
 .join-step ol li.on .num {
   font-weight: 500;
   font-size: 20px;
+  color: #fff;
 }
 .join-gubun{
   padding: 60px 0;
@@ -175,13 +198,20 @@ section .join-cont{
   line-height: 16px;
   box-sizing: border-box;
 }
-.ip-btn-wrap{
+.join-form-title h2{
+  color: #2b2d36;
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.join-form .ip-btn-wrap{
   margin-bottom: 10px;
 }
-.ip-btn-wrap input{
+.join-form .ip-btn-wrap input{
   width: calc(100% - 124px);
 }
-.ip-btn-wrap .btn-pos{
+.join-form .ip-btn-wrap .btn-pos{
   display: inline-block;
   min-width: 115px;
   height: 40px;
@@ -197,6 +227,7 @@ section .join-cont{
   transition: all 0.1s;
 }
 .ip-email-wrap{
+  margin-top: 8px;
   display: flex;
 }
 .ip-email-wrap .gap{
@@ -217,27 +248,23 @@ section .join-cont{
   border: solid 1px #d5d5d5;
   width: 170px;
 }
-.btn-wrap{
-  margin-top: 50px;
-  text-align: center;
-}
-.btn-wrap .btn-lg{
-  display: inline-block;
-  width: 180px;
-  height: 60px;
-  padding: 0 20px;
-  line-height: 58px;
-  text-align: center;
-  border-color: #47ad1a;
-  background: #47ad1a;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 27px;
-  border: 1px solid #47ad1a;
-  vertical-align: top;
-  transition: all 0.1s;
+.ip-btn-wrap select{
+  height: 40px;
+  margin-left: 4px;
+  padding: 0 32px 0 15px;
+  color: #999;
+  font-size: 15px;
   cursor: pointer;
+  border: solid 1px #d5d5d5;
+  width: 115px;
 }
+.join-btn{
+  text-align: center;
+}
+.join-btn button{
+  margin-right: 20px;
+}
+
 
 
 
@@ -250,12 +277,12 @@ section .join-cont{
   overflow: hidden;
 }
 .agree-wrap>.agree-container[aria-expanded="false"] {
-  height: 0px;
-  transition: all .4s ease-out;
+  height: 0;
+  transition: height .4s ease-out;
 }
 .agree-wrap>.agree-container[aria-expanded="true"] {
-  height: 100%;
-  transition: all 0.35s ease-in-out;
+  height: 350px;
+  transition: height .4s ease-out;
 }
 
 .agree-header{
@@ -320,8 +347,11 @@ section .join-cont{
   height: 24px;
   cursor: pointer;
 }
-.arr-icon.big{
+.arr-icon.down{
   background:url(/public/images/ico_accordion_default.png) no-repeat center center;
+}
+.arr-icon.up{
+  background:url(/public/images/member/ico_accordion_open.png) no-repeat center center;
 }
 .arr-icon.small {
   background:url(/public/images/member/ico_down_arr.png) no-repeat center center;
@@ -329,10 +359,6 @@ section .join-cont{
 .agree-item{
   border-bottom: 1px solid #b5b5b5;
   overflow: hidden;
-}
-.agree-item>.agree-container[aria-expanded="false"]{
-  height: 0px;
-  transition: height 0.5s cubic-bezier(0, 1, 0, 1);
 }
 .agree-item .agree-header{
   padding-left: 50px;
@@ -352,3 +378,21 @@ section .join-cont{
   color: #777;
 }
 
+.join-form .error-msg {
+  margin: 4px 4px;
+  padding-left: 21px;
+  font-size: 12px;
+  color: #ec1f2f;
+  line-height: 18px;
+  background: url(/public/images/main/ico_error.png) no-repeat left center;
+}
+.join-form .error-msg.green{
+  color: #03A65A;
+  background: url(/public/images/member/join-check.png) no-repeat left center;
+  background-size: 16px 16px;
+}
+
+
+.ip-email-wrap input:disabled{
+  background-color: #eeecec;
+}

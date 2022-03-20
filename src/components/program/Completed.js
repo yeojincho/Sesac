@@ -1,15 +1,12 @@
-import './components/common/common.css';
-import './components/program/completed.css';
+import '../common/common.css';
+import './completed.css';
 
 import React from "react";
-
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
+import { Link } from "react-router-dom";
 
 function Completed(){
     return(
         <div className="wrapper inner-box">
-            <Header />
             <div className="content">
                 <div className="step">
                     <ul>
@@ -19,7 +16,7 @@ function Completed(){
                     </ul>
                 </div>
                 <div className='tableSection'>
-                    <table>
+                    <table className='compTable'>
                         <tbody>
                             <tr>
                                 <th>
@@ -75,12 +72,11 @@ function Completed(){
                 </div>
                 <div className='btn'>
                     <ul>
-                        <li><a href="#">뒤로가기</a></li>
-                        <li><a href="#">신청완료</a></li>
+                        <li><Link to="/infoinput"><button>뒤로가기</button></Link></li>
+                        <li><Link to="/confirm"><button>신청완료</button></Link></li>
                     </ul>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

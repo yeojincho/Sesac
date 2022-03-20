@@ -1,7 +1,4 @@
-* {
-    color: #636363;
-}
-
+/* reset */
 table{
     padding:0;
     border:0;
@@ -11,6 +8,7 @@ table{
 th, td{
     padding:0;
 }
+
 
 .mainTitle {
     font-size: 28px;
@@ -23,8 +21,10 @@ th, td{
     margin-bottom: 20px;
 }
 
+
+
 .tableSection {
-    margin: 100px auto;
+    margin: 100px auto 150px;
 }
 
 .tableSection .top {
@@ -34,13 +34,16 @@ th, td{
 
 .tableSection .top .downloadBtn {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 30px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #bbb;
     cursor: pointer;
-    font-size: 16px;
     position: absolute;
+    background: url(../../../public/images/share.png) no-repeat;
+    background-size: 25px;
+    font-weight: 300;
 }
+
 .tableSection .top .date {
     font-size: 30px;
     text-align: center;
@@ -62,69 +65,56 @@ th, td{
 .tableSection .top .date .btnPrev {
     background: url(../../../public/images/arrow_prev.png) no-repeat center;
     background-size: 25px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .tableSection .top .date .btnNext {
     background: url(../../../public/images/arrow_next.png) no-repeat center;
     background-size: 25px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .tableSection .top .searchBox {
     width: 250px;
-    height: 50px;
+    height: 40px;
     margin: 20px 0;
-    text-indent: 60px;
+    text-indent: 50px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 50px;
     float: right;
     outline: none;
     background: url(../../../public/images/search.png) no-repeat;
-    background-position: 20px center;
-    background-size: 20px 20px;
+    background-position: 16px center;
+    background-size: 16px 16px;
     background-color: #f3f3f3;
 }
 
-table {
-    margin-top: 20px;
+.programTable {
     width: 100%;
     border: 1px solid #f3f3f3;
 }
 
-thead {
+.programTable thead {
     border-bottom: 1px solid #c8c8c8;
 }
 
-table tr:nth-child(odd) {
+.programTable thead tr th, .programTable tr th {
+    text-align: center;
+}
+
+.programTable tr:nth-child(odd) {
     background-color: #F4F4F4;
 }
 
-table tr th, table tr td {
+.programTable tr th, .programTable tr td {
     padding: 20px;
 }
 
-table th {
+.programTable th {
+    font-weight: bold;
+}
+
+.programTable tbody tr td {
+    font-weight: 400;
     text-align: left;
-    font-weight: bold;
-}
-
-.listSection .btn li {
-    border-radius: 50px;
-    background-color: #F4F4F4;
-    margin-right: 30px;
-    display: inline-block;
-    padding: 10px 30px;
-}
-
-
-.listSection .btn li a {
-    color: inherit;
-}
-
-/* 나중에 .focusOn 등의 class를 js로 추가하기 */
-.listSection .btn li:hover { 
-    color: #fff;
-    font-weight: bold;
-    background-color: #5EBF92;
 }

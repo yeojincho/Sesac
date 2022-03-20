@@ -1,37 +1,78 @@
-.wrap1 {
+/* flex 정렬 */
+.inner-box .flex-box {
+  display: flex;
+}
+
+/* contentBox  */
+.account-contentBox {
+  width: 40%;
+}
+/* button 공통 */
+.account-contentBox button.form-btn {
+  margin: 50px 0;
+  width: 150px;
+  min-width: 110px;
+  height: 38px;
+  border: none;
+  padding: 0 10px;
+  border-radius: 7px;
+  background-color: #03A65A;;
+}
+
+
+/* contentBox title */
+.account-contentBox .pageTitle {
+  color: #212529;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* contentBox sub-title */
+.account-contentBox .account-subtitle {
+  font-size: 16px;
+  color: #212529;
+  margin-bottom: 2px;
+}
+
+
+.account-userinfo p {
+  margin-bottom: 5px;
+  color: #03A65A;
+}
+
+.account-contentBox .form {
+  margin-top: 30px;
+}
+
+.account-contentBox .form Label {
+  
+}
+
+
+
+.account-wrap1 {
   box-sizing: border-box;
-  display: flex;
+  /* display: flex; */
 }
 
-h3,
-.hello {
-  color: gray;
-  position: absolute;
-  right: 10px;
-  display: block;
-  margin-bottom: 30px;
-  justify-self: start;
+.account-myTitle {
+  font-size: 18px;
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 20px;
-  font-style: none;
-}
-.info button {
+
+.account-info button {
   border: none;
   background-color: transparent;
 }
-.Imp {
+.account-Imp {
   font-weight: 700;
 }
-.FormText {
+.account-FormText {
   width: 400px;
   height: 200px;
 }
-.FormPw {
+.account-FormPw {
   width: 200px;
 }
 .sideBar {
@@ -49,3 +90,4 @@ h3,
 .title {
   display: flex;
 }
+

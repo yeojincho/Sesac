@@ -1,0 +1,21 @@
+.jobContentsTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.jobContentsBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.jobContentsBox .jobThumImg {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #dddddd;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+.jobContentsBox .thumText {
+  margin-left: 20px;
+  color: #454545;
+}

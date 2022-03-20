@@ -1,80 +1,178 @@
-.wrapper {
-  margin-bottom: 150px;
+/* faq 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  /* title */
+
+  .fqaTitle {
+    margin: 90px 65px;
+  }
+  .fqaTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .fqaTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* submenuList */
+
+  .fqaSubMenuBox {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .fqaSubMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fqaSubMenuList {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    margin: 50px 60px 0 60px;
+  }
+  .fqaSubMenuList.subOn {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+    font-weight: bold;
+  }
+  .fqaSubMenuList:hover {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+  }
+
+  /* FaqAcco.js */
+
+  .accoBox {
+    margin-bottom: 150px;
+  }
+  .accoBox .accoImg {
+    width: 25px;
+    height: 25px;
+    margin: 10px 20px 10px;
+  }
+  .accoBox .questionBox {
+    display: flex;
+    align-items: center;
+  }
+  .accoBox .questionBox p {
+    padding-top: 20px;
+    cursor: pointer;
+  }
+  .accoBox .questionBox p:hover {
+    color: #03a65a;
+  }
+  .accoBox .answerBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .accoBox .answerBox p {
+    padding-top: 20px;
+  }
 }
 
-/* title */
+/* faq 페이지 Mobile.ver */
+@media screen and (max-width: 767px) {
+  /* title */
 
-.title {
-  margin: 106px 65px;
-}
-.title h2 {
-  color: #777777;
-  font-size: 30px;
-}
+  .fqaTitle {
+    margin: 90px 65px;
+  }
+  .fqaTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
 
-.title h3 {
-  color: #aaaaaa;
-  font-size: 28px;
-}
+  .fqaTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-/* submenuList */
+  /* submenuList */
 
-.fqaSubMenuBox {
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
+  .fqaSubMenuBox {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
 
-.fqaSubMenuList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .fqaSubMenuContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.fqaSubMenuList li {
-  background-color: #dddddd;
-  border-radius: 50px;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  display: block;
-  color: #898989;
-  font-size: 20px;
-  text-align: center;
-  margin-right: 20px;
-}
+  .fqaSubMenuList {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 30px 0 30px;
+  }
+  .fqaSubMenuList.subOn {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+    font-weight: bold;
+  }
+  .fqaSubMenuList:hover {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+  }
 
-button {
-  border: none;
-  border-radius: 50px;
-  box-shadow: none;
-  cursor: pointer;
-  width: 100%;
-  background-color: #dddddd;
-  color: #898989;
-}
+  /* FaqAcco.js */
 
-.subOn {
-  color: #ffffff;
-  background-color: #5ebf92;
-  font-weight: bold;
-}
+  .accoBox {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .accoBox .accoImg {
+    width: 20px;
+    height: 20px;
+    margin: 10px 20px 10px;
+  }
+  .accoBox .questionBox {
+    display: flex;
+    align-items: center;
+  }
+  .accoBox .questionBox p {
+    padding-top: 15px;
+    cursor: pointer;
+  }
+  .accoBox .questionBox p:hover {
+    color: #03a65a;
+  }
+  .accoBox .answerBox {
+    display: flex;
+    align-items: center;
+  }
 
-/* FaqAcco.js */
-
-.accoImg {
-  width: 25px;
-  height: 25px;
-  margin: 0 20px 10px;
-}
-
-.answerBox {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  line-height: 100px;
-}
-
-.font-weight-bold {
-  height: 70px;
-  line-height: 70px;
+  .accoBox .answerBox p {
+    padding-top: 10px;
+  }
 }
