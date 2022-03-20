@@ -1,162 +1,396 @@
-/* title */
+/* visit 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  /* title */
+  .visitTitle {
+    margin: 90px 65px;
+  }
+  .visitTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .visitTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-.visitTitle {
-  margin: 90px 65px;
-}
-.visitTitle h1 {
-  font-weight: bold;
-  color: #777777;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-.visitTitle h2 {
-  color: #aaaaaa;
-  font-size: 18px;
-  margin-bottom: 20px;
+  /* submenuList */
+
+  .visitSubMenuBox {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  .visitSubMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .visitSubMenuList {
+    display: block;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px 70px 0 70px;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .visitSubMenuList.subOn {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+    font-weight: bold;
+  }
+  .visitSubMenuList:hover {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+  }
+
+  /* visitInfo */
+
+  .visitInfo .mapBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .visitInfo .mapBox .mapBoxTop {
+    display: flex;
+    justify-content: center;
+  }
+  .visitInfo .mapBox .mapBoxTop .officeImg {
+    width: 400px;
+    margin-right: 15px;
+  }
+  #map {
+    width: 800px;
+  }
+  .visitInfo .mapBox .addressBox {
+    display: flex;
+    margin-bottom: 100px;
+    background-color: #5ebf92;
+    width: 1215px;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+  }
+  .visitInfo .mapBox .addressBox p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #fff;
+  }
+  .visitInfo .mapBox .addressBox p:last-child {
+    display: inline;
+  }
+  .visitInfo .mapBox .addressBox #addressText > span {
+    color: #fff;
+    padding-right: 5px;
+  }
+  .visitInfo .mapBox .addressBox .share {
+    padding-left: 10px;
+    padding-right: 50px;
+    display: block;
+    border: none;
+    font-size: 18px;
+    background: url(/public/images/visit/share_636363.png) no-repeat 50px center;
+    background-size: 20px;
+  }
+  .visitInfo .mapBox .addressBox .mapLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 100%;
+    background-color: #fafafa;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .visitInfo .mapBox .addressBox .mapLink a {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding-top: 58px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    background: url(/public/images/visit/map.png) no-repeat 30px 20px;
+    background-size: 30px;
+    color: inherit;
+  }
+  .visitInfo .mapBox .addressBox .mapLink a:hover {
+    background-color: #fafafa;
+    opacity: 0.6;
+  }
+
+  /* transport */
+
+  .transport {
+    margin: 150px 0 50px;
+  }
+  .transport h4 {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+  .transport h4 span {
+    color: #5ebf92;
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  .transportList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    color: #999;
+  }
+  .car,
+  .subway,
+  .bus {
+    display: flex;
+    justify-content: center;
+  }
+
+  .car,
+  .subway {
+    border-right: 1px solid #dddddd;
+    padding-right: 30px;
+  }
+
+  .transportListTitle {
+    width: 80px;
+    height: 180px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .carTitle {
+    background: url(/public/images/visit/car.png) no-repeat center top;
+    background-size: 70px;
+  }
+  .subwayTitle {
+    background: url(/public/images/visit/subway.png) no-repeat center top;
+    background-size: 70px;
+  }
+  .busTitle {
+    background: url(/public/images/visit/bus2.png) no-repeat center top;
+    background-size: 60px;
+  }
+  .transportListContents {
+    width: 330px;
+    height: 180px;
+    margin: auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .car .transportListContents p:nth-child(2),
+  .car .transportListContents p:last-child {
+    font-size: 14px;
+    margin-bottom: 0.2rem;
+  }
+  .subway .transportListContents {
+    width: 200px;
+  }
 }
 
-/* submenuList */
+/* visit 페이지 Mobile.ver */
+@media screen and (max-width: 767px) {
+  /* title */
+  .visitTitle {
+    margin: 90px 65px;
+  }
+  .visitTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .visitTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-.visitSubMenuBox {
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-.visitSubMenuContainer {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.visitSubMenuList {
-  display: block;
-  color: #999;
-  font-size: 16px;
-  text-align: center;
-  background-color: #ddd;
-  border-radius: 50px;
-  margin-left: 50px;
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-}
+  /* submenuList */
 
-.visitSubMenuList.subOn {
-  color: #ffffff;
-  background-color: #5ebf92;
-  font-weight: bold;
-}
-.visitSubMenuList:hover {
-  color: #ffffff;
-  background-color: #5ebf92;
-}
+  .visitSubMenuBox {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .visitSubMenuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .visitSubMenuList {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 
-/* visitInfo */
+  .visitSubMenuList.subOn {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+    font-weight: bold;
+  }
+  .visitSubMenuList:hover {
+    border: 1px solid #5ebf92;
+    color: #ffffff;
+    background-color: #5ebf92;
+  }
+  .visitInfo .mapBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+  .visitInfo .mapBox .mapBoxTop {
+    display: flex;
+    justify-content: center;
+  }
+  .visitInfo .mapBox .mapBoxTop .officeImg {
+    width: 150px;
+    margin-right: 15px;
+  }
+  #map {
+    width: 400px;
+  }
+  .visitInfo .mapBox .addressBox {
+    display: flex;
+    margin-bottom: 80px;
+    background-color: #5ebf92;
+    width: 565px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+  }
+  .visitInfo .mapBox .addressBox p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #fff;
+  }
+  .visitInfo .mapBox .addressBox #addressText > span {
+    color: #fff;
+    padding-right: 5px;
+  }
+  .visitInfo .mapBox .addressBox .share {
+    padding-left: 20px;
+    padding-right: 100px;
+    display: block;
+    border: none;
+    font-size: 14px;
+    background: url(/public/images/visit/share_636363.png) no-repeat 50px center;
+    background-size: 16px;
+  }
+  .visitInfo .mapBox .addressBox .mapLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fafafa;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .visitInfo .mapBox .addressBox .mapLink a {
+    display: block;
+    position: relative;
+    height: 100%;
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    background: url(/public/images/visit/map.png) no-repeat 20px 15px;
+    background-size: 20px;
+    color: inherit;
+  }
+  .visitInfo .mapBox .addressBox .mapLink a:hover {
+    background-color: #fafafa;
+    opacity: 0.6;
+  }
 
-.visitInfo .address {
-  display: flex;
-  align-items: center;
-  color: #666666;
-  margin-bottom: 30px;
-}
-.visitInfo .address h3 {
-  font-size: 25px;
-}
-.visitInfo .share {
-  width: 100px;
-  height: 40px;
-  line-height: 40px;
-  padding-left: 10px;
-  padding-right: 50px;
-  display: block;
-  border: none;
-  font-size: 18px;
-  background: url(/public/images/share.png) no-repeat 50px center;
-  background-size: 20px;
-}
-.visitInfo .mapBox {
-  display: flex;
-  margin-bottom: 150px;
-}
-.visitInfo .mapBox .officeImg {
-  width: 473px;
-  height: 500px;
-  margin-right: 67px;
-}
-#map {
-  width: 1060px;
-  height: 500px;
-}
+  /* transport */
 
-/* transport */
+  .transport {
+    margin: 0 0 30px;
+  }
+  .transport h4 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .transport h4 span {
+    color: #5ebf92;
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  .transportList {
+    margin-top: 50px;
+    color: #999;
+  }
+  .car,
+  .subway,
+  .bus {
+    display: flex;
+    padding: 20px 20px;
+  }
 
-.transport {
-  margin-bottom: 50px;
-}
-.transport h3 {
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  border: 1px solid transparent;
-  border-radius: 50px;
-  background: #dddddd;
-  color: #666666;
-  font-size: 20px;
-  text-align: center;
-}
-.transportList {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  color: #666666;
-}
-.car,
-.subway,
-.bus {
-  display: flex;
-  justify-content: center;
-}
+  .car,
+  .subway {
+    border-bottom: 1px solid #dddddd;
+  }
 
-.car,
-.subway {
-  border-right: 1px solid #dddddd;
-  padding-right: 20px;
-}
-
-.transportListTitle {
-  width: 80px;
-  height: 180px;
-  margin-right: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 100px;
-}
-.carTitle {
-  background: url(/public/images/visit/car.png) no-repeat center top;
-  background-size: 70px;
-}
-.subwayTitle {
-  background: url(/public/images/visit/subway.png) no-repeat center top;
-  background-size: 70px;
-}
-.busTitle {
-  background: url(/public/images/visit/bus2.png) no-repeat center top;
-  background-size: 60px;
-}
-.transportListContents {
-  width: 300px;
-  height: 180px;
-  margin: auto;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
-}
-.car .transportListContents p:nth-child(2),
-.car .transportListContents p:last-child {
-  font-size: 14px;
-  margin-bottom: 0.2rem;
-}
-.subway .transportListContents {
-  width: 200px;
+  .transportListTitle {
+    width: 50px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .carTitle {
+    background: url(/public/images/visit/car.png) no-repeat center top;
+    background-size: 50px;
+  }
+  .subwayTitle {
+    background: url(/public/images/visit/subway.png) no-repeat center top;
+    background-size: 50px;
+  }
+  .busTitle {
+    background: url(/public/images/visit/bus2.png) no-repeat center top;
+    background-size: 40px;
+  }
+  .transportListContents {
+    height: 100px;
+    font-size: 14px;
+    margin-left: 30px;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .car .transportListContents p:nth-child(2),
+  .car .transportListContents p:last-child {
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+  }
+  .subway .transportListContents {
+    width: 200px;
+  }
 }
