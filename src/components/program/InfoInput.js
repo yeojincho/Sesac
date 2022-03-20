@@ -2,6 +2,7 @@ import '../common/common.css';
 import './infoinput.css';
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function InfoInput(){
     return(
@@ -217,7 +218,9 @@ function InfoInput(){
                     </div>
                 </div>
                 <div className='confirmBtn'>
-                    <a href="#">신청하기</a>
+                    <Link to="/completed">
+                        <button>신청하기</button>
+                    </Link>
                 </div>
             </div>
         </div>

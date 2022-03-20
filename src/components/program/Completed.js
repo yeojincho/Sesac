@@ -2,6 +2,7 @@ import '../common/common.css';
 import './completed.css';
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Completed(){
     return(
@@ -71,8 +72,8 @@ function Completed(){
                 </div>
                 <div className='btn'>
                     <ul>
-                        <li><a href="#">뒤로가기</a></li>
-                        <li><a href="#">신청완료</a></li>
+                        <li><Link to="/infoinput"><button>뒤로가기</button></Link></li>
+                        <li><Link to="/confirm"><button>신청완료</button></Link></li>
                     </ul>
                 </div>
             </div>

@@ -6,6 +6,11 @@
     color: #454545;
 }
 
+.view-detail {
+  background-color: #f9f9f9;
+  z-index: -200;
+}
+
 .flexStyle {
     display: flex;
     align-items: center;
@@ -13,7 +18,7 @@
 }
 
 .marginBottomStyle {
-    margin-bottom: 100px;
+    padding: 20px 50px;
 }
 
 
@@ -24,10 +29,16 @@
 
 #outlineProcess .outlineProcess-left {
     flex-basis: 40%;
+    border-radius: 5px;
 }
 
-#outlineProcess .outlineProcess-left p {
-    word-break: keep-all;
+.outlineProcess-left .listText {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 45px;
+  word-break: keep-all;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 #outlineProcess .outlineProcess-right {
@@ -65,31 +76,46 @@
 
 
 /* 과정목표 */
-#processObjective .processObjective-top li {
-    list-style: disc;
+.listSubtitle {
+  background-color: #666;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
 }
 
-#processObjective .processObjective-left p {
-    font-size: 20px;
+.processObjective-left {
+  flex-basis: 40%;
 }
 
-#processObjective .processObjective-right {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.processObjective-left .listSubtitle {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.processObjective-left ul {
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #fff;
+  padding: 45px;
+}
+
+#processObjective .processObjective-left ul li {
+  list-style: disc;
+  padding-bottom: 10px;
+  word-break: keep-all;
+}
+
+.processObjective-right {
+  flex-basis: 40%;
 }
 
 #processObjective .processObjective-right .readingIcon {
-    width: 50%;
-    height: 50%;
-}
-
-#processObjective .processObjective-right ul li {
-    text-align: center;
-}
-
-#processObjective .processObjective-right ul li img {
-    width: 80px;
+    width: 40%;
+    height: 40%;
 }
 
 #processObjective .processObjective-right ul li:last-child img {
@@ -120,15 +146,9 @@
     border-radius: 5px;
 }
 
-#educationTarget .targetList .targetList-title {
-    background-color: #666;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 50px;
-}
-
 #educationTarget .targetList .targetList-text {
     padding: 15px 0;
+    background-color: #fff;
 }
 
 
@@ -144,6 +164,7 @@
   width: 150px;
   height: 200px;
   text-align: center;
+  background-color: #fff;
 }
 .curriBox .curriTitle p {
   padding: 10px 0;
@@ -152,6 +173,8 @@
   font-size: 28px;
   color: #fff;
   background: #666;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .curriBox .curriContents {
   border: 1px solid #ccc;
@@ -160,9 +183,13 @@
   width: 850px;
   padding-top: 10px;
   margin-left: 15px;
+  background-color: #fff;
 }
 .curriContentsList {
   padding-top: 10px;
+}
+.curriContentsList li {
+  list-style: disc;
 }
 /*  mainTutor */
 .mainTutorBox {
@@ -183,6 +210,10 @@
   height: 50px;
   line-height: 50px;
   text-align: center;
+}
+.mainTutorLeft a:hover p {
+  font-weight: bold;
+  color: #5ebf92;
 }
 .mainTutorRight {
   display: flex;

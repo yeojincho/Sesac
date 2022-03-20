@@ -85,7 +85,7 @@ th, td{
     text-align: center;
 }
 
-.confirmBtn a {
+.confirmBtn button {
     border-radius: 50px;
     padding: 10px 30px;
     background-color: #5EBF92;

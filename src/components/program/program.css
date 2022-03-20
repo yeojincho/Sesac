@@ -24,7 +24,7 @@ th, td{
 
 
 .tableSection {
-    margin: 100px auto;
+    margin: 100px auto 150px;
 }
 
 .tableSection .top {
@@ -34,11 +34,14 @@ th, td{
 
 .tableSection .top .downloadBtn {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 30px;
     border-radius: 10px;
     border: 1px solid #bbb;
     cursor: pointer;
     position: absolute;
+    background: url(../../../public/images/share.png) no-repeat;
+    background-size: 25px;
+    font-weight: 300;
 }
 
 .tableSection .top .date {
@@ -62,12 +65,12 @@ th, td{
 .tableSection .top .date .btnPrev {
     background: url(../../../public/images/arrow_prev.png) no-repeat center;
     background-size: 25px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .tableSection .top .date .btnNext {
     background: url(../../../public/images/arrow_next.png) no-repeat center;
     background-size: 25px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .tableSection .top .searchBox {
@@ -87,7 +90,6 @@ th, td{
 }
 
 .programTable {
-    margin-top: 20px;
     width: 100%;
     border: 1px solid #f3f3f3;
 }
@@ -96,39 +98,23 @@ th, td{
     border-bottom: 1px solid #c8c8c8;
 }
 
+.programTable thead tr th, .programTable tr th {
+    text-align: center;
+}
+
 .programTable tr:nth-child(odd) {
     background-color: #F4F4F4;
 }
 
-.programTable tr th, table tr td {
+.programTable tr th, .programTable tr td {
     padding: 20px;
 }
 
 .programTable th {
-    text-align: left;
     font-weight: bold;
 }
 
-.programTable td {
+.programTable tbody tr td {
     font-weight: 400;
-}
-
-.listSection .btn li {
-    border-radius: 50px;
-    background-color: #F4F4F4;
-    margin-right: 30px;
-    display: inline-block;
-    padding: 10px 30px;
-}
-
-
-.listSection .btn li a {
-    color: inherit;
-}
-
-/* 나중에 .focusOn 등의 class를 js로 추가하기 */
-.listSection .btn li:hover { 
-    color: #fff;
-    font-weight: bold;
-    background-color: #5EBF92;
+    text-align: left;
 }

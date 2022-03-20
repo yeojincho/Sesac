@@ -18,6 +18,7 @@ import Visit from "../../components/customer/visit";
 
 // 공개과정
 import Program from "../../components/program/Program";
+import ProgramList from "../../components/program/ProgramList";
 import Curriculum from "../../components/program/Curriculum";
 import TermsOfUse from "../../components/program/TermsOfUse";
 import InfoInput from "../../components/program/InfoInput";
@@ -66,6 +67,7 @@ export default function PCLayout({ isLogin }) {
 
         {/* 공개과정 */}
         <Route exact path='/program' component={Program}></Route>
+        <Route exact path='/programlist' component={ProgramList}></Route>
         <Route exact path='/curriculum' component={Curriculum}></Route>
         <Route exact path='/termsOfUse' component={TermsOfUse}></Route>
         <Route exact path='/infoInput' component={InfoInput}></Route>
