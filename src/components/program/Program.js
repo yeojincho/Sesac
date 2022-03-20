@@ -27,8 +27,10 @@ function Program(){
         <div className="wrapper inner-box">
             <MainBanner />
             <div className="tableSection">
-                <h2 className='mainTitle'>월간교육일정</h2>
-                <p className='subTitle'>엑스퍼트 아카데미 교육 프로그램의 월간 교육과정을 알려드립니다.</p>
+                <div className="c-top-title">
+                    <h2>월간교육일정</h2>
+                    <h3>__엑스퍼트 아카데미 교육 프로그램의 월간 교육과정을 알려드립니다.</h3>
+                </div>
                 <div className="top">
                     <button className='downloadBtn'>
                         공개교육 연간일정표 다운로드
@@ -38,7 +40,13 @@ function Program(){
                         <h3>2022년 {month}월</h3>
                         <button className='btnNext' onClick={onIncrease}>next</button>
                     </div>
-                    <input type="text" placeholder="Search" className="searchBox focus" />
+                    <div class="date-search-option programSearch">
+                        <div class="item-search">
+                            <input type="text" placeholder="검색" class="ipt-search" />
+                            <a href="#none" class="btn-search">검색</a>
+                        </div>
+                    </div>
+                    {/* <input type="text" placeholder="Search" className="searchBox" /> */}
                 </div>
                 <table className='programTable'>
                     <thead>
