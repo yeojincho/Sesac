@@ -1,18 +1,24 @@
 import '../common/common.css';
 import './infoinput.css';
+import InfoInput_table from './InfoInput_table';
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 function InfoInput(){
+    const [student, setStudent] = useState([]);
+    const studentRemove = (index) => {
+        setStudent(student => student.filter((item, i) => i !== index));
+    } //삭제하려는 요소의 인덱스를 전달해야 합니다. 전달된 인덱스와 같지 않은 인덱스가 있는 요소에 의한 삭제 핸들러 필터
+    
     return(
         <div className="wrapper inner-box">
             <div className="content">
-                <div className="step">
+                <div className="c-menu">
                     <ul>
-                        <li>1.이용약관</li><i className="fa fa-light fa-chevron-right"></i>
-                        <li>2.정보입력</li><i className="fa fa-light fa-chevron-right"></i>
-                        <li>3.신청완료</li>
+                        <li><Link to='/TermsOfUse'>1. 이용약관</Link></li>
+                        <li className="c-on" ><Link to='/infoinput'>2. 정보입력</Link></li>
+                        <li ><Link to='/completed'>3. 신청완료</Link></li>
                     </ul>
                 </div>
                 <div className='tableSection'>
@@ -33,11 +39,14 @@ function InfoInput(){
                                         교육기간 *
                                     </th>
                                     <td>
-                                        <select name="date_select" id="date_select">
-                                            <option value="">2022-01-10 ~ 2022-01-10</option>
-                                            <option value="">2022-01-10 ~ 2022-01-10</option>
-                                            <option value="">2022-01-10 ~ 2022-01-10</option>
-                                        </select>
+                                        <div class="c-inp-select-box">
+                                            <select>
+                                                <option>날짜 선택</option>
+                                                <option>2022-03-10 ~ 2022-03-10</option>
+                                                <option>2022-03-10 ~ 2022-03-10</option>
+                                                <option>2022-03-10 ~ 2022-03-10</option>
+                                            </select>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -54,125 +63,12 @@ function InfoInput(){
                     <div className="tableSectionPart">
                         <h4 className='title'>2. 교육생 정보</h4>
                         <h5 className='subtitle'>실제 교육 참가자의 정보를 입력해주세요.</h5>
-                        <div className="btn">
-                            <a href="#">교육 인원 추가+</a>
-                            <a href="#">선택 삭제</a>
+                        <div className="C-btn-box inputBtnList">
+                            <button className="btn-type1 small inputBtn"><span>교육 인원 추가 +</span></button>
+                            <button className="btn-type1 small"><span>선택 삭제</span></button>
                         </div>
                         <div className="table_info">
-                            <table className='infoTable'>
-                                <tbody>
-                                    <tr>
-                                        <td rowSpan={4}>
-                                            <input type="checkbox" />
-                                        </td>
-                                        <th>
-                                            성명 *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            생년월일(ex.2020.01.01) *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            연락처(ex.010-1111-1111) *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            E-mail *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            회사명
-                                        </th>
-                                        <td colSpan={3}>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            부서명
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            직위
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table className='infoTable'>
-                                <tbody>
-                                    <tr>
-                                        <td rowSpan={4}>
-                                            <input type="checkbox" />
-                                        </td>
-                                        <th>
-                                            성명 *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            생년월일(ex.2020.01.01) *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            연락처(ex.010-1111-1111) *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            E-mail *
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            회사명
-                                        </th>
-                                        <td colSpan={3}>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            부서명
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                        <th>
-                                            직위
-                                        </th>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <InfoInput_table />
                         </div>
                     </div>
                     <div className="tableSectionPart">
@@ -208,18 +104,34 @@ function InfoInput(){
                                         결제방법 선택 *
                                     </th>
                                     <td colSpan="2">
-                                        <input type="checkbox" /> 현금입금(계산서)
-                                        <input type="checkbox" /> 카드결제(문자전송)
-                                        <input type="checkbox" /> 카드결제(현장방문)
+                                        <div className="checkSection">
+                                            <div className="c-inp-chk-box">
+                                                <input type="checkbox" id="dcList01" className="inp-chk" />
+                                                <label htmlFor="dcList01">현금입금&#40;계산서&#41;</label>
+                                            </div>
+                                            <div className="c-inp-chk-box">
+                                                <input type="checkbox" id="dcList02" className="inp-chk" />
+                                                <label htmlFor="dcList02">카드결제&#40;문자전송&#41;</label>
+                                            </div>
+                                            <div className="c-inp-chk-box">
+                                                <input type="checkbox" id="dcList03" className="inp-chk" />
+                                                <label htmlFor="dcList03">카드결제&#40;현장방문&#41;</label>
+                                            </div>
+                                            <div className="c-inp-chk-box">
+                                                <input type="checkbox" id="dcList04" className="inp-chk" />
+                                                <label htmlFor="dcList04">무료교육</label>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <p className='paymentNoti'>* 무료교육인 경우에만 무료교육을 선택해 주세요</p>
                     </div>
                 </div>
-                <div className='confirmBtn'>
+                <div className='confirmBtn c-btn-box'>
                     <Link to="/completed">
-                        <button>신청하기</button>
+                        <button className="btn-type2 small"><span>신청하기</span></button>
                     </Link>
                 </div>
             </div>
