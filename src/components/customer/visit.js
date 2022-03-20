@@ -2,6 +2,7 @@ import React,  { useState, useEffect } from "react";
 import './visit.css'
 import Customer from './Customer';
 import VisitMap from './VisitMap';
+import { Link } from 'react-router-dom';
 
 export default function Visit(){
 
@@ -30,7 +31,6 @@ export default function Visit(){
     }   
     
 
-
     return(
         <>
             <div className="inner-box">
@@ -56,25 +56,31 @@ export default function Visit(){
                         })}
                     </ul>
                 </div>{/* e: submenu */}
-                <main className="visitInfo">
-                    <div className="address">
-                        <h3 id="addressText">주소 : <span>서울특별시 중대로 121 롯데캐슬파인힐</span>2층</h3>
-                        <button className='share' onClick={copyAddress}>
-                            공유
-                        </button>
-                    </div>
+                <main className="visitInfo">                   
                     <div className="mapBox">
+                        <div className='mapBoxTop'>
                             <img src='/images/visit/office.png' className="officeImg"></img>
-                        <VisitMap />
-                    </div>        
+                            <VisitMap />
+                        </div>
+                    <div className="addressBox">
+                        <p id="addressText">주소 : <span>서울특별시 중대로 121 롯데캐슬파인힐</span>2층</p>
+                        <p>T. 02)2152-3915</p>
+                        <button className='share' onClick={copyAddress}>
+                         공유
+                        </button>
+                        <span className='mapLink'>
+                            <a href="https://map.kakao.com/link/map/37.402056,127.108212" target="_blank" title='카카오맵 지도 열기'>지도 보기</a>
+                        </span>
+                    </div> 
+                    </div>     
                 </main>{/* e: visitInfo */}
                 <div className="transport">
-                        <h3>교통편</h3>
+                        <h4> <span>&gt;</span>교통편</h4>
                     <div className="transportList">
                         <div className="car">
                             <p className="transportListTitle carTitle">승용차</p>
                             <div className="transportListContents">
-                                <p>※ 교육생들을 위한 주차장 시설이 제공되지<br/> 않습니다.</p>
+                                <p>※ 교육생들을 위한 주차장 시설이 제공되지않습니다.</p>
                                 <p>승용차 이용 시 주차장 비용을 부담하셔야 합니다.</p>
                                 <p>(가락2 공영 주차장 / 1일 24,000원)</p>
                             </div>

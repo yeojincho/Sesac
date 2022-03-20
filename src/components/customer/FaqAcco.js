@@ -4,7 +4,6 @@ import { Collapse, CardBody, Card, CardHeader} from 'reactstrap';
 
 export default function FaqAcco(props){
     const [toggleQuestion, setToggequestion] = useState(1);
-    console.log(props.currentMenu)
     if(props.currentMenu === 0){
         return(
             <div className='wrapper inner-box'>
