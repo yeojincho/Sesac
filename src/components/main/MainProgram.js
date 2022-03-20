@@ -17,7 +17,7 @@ export default function MainProgram() {
 
   return (
     <>
-      <div className="inner-box program-category">
+      <div className="program-category">
         <div className="main-text-box">
           <span className="eyebrow">과정 카테고리</span>
           <span className="p-title">
@@ -72,7 +72,7 @@ export default function MainProgram() {
         </div>
         <div class="tab-content program-contents">
           <div
-            className={tabId % 2 === 0 ? "tab-pane active" : "tab-pane"}
+            className={tabId % 2 === 1 ? "tab-pane active" : "tab-pane"}
           >
             <div class="row">
               <div className="main-program-img">
@@ -80,7 +80,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -94,7 +94,6 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -103,7 +102,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="http://www.excacademy.co.kr/images/title_img/9VTXNHX62021011809064647NMGM7Q.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -118,7 +117,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -127,7 +126,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/09ZPMCVO20201020084210UKSFGH79.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -142,7 +141,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -151,7 +150,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="		http://www.excacademy.co.kr/images/title_img/E38SSFV220201020113216AE1IMJ6M.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -166,7 +165,6 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -175,7 +173,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/BII7UN07202010201344446TCXORBR.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_15-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -190,7 +188,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -199,7 +197,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/GRPSGK7T20201104145323B3IIAPHE.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_13-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -214,7 +212,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -223,7 +221,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/IISC79JN20210111091446DTM20DT8.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_11-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -238,7 +236,6 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -247,7 +244,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -262,7 +259,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -271,105 +268,98 @@ export default function MainProgram() {
                   {programMore && (
                     <>
                       <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/09ZPMCVO20201020084210UKSFGH79.gif"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_06-min.png"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
                     </>
                   )}
                 </ul>
@@ -386,15 +376,15 @@ export default function MainProgram() {
             </div>
           </div>
           <div
-            className={tabId % 2 === 1 ? "tab-pane active" : "tab-pane"}
+            className={tabId % 2 === 0 ? "tab-pane active" : "tab-pane"}
           >
             <div class="row">
               <div className="main-program-img">
-                <ul className="inner-box program-list">
-                  <li className="program-item">
+              <ul className="inner-box program-list">
+              <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/09ZPMCVO20201020084210UKSFGH79.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -409,31 +399,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
-                      </ul>
-                      <p className="item-title">사내강사 양성과정 사내강사 양성과정 사내강사 양성과정</p>
-                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                    </div>
-                  </li>
-                  <li className="program-item">
-                    <div className="item-img">
-                      <img
-                        src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                        alt="강의"
-                      />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
-                    </div>
-                    <div className="item-text">
-                      <ul className="item-top">
-                        <li>2DAY</li>
-                        <li>16시간</li>
-                        <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -442,7 +408,29 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="http://www.excacademy.co.kr/images/title_img/9VTXNHX62021011809064647NMGM7Q.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -457,7 +445,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -466,7 +454,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="		http://www.excacademy.co.kr/images/title_img/E38SSFV220201020113216AE1IMJ6M.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -481,7 +469,6 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -490,7 +477,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/BII7UN07202010201344446TCXORBR.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_15-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -505,7 +492,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -514,7 +501,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/GRPSGK7T20201104145323B3IIAPHE.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_13-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -529,7 +516,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -538,7 +525,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/IISC79JN20210111091446DTM20DT8.gif"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_11-min.png"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -553,7 +540,6 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -562,7 +548,7 @@ export default function MainProgram() {
                   <li className="program-item">
                     <div className="item-img">
                       <img
-                        src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg"
                         alt="강의"
                       />
                       <div className="item-img-desc">
@@ -577,7 +563,7 @@ export default function MainProgram() {
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        <li>메타버스</li>
+                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
@@ -586,105 +572,98 @@ export default function MainProgram() {
                   {programMore && (
                     <>
                       <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/09ZPMCVO20201020084210UKSFGH79.gif"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
-                      <li className="program-item">
-                        <div className="item-img">
-                          <img
-                            src="	http://www.excacademy.co.kr/images/title_img/2POFPAL120211027181346X1I5JFVL.png"
-                            alt="강의"
-                          />
-                          <div className="item-img-desc">
-                            <p>
-                              사내강사 경험이 부족한 학습자에게 꼭 필요한
-                              교수설계와 설득력을 높일 수 있는 스토리 텔링 기법
-                              소개
-                            </p>
-                          </div>
-                        </div>
-                        <div className="item-text">
-                          <ul className="item-top">
-                            <li>2DAY</li>
-                            <li>16시간</li>
-                            <li>Live</li>
-                            <li>메타버스</li>
-                          </ul>
-                          <p className="item-title">사내강사 양성과정</p>
-                          <p className="item-date">2022.02.22 ~ 2022.02.23</p>
-                        </div>
-                      </li>
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                        
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
+                  <li className="program-item">
+                    <div className="item-img">
+                      <img
+                        src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
+                        alt="강의"
+                      />
+                      <div className="item-img-desc">
+                        <p>
+                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
+                          설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        </p>
+                      </div>
+                    </div>
+                    <div className="item-text">
+                      <ul className="item-top">
+                        <li>2DAY</li>
+                        <li>16시간</li>
+                        <li>Live</li>
+                      </ul>
+                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                  </li>
                     </>
                   )}
                 </ul>

@@ -10,7 +10,7 @@
     display: block;
     width: 200px;
     height: 55px;
-    margin-left: 20px;
+    margin: 0 50px 0 50px;
     background-color: #ddd;
     border-radius: 50px;
     color: #999;
@@ -48,9 +48,9 @@
   }
   .customer-list {
     display: block;
-    width: 150px;
+    width: 200px;
     height: 40px;
-    margin-left: 20px;
+    margin-left: 40px;
     background-color: #dddddd;
     border-radius: 50px;
     text-decoration: none;
@@ -59,10 +59,14 @@
     text-align: center;
     line-height: 40px;
   }
+  /* common.css 적용이 안돼서 추가 */
+  .customer-list a {
+    color: inherit;
+  }
   .customer-list:hover {
     background-color: #03a65a;
     color: #fff;
-    font-weight: bold;
+    border: none;
   }
   .cf::after {
     content: "";

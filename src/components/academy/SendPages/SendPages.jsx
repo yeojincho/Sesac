@@ -25,7 +25,6 @@ export default function SendPage() {
   }
   return (
     <div className='inner-box SendContents'>
-      <Darkmode />
       <form onSubmit={sendEmail} className='boxContents'>
         <div>
           <p className='sendPageBoxTitle'>Write your information</p>
