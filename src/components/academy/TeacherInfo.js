@@ -16,7 +16,7 @@ export default function TeacherInfo() {
     },
     {
       name: "김세영",
-      src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98_1.PNG",
       edu: {
         one: "인재원 회장",
         two: "인재원 회장",
@@ -26,7 +26,7 @@ export default function TeacherInfo() {
     },
     {
       name: "박한솔",
-      src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98.JPG",
       edu: {
         one: "개발원 대장",
         two: "개발원 대장",
@@ -36,7 +36,7 @@ export default function TeacherInfo() {
     },
     {
       name: "이승연",
-      src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%ED%95%9C%EC%A3%BC%EB%AF%B8-%EA%B0%95%EC%82%AC%EC%86%8C%EA%B0%9C.jpg",
       edu: {
         one: "척척대학교 박사",
         two: "척척대학교 박사",
@@ -88,10 +88,10 @@ export default function TeacherInfo() {
   ));
 
   return (
-    <div className="">
-      <div className="inner-box">
+    <div className=''>
+      <div className='inner-box'>
         <Menu_title headTitle={titles[0].title} subTitle={titles[0].subTitle} />
-        <ul className="teacher-list">{namelist}</ul>
+        <ul className='teacher-list'>{namelist}</ul>
       </div>
     </div>
   );

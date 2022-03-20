@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./HrStore.css";
 import Menu_title from "./Menu_title";
 import HrItem from "./HrItem";
+import { Link } from "react-router-dom";
 
 export default function HrStore() {
   const titles = [
@@ -57,11 +58,11 @@ export default function HrStore() {
   };
 
   return (
-    <div className="">
-      <div className="inner-box">
+    <div className=''>
+      <div className='inner-box'>
         <Menu_title headTitle={titles[1].title} subTitle={titles[1].subTitle} />
-        <div className="hrBox">
-          <ul className="btnBox">
+        <div className='hrBox'>
+          <ul className='btnBox'>
             {menu.map((el, idx) => {
               return (
                 <li>
@@ -69,7 +70,7 @@ export default function HrStore() {
                     key={el.content}
                     className={currentTab === idx ? "btn on" : "btn"}
                     onClick={() => handleMneu(idx)}
-                    type="button"
+                    type='button'
                   >
                     {el.name}
                   </button>
@@ -77,7 +78,9 @@ export default function HrStore() {
               );
             })}
           </ul>
-          <ul className="hrItemList">{itemList}</ul>
+          <Link to='/OrderPage'>
+            <ul className='hrItemList'>{itemList}</ul>
+          </Link>
         </div>
       </div>
     </div>
