@@ -52,7 +52,7 @@ export default function MainExContents() {
                 <li className="ex-item">
                   <div className="item-img">
                     <img
-                      src="http://www.excacademy.co.kr/event_files/sub/EC-JCHQP2020020416578.gif"
+                      src="http://www.excacademy.co.kr/cts_files/sub/CTS-VZN4T20200324102556.gif"
                       alt="이벤트"
                     />
                   </div>
@@ -65,7 +65,7 @@ export default function MainExContents() {
                 <li className="ex-item">
                   <div className="item-img">
                     <img
-                      src="http://www.excacademy.co.kr/cts_files/sub/CTS-NINHR2020090317431.gif"
+                      src="	http://www.excacademy.co.kr/cts_files/sub/CTS-G69TF20200221154733.gif"
                       alt="이벤트"
                     />
                   </div>
