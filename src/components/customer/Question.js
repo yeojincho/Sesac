@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import Customer from "./Customer";
 import "./notice.css";
 import QuestionList from "./QuestionList";
 
-function Question() {
+function Question({ children }) {
   return (
     <React.Fragment>
       <section className="question-container">
@@ -16,7 +15,7 @@ function Question() {
         </section>
         <Customer />
         <article className="question-table">
-          <QuestionList />
+          <QuestionList children={children} />
           <div className="write-question-btn">
             <Link to="/writing">
               <button>작성하기</button>
