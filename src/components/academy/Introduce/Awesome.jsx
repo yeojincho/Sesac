@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useRef } from "react";
 import { useSpring, animated as a, interpolate } from "react-spring";
 import useWindowScroll from "@react-hook/window-scroll";
 import useScrollWidth from "./useScrollWidth";
@@ -58,7 +57,7 @@ function ScrollCarousel({ children }) {
       onMouseMove={onMouseMove}
       className='scroll-carousel'
       ref={refHeight}
-      style={{ height: "2100px" }}
+      style={{ height: "700px" }}
     >
       <div className='sticky-box'>
         <a.div
@@ -78,19 +77,23 @@ function Awesome() {
     <div className='container inner-box'>
       <ScrollCarousel>
         <div className='box '>
-          <img src='/images/pixabay/13.jpg' alt='' className='img' />
+          <img src='/images/pixabay/10.jpg' alt='' className='img' />
         </div>
         <div className='box'>
-          <img src='/images/pixabay/14.jpg' alt='' className='img' />
+          <img
+            src='/images/pixabay/KakaoTalk_20220319_225210294_08-min.png'
+            alt=''
+            className='img'
+          />
         </div>
         <div className='box'>
-          <img src='/images/pixabay/13.jpg' alt='' className='img' />
+          <img src='/images/pixabay/3.jpg' alt='' className='img' />
         </div>
         <div className='box'>
-          <img src='/images/pixabay/12.jpg' alt='' className='img' />
+          <img src='/images/pixabay/9.jpg' alt='' className='img' />
         </div>
-        <div className='box box--narrower'>
-          <img src='/images/pixabay/11.jpg' alt='' className='img' />
+        <div className='box'>
+          <img src='/images/pixabay/10.jpg' alt='' className='img' />
         </div>
       </ScrollCarousel>
       <div class='innerContainer'>

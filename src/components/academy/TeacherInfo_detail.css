@@ -1,24 +1,24 @@
 .t_infoContainer {
   padding-bottom: 70px;
+  width: 400px;
 }
 .t_btn {
-  background-color: #5EBF92;
+  margin-top: 30px;
+  background-color: #5ebf92;
   color: #fff;
   border-radius: 34px;
-  width: 125px;  
+  width: 125px;
   height: 35px;
   line-height: 32px;
   text-align: center;
   font-size: 14px;
   margin-bottom: 20px;
   border: none;
-  background-image: url('/public/images/play.png');
+  background-image: url("/public/images/play.png");
   background-repeat: no-repeat;
   background-position: right 6px top 7px;
   background-size: 20px;
 }
-
-
 
 /* .t_btn::after {
   background: url('');
@@ -30,6 +30,7 @@
   height: 250px;
   background-color: rgba(111, 111, 111, 0.6);
   margin-bottom: 13px;
+  border-radius: 15px;
 }
 
 .t_img {
@@ -41,7 +42,12 @@
   transform: translateX(-50%);
   display: block;
 }
-
+.t_infoContainer {
+  overflow: hidden;
+}
+.t_img:hover {
+  opacity: 0.5;
+}
 .t_titleInfo {
   display: flex;
   align-items: center;
@@ -52,13 +58,12 @@
 .t_titleInfo h2 {
   font-size: 26px;
   font-weight: 800;
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
-
 
 .t_titleInfo .t_motto {
   font-size: 15px;
-  color: #5EBF92;
+  color: #5ebf92;
   position: absolute;
   right: 0;
 }
@@ -68,7 +73,7 @@
 }
 
 .t_historyBox .t_history {
-  color: #6D6D6D;
+  color: #6d6d6d;
   margin-bottom: 4px;
 }
 
@@ -91,7 +96,7 @@
 #lectureList {
   width: 155px;
   height: 28px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   color: #898989;
   border: none;
   border-radius: 20px;
@@ -107,7 +112,7 @@
 } */
 
 /* Tablet */
-@media screen and  (max-width: 1023px)  {
+@media screen and (max-width: 1023px) {
   .t_titleInfo {
     display: flex;
     flex-direction: column;
@@ -131,9 +136,6 @@
   }
 }
 
-
 /* mobile */
-@media screen and (max-width:767px) {
-
+@media screen and (max-width: 767px) {
 }
-

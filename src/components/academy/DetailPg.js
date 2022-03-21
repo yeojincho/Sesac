@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import "./DatailPg.css";
+import "./DetailPg.css";
 
 function Detail() {
   //title animation
@@ -20,11 +20,11 @@ function Detail() {
       </animated.h1>
       <div className='DetailPg-accordion'>
         <Accordion
-          title='Item 1 - Expert Academy is Awesome'
+          title='- 왜 엑스퍼트 아카데미인가?'
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
         />
         <Accordion
-          title='Item 2 - Expert Academy is Awesome'
+          title='- 엑스퍼트가 특별한 이유?'
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
         />
         <Accordion
