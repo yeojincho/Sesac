@@ -100,13 +100,15 @@ function Curriculum(){
                                 <li>비대면</li>
                                 <li>290,000원</li>
                                 <li>
-                                    <select name="programSelect" id="program_select">
-                                        <option value>::::::::::::::::: 일정 선택 :::::::::::::::::</option>
-                                        <option value="">2022-04-08 (금)</option>
-                                        <option value="">2022-04-11 (월)</option>
-                                        <option value="">2022-04-12 (화)</option>
-                                        <option value="">2022-04-13 (수)</option>
-                                    </select>
+                                    <div className="c-inp-select-box">
+                                        <select name="programSelect" id="program_select">
+                                            <option value>::::::::::::::::: 일정 선택 :::::::::::::::::</option>
+                                            <option value="">2022-04-08 (금)</option>
+                                            <option value="">2022-04-11 (월)</option>
+                                            <option value="">2022-04-12 (화)</option>
+                                            <option value="">2022-04-13 (수)</option>
+                                        </select>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

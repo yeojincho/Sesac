@@ -37,8 +37,7 @@ function ViewDetail() {
             <div id='processObjective' className='marginBottomStyle'>
                 <h4 className="detailTitle">과정목표</h4>
                 <div className="flexStyle">
-                    <div className="processObjective-left
-                    ">
+                    <div className="processObjective-left">
                         <div className='listSubtitle'>사랑받는 신입사원으로 거듭나기</div>
                         <ul>
                             <li className='list-text'>조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.</li>
@@ -137,7 +136,7 @@ function ViewDetail() {
                 <h4 className='detailTitle'>대표강사</h4>
                 <div className='mainTutorBox'>
                     <div className='mainTutorLeft'>
-                        <img src="/images/moon.jpeg "alt="강사 이미지" />
+                        <img src="/images/kim.png "alt="강사 이미지" />
                         <a href="#"><p>강사 인터뷰</p></a>
                         {/* p 태그 안에 a 태그를 감싸면 글자 위로 커서를 가져갔을 때만 인식이 돼서 접근성을 위해 a 태그를 가장 바깥에 두는게 좋음!(이렇게 되면 버튼의 어느 영역에 커서를 가져가도 인식가능) */}
                     </div>{/* e: mainTutorLeft */}
