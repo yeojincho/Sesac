@@ -1,21 +1,51 @@
-.jobContentsTop {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+/* 취업과정 모집중인 과정 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  .jobContentsTop {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .jobContentsBottom {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .jobContentsBox .jobThumImg {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  .jobContentsBox .thumText {
+    margin-left: 20px;
+    color: #454545;
+  }
 }
-.jobContentsBottom {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.jobContentsBox .jobThumImg {
-  width: 300px;
-  height: 200px;
-  border: 1px solid #dddddd;
-  border-radius: 40px;
-  margin-bottom: 20px;
-}
-.jobContentsBox .thumText {
-  margin-left: 20px;
-  color: #454545;
+/* 취업과정 모집중인 과정 페이지 mobile.ver */
+@media screen and (max-width: 768px) {
+  .jobContentsTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .jobContentsBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .jobContentsBox .jobThumImg {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+  .jobContentsBox .thumText {
+    margin-left: 10px;
+    color: #454545;
+    font-size: 14px;
+  }
 }
