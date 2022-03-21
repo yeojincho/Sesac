@@ -14,6 +14,11 @@ function ProgramList(){
 
     return(
         <div className="wrapper inner-box">
+            <ul class="cont-navi">
+                <li><Link to='/'><a href="#none" class="nav-home">HOME</a></Link></li>
+                <li><Link to='/program'><a href="#none" class="nav-sub">공개과정</a></Link></li>
+                <li><span class="nav-sub">계층교육</span></li>
+            </ul>
             <div className="listSection">
                 <div className="c-top-title">
                     <h2>계층교육</h2>
