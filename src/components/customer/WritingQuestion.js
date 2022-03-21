@@ -49,70 +49,100 @@ function WritingQuestion() {
       <div>
         <Customer />
       </div>
-      <div className="question-writing-container">
+      <div className="question-form-wrap">
         <form id="question-writing-form">
-          <div className="question-form-item">
+          <fieldset id="question-fieldset">
             <div className="question-item-box">
-              <label for="name" className="writing-question-title">
-                작성자
-              </label>
-              <input
-                type="text"
-                id="question-name"
-                value={newWriter}
-                onChange={writerInput}
-              />
-            </div>
-            <div className="question-item-box">
-              <label for="pw" className="writing-question-title">
-                비밀번호
-              </label>
-              <input
-                type="password"
-                id="question-password"
-                value={newPassword}
-                onChange={passwordInput}
-              />
-            </div>
-          </div>
-          <div className="question-form-item">
-            <div className="question-item-box">
-              <label for="contact" className="writing-question-title">
-                연락처*
-              </label>
-              <input
-                type=""
-                id="question-contact"
-                value={newPhone}
-                onChange={phoneInput}
-              />
+              <p className="item-label-box">
+                <label for="name" className="writing-question-title">
+                  작성자
+                </label>
+              </p>
+              <div className="item-input-box">
+                <input
+                  type="text"
+                  id="question-name"
+                  value={newWriter}
+                  onChange={writerInput}
+                />
+              </div>
             </div>
             <div className="question-item-box">
-              <label for="mail" className="writing-question-title">
-                E-mail*
-              </label>
-              <input
-                type="email"
-                id="question-email"
-                value={newEmail}
-                onChange={emailInput}
-              />
+              <p className="item-label-box">
+                <label for="pw" className="writing-question-title">
+                  비밀번호
+                </label>
+              </p>
+              <div className="item-input-box">
+                <input
+                  type="password"
+                  id="question-password"
+                  value={newPassword}
+                  onChange={passwordInput}
+                />
+              </div>
             </div>
-          </div>
-          <div className="question-form-item cf">
-            <div className="question-title-box">
-              <label for="content" id="question-content-title">
-                문의사항
-              </label>
+            <div className="question-item-box">
+              <p className="item-label-box">
+                <label for="contact" className="writing-question-title req">
+                  연락처
+                </label>
+              </p>
+              <div className="item-input-box">
+                <input
+                  type=""
+                  id="question-contact"
+                  value={newPhone}
+                  onChange={phoneInput}
+                />
+              </div>
             </div>
-            <div className="question-content-box">
-              <textarea
-                id="question-content"
-                value={newContent}
-                onChange={contentInput}
-              ></textarea>
+            <div className="question-item-box">
+              <p className="item-label-box">
+                <label for="mail" className="writing-question-title req">
+                  E-mail
+                </label>
+              </p>
+              <div className="item-input-box">
+                <input
+                  type="email"
+                  id="question-email"
+                  value={newEmail}
+                  onChange={emailInput}
+                />
+              </div>
             </div>
-          </div>
+            <div className="question-item-box">
+              <p className="item-label-box">
+                <label for="title" className="writing-question-title">
+                  제목
+                </label>
+              </p>
+              <div className="item-input-box">
+                <input
+                  id="question-title"
+                  // value={newTitle}
+                  // onChange={TitleInput}
+                ></input>
+              </div>
+            </div>
+            <div className="question-item-box">
+              <p className="item-label-box">
+                <label for="content" className="writing-question-title">
+                  문의사항
+                </label>
+              </p>
+              <div className="item-input-box">
+                <div className="item-content-box">
+                  <textarea
+                    id="question-content"
+                    value={newContent}
+                    onChange={contentInput}
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </form>
         <div className="question-btn-box">
           <button className="question-submit-btn" onClick={createQuestion}>
