@@ -1,16 +1,11 @@
 import '../common/common.css';
 import './infoinput.css';
-import InfoInput_table from './InfoInput_table';
+import InfoInput_section from './InfoInput_section';
 
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 function InfoInput(){
-    const [student, setStudent] = useState([]);
-    const studentRemove = (index) => {
-        setStudent(student => student.filter((item, i) => i !== index));
-    } //삭제하려는 요소의 인덱스를 전달해야 합니다. 전달된 인덱스와 같지 않은 인덱스가 있는 요소에 의한 삭제 핸들러 필터
-    
     return(
         <div className="wrapper inner-box">
             <ul class="cont-navi">
@@ -70,13 +65,7 @@ function InfoInput(){
                     <div className="tableSectionPart">
                         <h4 className='title'>2. 교육생 정보</h4>
                         <h5 className='subtitle'>실제 교육 참가자의 정보를 입력해주세요.</h5>
-                        <div className="C-btn-box inputBtnList">
-                            <button className="btn-type1 small inputBtn"><span>교육 인원 추가 +</span></button>
-                            <button className="btn-type1 small"><span>선택 삭제</span></button>
-                        </div>
-                        <div className="table_info">
-                            <InfoInput_table />
-                        </div>
+                        <InfoInput_section />
                     </div>
                     <div className="tableSectionPart">
                         <h4 className='title'>3. 결제 금액</h4>
