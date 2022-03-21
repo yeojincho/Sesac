@@ -34,12 +34,30 @@
   color: #212529;
   margin-bottom: 2px;
 }
-
+.account-userinfo {
+  margin: 10px 0 40px;
+}
 
 .account-userinfo p {
+  font-weight: lighter;
   margin-bottom: 5px;
-  color: #03A65A;
+  color: #212529;
 }
+
+.account-userinfo p::before {
+  content:'';
+  display:inline-block;
+  width:6px;
+  height:6px;
+  margin:-5px 10px auto 4px;
+  vertical-align:middle;
+  border-right:1px solid #27aa84;
+  border-top:1px solid #27aa84;
+  transform:rotate(45deg)
+}
+
+
+
 
 .account-contentBox .form {
   margin-top: 30px;
@@ -56,6 +74,8 @@
   /* display: flex; */
 }
 
+
+
 .account-myTitle {
   font-size: 18px;
 }
@@ -65,9 +85,33 @@
   border: none;
   background-color: transparent;
 }
-.account-Imp {
-  font-weight: 700;
+
+.account-contentBox #withdrwal-reason {
+  width: 500px;
+  height: 230px;
 }
+
+.account-contentBox #withdrwal-reason::placeholder
+ {
+  color: #636363;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: left;
+}
+
+
+.account-contentBox #password-check::placeholder
+ {
+  color: #636363;
+  font-weight: lighter;
+  font-style: italic;
+  position: relative;
+  top: -30px;
+}
+
+
+
+
 .account-FormText {
   width: 400px;
   height: 200px;
@@ -91,3 +135,6 @@
   display: flex;
 }
 
+.account-contentBox label {
+  display: block;
+}

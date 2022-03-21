@@ -7,7 +7,9 @@
 .inner-box .flex-box {
   display: flex;
 }
-
+.Management-contentBox {
+  width: 50%;
+}
 
 /* contentBox title 공통 */
 .Management-contentBox .pageTitle {
@@ -23,7 +25,9 @@
   font-size: 21px;
   color: #191b20;
 }
-.Management-infoTitle {
+.Management-infoForm .Management-infoTitle {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #212529;
 }
 
 
@@ -78,6 +82,7 @@
   font-weight: lighter;
   margin-bottom: 6px;
   margin-top: 16px;
+  font-size: 17px;
 }
 
 
@@ -92,12 +97,47 @@
 }
 
 
-.service {
-  font-weight: 500;
-  font-size: 16px;
-  color: #191b20;
+
+/* 주소검색 */
+#roadAddrPart1 {
+  width: 87%;
 }
 
+#roadAddrPart2 {
+  width: 87%;
+  margin-top: 20px;
+}
+.zipBox {
+  position: relative;
+}
+
+#zipBtn {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  background-color: #eee;
+  color: #191b20;
+  font-weight: lighter;
+  padding: 3px 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.postCode_btn {
+  position: absolute;
+  right: -70px;
+  top: 5px;
+  background-color: #eee;
+  color: #191b20;
+  font-weight: lighter;
+  padding: 3px 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#zipContainer {
+  border: 1px solid reds;
+}
 
 /* 버튼2개 */
 .Management-bottomBtn {
@@ -148,3 +188,9 @@
 }
 
 
+/* placeholder css */
+.Management-contentBox input::placeholder {
+  color: #636363;
+  font-weight: lighter;
+  font-style: italic;
+}
