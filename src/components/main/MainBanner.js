@@ -36,7 +36,7 @@ export default function MainBanner() {
         }}
       >
         <SwiperSlide>
-          <img src="/images/green.png" alt="재생" className="banner-img"/>
+          {/* <img src="/images/green.png" alt="재생" className="banner-img"/> */}
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel-top-title">Power BI</h1>
@@ -47,7 +47,7 @@ export default function MainBanner() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src="/images/main/blue-banner.jpg" alt="재생" className="banner-img"/>
+        {/* <img src="/images/main/blue-banner.jpg" alt="재생" className="banner-img"/> */}
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel2-top-title">사내강사 양성과정</h1>
@@ -58,7 +58,7 @@ export default function MainBanner() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src="/images/main/banner2.jpg" alt="재생" className="banner-img"/>
+        {/* <img src="/images/main/banner2.jpg" alt="재생" className="banner-img"/> */}
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel2-top-title">Power BI</h1>
