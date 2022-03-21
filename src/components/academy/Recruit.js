@@ -1,104 +1,111 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import $ from 'jquery';
 import "./Recruit.css";
-import { Label, FormGroup, Input, Button, Form, Col } from "reactstrap";
+
 function Recruit() {
+  const [file, setFile] = useState(null);
+  const fileFn  = (file)=>{
+    setFile(file[0].name);
+    $(".file-delete").addClass("on")
+  }
+  const removeFileFn = () =>{
+    $(".file-delete").removeClass("on");
+    $("#fileInput").val("");
+
+  }
   return (
     <div className='recruit-wrap inner-box'>
-      <h3 className='recruit-header'>
-        <b>인재채용안내</b>
-      </h3>
-      <span className='recruit-span'>
-        엑스퍼트 아카데미는 실력있는 강사님과 매니저를 선발합니다.
-      </span>
-      <div className='recruit-Contents'>
-        <img className='recruit-lectureImg' src={"/images/lecture1.png"} />
-        <Form>
-          <FormGroup row className='recruit-TextBox'>
-            <Label for='apply' sm={2} className='recruit-subTitle'>
-              지원자명
-            </Label>
-            <Col sm={10}>
-              <Input id='apply' name='apply' placeholder='name' type='text' />
-            </Col>
-          </FormGroup>
-          <FormGroup row className='TextBox'>
-            <Label for='examplePassword' sm={2} className='subTitle'>
-              연락처
-            </Label>
-            <Col sm={10}>
-              <Input
-                id='examplePassword'
-                name='password'
-                placeholder='phone number'
-                type='text'
-              />
-            </Col>
-          </FormGroup>
-          <FormGroup row className='recruit-TextBox'>
-            <Label for='examplePassword' sm={2} className='recruit-subTitle'>
-              E-mail
-            </Label>
-            <Col sm={10}>
-              <Input
-                id='examplePassword'
-                name='password'
-                placeholder='email'
-                type='email'
-              />
-            </Col>
-          </FormGroup>
-          <FormGroup row className='recruit-TextBox'>
-            <Label for='examplePassword' sm={2} className='recruit-subTitle'>
-              주요역량
-            </Label>
-            <Col sm={10}>
-              <Input
-                id='examplePassword'
-                name='password'
-                placeholder='text'
-                type='text'
-              />
-            </Col>
-          </FormGroup>
-          <FormGroup row tag='fieldset' className='recruit-TextBox'>
-            <legend className='col-form-label col-sm-2 subTitle'>
-              지원분야
-            </legend>
-            <Col sm={10}>
-              <FormGroup className='recruit-FormGroup' check>
-                <Input name='radio2' type='radio' /> <Label check>강사</Label>
-              </FormGroup>
-              <FormGroup check>
-                <Input name='radio2' type='radio' /> <Label check>매니저</Label>
-              </FormGroup>
-            </Col>
-          </FormGroup>
-          <FormGroup row className='recruit-TextBox'>
-            <Label for='checkbox2' sm={2} className='subTitle'>
-              Checkbox
-            </Label>
-            <Col
-              sm={{
-                size: 10,
-              }}
-            >
-              <FormGroup check>
-                <Input id='checkbox2' type='checkbox' />{" "}
-                <Label check>Check me out</Label>
-              </FormGroup>
-            </Col>
-          </FormGroup>
-          <FormGroup check row>
-            <Col
-              sm={{
-                offset: 2,
-                size: 10,
-              }}
-            >
-              <Button className='recruit-submitBtn'>Submit</Button>
-            </Col>
-          </FormGroup>
-        </Form>
+      <ul class="cont-navi">
+        <li><a href="#none" class="nav-home">HOME</a></li>
+        <li><span class="nav-sub">아카데미</span></li>
+        <li><span class="nav-sub">인재채용</span></li>
+      </ul>
+      <div className="c-top-title">
+        <h2>인재 채용 안내</h2>
+        <h3>__엑스퍼트아카데미는 실력있는 강사님과 매니저를 선발 합니다.</h3>
+      </div>
+
+      <div className="recruit-box">
+        <img className='recruit-lectureImg' src="/images/lecture1.png" />
+        <div className="cont-form-box"> 
+          <ul className="form-list">
+            <li>
+              <p className="form-title"><span className="ess">지원자명</span></p>
+              <div className="form-cont">
+                <div className="count-input inp">
+                  <input type="text" className="ipt-txt"  placeholder="이름을 입력해주세요." />
+                </div>
+              </div>
+            </li>
+            <li>
+              <p className="form-title"><span className="ess">연락처</span></p>
+              <div className="form-cont">
+                <div className="count-input inp">
+                  <input type="text" className="ipt-txt"  placeholder="연락처를 입력해주세요." />
+                </div>
+              </div>
+            </li>
+            <li>
+              <p className="form-title"><span className="ess">이메일</span></p>
+              <div className="form-cont">
+                <div className="count-input inp">
+                  <input type="text" className="ipt-txt"  placeholder="이메일을 입력해주세요." />
+                </div>
+              </div>
+            </li>
+            <li>
+              <p className="form-title"><span className="ess">지원 분야</span></p>
+              <div className="form-cont">
+                <ul class="radio-set">
+                  <li>
+                    <div class="inp-radio-box">
+                      <input type="radio" id="gsRdo0" class="ipt-rdo" name="gsRdo" />
+                      <label htmlFor="gsRdo0"><span>강사</span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="inp-radio-box">
+                      <input type="radio" id="gsRdo1" class="ipt-rdo" name="gsRdo" />
+                      <label htmlFor="gsRdo1"><span>매니저</span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p className="form-title"><span>주요 역량</span></p>
+              <div className="form-cont">
+                <div className="count-input ta">
+                  <textarea id="title1" title="내용" placeholder="주요 역량 내용을 입력해주세요." ></textarea>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p className="form-title"><span>이력서 첨부</span></p>
+              <div className="form-cont">
+                <div className="upload-box">
+                  <div className="file-upload">
+                    <input type="text" className="ipt-upload" placeholder="파일을 선택해 주세요." title="첨부파일" readonly="" id="fileInput" value={file}/>
+                    <input type="file" id="file1" className="ipt-file" onChange={(e)=>fileFn(e.target.files)} multiple="multiple"/>
+                    <label htmlFor="file1" className="btn-file">파일선택</label>
+                    <button className="file-delete" onClick={removeFileFn} >삭제</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div className="form-description type2"> 
+          제출된 서류는 반환하지 않으며 이력서 기재사항과 제출된 서류에 사실과 다르게 기재된 사항이 있을 경우 합격 취소 등
+  불이익을 받을 수 있습니다.
+          </div> 
+          <Link to="/Recruit/complete">
+          <div className="c-btn-box">
+            <button className="btn-type2"><span>등록</span></button>
+          </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

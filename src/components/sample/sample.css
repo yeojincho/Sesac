@@ -1,6 +1,42 @@
-
-
-
+/* 00.상단 페이지 경로 */
+.cont-navi {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+}
+.cont-navi li .nav-home {
+  padding-left: 17px;
+}
+.cont-navi li a, .cont-navi li span {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 14px;
+  font-size: 13px;
+  color: #aaa;
+  line-height: 74px;
+  letter-spacing: 0;
+}
+.cont-navi li .nav-home:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 11px;
+  margin-top: -6px;
+  background: url(/public/images/ico_home.png) no-repeat center center;
+}
+.cont-navi li .nav-sub:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 9px;
+  margin-top: -5px;
+  background: url(/public/images/ico_navi_arrow.png) no-repeat center center;
+}
 
 /* 01.상단 공통 타이틀 */
 .c-top-title{
@@ -482,7 +518,7 @@
 
 /* 11.완료페이지 */
 .complete-page .complete-contents {
-  padding: 70px 15px 130px;
+  padding: 100px 15px;
   border-radius: 7px;
   background: #f5f5f5;
   text-align: center;
@@ -492,9 +528,10 @@
   font-size: 28px;
   color: #222;
   line-height: 36px;
+  font-weight: bold;
 }
 .complete-page .complete-contents .complete-desc {
-  margin-top: 4px;
+  margin-top: 15px;
   font-size: 16px;
   color: #444;
   line-height: 24px;
@@ -502,5 +539,5 @@
 
 .complete-main-btn{
   text-align: center;
-  margin: -80px 0 80px;
+  margin: 0 0 40px;
 }
