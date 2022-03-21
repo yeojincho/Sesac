@@ -77,6 +77,12 @@ function Curriculum(){
     
     return(
         <div className="wrapper inner-box">
+            <ul class="cont-navi">
+                <li><Link to='/'><a href="#none" class="nav-home">HOME</a></Link></li>
+                <li><Link to='/program'><a href="#none" class="nav-sub">공개과정</a></Link></li>
+                <li><Link to='/programlist'><a href="#none" class="nav-sub">계층교육</a></Link></li>
+                <li><span class="nav-sub">교육 상세</span></li>
+            </ul>
             {/* { BtnStatus &&<button className="scrollTopBtn" onClick={handleTop}>TOP</button> } */}
             <div className="topDetailpage">
                 <div className="left">

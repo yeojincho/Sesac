@@ -1,6 +1,7 @@
 import './program.css';
 
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 import MainBanner from '../../components/main/MainBanner';
 
@@ -25,6 +26,10 @@ function Program(){
 
     return(
         <div className="wrapper inner-box">
+            <ul class="cont-navi">
+                <li><Link to='/'><a href="#none" class="nav-home">HOME</a></Link></li>
+                <li><span class="nav-sub">공개과정</span></li>
+            </ul>
             <MainBanner />
             <div className="tableSection">
                 <div className="c-top-title">
