@@ -19,8 +19,44 @@ th, td{
     border: 1px solid #f3f3f3;
 }
 
+.infoTable tbody tr td input[type=text] {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: inherit;
+}
+
 .tableSectionPart:nth-child(2) .infoTable {
     margin-top: 10px;
+}
+
+.inputTotal {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.inputUlFlex {
+    /* display: flex; */
+}
+
+.infoItemDel {
+    display: flex;
+    align-items: center;
+}
+.infoItemDelBtn {
+    margin-top: 0;
+    margin-right: 50px;
+    font-weight: bold;
+    color: #03A65A;
+    font-size: 14px;
+    border: 1px solid #f9f9f9;
+    width: 60px;
+    height: 40px;
+}
+.infoItemTit {
+    font-size: 24px;
 }
 
 .tablePrice {

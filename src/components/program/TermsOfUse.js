@@ -50,14 +50,14 @@ function TermsOfUse(){
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quisquam beatae quis velit culpa labore suscipit possimus ullam fuga nesciunt, amet quaerat ipsa? Perferendis et ex doloribus sapiente placeat dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, corrupti. Alias, optio hic quaerat tempore officia, ducimus nobis natus, illo dignissimos autem architecto earum! Beatae amet animi hic doloribus quae!</p>
                         </div>
                         <div className="c-inp-chk-box">
-                            <input type="checkbox" id="dcList01" className="inp-chk" />
-                            <label htmlFor="dcList01">위 이용약관에 동의합니다</label>
+                            <input type="checkbox" id="dcList02" className="inp-chk" />
+                            <label htmlFor="dcList02">위 이용약관에 동의합니다</label>
                         </div>
                     </div>
                     <div className='agree_box'>
                         <div className="c-inp-chk-box">
-                            <input type="checkbox" id="dcList01" className="inp-chk" />
-                            <label htmlFor="dcList01">위 이용약관에 동의합니다</label>
+                            <input type="checkbox" id="dcList03" className="inp-chk" />
+                            <label htmlFor="dcList03">위 이용약관에 동의합니다</label>
                         </div>
                     </div>
                     <div className="ok_btn">
