@@ -10,34 +10,59 @@ export default function HrStore() {
       title: "엑스퍼트 아카데미 강사소개",
       subTitle: "엑스퍼트 아카데미만의 강사님을 소개합니다.",
     },
-    {
-      title: "HR샵",
-      subTitle: "__교육에 필요한 옵션 및 상품정보를 제공합니다.",
-    },
   ];
   const itemInfo = [
     {
-      src: "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_1280.jpg",
+      src: "/images/academy/expert.png",
       item: "엑공박스 베이직",
       price: "10,000",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_1280.jpg",
+      src: "/images/shopitem3.jpg",
       item: "엑공박스 프리미엄",
       price: "12,000",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_1280.jpg",
+      src: "/images/academy/expert.png",
+
       item: "도시락 업그레이드",
       price: "5,000",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_1280.jpg",
+      src: "/images/shopitem3.jpg",
+
       item: "아침제공 서비스",
       price: "10,000",
     },
     {
-      src: "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_1280.jpg",
+      src: "/images/academy/expert.png",
+      item: "사내강사 과정 필수템 포인터",
+      price: "10,000",
+    },
+    {
+      src: "/images/shopitem3.jpg",
+
+      item: "사내강사 과정 필수템 포인터",
+      price: "10,000",
+    },
+    {
+      src: "/images/academy/expert.png",
+      item: "사내강사 과정 필수템 포인터",
+      price: "10,000",
+    },
+    {
+      src: "/images/shopitem3.jpg",
+      item: "사내강사 과정 필수템 포인터",
+      price: "10,000",
+    },
+    {
+      src: "/images/academy/expert.png",
+
+      item: "사내강사 과정 필수템 포인터",
+      price: "10,000",
+    },
+    {
+      src: "/images/shopitem3.jpg",
       item: "사내강사 과정 필수템 포인터",
       price: "10,000",
     },
@@ -60,7 +85,14 @@ export default function HrStore() {
   return (
     <div className=''>
       <div className='inner-box'>
-        <Menu_title headTitle={titles[1].title} subTitle={titles[1].subTitle} />
+        <div className='orderPage-bigTlte'>
+          <h3 className='orderPage-h3'>
+            <b>HR샵</b>
+          </h3>
+          <span className='orderPage-span'>
+            __교육에 필요한 옵션 및 상품정보를 제공합니다.
+          </span>
+        </div>
         <div className='hrBox'>
           <ul className='btnBox'>
             {menu.map((el, idx) => {
@@ -82,6 +114,9 @@ export default function HrStore() {
             <ul className='hrItemList'>{itemList}</ul>
           </Link>
         </div>
+      </div>
+      <div className='bottomBannerImg'>
+        <img src='/images/academy/008.png' alt='' />
       </div>
     </div>
   );

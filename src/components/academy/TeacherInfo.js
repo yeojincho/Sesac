@@ -66,17 +66,6 @@ export default function TeacherInfo() {
     },
   ];
 
-  const titles = [
-    {
-      title: "엑스퍼트 아카데미 강사소개",
-      subTitle: "엑스퍼트 아카데미만의 강사님을 소개합니다.",
-    },
-    {
-      title: "HR샵",
-      subTitle: "__교육에 필요한 옵션 및 상품정보를 제공합니다.",
-    },
-  ];
-
   const namelist = info.map((data, idx) => (
     <TeacherInfo_detail
       key={idx}
@@ -89,8 +78,15 @@ export default function TeacherInfo() {
 
   return (
     <div className=''>
-      <div className='inner-box'>
-        <Menu_title headTitle={titles[0].title} subTitle={titles[0].subTitle} />
+      <div className='orderPage-bigTlte'>
+        <h3 className='orderPage-h3'>
+          <b>강사정보</b>
+        </h3>
+        <span className='orderPage-span'>
+          __교육에 필요한 옵션 및 상품정보를 제공합니다.
+        </span>
+      </div>
+      <div className='inner-box '>
         <ul className='teacher-list'>{namelist}</ul>
       </div>
     </div>

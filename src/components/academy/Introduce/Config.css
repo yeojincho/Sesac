@@ -1,8 +1,11 @@
 .IntroduceBox {
+  width: 100%;
   height: 800px;
+  background-color: #eaeaea;
 }
 .IntroduceBox div {
-  margin: 30px 30px;
+  margin: 0 30px;
+  padding: 15px 0;
 }
 .IntroduceBox span {
   font-size: 100px;

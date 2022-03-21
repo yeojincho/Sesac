@@ -1,8 +1,22 @@
 import emailjs from "@emailjs/browser";
 import "./SendPages.css";
-import Darkmode from "../../Darkmode/Darkmode";
-
+import Darkmode from "../../Darkmode/Darkmode.js";
+import React, { useState } from "react";
+import Modal from "../Modal/Modal.js";
 export default function SendPage() {
+  const [value, setValue] = useState([60000, 70000, 80000]);
+  const [quantity, setQuantity] = useState(0);
+  /* const caculator = 20000; */
+  let [HowMuch, setHowmuch] = useState();
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   function sendEmail(e) {
     e.preventDefault();
 
@@ -23,8 +37,10 @@ export default function SendPage() {
       );
     e.target.reset();
   }
+
   return (
     <div className='inner-box SendContents'>
+      <Darkmode />
       <form onSubmit={sendEmail} className='boxContents'>
         <div>
           <p className='sendPageBoxTitle'>Write your information</p>
@@ -65,9 +81,12 @@ export default function SendPage() {
             required='required'
           ></textarea>
           <br />
-          <button type='submit' className='contact-button'>
+          <button type='submit' className='contact-button' onClick={openModal}>
             Send Message Now
           </button>
+          <Modal open={modalOpen} close={closeModal}>
+            전송되었습니다! 빠르게 답장드릴게요 🥺
+          </Modal>
         </div>
       </form>
     </div>
