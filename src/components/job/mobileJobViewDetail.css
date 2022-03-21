@@ -1,10 +1,10 @@
-/* viewDetail 페이지 PC.ver */
-@media screen and (min-width: 768px) {
+/* viewDetail 페이지 mobile.ver */
+@media screen and (max-width: 768px) {
   /* common */
   .detailTitle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: #454545;
   }
   .view-detail {
@@ -24,7 +24,11 @@
 
   /* 과정개요 */
   #outlineProcess {
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+  #outlineProcess .flexStyle {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   #outlineProcess .outlineProcess-left {
@@ -35,14 +39,19 @@
   .outlineProcess-left .listText {
     border: 1px solid #ccc;
     background-color: #fff;
-    padding: 45px;
+    padding: 35px;
     word-break: keep-all;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    font-size: 14px;
   }
 
   #outlineProcess .outlineProcess-right {
     flex-basis: 40%;
+    margin-top: 50px;
+  }
+  #outlineProcess .outlineProcess-right .flexStyle {
+    flex-direction: row;
   }
 
   #outlineProcess .outlineProcess-right .iconList li {
@@ -75,6 +84,12 @@
   }
 
   /* 과정목표 */
+  #processObjective .flexStyle {
+    flex-direction: column;
+  }
+  #processObjective .processObjective-right .flexStyle {
+    flex-direction: row;
+  }
   .processObjective-left .listSubtitle {
     background-color: #666;
     color: #fff;
@@ -91,7 +106,7 @@
 
   .processObjective-left .listSubtitle {
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .processObjective-left ul {
@@ -99,26 +114,29 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #fff;
-    padding: 45px;
+    padding: 35px;
+    font-size: 14px;
   }
 
   #processObjective .processObjective-left ul li {
     list-style: disc;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     word-break: keep-all;
   }
-
-  .processObjective-right {
+  #processObjective .processObjective-right .flexStyle {
+  }
+  #processObjective .processObjective-right {
     flex-basis: 40%;
+    margin-top: 50px;
   }
   #processObjective .processObjective-right .readingIcon {
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
   }
-
-  /* #processObjective .processObjective-right ul li:last-child img {
-  width: 70px;
-} */
+  #processObjective .processObjective-right ul li img {
+    width: 80%;
+    margin-left: 8px; /*가운데 정렬이 안돼서 추가했어요*/
+  }
 
   #processObjective .processObjective-right ul li p {
     background-color: #000;
@@ -147,6 +165,7 @@
   #educationTarget .targetList .targetList-text {
     padding: 15px 0;
     background-color: #fff;
+    font-size: 14px;
   }
 
   /* 승연 파트 */
@@ -166,6 +185,7 @@
   }
   .curriBox .curriTitle p {
     padding: 10px 0;
+    font-size: 14px;
   }
   .curriBox .curriTitle p:first-child {
     font-size: 28px;
@@ -184,7 +204,9 @@
     background-color: #fff;
   }
   .curriContentsList {
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 14px;
   }
   .curriContentsList li {
     list-style: disc;
@@ -192,20 +214,22 @@
   /*  mainTutor */
   .mainTutorBox {
     display: flex;
-    margin-right: 90px;
-    margin-left: 90px;
+    margin: auto;
+  }
+  .mainTutorLeft {
+    position: relative;
   }
   .mainTutorLeft img {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 250px;
     margin-bottom: 10px;
   }
   .mainTutorLeft p {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 400px;
+    width: 300px;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -222,23 +246,26 @@
   .mainTutorRight .mainTutorInfo {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 600px;
-    height: 200px;
+    width: 330px;
+    height: 310px;
   }
   .mainTutorRight .mainTutorInfo p:first-child {
     text-align: center;
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .mainTutorRight .mainTutorInfo p:last-child {
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .mainTutorRight .mainTutorInfo p:last-child span {
     font-size: 28px;
   }
   .mainTutorRight .mainTutorRigthBottom {
     display: flex;
+    position: absolute;
+    left: 50px;
+    margin-top: 320px;
     height: 195px;
   }
   .mainTutorRight .mainTutorRigthBottom p {
@@ -248,16 +275,24 @@
   .mainTutorRight .mainTutorRigthBottom .mainTutorCareer {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 290px;
+    width: 300px;
     margin-right: 10px;
   }
   .mainTutorRight .mainTutorRigthBottom .mainTutorPlace {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 290px;
+    width: 330px;
     margin-left: 10px;
   }
+  .mainTutorRight .mainTutorRigthBottom .mainTutorCareer ul,
+  .mainTutorRight .mainTutorRigthBottom .mainTutorPlace ul {
+    padding-left: 20px;
+  }
+
   /*  applyInfo */
+  #applyInfo {
+    margin-top: 200px;
+  }
   .applyInfoStepBox {
     width: 100%;
   }

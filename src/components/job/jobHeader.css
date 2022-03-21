@@ -1,40 +1,100 @@
-/* title */
+/* 취업과정 header 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  /* title */
 
-.jobTitle {
-  margin: 90px 65px;
+  .jobTitle {
+    margin: 90px 65px;
+  }
+  .jobTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .jobTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* menu */
+
+  .jobMenuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jobMenuList li {
+    background-color: #dddddd;
+    border-radius: 50px;
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    display: block;
+    color: #454545;
+    font-size: 20px;
+    text-align: center;
+  }
+  .jobMenuList li a {
+    color: inherit;
+  }
+  .jobMenuList li:hover {
+    background-color: #03a65a;
+    color: #fff;
+    border: none;
+  }
 }
-.jobTitle h1 {
-  font-weight: bold;
-  color: #777777;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
+/* 취업과정 header mobile.ver */
+@media screen and (max-width: 768px) {
+  /* title */
 
-.jobTitle h2 {
-  color: #aaaaaa;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+  .jobTitle {
+    margin: 90px 65px;
+  }
+  .jobTitle h1 {
+    font-weight: bold;
+    color: #777777;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
 
-/* menu */
+  .jobTitle h2 {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-.jobMenuList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* menu */
 
-.jobMenuList li {
-  border: 1px solid transparent;
-  background-color: #dddddd;
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  margin-right: 30px;
-  margin-bottom: 50px;
-  display: block;
-  color: #454545;
-  font-size: 20px;
-  text-align: center;
+  .jobMenuList {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobMenuList li {
+    background-color: #dddddd;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    display: block;
+    color: #454545;
+    font-size: 14px;
+    text-align: center;
+  }
+  .jobMenuList li a {
+    color: inherit;
+  }
+  .jobMenuList li:hover {
+    background-color: #03a65a;
+    color: #fff;
+    border: none;
+  }
 }
