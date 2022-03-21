@@ -7,6 +7,10 @@ export default function Join() {
   return (
     <div className="join-wrapper">
       <div className="inner-box join-inner">
+        <ul class="cont-navi">
+          <li><a href="#none" class="nav-home">HOME</a></li>
+          <li><span class="nav-sub">회원가입</span></li>
+        </ul>
         <div className="top-title">
           <h2>회원가입</h2>
           <h3>__회원가입 구분</h3>

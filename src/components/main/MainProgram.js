@@ -119,7 +119,7 @@ export default function MainProgram() {
                         <li>Live</li>
                         
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -143,7 +143,7 @@ export default function MainProgram() {
                         <li>Live</li>
                         
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -166,7 +166,7 @@ export default function MainProgram() {
                         <li>16시간</li>
                         <li>Live</li>
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -190,7 +190,7 @@ export default function MainProgram() {
                         <li>Live</li>
                         
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -214,7 +214,7 @@ export default function MainProgram() {
                         <li>Live</li>
                         
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -237,7 +237,7 @@ export default function MainProgram() {
                         <li>16시간</li>
                         <li>Live</li>
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>
@@ -261,7 +261,7 @@ export default function MainProgram() {
                         <li>Live</li>
                         
                       </ul>
-                      <p className="item-title">사내강사 양성과정</p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
                   </li>

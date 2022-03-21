@@ -1,64 +1,85 @@
 /* PC용  */
 @media screen and (min-width: 768px) {
-  /* 작성하기 페이지 CSS */
-  .question-writing-form {
-    border-collapse: collapse;
+  /* 문의사항 글작성 페이지 CSS */
+  .question-form-wrap {
+    margin-top: 15px;
+    width: 1300px;
+    margin: 50px auto 0;
+  }
+  .question-form-wrap .item-label-box,
+  .question-form-wrap .item-input-box {
+    display: table-cell;
+    padding: 5px 30px 5px 0;
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #000;
+  }
+  .question-form-wrap .question-item-box {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .question-form-wrap .item-input-box #question-name,
+  .question-form-wrap .item-input-box #question-password,
+  .question-form-wrap .item-input-box #question-contact,
+  .question-form-wrap .item-input-box #question-email,
+  .question-form-wrap .item-input-box #question-title,
+  .question-form-wrap .item-input-box #question-content {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+  }
+  .question-form-wrap .item-input-box {
+    width: 100%;
+  }
+  .question-form-wrap .item-input-box #question-content {
+    height: 20vh;
   }
   #question-writing-form {
-    width: 1300px;
-    margin: 100px auto;
+    border-top: 1px solid #ddd;
+    margin: 0 auto 10vh;
+    width: 70%;
+    position: relative;
   }
-  #question-writing-form,
-  .writing-title,
-  .question-item-box {
-    border: 1px solid #eeeeee;
+  #question-writing-form .question-item-box {
+    padding-left: 30px;
   }
-  .question-form-item {
-    display: flex;
+  .item-label-box label {
+    width: 10vw;
   }
-  .question-item-box {
-    width: 50%;
-    height: 90px;
+  .question-form-wrap
+    .question-writing-form
+    .question-item-box
+    .item-input-box {
+    margin-left: 20px;
   }
-  #question-name,
-  #question-password,
-  #question-contact,
-  #question-email,
-  #question-content {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #eeeeee;
-    border: none;
-    outline: none;
-  }
-  .writing-question-title {
-    width: 30%;
-    height: 100%;
-    font-size: 18px;
-    border-right: 1px solid #eeeeee;
-    line-height: 90px;
-    text-indent: 30px;
-  }
-  .question-title-box {
-    width: 195px;
-    height: 400px;
-    text-align: center;
-    border: 1px solid #eeeeee;
-  }
-  .question-content-box {
-    width: calc(1296px - 200px);
-  }
-  #question-content {
-    text-align: center;
-    float: right;
+  .question-form-wrap .item-input-box textarea {
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    resize: none;
     width: 100%;
     height: 100%;
+    border: none;
+    padding: 10px 15px 10px;
   }
-  #question-content-title {
+  label.req {
     position: relative;
-    top: 50%;
-    font-size: 18px;
   }
+  label.req::after {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    content: "";
+    width: 10px;
+    background-color: #03a65a;
+    border-radius: 50%;
+    clear: both;
+    height: 10px;
+  }
+
   .question-btn-box {
     display: flex;
     justify-content: center;
@@ -81,6 +102,7 @@
     display: block;
     clear: both;
   }
+
   /* NoticeList 적용 CSS */
   .notice-search-box input {
     width: 250px;
@@ -105,7 +127,7 @@
 }
 
 /* 모바일용  */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .notice-list-container {
     width: 100%;
   }
@@ -139,4 +161,4 @@
     background-position: -10px center;
     text-indent: 0;
   }
-}
+} */

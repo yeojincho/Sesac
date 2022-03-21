@@ -166,13 +166,13 @@
   }
   .header-wrapper2 .top-rolling .rolling-item{
     display: block;
-    animation: scroll 8s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    animation: scroll 7s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
   }
   @keyframes scroll {
     0% {
-        transform: translateY(20px)
+        transform: translateY(10px)
     }
-    20% {
+    4% {
       transform: translateY(0px)
     }
     30%{
@@ -190,11 +190,11 @@
     90%{
       transform: translateY(-45px)
     }
-    99.9%{
-      transform: translateY(-70px)
-    }
+    /* 99.9%{
+      transform: translateY(-65px)
+    } */
     100% {
-      transform: translateY(-70px)
+      transform: translateY(-68px)
     }
   }
 

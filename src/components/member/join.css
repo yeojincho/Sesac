@@ -1,12 +1,11 @@
 @media screen and (min-width:768px){ 
   /* 회원가입 01.회원구분 */
   .join-inner .top-title{
-    margin: 90px 65px;
+    margin: 50px 65px;
   }
   section .join-cont{
     width: 600px;
     margin: 50px auto;
-    margin-bottom: 100px;
   }
   .join-inner .top-title h2{
     font-weight: 700;
@@ -20,6 +19,9 @@
   }
   .join-step {
     margin: 0 auto;
+  }
+  .join-step ol{
+    padding: 0;
   }
 }
 @media screen and (max-width:767px){
@@ -94,6 +96,7 @@
   color: #fff;
   background: #03A65A;
   border-color: #03A65A;
+  font-weight: bold;
 }
 .join-step ol li.on:before, 
 .join-step ol li.on:after {
@@ -156,9 +159,10 @@
 }
 .join-gubun .join-gubun-btn a span{
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
   text-align: center;
+  font-weight: bold;
 }
 .dot-list li {
   position: relative;
@@ -396,3 +400,9 @@
 .ip-email-wrap input:disabled{
   background-color: #eeecec;
 }
+
+.join-btn .btn-type1{
+  border-color: #aaaaaa;
+  font-size: 18px;
+}
+
