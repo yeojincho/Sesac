@@ -8,7 +8,6 @@
 
 .view-detail {
   background-color: #f9f9f9;
-  z-index: -200;
 }
 
 .flexStyle {
@@ -118,20 +117,8 @@
     height: 40%;
 }
 
-#processObjective .processObjective-right ul li:last-child img {
-    width: 70px;
-}
-
-#processObjective .processObjective-right ul li p {
-    background-color: #000;
-    border-radius: 10px;
-    font-size: 12px;
-    color: #fff;
-    font-weight: bold;
-    padding: 3px 10px;
-    text-align: center;
-    margin-top: 10px;
-    width: 100px;
+#processObjective .processObjective-right ul li img {
+  width: 100%;
 }
 
 /* 교육대상 */
@@ -156,6 +143,7 @@
 /*  curriculum */
 .curriBox {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 .curriBox .curriTitle {
@@ -194,7 +182,8 @@
 /*  mainTutor */
 .mainTutorBox {
   display: flex;
-  margin: 0 auto;
+  margin-right: 90px;
+  margin-left: 90px;
 }
 .mainTutorLeft img {
   border: 1px solid #ccc;
@@ -261,7 +250,6 @@
 /*  applyInfo */
 .applyInfoStepBox {
   width: 100%;
-  z-index: 1;
 }
 .applyInfoStep {
   display: flex;
@@ -279,25 +267,24 @@
   counter-increment: step;
   width: 40px;
   height: 40px;
-  border: 1px solid #ccc;
+  border: 1px solid #5EBF92;
   display: block;
   margin: 0 auto 10px auto;
   border-radius: 50%;
   line-height: 37px;
-  background: #fff;
-  color: #ccc;
+  background: #5EBF92;
+  color: #fff;
   text-align: center;
   font-weight: bold;
 }
 .applyInfoStep li:after {
-  content: "";
+  content: '';
   position: absolute;
-  width: 100%;
+  width: 93%;
   height: 3px;
   background: #5EBF92;
   top: 15px;
-  left: -50%;
-  z-index: -1;
+  left: -48%;
 }
 .applyInfoStep li:first-child::after {
   content: none;

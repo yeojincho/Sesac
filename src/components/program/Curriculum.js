@@ -77,6 +77,12 @@ function Curriculum(){
     
     return(
         <div className="wrapper inner-box">
+            <ul class="cont-navi">
+                <li><Link to='/'><a href="#none" class="nav-home">HOME</a></Link></li>
+                <li><Link to='/program'><a href="#none" class="nav-sub">공개과정</a></Link></li>
+                <li><Link to='/programlist'><a href="#none" class="nav-sub">계층교육</a></Link></li>
+                <li><span class="nav-sub">교육 상세</span></li>
+            </ul>
             {/* { BtnStatus &&<button className="scrollTopBtn" onClick={handleTop}>TOP</button> } */}
             <div className="topDetailpage">
                 <div className="left">
@@ -100,13 +106,15 @@ function Curriculum(){
                                 <li>비대면</li>
                                 <li>290,000원</li>
                                 <li>
-                                    <select name="programSelect" id="program_select">
-                                        <option value>::::::::::::::::: 일정 선택 :::::::::::::::::</option>
-                                        <option value="">2022-04-08 (금)</option>
-                                        <option value="">2022-04-11 (월)</option>
-                                        <option value="">2022-04-12 (화)</option>
-                                        <option value="">2022-04-13 (수)</option>
-                                    </select>
+                                    <div className="c-inp-select-box">
+                                        <select name="programSelect" id="program_select">
+                                            <option value>::::::::::::::::: 일정 선택 :::::::::::::::::</option>
+                                            <option value="">2022-04-08 (금)</option>
+                                            <option value="">2022-04-11 (월)</option>
+                                            <option value="">2022-04-12 (화)</option>
+                                            <option value="">2022-04-13 (수)</option>
+                                        </select>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
