@@ -1,15 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Table } from "reactstrap";
+import styled from "styled-components";
 
-function QuestionList() {
-  // const date = new Date();
-  // const yyyy = date.getFullYear();
-  // const mm = date.getMonth();
-  // const dd = date.getDate();
-
+function QuestionList({ active }) {
   const questions = useSelector((state) => state.questionReducer.questions);
 
+  console.log(questions);
   return (
     <div>
       <Table striped className="question-list-table">
@@ -25,9 +22,11 @@ function QuestionList() {
           {questions.map((question) => (
             <tr>
               <th scope="row">{question.id}</th>
-              <td>{question.content}</td>
+              <td style={{ textAlign: "center" }}>{question.title}</td>
               <td>{question.writer}</td>
-              <td>{question.date}</td>
+              <td className="question-date" style={{ textAlign: "center" }}>
+                {question.date}
+              </td>
             </tr>
           ))}
         </tbody>

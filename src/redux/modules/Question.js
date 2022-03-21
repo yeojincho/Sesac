@@ -18,6 +18,10 @@ export default function questionReducer(state = initialState, action) {
   switch (action.type) {
     case ADD_QUESTION: {
       const currentId = state.questions.length + 1 || 1;
+      const today = new Date();
+      const mm = today.getMonth();
+      const dd = today.getDate();
+      console.log(today);
       const question = [
         ...state.questions,
         {
@@ -26,7 +30,9 @@ export default function questionReducer(state = initialState, action) {
           password: action.payload.newPassword,
           phone: action.payload.newPhone,
           email: action.payload.newEmail,
+          title: action.payload.newTitle,
           content: action.payload.newContent,
+          date: `${mm + 1}.${dd}`,
         },
       ];
       question.sort((a, b) => b.id - a.id);
