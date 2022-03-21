@@ -1,23 +1,72 @@
-.jobIntroTitle {
-  display: flex;
-  justify-content: center;
-  background: url("/public/images/job-search.png") no-repeat top left 100px;
-  background-size: 50px;
-  margin-bottom: 30px;
-}
+/* 취업과정 intro 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  .jobIntroTitle {
+    display: flex;
+    justify-content: center;
+    background: url("/public/images/job-search.png") no-repeat top left 120px;
+    background-size: 50px;
+    margin-bottom: 30px;
+  }
 
-.jobIntroTitle h3 {
-  color: #454545;
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
-}
+  .jobIntroTitle h3 {
+    color: #454545;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+  }
 
-.jobIntroBox {
-  margin: auto;
-  width: 900px;
-  background-color: #f4f4f4;
-  padding: 20px 50px;
-  border-radius: 7px;
-  margin-bottom: 100px;
+  .jobIntroBox {
+    margin: auto;
+    width: 900px;
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+  }
+
+  .jobIntroContents {
+    text-align: center;
+  }
+  .jobIntroContents dt {
+    font-size: 20px;
+  }
+  .jobIntroContents dd {
+    padding: 10px 0;
+  }
+}
+/* 취업과정 intro 페이지 mobile.ver */
+@media screen and (max-width: 768px) {
+  .jobIntroTitle {
+    display: flex;
+    justify-content: center;
+    background: url("/public/images/job-search.png") no-repeat top center;
+    background-size: 50px;
+  }
+
+  .jobIntroTitle h3 {
+    color: #454545;
+    font-size: 20px;
+    line-height: 120px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .jobIntroBox {
+    margin: auto;
+    width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px 50px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+  }
+
+  .jobIntroContents {
+    text-align: center;
+  }
+  .jobIntroContents dt {
+    font-size: 18px;
+  }
+  .jobIntroContents dd {
+    padding: 10px 0;
+  }
 }
