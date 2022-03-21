@@ -21,7 +21,6 @@ export default function questionReducer(state = initialState, action) {
       const today = new Date();
       const mm = today.getMonth();
       const dd = today.getDate();
-      console.log(today);
       const question = [
         ...state.questions,
         {

@@ -13,7 +13,6 @@ function WritingQuestion() {
   const [newEmail, setNewEmail] = useState("");
   const [newTitle, setNewTitle] = useState("");
   const [newContent, setNewContent] = useState("");
-  // const [newDate, setNewDate] = useState("");
 
   const dispatch = useDispatch();
 
@@ -38,17 +37,9 @@ function WritingQuestion() {
   };
 
   const createQuestion = () => {
-    // const date = new Date();
-    // const yyyy = date.getFullYear();
-    // const mm = date.getMonth();
-    // const dd = date.getDate();
     if (newContent.length === 0) {
       alert("내용을 입력해주세요!");
       return;
-      // } else if (date !== null) {
-      //   setNewDate(yyyy);
-      //   console.log(newDate);
-      //   return;
     }
 
     const payload = {
@@ -58,7 +49,6 @@ function WritingQuestion() {
       newEmail,
       newTitle,
       newContent,
-      // newDate,
     };
     dispatch(addQuestion(payload));
 

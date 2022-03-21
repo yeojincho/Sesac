@@ -127,38 +127,128 @@
 }
 
 /* 모바일용  */
-/* @media screen and (max-width: 767px) {
-  .notice-list-container {
-    width: 100%;
-  }
-  .notice-search-box input {
-    width: 100px;
-    height: 30px;
-    float: right;
-  }
-  .notice-list-table {
-    width: 100%;
-  }
-  .notice-list-table tbody tr {
-    font-size: 0.8em;
-  }
-  .notice-search-box input {
-    width: 150px;
-    height: 30px;
-    text-indent: 45px;
-    border: 2px solid #ddd;
-    font-size: 16px;
+@media screen and (max-width: 767px) {
+  /* 공지사항 검색 input CSS */
+  .notice-search-box {
+    display: inline-block;
+    padding: 5px;
     border-radius: 50px;
-    float: right;
-    outline: none;
-    background: url(../../../public/images/search.png) no-repeat;
-    background-position: 20px center;
-    background-size: 15px 15px;
     margin-bottom: 50px;
+    border: 1px solid #ddd;
   }
-  .notice-search-box:focus {
-    background-image: none;
-    background-position: -10px center;
-    text-indent: 0;
+  .notice-search-box .search-input {
+    width: 17vw;
+    height: 3vh;
+    border: none;
+    text-indent: 1em;
   }
-} */
+  .search-input:focus {
+    outline: none;
+  }
+
+  /* 문의하기 - 글작성 페이지 CSS */
+  .question-form-wrap {
+    margin-top: 15px;
+    width: 600px;
+    margin: 50px auto 0;
+  }
+  .question-form-wrap .item-label-box,
+  .question-form-wrap .item-input-box {
+    display: table-cell;
+    padding: 5px 30px 5px 0;
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+    color: #000;
+  }
+  .question-form-wrap .question-item-box {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  .question-item-box .item-label-box .writing-question-title {
+    width: 15vw;
+  }
+  .question-form-wrap .item-input-box #question-name,
+  .question-form-wrap .item-input-box #question-password,
+  .question-form-wrap .item-input-box #question-contact,
+  .question-form-wrap .item-input-box #question-email,
+  .question-form-wrap .item-input-box #question-title,
+  .question-form-wrap .item-input-box #question-content {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+  }
+  .question-form-wrap .item-input-box {
+    width: 100%;
+  }
+  .question-form-wrap .item-input-box #question-content {
+    height: 20vh;
+  }
+  #question-writing-form {
+    border-top: 1px solid #ddd;
+    margin: 0 auto 10vh;
+    width: 70%;
+    position: relative;
+  }
+  #question-writing-form .question-item-box {
+    padding-left: 30px;
+  }
+  .item-label-box label {
+    width: 10vw;
+  }
+  .question-form-wrap
+    .question-writing-form
+    .question-item-box
+    .item-input-box {
+    margin-left: 20px;
+  }
+  .question-form-wrap .item-input-box textarea {
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 10px 15px 10px;
+  }
+  label.req {
+    position: relative;
+  }
+  label.req::after {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    content: "";
+    width: 10px;
+    background-color: #03a65a;
+    border-radius: 50%;
+    clear: both;
+    height: 10px;
+  }
+
+  .question-btn-box {
+    display: flex;
+    justify-content: center;
+  }
+  .question-submit-btn {
+    width: 12vw;
+    height: 5vh;
+    border: none;
+    border-radius: 30px;
+    background-color: #03a65a;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10vh;
+  }
+  .cf::after {
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: 0;
+    display: block;
+    clear: both;
+  }
+}
