@@ -1,20 +1,27 @@
-import React from 'react';
+import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { useState } from 'react';
+import { useState } from "react";
 
-import MHeader from './MHeader';
-import MFooter from './MFooter';
-import Main from '../../main/Main';
-import Menu from './Menu';
-import Join from '../../member/Join';
-import JoinForm from '../../member/JoinForm';
+import MHeader from "./MHeader";
+import MFooter from "./MFooter";
+import Main from "../../main/Main";
+import Menu from "./Menu";
+import Join from "../../member/Join";
+import JoinForm from "../../member/JoinForm";
 import JoinComplete from "../../member/JoinComplete";
 
 //아카데미
-import Partnership from '../../academy/Partnership';
-import PartmershopComplete from '../../academy/PartmershopComplete';
-import Recruit from '../../academy/Recruit';
-import RecruitComplete from '../../academy/RecruitComplete';
+import Partnership from "../../academy/Partnership";
+import PartmershopComplete from "../../academy/PartmershopComplete";
+import Recruit from "../../academy/Recruit";
+import RecruitComplete from "../../academy/RecruitComplete";
+
+// 고객센터
+import Notice from "../../customer/Notice";
+import Question from "../../customer/Question";
+import WritingQuestion from "../../customer/WritingQuestion";
+import Faq from "../../customer/Faq";
+import Visit from "../../customer/visit";
 
 /* 
   신나는 반응형 웹 만들기
@@ -29,44 +36,57 @@ import RecruitComplete from '../../academy/RecruitComplete';
   }
 
 */
-export default function MobileLayout({isMobile,isLogin}) {
+export default function MobileLayout({ isMobile, isLogin }) {
   /* 전체 메뉴 팝업 */
   const [MenuPopOpen, setMenuPopOpen] = useState(false);
-  const openMenuPopFn = ()=> setMenuPopOpen(true);
-  const closeMenuPopFn = ()=> setMenuPopOpen(false);
+  const openMenuPopFn = () => setMenuPopOpen(true);
+  const closeMenuPopFn = () => setMenuPopOpen(false);
 
   return (
     <>
-      {
-        !MenuPopOpen ? 
+      {!MenuPopOpen ? (
         <>
           <MHeader open={openMenuPopFn} />
-            <Switch>
-            </Switch>
-              <Route exact path="/" render={(props) => <Main isMobile={isMobile} {...props} />}></Route>
-              {/* 메인 */}
-              {/* 회원가입 */}
-              <Route exact path="/join" component={Join}></Route>
-              <Route exact path="/join/form/:type" component={JoinForm}></Route>
-              <Route exact path="/join/complete" component={JoinComplete}></Route>
-              {/* 공개과정 */}
-              {/* 취업과정 */}
-              {/* Ex콘텐츠 */}
-              {/* 고객센터 */}
-              {/* 아카데미 */}
-              <Route exact path='/Partnership' component={Partnership}></Route>
-              <Route exact path='/Partnership/complete' component={PartmershopComplete}></Route>
-              <Route exact path='/Recruit' component={Recruit}></Route>
-              <Route exact path='/Recruit/complete' component={RecruitComplete}></Route>
-              {/* 마이페이지 */}
+          <Switch></Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => <Main isMobile={isMobile} {...props} />}
+          ></Route>
+          {/* 메인 */}
+          {/* 회원가입 */}
+          <Route exact path="/join" component={Join}></Route>
+          <Route exact path="/join/form/:type" component={JoinForm}></Route>
+          <Route exact path="/join/complete" component={JoinComplete}></Route>
+          {/* 공개과정 */}
+          {/* 취업과정 */}
+          {/* Ex콘텐츠 */}
+          {/* 고객센터 */}
+          <Route exact path="/notice" component={Notice}></Route>
+          <Route exact path="/question" component={Question}></Route>
+          <Route exact path="/writing" component={WritingQuestion}></Route>
+          <Route exact path="/faq" component={Faq}></Route>
+          <Route exact path="/visit" component={Visit}></Route>
+          {/* 아카데미 */}
+          <Route exact path="/Partnership" component={Partnership}></Route>
+          <Route
+            exact
+            path="/Partnership/complete"
+            component={PartmershopComplete}
+          ></Route>
+          <Route exact path="/Recruit" component={Recruit}></Route>
+          <Route
+            exact
+            path="/Recruit/complete"
+            component={RecruitComplete}
+          ></Route>
+          {/* 마이페이지 */}
 
           <MFooter />
         </>
-
-        :
-
+      ) : (
         <Menu close={closeMenuPopFn} isLogin={isLogin} />
-      }
+      )}
     </>
-  )
+  );
 }

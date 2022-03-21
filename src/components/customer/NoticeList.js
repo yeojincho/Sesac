@@ -47,7 +47,11 @@ function NoticeList() {
   return (
     <div className="notice-list-container">
       <div className="notice-search-box">
-        <input type="text" placeholder="Search" className="searchBox focus" />
+        <input
+          type="search"
+          placeholder="검색"
+          className="search-input focus"
+        />
       </div>
       <Table striped className="notice-list-table">
         <thead>
@@ -62,9 +66,9 @@ function NoticeList() {
           {sortedNotices.map((notice) => (
             <tr>
               <th scope="row">{notice.id}</th>
-              <td>{notice.content}</td>
+              <td style={{ textAlign: "left" }}>{notice.content}</td>
               <td>{notice.writer}</td>
-              <td>{notice.date}</td>
+              <td style={{ textAlign: "center" }}>{notice.date}</td>
             </tr>
           ))}
         </tbody>
