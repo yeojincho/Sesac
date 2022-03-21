@@ -91,6 +91,7 @@
   margin-right: 50px;
   margin-bottom: 24px;
   width: 325px;
+  animation: fadein .7s ease-in ;
 }
 .main-ex-img .ex-list .ex-item:last-child{
   margin-right: 0;
@@ -184,15 +185,11 @@
   padding: 50px 50px 0;
 }
 .main-hr .text-box .b-title{
-  margin-bottom: 4px;
+  margin-bottom: 18px;
 }
-.hr-list .swiper{
-  padding: 0 45px;
-  
-} 
 .hr-list .swiper-button-prev{
   top: 50px;
-  left: 10px;
+  left: 7px;
   width: 50px;
   height: 50px;
   padding: 15px 24px;
@@ -218,10 +215,16 @@
 .hr-list .swiper-button-prev::after,.hr-list .swiper-button-next::after{
   display: none;
 }
+.hr-list .swiper-wrapper{
+  justify-content: space-between;
+}
 .hr-list .swiper{
+  justify-content: space-around;
   margin: 0 auto;
-  width: 540px;
+  width: 600px;
   height: 150px;
+  padding: 0 50px;
+
 }
 .hr-list .swiper-slide img{
   width: 200px;
@@ -233,7 +236,17 @@
   background-color: #03A65A;
 }
 
-
+.main-banner .swiper-slide:first-child::before{
+  /* background: url('/public/images/green.png') no-repeat; */
+  background-color: #C8E5B0;
+}
+.main-banner .swiper-slide:nth-child(2):before{
+  /* background: url('/public/images/main/blue-banner.jpg') no-repeat; */
+  background-color: #18222B;
+}
+.main-banner .swiper-slide:last-child::before{
+  background: url('/public/images/main/banner2.jpg') no-repeat;
+}
 /* PC Main CSS */
 @media screen and (min-width:768px){
    /* 메인 배너 */
@@ -252,8 +265,15 @@
       margin-left: auto;
       text-align: left;
   }
+  .main-banner .swiper-slide::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+ 
   .main-banner .swiper-slide-active .panel-img{
-    transition: all 2.2s linear;
+    transition: all 2.5s linear;
     transform: scale(1.2);
   }
   .main-frame .panel-title{
@@ -388,6 +408,7 @@
     margin-right: 40px;
     overflow: hidden;
     width: 240px;
+    animation: fadein .7s ease-in ;
   }
   .main-program-img .program-item:nth-child(4n){
     margin-right: 0;
@@ -412,6 +433,7 @@
     height: 0;
     padding: 15px;
     box-sizing: border-box;
+    background: rgba(0,0,0,0.9);
     opacity: 0;
     border-radius: 7px;
     transition: height 0.35s ease-in-out;
@@ -419,7 +441,7 @@
     overflow: hidden;
     font-size: 14px;
   }
-  .main-program-img .program-item:nth-child(1) .item-img-desc{
+  /* .main-program-img .program-item:nth-child(1) .item-img-desc{
     background: rgba(0,0,0,0.9);
   }
   .main-program-img .program-item:nth-child(2) .item-img-desc{
@@ -442,7 +464,7 @@
   }
   .main-program-img .program-item:nth-child(8) .item-img-desc{
     background: rgba(12, 150, 85, 0.6);
-  }
+  } */
   .main-program-img .program-item .item-img .item-img-desc p{
     color: #fff !important;
   }
@@ -578,6 +600,12 @@
 
 /* 모바일 Main CSS */
 @media screen and (max-width:767px){
+  .main-banner .swiper-slide::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
   .main-frame{
     position: absolute;
       top: 0;
@@ -621,7 +649,7 @@
     font-weight: bold;
   }
   .main-frame .panel2-top-title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
   }
@@ -674,13 +702,14 @@
   .main-program-img .program-item {
     vertical-align:top;
     margin-right: 30px;
+
   }
   .main-program-img .program-item .item-img {
     position: relative;
   }
   .main-program-img .program-item .item-img img{ 
-    width: 250px;
-    height: 210px;
+    width: 200px;
+    height: 150px;
     border-radius: 7px;
     cursor: pointer;
   }

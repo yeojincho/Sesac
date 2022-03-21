@@ -23,6 +23,13 @@ export default function Sample1() {
       */}
 
 
+      {/* 00. 상단 페이지 경로 */}
+      <ul class="cont-navi">
+        <li><a href="#none" class="nav-home">HOME</a></li>
+        <li><a href="#none" class="nav-sub">공개과정</a></li>
+        <li><a href="#none" class="nav-sub">월간 교육 일정</a></li>
+        <li><span class="nav-sub">교육 신청</span></li>
+      </ul>
 
       {/* 01.상단 공통 타이틀 */}
       <div className="c-top-title">

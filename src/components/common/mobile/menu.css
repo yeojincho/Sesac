@@ -52,14 +52,14 @@
     background: none;
     border: none;
     letter-spacing: -1px;
-    background-color:#ccc;
+    background-color:rgb(243, 243, 243);
   }
   .gnb-left-depth1 li button span {
     display: block;
     padding: 2px 15px;
     font-size: 14px;
-    font-weight: 700;
-    color: #000;
+    font-weight: bold;
+    color: #008000;
     line-height: 36px;
   }
   .header-gnb-menu .gnb-menu-right {

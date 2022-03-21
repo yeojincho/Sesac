@@ -75,7 +75,11 @@ export default function JoinForm() {
   return (
     <div className="join-wrapper">
       <div className="inner-box join-inner">
-        <div className="top-title">
+				<ul class="cont-navi">
+          <li><a href="#none" class="nav-home">HOME</a></li>
+          <li><span class="nav-sub">회원가입</span></li>
+        </ul>
+				<div className="top-title">
           <h2>회원가입</h2>
           <h3>__회원가입 정보</h3>
         </div>
@@ -161,6 +165,7 @@ export default function JoinForm() {
 								</select>
 								<span className="error-msg" id="memberNameError" style={{display:'none'}}>이름를 입력해주세요.</span>
 							</div>
+							<span style={{color:'#008000',fontWeight:'bold'}}>회원구분 : {type === "manager" ?'교육 담당자' : '개인 회원'}</span>
 							
 
 							<div className="join-form-title">

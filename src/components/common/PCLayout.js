@@ -1,9 +1,12 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
+// 아카데미
 import OrderPage from "../../components/academy/OrderPage";
 import Partnership from "../../components/academy/Partnership";
-import Recruit from "../../components/academy/OrderPage";
+import PartmershopComplete from "../../components/academy/PartmershopComplete";
+import Recruit from "../../components/academy/Recruit";
+import RecruitComplete from "../../components/academy/RecruitComplete";
 import HrStore from "../../components/academy/HrStore";
 import TeacherInfo from "../../components/academy/TeacherInfo";
 import SendPages from "../academy/SendPages/SendPages.jsx";
@@ -93,7 +96,9 @@ export default function PCLayout({ isLogin }) {
 
         <Route exact path='/OrderPage' component={OrderPage}></Route>
         <Route exact path='/Partnership' component={Partnership}></Route>
+        <Route exact path='/Partnership/complete' component={PartmershopComplete}></Route>
         <Route exact path='/Recruit' component={Recruit}></Route>
+        <Route exact path='/Recruit/complete' component={RecruitComplete}></Route>
         <Route exact path='/hrstore' component={HrStore}></Route>
         <Route exact path='/teacherinfo' component={TeacherInfo}></Route>
         <Route exact path='/sendpage' component={SendPages}></Route>

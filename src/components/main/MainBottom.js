@@ -51,7 +51,7 @@ export default function MainBottom() {
           <div className="main-hr">
             <div className="text-box">
               <span className="b-title">HR샵</span>
-              <span className="b-comment">교육에 필요한 옵션및 상품정보를 제공합니다.</span>
+              <span className="b-comment">교육에 필요한 옵션 및 상품정보를 제공합니다.</span>
             </div>
             <div className="hr-list">
               <Swiper
@@ -60,11 +60,16 @@ export default function MainBottom() {
                 scrollbar={{ draggable: true }}
                 navigation={true}
                 pagination={{ clickable: true }}
+                autoplay={{ 
+                  delay: 3000,
+                  disableOnInteraction	 : false
+                  
+                }}
               >
-                <SwiperSlide><img src="/images/shopitem1.jpg" alt="1" /></SwiperSlide>
+                <SwiperSlide><img src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg" alt="1" /></SwiperSlide>
                 <SwiperSlide><img src="/images/shopitem2.jpg" alt="2" /></SwiperSlide>
                 <SwiperSlide><img src="/images/shopitem3.jpg" alt="3" /></SwiperSlide>
-                <SwiperSlide><img src="/images/shopitem1.jpg" alt="3" /></SwiperSlide>
+                <SwiperSlide><img src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg" alt="3" /></SwiperSlide>
               </Swiper>
             </div>
           </div>
