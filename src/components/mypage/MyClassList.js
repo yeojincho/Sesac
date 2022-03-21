@@ -32,11 +32,11 @@ const MyClassList = () => {
             <table className="myClassList-table">
               <colgroup>
                 <col width={40} />
-                <col width={350} />
+                <col width={330} />
                 <col width={200} />
                 <col width={40} />
                 <col width={150} />
-                <col width={80} />
+                <col width={90} />
                 <col width={90} />
               </colgroup>
               <tr id="under">
@@ -70,13 +70,13 @@ const MyClassList = () => {
                 </tr>
               ))}
             </table>
-            <div className="notice-noClass on">
+            {/* <div className="notice-noClass on">
               <h3>교육내역이 없습니다.</h3>
               <p>
                 문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로 연락
                 주십시오.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

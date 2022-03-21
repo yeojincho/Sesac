@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { label, FormGroup, Button } from "reactstrap";
 import HeadTitle from "./HeadTitle";
 import "./Management.css";
 import SideMenu from "./SideMenu";
+import DaumPostcode from "react-daum-postcode";
+import PopupPostCode from "./PopupPostCode";
+import PopupDom from "./PopupDom";
 
 function Management() {
   const user1 = { name: "강동원", id: "expert", gender: "남" };
+
+  //주소input state
+  const [address, setAddress] = useState("");
+
+  // 팝업창 상태 관리
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // 팝업창 열기
+  const openPostCode = () => {
+    setIsPopupOpen(true);
+  };
+
+  // 팝업창 닫기
+  const closePostCode = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <div className="inner-box">
       <HeadTitle />
@@ -32,7 +52,7 @@ function Management() {
             <form className="Management-infoForm">
               <h3 className="Management-infoTitle">부가정보1</h3>
               <div className="mrgn-left">
-                <label for="phone-number">휴대전화</label>
+                <label htmlFor="phone-number">휴대전화</label>
                 <input
                   class="form-control col-sm-4"
                   id="phone-number"
@@ -41,7 +61,7 @@ function Management() {
                   aria-label="phone number"
                 />
 
-                <label for="mail-address"> 메일주소 </label>
+                <label htmlFor="mail-address"> 메일주소 </label>
                 <input
                   class="form-control"
                   id="mail-address"
@@ -50,7 +70,7 @@ function Management() {
                   aria-label="email address"
                 />
 
-                <label for="birthday"> 생년월일 </label>
+                <label htmlFor="birthday"> 생년월일 </label>
                 <input
                   class="form-control"
                   id="birthday"
@@ -59,7 +79,7 @@ function Management() {
                   aria-label="birthday"
                 />
 
-                <label for="user-division">회원구분</label>
+                <label htmlFor="user-division">회원구분</label>
 
                 <select
                   class="form-select"
@@ -73,7 +93,7 @@ function Management() {
                   <option value="user">일반</option>
                 </select>
 
-                <label for="mailing-service">메일링서비스 : </label>
+                <label htmlFor="mailing-service">메일링서비스 : </label>
                 <input
                   class="form-check-input"
                   id="mailing-service"
@@ -81,56 +101,79 @@ function Management() {
                   aria-label="check mailing service"
                 />
 
-                <label for="mailing-service">수신받음</label>
+                <label htmlFor="mailing-service">수신받음</label>
                 <br />
               </div>
 
               <h3 className="Management-infoTitle">부가정보2</h3>
               <div className="mrgn-left">
-                <label for="company-name">회사명</label>
+                <label htmlFor="company-name">회사명</label>
                 <input
                   class="form-control"
                   id="company-name"
                   type="text"
-                  placeholder="회사명"
+                  placeholder="소속된 회사를 입력해주세요"
                   aria-label="your company name"
                 />
 
-                <label for="department"> 부서명 </label>
+                <label htmlFor="department"> 부서명 </label>
                 <input
                   class="form-control"
                   id="department"
                   type="text"
-                  placeholder="부서명"
+                  placeholder="소속된 부서를 입력해주세요"
                   aria-label="your company name"
                 />
 
-                <label for="job-title"> 직함 </label>
+                <label htmlFor="job-title"> 직함 </label>
                 <input
                   class="form-control"
                   id="job-title"
                   type="text"
-                  placeholder="직함"
+                  placeholder="직함을 입력해주세요"
                   aria-label="job title"
                 />
 
-                <label for="company-phone"> 회사전화 </label>
+                <label htmlFor="company-phone"> 회사전화 </label>
                 <input
                   class="form-control"
                   id="company-phone"
                   type="tel"
-                  placeholder="회사전화"
+                  placeholder="회사 전화번호를 입력해주세요"
                   aria-label="company phone number"
                 />
 
-                <label for="company-address"> 회사주소 </label>
-                <input
-                  class="form-control"
-                  id="company-address"
-                  type="text"
-                  placeholder="회사주소"
-                  aria-label="company address"
-                />
+                <label htmlFor="roadAddrPart1"> 회사주소 </label>
+                <div className="zipBox">
+                  <input
+                    class="form-control"
+                    id="roadAddrPart1"
+                    type="text"
+                    placeholder="주소를 검색하여 회사 주소를 입력하세요"
+                    aria-label="company address"
+                    value={address}
+                  />
+                  <button id="zipBtn" type="button" onClick={openPostCode}>
+                    주소 검색
+                  </button>
+                  <div id="popupDom">
+                    {isPopupOpen && (
+                      <PopupDom>
+                        <PopupPostCode
+                          onClose={closePostCode}
+                          setAddress={setAddress}
+                        />
+                      </PopupDom>
+                    )}
+                  </div>
+                  <input
+                    class="form-control"
+                    id="roadAddrPart2"
+                    type="text"
+                    placeholder="상세주소를 입력하세요"
+                    aria-label="company detail address"
+                  />
+                </div>
               </div>
               <div className="Management-bottomBtn flex-box">
                 <Button id="check-btn">확인</Button>
