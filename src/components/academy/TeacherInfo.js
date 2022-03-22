@@ -56,7 +56,7 @@ export default function TeacherInfo() {
     },
     {
       name: "안예지",
-      src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98_1.PNG",
       edu: {
         one: "똑똑대학교 박사",
         two: "똑똑대학교 박사",
@@ -78,7 +78,7 @@ export default function TeacherInfo() {
 
   return (
     <div className=''>
-      <div className='orderPage-bigTlte'>
+      <div className='orderPage-bigTitle'>
         <h3 className='orderPage-h3'>
           <b>강사정보</b>
         </h3>
@@ -88,6 +88,9 @@ export default function TeacherInfo() {
       </div>
       <div className='inner-box '>
         <ul className='teacher-list'>{namelist}</ul>
+      </div>
+      <div className='bottomBoxBanner'>
+        <img src='/images/academy/배너배너.png' alt='#' />
       </div>
     </div>
   );

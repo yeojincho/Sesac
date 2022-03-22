@@ -34,8 +34,8 @@ function OrderPage() {
     setModalOpen(false);
   };
   return (
-    <div className='orderPage-contents inner-box'>
-      <div className='orderPage-bigTlte'>
+    <>
+      <div className='orderPage-bigTitle'>
         <h3 className='orderPage-h3'>
           <b>HR샵</b>
         </h3>
@@ -43,85 +43,87 @@ function OrderPage() {
           __교육에 필요한 옵션 및 상품정보를 제공합니다.
         </span>
       </div>
-      <div className='orderPage-left'>
-        <Slider />
-        <div className='orderPage-infoBtn'>
-          <button className='btn-type1 small'>
-            <span>상세정보</span>
-          </button>
-          <button className='btn-type2 small'>
-            <span>반품/교환정보</span>
-          </button>
-        </div>
-      </div>
-      <div className='orderPage-right'>
-        <div className='shareBtn'>
-          <ShareBtn />
-        </div>
-
-        <div className='orderInfo'>
-          <h2 className='orderPage-h2'>{ProductData[0]}</h2>
-          <p className='orderPage-p'>{value[0]}원</p>
-          <input
-            className='orderPage-input'
-            type='text'
-            placeholder='요청사항을 입력해주세요'
-          ></input>
-          <div class='c-inp-select-box'>
-            <p className='orderPage-p'>배송여부</p>
-            <select className='OrderPage-select'>
-              <option>선택해주세요</option>
-              <option>개별배송</option>
-              <option>일반배송</option>
-              <option>현장지급</option>
-            </select>
-          </div>
-          <p className='alertMsg'>
-            배송형태에 따라 추가비용이 발생할 수 있습니다.
-          </p>
-          <button
-            className='plusMinusBtn'
-            onClick={() => setQuantity(quantity + 1)}
-          >
-            <span>+</span>
-          </button>
-          {quantity}
-          <button
-            className='plusMinusBtn'
-            onClick={() => setQuantity(quantity - 1)}
-          >
-            <span>-</span>
-          </button>
-          <div className='totalInfo'>
-            <dt>
-              <dd>총 수량 {quantity}개</dd>
-            </dt>
-          </div>
-          <div className='C-btn-box orderPage-infoBtn'>
-            <Link to='./sendpage'>
-              <button className='btn-type1 small'>
-                <span>문의하기</span>
-              </button>
-            </Link>
-            <button onClick={openModal} className='btn-type2 small'>
-              <span>주문하기</span>
+      <div className='orderPage-contents inner-box'>
+        <div className='orderPage-left'>
+          <Slider />
+          <div className='orderPage-infoBtn'>
+            <button className='btn-type1 small'>
+              <span>상세정보</span>
             </button>
-            <Modal open={modalOpen} close={closeModal}>
-              주문이 완료되었습니다!
-            </Modal>
+            <button className='btn-type2 small'>
+              <span>반품/교환정보</span>
+            </button>
           </div>
         </div>
+        <div className='orderPage-right'>
+          <div className='shareBtn'>
+            <ShareBtn />
+          </div>
+
+          <div className='orderInfo'>
+            <h2 className='orderPage-h2'>{ProductData[0]}</h2>
+            <p className='orderPage-p'>{value[0]}원</p>
+            <input
+              className='orderPage-input'
+              type='text'
+              placeholder='요청사항을 입력해주세요'
+            ></input>
+            <div class='c-inp-select-box'>
+              <p className='orderPage-p'>배송여부</p>
+              <select className='OrderPage-select'>
+                <option>선택해주세요</option>
+                <option>개별배송</option>
+                <option>일반배송</option>
+                <option>현장지급</option>
+              </select>
+            </div>
+            <p className='alertMsg'>
+              배송형태에 따라 추가비용이 발생할 수 있습니다.
+            </p>
+            <button
+              className='plusMinusBtn'
+              onClick={() => setQuantity(quantity + 1)}
+            >
+              <span>+</span>
+            </button>
+            {quantity}
+            <button
+              className='plusMinusBtn'
+              onClick={() => setQuantity(quantity - 1)}
+            >
+              <span>-</span>
+            </button>
+            <div className='totalInfo'>
+              <dt>
+                <dd>총 수량 {quantity}개</dd>
+              </dt>
+            </div>
+            <div className='C-btn-box orderPage-infoBtn'>
+              <Link to='./sendpage'>
+                <button className='btn-type1 small'>
+                  <span>문의하기</span>
+                </button>
+              </Link>
+              <button onClick={openModal} className='btn-type2 small'>
+                <span>주문하기</span>
+              </button>
+              <Modal open={modalOpen} close={closeModal}>
+                주문이 완료되었습니다!
+              </Modal>
+            </div>
+          </div>
+        </div>
+        <div className='orderPgContents'>
+          <img src='/images/academy/01.png' alt='' />
+        </div>
+        <div className='orderPgContents'>
+          <img src='/images/academy/02.png' alt='' />
+        </div>
+        <div className='orderPgContents'>
+          <img src='/images/academy/03.png' alt='' />
+        </div>
       </div>
-      <div className='orderPgContents'>
-        <img src='/images/academy/01.png' alt='' />
-      </div>
-      <div className='orderPgContents'>
-        <img src='/images/academy/02.png' alt='' />
-      </div>
-      <div className='orderPgContents'>
-        <img src='/images/academy/03.png' alt='' />
-      </div>
-    </div>
+    </>
   );
 }
 export default OrderPage;

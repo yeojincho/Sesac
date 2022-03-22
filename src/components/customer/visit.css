@@ -2,18 +2,21 @@
 @media screen and (min-width: 768px) {
   /* title */
   .visitTitle {
-    margin: 90px 65px;
+    width: 100%;
+    height: 150px;
+    background-color: #266f37;
+    opacity: 0.9;
+    padding: 20px 0 30px 30px;
   }
   .visitTitle h1 {
     font-weight: bold;
-    color: #777777;
+    color: #fff;
     font-size: 28px;
     margin-bottom: 10px;
   }
   .visitTitle h2 {
-    color: #aaaaaa;
+    color: #fff;
     font-size: 18px;
-    margin-bottom: 20px;
   }
 
   /* submenuList */
@@ -30,27 +33,31 @@
   .visitSubMenuList {
     display: block;
     color: #999;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border-bottom: 2px solid #ccc;
     margin: 30px 70px 0 70px;
-    width: 180px;
     height: 40px;
     line-height: 40px;
     text-align: center;
+    /*애니메이션 추가*/
+    width: 70%;
+    max-width: 180px;
+    letter-spacing: 0;
+    transition: all 0.28s ease-in-out;
+    cursor: pointer;
   }
 
   .visitSubMenuList.subOn {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+    border-bottom: 2.5px solid #5ebf92;
     font-weight: bold;
   }
-  .visitSubMenuList:hover {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+
+  .visitSubMenuList:hover,
+  .visitSubMenuList:focus,
+  .visitSubMenuList:active {
+    letter-spacing: 5px;
+    border-color: #5ebf92;
   }
 
   /* visitInfo */
@@ -134,21 +141,19 @@
 
   .transport {
     margin: 150px 0 50px;
+    color: #999;
   }
   .transport h4 {
-    font-size: 25px;
-    padding-left: 10px;
-  }
-  .transport h4 span {
-    color: #5ebf92;
-    font-weight: bold;
-    padding-right: 5px;
+    width: 90px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5ebf92;
+    text-align: center;
   }
   .transportList {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    color: #999;
   }
   .car,
   .subway,
@@ -200,24 +205,36 @@
   .subway .transportListContents {
     width: 200px;
   }
+  .visitBottomBanner {
+    width: 100%;
+    height: 200px;
+    margin: 40px 0;
+  }
+  .visitBottomBanner img {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* visit 페이지 Mobile.ver */
 @media screen and (max-width: 767px) {
   /* title */
   .visitTitle {
-    margin: 90px 65px;
+    width: 100%;
+    height: 150px;
+    background-color: #266f37;
+    opacity: 0.9;
+    padding: 20px 0 30px 30px;
   }
   .visitTitle h1 {
     font-weight: bold;
-    color: #777777;
+    color: #fff;
     font-size: 28px;
     margin-bottom: 10px;
   }
   .visitTitle h2 {
-    color: #aaaaaa;
+    color: #fff;
     font-size: 18px;
-    margin-bottom: 20px;
   }
 
   /* submenuList */
@@ -234,28 +251,29 @@
   .visitSubMenuList {
     display: block;
     color: #999;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border-bottom: 1px solid #ccc;
     margin-left: 50px;
     width: 80px;
     height: 30px;
     line-height: 30px;
     text-align: center;
+    letter-spacing: 0;
+    transition: all 0.28s ease-in-out;
+    cursor: pointer;
   }
-
   .visitSubMenuList.subOn {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+    border-bottom: 2.5px solid #5ebf92;
     font-weight: bold;
   }
-  .visitSubMenuList:hover {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+  .visitSubMenuList:hover,
+  .visitSubMenuList:focus,
+  .visitSubMenuList:active {
+    border-color: #5ebf92;
   }
+
+  /* visitInfo */
   .visitInfo .mapBox {
     display: flex;
     justify-content: center;
@@ -285,21 +303,25 @@
   .visitInfo .mapBox .addressBox p {
     font-size: 14px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10px;
     color: #fff;
+  }
+  .visitInfo .mapBox .addressBox p:last-of-type {
+    font-size: 12px;
   }
   .visitInfo .mapBox .addressBox #addressText > span {
     color: #fff;
     padding-right: 5px;
   }
   .visitInfo .mapBox .addressBox .share {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 100px;
     display: block;
     border: none;
     font-size: 14px;
-    background: url(/public/images/visit/share_636363.png) no-repeat 50px center;
-    background-size: 16px;
+    background: url(/public/images/visit/share_636363.png) no-repeat 35px center;
+    background-size: 14px;
+    font-size: 12px;
   }
   .visitInfo .mapBox .addressBox .mapLink {
     position: absolute;
@@ -332,19 +354,17 @@
 
   .transport {
     margin: 0 0 30px;
+    color: #999;
   }
   .transport h4 {
-    font-size: 20px;
-    padding-left: 10px;
-  }
-  .transport h4 span {
-    color: #5ebf92;
-    font-weight: bold;
-    padding-right: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    width: 90px;
+    border-bottom: 2px solid #5ebf92;
+    text-align: center;
   }
   .transportList {
     margin-top: 50px;
-    color: #999;
   }
   .car,
   .subway,
@@ -392,5 +412,14 @@
   }
   .subway .transportListContents {
     width: 200px;
+  }
+  .visitBottomBanner {
+    width: 100%;
+    height: 200px;
+    margin: 40px 0;
+  }
+  .visitBottomBanner img {
+    width: 100%;
+    height: 200px;
   }
 }

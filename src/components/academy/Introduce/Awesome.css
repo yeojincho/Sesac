@@ -1,82 +1,165 @@
-.transform-box {
-  width: 100%;
-  height: 500px;
-}
-.transform-box img {
-  width: 100%;
-  height: 100%;
-}
+@media screen and (min-width: 768px) {
+  .transform-box {
+    width: 100%;
+    height: 500px;
+  }
+  .transform-box img {
+    width: 100%;
+    height: 100%;
+  }
 
-.padding-block {
-  display: flex;
-  text-align: center;
-  font-size: 5vmax;
-  justify-content: center;
-  align-items: center;
-  background-color: #efefef;
-  color: #333;
-  object-fit: cover;
-  margin: 0 auto;
-}
+  .padding-block {
+    display: flex;
+    text-align: center;
+    font-size: 5vmax;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    color: #333;
+    object-fit: cover;
+    margin: 0 auto;
+  }
 
-.scroll-carousel {
-  background-color: #efefef;
-  position: relative;
-}
+  .scroll-carousel {
+    background-color: #efefef;
+    position: relative;
+  }
 
-.sticky-box {
-  margin-top: 80px;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  width: auto;
-  height: 700px;
-}
-.sticky-box img {
-  height: 800px;
-}
+  .sticky-box {
+    margin-top: 80px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: auto;
+    height: 700px;
+  }
+  .sticky-box img {
+    height: 800px;
+  }
 
-.transform-box {
-  height: 1300px;
-  display: flex;
-  will-change: transform;
-}
+  .transform-box {
+    height: 1300px;
+    display: flex;
+    will-change: transform;
+  }
 
-.box {
-  flex-shrink: 0;
-  width: 130rem;
-  height: 80vh;
-  margin: 0 2rem;
-}
+  .box {
+    flex-shrink: 0;
+    width: 130rem;
+    height: 80vh;
+    margin: 0 2rem;
+  }
 
-.box--narrower {
-  width: 70rem;
-}
+  .box--narrower {
+    width: 70rem;
+  }
 
-.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.icon_inBanner1 {
-  width: 100px;
-  height: 100px;
-}
+  .icon_inBanner1 {
+    width: 100px;
+    height: 100px;
+  }
 
-.icon_inBanner2 {
-  width: 100px;
-  height: 100px;
+  .icon_inBanner2 {
+    width: 100px;
+    height: 100px;
+  }
+  .icon_inBanner3 {
+    width: 100px;
+    height: 100px;
+  }
+  .icon_inBanner4 {
+    width: 100px;
+    height: 100px;
+  }
+  .Bottom-bannerImg1 {
+    width: 100%;
+    height: 400px;
+  }
 }
-.icon_inBanner3 {
-  width: 100px;
-  height: 100px;
-}
-.icon_inBanner4 {
-  width: 100px;
-  height: 100px;
-}
-.Bottom-bannerImg1 {
-  width: 100%;
-  height: 400px;
+@media screen and (max-width: 767px) {
+  .transform-box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .padding-block {
+    display: flex;
+    text-align: center;
+    font-size: 5vmax;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    color: #333;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .scroll-carousel {
+    background-color: #efefef;
+    position: relative;
+  }
+
+  .sticky-box {
+    width: 100%;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    width: auto;
+    height: 500px;
+  }
+  .sticky-box img {
+    height: 500px;
+  }
+
+  .transform-box {
+    height: 500px;
+    display: flex;
+    will-change: transform;
+  }
+
+  .box {
+    flex-shrink: 0;
+    width: 100rem;
+    height: 50vh;
+    margin: 0 2rem;
+  }
+
+  .box--narrower {
+    width: 50rem;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .icon_inBanner1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon_inBanner2 {
+    width: 100px;
+    height: 100px;
+  }
+  .icon_inBanner3 {
+    width: 100px;
+    height: 100px;
+  }
+  .icon_inBanner4 {
+    width: 100px;
+    height: 100px;
+  }
+  .Bottom-bannerImg1 {
+    width: 100%;
+    height: 400px;
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./customer.css";
 
@@ -12,21 +12,28 @@ function Customer() {
     borderRadius: '50px',
   }
 
+  const menuTitle = [
+    '공지사항',
+    '문의하기',
+    '자주 묻는 질문',
+    '오시는 길'
+  ]
+
   return (
     <React.Fragment>
       <section className="customer-list-container cf">
         <ul className="customer-list-container">
           <li className="customer-list">
-            <NavLink to="/notice" activeStyle={menuStyle}>공지사항</NavLink>
+            <NavLink to="/notice" activeStyle={menuStyle}>{menuTitle[0]}</NavLink>
           </li>
           <li className="customer-list">
-            <NavLink to="/question" activeStyle={menuStyle}>문의하기</NavLink>
+            <NavLink to="/question" activeStyle={menuStyle}>{menuTitle[1]}</NavLink>
           </li>
           <li className="customer-list">
-            <NavLink to="/faq" activeStyle={menuStyle}>자주 묻는 질문</NavLink>
+            <NavLink to="/faq" activeStyle={menuStyle}>{menuTitle[2]}</NavLink>
           </li>
           <li className="customer-list">
-            <NavLink to="/visit" activeStyle={menuStyle}>오시는 길</NavLink>
+            <NavLink to="/visit" activeStyle={menuStyle}>{menuTitle[3]}</NavLink>
           </li>
         </ul>
       </section>

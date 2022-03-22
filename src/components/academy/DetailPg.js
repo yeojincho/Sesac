@@ -16,29 +16,39 @@ function Detail() {
   return (
     <div className='DetailPg-main'>
       <animated.h1 style={titleAnimation} className='DetailPg-title'>
-        Why is it special?
+        HR샵 문의하기 \ 자주하는 질문
       </animated.h1>
-      <div className='DetailPg-accordion'>
-        <Accordion
-          title='- 왜 엑스퍼트 아카데미인가?'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-        />
-        <Accordion
-          title='- 엑스퍼트가 특별한 이유?'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-        />
-        <Accordion
-          title='Item 3 - Expert Academy is Awesome'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-        />
-        <Accordion
-          title='Item 4 - Expert Academy is Awesome'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-        />
-        <Accordion
-          title='Item 5 - Expert Academy is Awesome'
-          text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam'
-        />
+      <div className='qaContentsBox'>
+        <div className='DetailPg-accordion'>
+          <Accordion
+            title='- MODULE_NOT_FOUND 가 뜨는데 어떡하나요?'
+            text='Error: Cannot find module ㅇㅇㅇ이 경고인경우 혹시 dialogflow.js 이페이지 위에 const dialogflow =  require(ㅇㅇㅇ)이 부분을 생략하신게 아닌가 확인해보시기 바랍니다.'
+          />
+          <Accordion
+            title='- npm install이 안되는데 이유가 뭘까요?'
+            text='현재 보니깐 ㅇㅇㅇ이 설치되어있지 않아서 에러가 난다고 나오는데 npm install --global --production windows-build-tools 이 명령어 한번 사용해봐주세요'
+          />
+          <Accordion
+            title='- 주어진 url주소로 figma파일을 어떻게 다운받아야 하나요?'
+            text='드라이브에서 파일을 다운 받으시거나 첨부파일에 추가된 .fig파일을 다운 받으시거나 Figma 링크를 통해 받으실 수 있습니다.'
+          />
+          <Accordion
+            title='- MODULE_NOT_FOUND 가 뜨는데 어떡하나요?'
+            text='Error: Cannot find module ㅇㅇㅇ이 경고인경우 혹시 dialogflow.js 이페이지 위에 const dialogflow =  require(ㅇㅇㅇ)이 부분을 생략하신게 아닌가 확인해보시기 바랍니다.'
+          />
+          <Accordion
+            title='- npm install이 안되는데 이유가 뭘까요?'
+            text='현재 보니깐 ㅇㅇㅇ이 설치되어있지 않아서 에러가 난다고 나오는데 npm install --global --production windows-build-tools 이 명령어 한번 사용해봐주세요'
+          />
+          <Accordion
+            title='- npm install이 안되는데 이유가 뭘까요?'
+            text='현재 보니깐 ㅇㅇㅇ이 설치되어있지 않아서 에러가 난다고 나오는데 npm install --global --production windows-build-tools 이 명령어 한번 사용해봐주세요'
+          />
+          <Accordion
+            title='- npm install이 안되는데 이유가 뭘까요?'
+            text='현재 보니깐 ㅇㅇㅇ이 설치되어있지 않아서 에러가 난다고 나오는데 npm install --global --production windows-build-tools 이 명령어 한번 사용해봐주세요'
+          />
+        </div>
       </div>
     </div>
   );
@@ -56,7 +66,7 @@ function Accordion(props) {
   const styles = {
     //if open is true, change color of title
     accordionTitle: {
-      color: open ? "#d9c387" : "#fff",
+      color: open ? "#d9c387" : "#727272",
       fontWeight: 700,
     },
   };

@@ -8,6 +8,19 @@ function ChangePw() {
   return (
     <div>
       <div className="inner-box ChangePw-wrap1">
+        <ul class="cont-navi">
+          <li>
+            <a href="#none" class="nav-home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <span class="nav-sub">마이페이지</span>
+          </li>
+          <li>
+            <span class="nav-sub">비밀번호 변경</span>
+          </li>
+        </ul>
         <HeadTitle />
         <div className="flex-box">
           <SideMenu />

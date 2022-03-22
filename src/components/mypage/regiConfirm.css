@@ -92,57 +92,9 @@
 }
 
 
-/* 수강신청 취소버튼 클릭 후 팝업버튼 */
-.popup-cancel {
-  position: relative;
-  display: none;
-  color: #333;
-  background-color: #ddd;
-  border-radius: 30px;
-  padding: 40px 40px;
-  width: 400px;
-}
-
-/* on 클래스 붙이면 보임 */
-#popup-cancel {
-  /* display: none; */
-}
-
-.yes#popup-cancel {
-  display: block;
-}
-
-
-
-#popup-cancel .cancel-btn {
-  display: block;
-  padding: 5px 8px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  color: #212529;
-  font-size: 14px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.1s linear;
-}
-
-#popup-cancel .cancel-btn:hover{
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.1);
-}
-#popup-cancel .cancel-btn:active {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-
 /* 교육내역이 없는 경우 보여지는 페이지 */
 .notice-noRegiClass  {
-  background-color: #ddd;
+  background-color: #eee;
   border-radius: 40px;
   padding: 40px 40px;
   width: 550px;
@@ -150,7 +102,7 @@
 
 .notice-noRegiClass h3 {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 500;
   color: #444;
   margin-bottom: 20px;
   text-align: center;
@@ -159,7 +111,6 @@
 .notice-noRegiClass p {
   line-height: 25px;
 } 
-
 
 
 
