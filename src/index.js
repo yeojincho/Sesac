@@ -8,6 +8,8 @@ import ScrollToTop from "./components/common/ScrollToTop";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "./redux/modules/index";
+import { CookiesProvider } from 'react-cookie';
+
 
 const store = createStore(rootReducer);
 
@@ -17,10 +19,12 @@ const sessionLogin = sessionStorage.getItem("user_id");
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
-        <ScrollToTop />
-        <App sessionLogin={sessionLogin} />
-      </BrowserRouter>
+      <CookiesProvider>
+        <BrowserRouter>
+            <ScrollToTop />
+            <App sessionLogin={sessionLogin} />
+        </BrowserRouter>
+      </CookiesProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
