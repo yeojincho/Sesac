@@ -3,7 +3,6 @@ import HeadTitle from "./HeadTitle";
 import SideMenu from "./SideMenu";
 import "./regiConfirm.css";
 import CancelModal from "./CancelModal";
-import NoClass from "./NoClass";
 
 const RegiConfirm = () => {
   //클래스 리스트 더미 데이터
@@ -55,14 +54,15 @@ const RegiConfirm = () => {
   const openMdelarr = () => {
     let tableData = document.getElementById("classTable");
     let tableLeng = tableData.rows.length;
-    alert("행의 수" + tableLeng);
+
     for (let i = 0; i < tableLeng; i++) {
       let chkbox = tableData.rows[i].cells[0].childNodes[0].checked;
 
       if (chkbox) {
         tableData.deleteRow(i);
         i--;
-      } else if (tableLeng === 0) {
+      }
+      if (tableLeng === 1) {
         setIsClass(true);
       }
     }
@@ -205,7 +205,15 @@ const RegiConfirm = () => {
 
             <CancelModal open={modalOpen} close={closeM} />
 
-            {isClass ? <NoClass is={isClass} /> : null}
+            {isClass ? (
+              <div className="notice-noRegiClass thereisnoclass">
+                <h3>신청하신 교육과정이 없습니다.</h3>
+                <p>
+                  문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로
+                  연락 주십시오
+                </p>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
