@@ -1,6 +1,6 @@
 
 
-/* PC Main CSS */
+/* PC  CSS */
 @media screen and (min-width:768px) {
   .Management-wrap1 {
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     display: flex;
   }
   .Management-contentBox {
-    width: 50%;
+    width: 50vw;
   }
   
   /* contentBox title 공통 */
@@ -200,6 +200,208 @@
   }
 }
 
+
+/* 모바일  CSS */
+@media screen and (max-width:767px) {
+  .Management-wrap1 {
+    box-sizing: border-box;
+  }
+  
+  
+  /* flex 정렬 */
+  .inner-box .flex-box {
+    display: flex;
+  }
+
+  .Management-contentBox {
+    width: 60vw;
+    margin-right: 30px;
+  }
+  
+  /* contentBox title 공통 */
+  .Management-contentBox .pageTitle {
+    color: #212529;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  
+  /* subtitle */
+  .Management-contentBox .Management-infoTitle {
+    font-size: 16px;
+    color: #191b20;
+  }
+  .Management-infoForm .Management-infoTitle {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #212529;
+  }
+  
+  
+  
+  .Management-contentBox .Management-infoTitle::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: -5px 10px 0 0;
+    vertical-align: middle;
+    background: #191b20;
+    border-radius: 50%;
+  }
+  
+  .mrgn-left {
+    padding-left: 17px;
+  }
+  
+  .mrgn-left .manage-userinfo {
+    display: block;
+    color: #191b20;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  
+  .mrgn-left .manage-userinfo::before {
+    content:'';
+    display:inline-block;
+    width:6px;
+    height:6px;
+    margin:-5px 10px auto 4px;
+    vertical-align:middle;
+    border-right:1px solid #27aa84;
+    border-top:1px solid #27aa84;
+    transform:rotate(45deg)
+  }
+  
+  
+  .mrgn-left .manage-userinfo span {
+    margin-left: 5px;
+  }
+  
+  
+  .Management-inform {
+    color: #191b20;
+    font-size: 16px;
+  }
+  
+  /* 인풋 라벨 */
+  .Management-inform label {
+    font-weight: lighter;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    font-size: 17px;
+  }
+  
+  
+  
+  #mailing-service {
+    margin-left: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    position: relative;
+    bottom: 4px;
+  
+  }
+  
+  
+  
+  /* 주소검색 */
+  #roadAddrPart1 {
+    width: 80%;
+  }
+  
+  #roadAddrPart2 {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .zipBox {
+    position: relative;
+  }
+  
+  #zipBtn {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-color: #eee;
+    color: #191b20;
+    font-weight: lighter;
+    padding: 3px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+  .postCode_btn {
+    position: absolute;
+    right: -70px;
+    top: 5px;
+    background-color: #eee;
+    color: #191b20;
+    font-weight: lighter;
+    padding: 3px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+  #zipContainer {
+    border: 1px solid reds;
+  }
+  
+  /* 버튼2개 */
+  .Management-bottomBtn {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 17px;
+    margin-bottom: 100px;
+  }
+  
+  /* 확인버튼 */
+  .Management-bottomBtn #check-btn {
+    width: 150px;
+    min-width: 110px;
+    height: 38px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+    line-height: 38px;
+    text-align: center;
+    background-color: #5EBF92;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .Management-bottomBtn #check-btn:hover {
+    background-color: #03A65A ;
+  }
+  
+  
+  /* 탈퇴버튼 */
+  .Management-bottomBtn #byeBtn {
+    width: 150px;
+    min-width: 110px;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 7px;
+    line-height: 38px;
+    text-align: center;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .Management-bottomBtn #byeBtn:hover {
+    background-color: #eee ;
+  }
+  
+  
+  /* placeholder css */
+  .Management-contentBox input::placeholder {
+    color: #636363;
+    font-weight: lighter;
+    font-style: italic;
+  }
+}
 
 
 

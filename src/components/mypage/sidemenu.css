@@ -1,70 +1,120 @@
-.sideMenuBox {
-  width: 300px;
-  min-width: 220px;
-  min-height: 400px;
-  color: #555;
-  padding: 30px 20px 30px 0;
-  margin-right: 60px;
-  box-shadow: 4px 0 4px -3px rgba(0, 0, 0, 0.2);
-}
-
-/* 사이드메뉴 큰메뉴 */
-.sideMenuBox .info em {
-  color: #212529;
-  font-weight: 600;
-  font-size: 22px;
-  font-style: normal;
-}
-
-
-
-
-.sideMenuBox ul.info {
-  margin-bottom: 60px;
-}
-
-/* 사이드메뉴 작은메뉴 */
-.sideMenuBox ul.info li {
-  border: none;
-  color: #212529;
-  font-size: 16px;
-  text-indent: 30px;
-  margin-top: 13px;
-}
-
-.sideMenuBox ul.info li::before {
-  content:'';
-  display:inline-block;
-  width:8px;
-  height:1px;
-  margin:-5px 10px auto auto;
-  vertical-align:middle;
-  background:#212529;
-}
-
-.sideMenuBox ul.info li.here {
-  /* font-weight: 800; */
-  color: #03A65A;
-}
-
-
-.sideMenuBox ul.info li:hover {
-  text-decoration: underline;
-  color: #03A65A;
-}
-
-.sideMenuBox ul.info li a {
-  color: inherit;
-}
-
-/* PC Main CSS */
+/* PC CSS */
 @media screen and (min-width:768px) {
+  .sideMenuBox {
+    width: 300px;
+    min-width: 220px;
+    min-height: 400px;
+    color: #555;
+    padding: 30px 20px 30px 0;
+    margin-right: 60px;
+    box-shadow: 4px 0 4px -3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 사이드메뉴 큰메뉴 */
+  .sideMenuBox .info em {
+    color: #212529;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: normal;
+  }
+
+
+
+
+  .sideMenuBox ul.info {
+    margin-bottom: 60px;
+  }
+
+  /* 사이드메뉴 작은메뉴 */
+  .sideMenuBox ul.info li {
+    border: none;
+    color: #212529;
+    font-size: 16px;
+    text-indent: 30px;
+    margin-top: 13px;
+  }
+
+  .sideMenuBox ul.info li::before {
+    content:'';
+    display:inline-block;
+    width:8px;
+    height:1px;
+    margin:-5px 10px auto auto;
+    vertical-align:middle;
+    background:#212529;
+  }
+
+  .sideMenuBox ul.info li.here {
+    /* font-weight: 800; */
+    color: #03A65A;
+  }
+
+
+  .sideMenuBox ul.info li:hover {
+    text-decoration: underline;
+    color: #03A65A;
+  }
+
+  .sideMenuBox ul.info li a {
+    color: inherit;
+  }
+
 
 }
 
-/* 모바일 Main CSS */
+/* 모바일 CSS */
 @media screen and (max-width:767px) {
-  
+  .sideMenuBox {
+    width: 220px;
+    min-width: 220px;
+    min-height: 400px;
+    color: #555;
+    padding: 30px 10px 30px 20px;
+    margin-right: 40px;
+    box-shadow: 4px 0 4px -3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 사이드메뉴 큰메뉴 */
+  .sideMenuBox .info em {
+    color: #212529;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+
+  .sideMenuBox ul.info {
+    margin-bottom: 50px;
+  }
+
+  /* 사이드메뉴 작은메뉴 */
+  .sideMenuBox ul.info li {
+    border: none;
+    color: #212529;
+    font-size: 15px;
+    text-indent: 20px;
+    margin-top: 13px;
+  }
+
+  .sideMenuBox ul.info li::before {
+    content:'';
+    display:inline-block;
+    width:8px;
+    height:1px;
+    margin:-5px 7px auto auto;
+    vertical-align:middle;
+    background:#212529;
+  }
+
+
+  .sideMenuBox ul.info li:hover {
+    text-decoration: underline;
+    color: #03A65A;
+  }
+
+  .sideMenuBox ul.info li a {
+    color: inherit;
+  }
 }
 
 
