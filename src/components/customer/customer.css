@@ -47,8 +47,8 @@
     margin: 0 auto 30px;
   }
   .customer-list {
+    flex: 1 0 100px;
     display: block;
-    width: 200px;
     height: 40px;
     margin-left: 40px;
     background-color: #dddddd;
