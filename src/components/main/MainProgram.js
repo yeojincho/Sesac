@@ -83,20 +83,26 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
+                        <li>HIT</li>
                       </ul>
-                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
+                      <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -105,12 +111,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -121,6 +121,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -129,22 +138,25 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
+                        <li>HIT</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -153,12 +165,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -168,6 +174,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -176,22 +191,25 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_15-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
+                        <li>HIT</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -200,12 +218,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_13-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -216,6 +228,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -224,21 +245,25 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_11-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
+                        <li>HIT</li>
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -247,22 +272,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   {programMore && (
@@ -273,11 +300,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_06-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -288,6 +310,15 @@ export default function MainProgram() {
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
+                    </div>
                   </li>
                   <li className="program-item">
                     <div className="item-img">
@@ -295,22 +326,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -319,22 +352,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -343,12 +378,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -358,6 +387,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                     </>
@@ -387,12 +425,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -404,6 +436,15 @@ export default function MainProgram() {
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
+                    </div>
                   </li>
                   <li className="program-item">
                     <div className="item-img">
@@ -411,11 +452,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -426,6 +462,15 @@ export default function MainProgram() {
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
+                    </div>
                   </li>
                   <li className="program-item">
                     <div className="item-img">
@@ -433,22 +478,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -457,12 +504,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -472,6 +513,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -480,22 +530,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_15-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -504,22 +556,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_13-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -528,12 +582,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_11-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -543,6 +591,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -551,22 +608,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   {programMore && (
@@ -577,11 +636,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -592,6 +646,15 @@ export default function MainProgram() {
                       <p className="item-title">사내강사 양성과정사내강사 양성과정사내강사 양성과정 </p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
                     </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
+                    </div>
                   </li>
                   <li className="program-item">
                     <div className="item-img">
@@ -599,22 +662,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -623,22 +688,24 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
                         <li>2DAY</li>
                         <li>16시간</li>
                         <li>Live</li>
-                        
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                   <li className="program-item">
@@ -647,12 +714,6 @@ export default function MainProgram() {
                         src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
-                      <div className="item-img-desc">
-                        <p>
-                          사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와
-                          설득력을 높일 수 있는 스토리 텔링 기법 소개
-                        </p>
-                      </div>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -662,6 +723,15 @@ export default function MainProgram() {
                       </ul>
                       <p className="item-title">사내강사 양성과정</p>
                       <p className="item-date">2022.02.22 ~ 2022.02.23</p>
+                    </div>
+                    <div className="item-img-desc">
+                      <p>
+                        사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
+                      </p>
+                      <div>
+                        <span className="viewBtn">상세보기</span>
+                        <span className="appBtn">과정신청</span>
+                      </div>
                     </div>
                   </li>
                     </>

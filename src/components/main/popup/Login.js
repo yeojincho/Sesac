@@ -61,7 +61,7 @@ export default function Login({ open, close }) {
                 <li><a href="/join">회원가입</a></li>
               </ul>
             </div>
-            <button className="btn-popup-close" onClick={close}>닫기</button>
+            <button className="btn-popup-close login-close" onClick={close}>닫기</button>
           </div>
         </div>
       </div>

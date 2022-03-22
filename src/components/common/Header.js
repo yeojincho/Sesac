@@ -97,16 +97,16 @@ export default function NewHeader({isLogin}) {
             </ul>
           </li>
           <li className="depth1">
-            <Link to="/" onClick={subMenuCloseFn}>Ex콘텐츠</Link>
+            <Link to="/ready" onClick={subMenuCloseFn}>Ex콘텐츠</Link>
             <ul className="depth2">
               <li>
-                <Link to="/" onClick={subMenuCloseFn}>이벤트</Link>
+                <Link to="/ready" onClick={subMenuCloseFn}>이벤트</Link>
               </li>
               <li>
-                <Link to="/" onClick={subMenuCloseFn} >과정후기</Link>
+                <Link to="/ready" onClick={subMenuCloseFn} >과정후기</Link>
               </li>
               <li>
-                <Link to="/" onClick={subMenuCloseFn}>EXC뷰</Link>
+                <Link to="/ready" onClick={subMenuCloseFn}>EXC뷰</Link>
               </li>
             </ul>
           </li>

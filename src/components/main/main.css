@@ -41,7 +41,7 @@
   margin-bottom: 14px;
   padding: 5px 15px;
   border-radius: 18px;
-  background-color: #008000;
+  background-color: rgb(12, 150, 85);
   font-size: 17px;
   color: #fff;
   font-weight: bold;
@@ -378,9 +378,6 @@
     text-decoration: none;color:inherit;
     cursor: pointer;
   }
-  .tab-pane{
-    animation: fadein .7s ease-in ;
-  }
   @keyframes fadein {
     from {
         opacity: 0;
@@ -403,94 +400,105 @@
     padding: 0;
     flex-wrap: wrap;
   }
+  @keyframes fade-in-fwd{0%{transform:translateZ(-80px);opacity:0}100%{transform:translateZ(0);opacity:1}}
   .main-program-img .program-item {
+    position: relative;
     vertical-align:top;
     margin-right: 40px;
     overflow: hidden;
     width: 240px;
-    animation: fadein .7s ease-in ;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+    /* animation: fadein .7s ease-in ; */
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
   }
   .main-program-img .program-item:nth-child(4n){
     margin-right: 0;
   }
-  .main-program-img .program-item .item-img {
-    position: relative;
-  }
-  .main-program-img .program-item .item-img:hover {
-    opacity:0.7;
-  }
   .main-program-img .program-item .item-img img{ 
     width: 240px;
     height: 140px;
-    border-radius: 7px;
-    cursor: pointer;
   }
-  .main-program-img .program-item .item-img .item-img-desc{
+  .main-program-img .program-item .item-img-desc{
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     padding: 15px;
     box-sizing: border-box;
-    background: rgba(0,0,0,0.9);
+    background: rgb(12, 150, 85);
     opacity: 0;
-    border-radius: 7px;
-    transition: height 0.35s ease-in-out;
     cursor: pointer;
     overflow: hidden;
     font-size: 14px;
+    box-sizing: border-box;
+    overflow:hidden;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
-  /* .main-program-img .program-item:nth-child(1) .item-img-desc{
-    background: rgba(0,0,0,0.9);
+  .main-program-img .program-item .item-img-desc> div{
+    position: absolute;
+    display: flex;
+    justify-content:space-around;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    width: 100%;
   }
-  .main-program-img .program-item:nth-child(2) .item-img-desc{
-    background: rgba(0,0,0,0.8);
+  .main-program-img .program-item .item-img-desc span:hover{
+    transform: skewX(-12deg);
+    transition-duration: 0.3s;
   }
-  .main-program-img .program-item:nth-child(3) .item-img-desc{
-    background: rgba(0,0,0,0.7);
+  .main-program-img .program-item .item-img-desc .viewBtn{
+    display: block;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #18222B;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
   }
-  .main-program-img .program-item:nth-child(4) .item-img-desc{
-    background: rgba(0,0,0,0.6);
+  .main-program-img .program-item .item-img-desc .appBtn{
+    display: block;
+    padding: 8px 15px;
+    background-color: #18222B;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
   }
-  .main-program-img .program-item:nth-child(5) .item-img-desc{
-    background: rgba(12, 150, 85, 0.9);
-  }
-  .main-program-img .program-item:nth-child(6) .item-img-desc{
-    background: rgba(12, 150, 85, 0.8);
-  }
-  .main-program-img .program-item:nth-child(7) .item-img-desc{
-    background: rgba(12, 150, 85, 0.7);
-  }
-  .main-program-img .program-item:nth-child(8) .item-img-desc{
-    background: rgba(12, 150, 85, 0.6);
-  } */
-  .main-program-img .program-item .item-img .item-img-desc p{
+  .main-program-img .program-item .item-img-desc p{
     color: #fff !important;
+    height: 70%;
+    overflow:hidden;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
-  .main-program-img .program-item .item-img:hover .item-img-desc{
+  .main-program-img .program-item:hover .item-img-desc{
     opacity:1;
-    height: 140px;
+    transition: opacity 0.5s ease-in-out;
   }
-  .main-program-img .program-item .item-img .item-img-desc p{
-    
-  }
+  
   .main-program-img{
     overflow: hidden;
   }
   .main-program-img .item-text{
-    margin-top: 10px;
-    margin-bottom: 28px;
+    padding: 10px;
     width: 100%;
-    box-sizing: border-box;
-    overflow:hidden;
-    word-wrap:break-word;
   }
   .main-program-img .item-text p {
     margin-bottom: 0;
-
+    overflow: hidden;
+    width: 100%;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
   .main-program-img .item-title{
+    height: 50px;
     font-weight: bold;
     color: #424242;
   }
@@ -563,19 +571,27 @@
     margin: 0;
     padding: 0;
   }
+  .main-ex-img .ex-item{
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+  }
   .main-ex-img .ex-list .ex-item .item-img{
     overflow: hidden;
   }
   .main-ex-img .ex-list .ex-item .item-img img {
     width: 325px;
     height: 120px;
-    border-radius: 7px;
-    cursor: pointer;
-    
   }
-  .main-ex-img .ex-list .ex-item .item-img img:hover {
-    transition: all 0.2s linear;
+  .main-ex-img .ex-list .ex-item:hover .item-img img {
+    transition: all 0.5s linear;
     transform: scale(1.05);
+  }
+  .main-ex-img .item-text{
+    padding: 10px;
+    font-weight: bold;
   }
   
   /* 메인 중간배너 */
@@ -700,8 +716,10 @@
     width: 100%;
   }
   .main-program-img .program-item {
-    vertical-align:top;
     margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
 
   }
   .main-program-img .program-item .item-img {
@@ -709,13 +727,18 @@
   }
   .main-program-img .program-item .item-img img{ 
     width: 200px;
-    height: 150px;
-    border-radius: 7px;
+    height: 130px;
     cursor: pointer;
+  }
+  .main-program-img .program-item .item-text{
+    padding: 8px;
   }
   .main-program-img .program-item .item-img .item-img-desc,
   .main-program-img .item-text,
   .btn-more{
+    /* display: none; */
+  }
+  .main-program-img .item-img-desc, .btn-more{
     display: none;
   }
 
