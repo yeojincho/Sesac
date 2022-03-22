@@ -1,0 +1,54 @@
+.error-wrap{
+}
+.error-wrap .error-cont {
+  width: 800px;
+  margin: 100px auto;
+  text-align: center;
+}
+.error-wrap .error-cont .error-message {
+  margin-top: 20px;
+  font-size: 38px;
+  line-height: 52px;
+  color: #000;
+  font-weight: 700;
+}
+.error-wrap .error-cont .error-detail {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7e7e7e;
+}
+.error-wrap .error-btn {
+  border-color: #aaaaaa;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.error-wrap .error-btn .btn-type1{
+  border-color: #aaaaaa;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.error-wrap .error-btn a,
+.error-wrap .service-btn a{
+  text-decoration: none;
+  color: inherit;
+}
+.error-wrap .error-cont .info-message {
+  width: 500px;
+  margin-top: 70px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 14px 0;
+  color: #000;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+}
+.error-wrap .error-cont .info-message strong {
+  display: inline-block;
+  color: #ec1f2f;
+  font-weight: 700;
+}
