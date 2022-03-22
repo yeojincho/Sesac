@@ -58,6 +58,7 @@ export default function NewHeader({ isLogin }) {
   const [isGnbOpen, setIsGnbOpen] = useState(false);
   return (
     <>
+
       <header className='header-wrapper2'>
         <div className='inner-box header-inner'>
           <h1 className='top-logo'>

@@ -19,6 +19,7 @@ import PartmershopComplete from "../../academy/PartmershopComplete";
 import Recruit from "../../academy/Recruit";
 import RecruitComplete from "../../academy/RecruitComplete";
 import Hrstore from "../../academy/HrStore";
+import TeacherInfo from "../../academy/TeacherInfo"
 
 // 고객센터
 import Notice from "../../customer/Notice";
@@ -26,8 +27,13 @@ import Question from "../../customer/Question";
 import WritingQuestion from "../../customer/WritingQuestion";
 import Faq from "../../customer/Faq";
 import Visit from "../../customer/visit";
-import SendPage from "../../academy/SendPages/SendPages";
+import Management from "../../mypage/Management";
+import AccountWithdrawal from "../../mypage/ AccountWithdrawal";
+import ChangePw from "../../mypage/ChangePw";
+import MyClassList from "../../mypage/MyClassList";
+import RegiConfirm from "../../mypage/RegiConfirm";
 import TeacherInfo from "../../academy/TeacherInfo";
+import HrStore from "../../academy/HrStore";
 
 /* 
   신나는 반응형 웹 만들기
@@ -93,6 +99,15 @@ export default function MobileLayout({ isMobile, isLogin }) {
             component={RecruitComplete}
           ></Route>
           {/* 마이페이지 */}
+          <Route exact path="/manage" component={Management}></Route>
+          <Route
+            exact
+            path="/manage/withdrawal"
+            component={AccountWithdrawal}
+          ></Route>
+          <Route exact path="/changepw" component={ChangePw}></Route>
+          <Route exact path="/classlist" component={MyClassList}></Route>
+          <Route exact path="/confirmclass" component={RegiConfirm}></Route>
 
           <MFooter />
         </>

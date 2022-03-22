@@ -53,6 +53,7 @@ import JoinForm from "../../components/member/JoinForm";
 import JoinComplete from "../../components/member/JoinComplete";
 
 import Sample1 from "../../components/sample/Sample1";
+import ReadyService from "./ReadyService";
 
 export default function PCLayout({ isLogin }) {
   return (
@@ -125,6 +126,10 @@ export default function PCLayout({ isLogin }) {
         <Route exact path='/changepw' component={ChangePw}></Route>
         <Route exact path='/classlist' component={MyClassList}></Route>
         <Route exact path='/confirmclass' component={RegiConfirm}></Route>
+
+        {/* 서비스 준비중 */}
+        <Route exact path="/ready" component={ReadyService}></Route>
+
 
         <Route>
           <NotFound />

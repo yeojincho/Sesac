@@ -47,7 +47,7 @@ const RegiConfirm = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openMdelarr = () => {
-    // const idx = document.querySelectorAll(e.target.value);
+    document.getElementById("myTable").deleteRow(0);
     setModalOpen(true);
   };
   const closeM = () => {
@@ -111,7 +111,7 @@ const RegiConfirm = () => {
                     id="flexCheckDefault"
                   />
                 </td>
-                <td>1</td>
+                <td>2</td>
                 <td>{myRegiClass[1].title}</td>
                 <td>{myRegiClass[1].date}</td>
                 <td>{myRegiClass[1].numOfP}</td>
@@ -128,7 +128,7 @@ const RegiConfirm = () => {
                     id="flexCheckDefault"
                   />
                 </td>
-                <td>1</td>
+                <td>3</td>
                 <td>{myRegiClass[2].title}</td>
                 <td>{myRegiClass[2].date}</td>
                 <td>{myRegiClass[2].numOfP}</td>
@@ -145,7 +145,7 @@ const RegiConfirm = () => {
                     id="flexCheckDefault"
                   />
                 </td>
-                <td>1</td>
+                <td>4</td>
                 <td>{myRegiClass[3].title}</td>
                 <td>{myRegiClass[3].date}</td>
                 <td>{myRegiClass[3].numOfP}</td>
