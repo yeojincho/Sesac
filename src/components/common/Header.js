@@ -249,7 +249,7 @@ export default function NewHeader({ isLogin }) {
 
         <div className={isGnbOpen ? "gnb_bg open" : "gnb_bg"}></div>
       </header>
-      <a className='btn-screen-top' href='#'>
+      <a className='btn-screen-top hide' href='#'>
         <span>TOP</span>
       </a>
       <LoginPop open={LoginPopOpen} close={closeLoginPopFn} />
