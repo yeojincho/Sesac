@@ -3,19 +3,22 @@
   /* title */
 
   .fqaTitle {
-    margin: 90px 65px;
+    width: 100%;
+    height: 150px;
+    background-color: #266f37;
+    opacity: 0.9;
+    padding: 20px 0 30px 30px;
   }
   .fqaTitle h1 {
     font-weight: bold;
-    color: #777777;
+    color: #fff;
     font-size: 28px;
     margin-bottom: 10px;
   }
 
   .fqaTitle h2 {
-    color: #aaaaaa;
+    color: #fff;
     font-size: 18px;
-    margin-bottom: 20px;
   }
 
   /* submenuList */
@@ -32,9 +35,7 @@
   }
 
   .fqaSubMenuList {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 180px;
+    border-bottom: 2px solid #ccc;
     height: 40px;
     line-height: 40px;
     display: block;
@@ -42,17 +43,34 @@
     font-size: 16px;
     text-align: center;
     margin: 50px 60px 0 60px;
+    /*애니메이션 추가*/
+    width: 70%;
+    max-width: 180px;
+    letter-spacing: 0;
+    transition: all 0.28s ease-in-out;
+    cursor: pointer;
   }
+
   .fqaSubMenuList.subOn {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+    border-bottom: 2.5px solid #5ebf92;
     font-weight: bold;
   }
-  .fqaSubMenuList:hover {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+
+  .fqaSubMenuList:hover,
+  .fqaSubMenuList:focus,
+  .fqaSubMenuList:active {
+    letter-spacing: 5px;
+    border-color: #5ebf92;
+  }
+
+  .faqBottomBanner {
+    width: 100%;
+    height: 200px;
+    margin: 40px 0;
+  }
+  .faqBottomBanner img {
+    width: 100%;
+    height: 200px;
   }
 
   /* FaqAcco.js */
@@ -75,6 +93,7 @@
   }
   .accoBox .questionBox p:hover {
     color: #03a65a;
+    transition: all 0.3s ease-in-out;
   }
   .accoBox .answerBox {
     display: flex;
@@ -91,19 +110,22 @@
   /* title */
 
   .fqaTitle {
-    margin: 90px 65px;
+    width: 100%;
+    height: 150px;
+    background-color: #266f37;
+    opacity: 0.9;
+    padding: 20px 0 30px 30px;
   }
   .fqaTitle h1 {
     font-weight: bold;
-    color: #777777;
+    color: #fff;
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .fqaTitle h2 {
-    color: #aaaaaa;
-    font-size: 18px;
-    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
   }
 
   /* submenuList */
@@ -122,9 +144,7 @@
   }
 
   .fqaSubMenuList {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 120px;
+    border-bottom: 2px solid #ccc;
     height: 30px;
     line-height: 30px;
     display: block;
@@ -132,22 +152,36 @@
     font-size: 14px;
     text-align: center;
     margin: 0 30px 0 30px;
+    /*애니메이션 추가*/
+    width: 70%;
+    max-width: 130px;
+    letter-spacing: 0;
+    transition: all 0.28s ease-in-out;
+    cursor: pointer;
   }
   .fqaSubMenuList.subOn {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+    border-bottom: 2.5px solid #5ebf92;
     font-weight: bold;
   }
-  .fqaSubMenuList:hover {
-    border: 1px solid #5ebf92;
-    color: #ffffff;
-    background-color: #5ebf92;
+  .fqaSubMenuList:hover,
+  .fqaSubMenuList:focus,
+  .fqaSubMenuList:active {
+    border-color: #5ebf92;
+  }
+  .faqBottomBanner {
+    width: 100%;
+    height: 200px;
+    margin: 40px 0;
+  }
+  .faqBottomBanner img {
+    width: 100%;
+    height: 200px;
   }
 
   /* FaqAcco.js */
 
   .accoBox {
+    font-size: 14px;
     margin-top: 50px;
     margin-bottom: 150px;
   }
