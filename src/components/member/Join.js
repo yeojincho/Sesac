@@ -6,16 +6,19 @@ import './join.css';
 export default function Join() {
   return (
     <div className="join-wrapper">
+      <div className='orderPage-bigTitle'>
+        <h3 className='orderPage-h3'>
+          <b>회원가입</b>
+        </h3>
+        <span className='orderPage-span'>
+          __엑스퍼트아카데미에 오신 것을 환영합니다.
+        </span>
+      </div>
       <div className="inner-box join-inner">
         <ul class="cont-navi">
           <li><a href="#none" class="nav-home">HOME</a></li>
           <li><span class="nav-sub">회원가입</span></li>
         </ul>
-        <div className="top-title">
-          <h2>회원가입</h2>
-          <h3>__회원가입 구분</h3>
-        </div>
-
         <section>
           <div className="join-cont">
             <div class="join-step">
