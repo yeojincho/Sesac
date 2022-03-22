@@ -35,7 +35,7 @@ function OrderPage() {
   };
   return (
     <div className='orderPage-contents inner-box'>
-      <div className='orderPage-bigTlte'>
+      <div className='orderPage-bigTitle'>
         <h3 className='orderPage-h3'>
           <b>HR샵</b>
         </h3>

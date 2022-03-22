@@ -65,6 +65,10 @@
   height: 100%;
   width: 1500px;
 }
+.Bottom-bannerImg2 p {
+  width: 150px;
+  margin-right: 20px;
+}
 
 .mainContents-info {
   display: flex;
@@ -73,4 +77,14 @@
   margin-top: 100px;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .Bottom-bannerImg3 img {
+    width: 100%;
+    height: 150px;
+  }
+  .iconBoxWrapper1,
+  .Bottom-bannerImg2 {
+    display: none;
+  }
 }

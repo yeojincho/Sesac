@@ -42,7 +42,7 @@ export default function SendPage() {
     <div className='inner-box SendContents'>
       <Darkmode />
       <form onSubmit={sendEmail} className='boxContents'>
-        <div>
+        <div className='innerBoxContents'>
           <p className='sendPageBoxTitle'>Write your information</p>
           <p>Name</p>
           <input
