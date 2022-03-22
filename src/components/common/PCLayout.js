@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Popup from './Popup';
 
 // 아카데미
 import OrderPage from "../../components/academy/OrderPage";
@@ -140,7 +139,6 @@ export default function PCLayout({ isLogin }) {
 
       <Footer />
 
-      <Popup />
     </>
   );
 }

@@ -18,7 +18,7 @@ import './banner.css';
 
 
 import Config from '../academy/Introduce/Config';
-
+import Popup from '../../components/common/Popup';
 
 export default function Main({isMobile}) {
   return (
@@ -32,6 +32,7 @@ export default function Main({isMobile}) {
           </div>
           <MainContents />
           <MainBottom />
+          <Popup />
         </>)
         :
         (<>
