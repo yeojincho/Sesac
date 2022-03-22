@@ -151,7 +151,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background: url(/public/images/main/ico_search.png) no-repeat;
+    background: url(/public/images/search.png) no-repeat;
     background-size: 24px 24px;
     position: absolute;
     top:25%;right:20px;
