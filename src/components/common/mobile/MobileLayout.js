@@ -10,6 +10,12 @@ import Join from "../../member/Join";
 import JoinForm from "../../member/JoinForm";
 import JoinComplete from "../../member/JoinComplete";
 
+// 취업과정
+import Job from "../../job/Job";
+import JobIntro from "../../job/JobIntro";
+import JobRecruit from "../../job/JobRecruit";
+import ProgramDetail from "../../job/ProgramDetail";
+
 //아카데미
 import Introduce from "../../academy/Introduce/Introduce";
 import DetailPg from "../../academy/DetailPg";
@@ -22,11 +28,11 @@ import Hrstore from "../../academy/HrStore";
 import TeacherInfo from "../../academy/TeacherInfo";
 
 // 고객센터
-import Notice from "../../customer/Notice";
+import Notice from '../../customer/Notice';
 import Question from "../../customer/Question";
-import WritingQuestion from "../../customer/WritingQuestion";
 import Faq from "../../customer/Faq";
 import Visit from "../../customer/visit";
+import WritingQuestion from "../../customer/WritingQuestion"
 import Management from "../../mypage/Management";
 import AccountWithdrawal from "../../mypage/ AccountWithdrawal";
 import ChangePw from "../../mypage/ChangePw";
@@ -71,6 +77,10 @@ export default function MobileLayout({ isMobile, isLogin }) {
           <Route exact path="/join/complete" component={JoinComplete}></Route>
           {/* 공개과정 */}
           {/* 취업과정 */}
+          <Route exact path='/job' component={Job}></Route>
+        <Route exact path='/jobIntro' component={JobIntro}></Route>
+        <Route exact path='/jobRecruit' component={JobRecruit}></Route>
+        <Route exact path='/programDetail' component={ProgramDetail}></Route>
           {/* Ex콘텐츠 */}
           {/* 고객센터 */}
           <Route exact path="/notice" component={Notice}></Route>

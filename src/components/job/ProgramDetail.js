@@ -5,12 +5,16 @@ import './programDetail.css';
 import JobViewDetail from './JobViewDetail';
 import JobHeader from './JobHeader';
 import $ from 'jquery';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 
 
 export default function ProgramDetail(){
 
     const [like, setLike] = useState(0);
+    // window 객체에서 현재 url 가져오기 -> 이 데이터로 공유 버튼 클릭 시 주소를 클립보드에 복사
+const currentUrl = window.location.href;
+
 
 
 
@@ -46,8 +50,10 @@ export default function ProgramDetail(){
   },[])
 
   return(
+    <>
+        <JobHeader />
         <div className="inner-box programDetailBox">
-            <JobHeader />
+            
             {/* { BtnStatus &&<button className="scrollTopBtn" onClick={handleTop}>TOP</button> } */}
             <div className="jobTopDetailpage">
                 <div className="left">
@@ -82,9 +88,14 @@ export default function ProgramDetail(){
                         </div>
                         <div className="btnUl">
                             <ul className="programBtn">
-                                <li className='jobShareBtn'>
-                                <a href='#'>공유</a>
+                                <li>
+                                <CopyToClipboard text={currentUrl}>
+                                     <button className='jobShareBtn' onClick={()=>{alert("클립보드에 복사 완료")}}>
+                                         공유
+                                    </button>
+                                </CopyToClipboard>
                                 </li>
+                                
                                 <li><button>문의하기</button></li>
                                 <li>
                                 <button onClick={()=>{setLike(like+1); alert("좋아요 등록 완료")}}><span>{like} &hearts; </span>관심과정</button>
@@ -125,6 +136,7 @@ export default function ProgramDetail(){
                     <JobViewDetail />
                 </div>
         </div>
+        </>
     )
 
 }
