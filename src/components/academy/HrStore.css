@@ -101,3 +101,14 @@ li {
   width: 1450px;
   height: 200px;
 }
+@media screen and (max-width: 767px) {
+  .btnBox li {
+    width: 75vw;
+  }
+  .btnBox {
+    width: 95vw;
+  }
+  .bottomBannerImg img {
+    width: 100%;
+  }
+}
