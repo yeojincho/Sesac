@@ -19,7 +19,7 @@ import PartmershopComplete from "../../academy/PartmershopComplete";
 import Recruit from "../../academy/Recruit";
 import RecruitComplete from "../../academy/RecruitComplete";
 import Hrstore from "../../academy/HrStore";
-import TeacherInfo from "../../academy/TeacherInfo"
+import TeacherInfo from "../../academy/TeacherInfo";
 
 // 고객센터
 import Notice from "../../customer/Notice";
@@ -32,8 +32,7 @@ import AccountWithdrawal from "../../mypage/ AccountWithdrawal";
 import ChangePw from "../../mypage/ChangePw";
 import MyClassList from "../../mypage/MyClassList";
 import RegiConfirm from "../../mypage/RegiConfirm";
-import TeacherInfo from "../../academy/TeacherInfo";
-import HrStore from "../../academy/HrStore";
+import SendPage from "../../academy/SendPages/SendPages";
 
 /* 
   신나는 반응형 웹 만들기
@@ -62,40 +61,40 @@ export default function MobileLayout({ isMobile, isLogin }) {
           <Switch></Switch>
           <Route
             exact
-            path='/'
+            path="/"
             render={(props) => <Main isMobile={isMobile} {...props} />}
           ></Route>
           {/* 메인 */}
           {/* 회원가입 */}
-          <Route exact path='/join' component={Join}></Route>
-          <Route exact path='/join/form/:type' component={JoinForm}></Route>
-          <Route exact path='/join/complete' component={JoinComplete}></Route>
+          <Route exact path="/join" component={Join}></Route>
+          <Route exact path="/join/form/:type" component={JoinForm}></Route>
+          <Route exact path="/join/complete" component={JoinComplete}></Route>
           {/* 공개과정 */}
           {/* 취업과정 */}
           {/* Ex콘텐츠 */}
           {/* 고객센터 */}
-          <Route exact path='/notice' component={Notice}></Route>
-          <Route exact path='/question' component={Question}></Route>
-          <Route exact path='/writing' component={WritingQuestion}></Route>
-          <Route exact path='/faq' component={Faq}></Route>
-          <Route exact path='/visit' component={Visit}></Route>
+          <Route exact path="/notice" component={Notice}></Route>
+          <Route exact path="/question" component={Question}></Route>
+          <Route exact path="/writing" component={WritingQuestion}></Route>
+          <Route exact path="/faq" component={Faq}></Route>
+          <Route exact path="/visit" component={Visit}></Route>
           {/* 아카데미 */}
-          <Route exact path='/introduce' component={Introduce}></Route>
-          <Route exact path='/hrstore' component={Hrstore}></Route>
-          <Route exact path='/OrderPage' component={OrderPage}></Route>
-          <Route exact path='/detail' component={DetailPg}></Route>
-          <Route exact path='/Partnership' component={Partnership}></Route>
+          <Route exact path="/introduce" component={Introduce}></Route>
+          <Route exact path="/hrstore" component={Hrstore}></Route>
+          <Route exact path="/OrderPage" component={OrderPage}></Route>
+          <Route exact path="/detail" component={DetailPg}></Route>
+          <Route exact path="/Partnership" component={Partnership}></Route>
           <Route
             exact
-            path='/Partnership/complete'
+            path="/Partnership/complete"
             component={PartmershopComplete}
           ></Route>
-          <Route exact path='/Recruit' component={Recruit}></Route>
-          <Route exact path='/sendpage' component={SendPage}></Route>
-          <Route exact path='/teacherinfo' component={TeacherInfo}></Route>
+          <Route exact path="/Recruit" component={Recruit}></Route>
+          <Route exact path="/sendpage" component={SendPage}></Route>
+          <Route exact path="/teacherinfo" component={TeacherInfo}></Route>
           <Route
             exact
-            path='/Recruit/complete'
+            path="/Recruit/complete"
             component={RecruitComplete}
           ></Route>
           {/* 마이페이지 */}
