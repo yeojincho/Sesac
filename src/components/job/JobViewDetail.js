@@ -4,6 +4,8 @@ import './mobileJobViewDetail.css';
 
 //ViewDetail 컴포넌트 JobViewDetail로 복사
 
+
+
 function JobViewDetail() {
     return(
         <div className='view-detail inner-box'>
@@ -135,7 +137,7 @@ function JobViewDetail() {
                 <h4 className='detailTitle'>대표강사</h4>
                 <div className='mainTutorBox job'>
                     <div className='mainTutorLeft'>
-                    <img src="/images/moon.jpeg "alt="강사 이미지" />
+                    <img src="/images/kim.png "alt="강사 이미지" />
                         <a href="#"><p>강사 인터뷰</p></a>
                     </div>{/* e: mainTutorLeft */}
                     <div className='mainTutorRight'>
