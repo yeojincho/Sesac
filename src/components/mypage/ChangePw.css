@@ -1,97 +1,92 @@
-.ChangePw-wrap1 {
-  box-sizing: border-box;
-}
-
-/* contentBox */
-.ChangePw-contentBox {
-  width: 40%;
-}
-
-/* flex 정렬 */
-.inner-box .flex-box {
-  display: flex;
-}
-
-
-/* contentBox title 공통 */
-.ChangePw-contentBox .pageTitle {
-  color: #212529;
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-/* contentBox sub-title 공통 */
-.ChangePw-contentBox .ChangePw-subtitle {
-  font-size: 21px;
-  color: #191b20;
-}
-
-.ChangePw-contentBox .ChangePw-subtitle::before {
-  content:'';
-  display:inline-block;
-  width:8px;
-  height:2px;
-  margin:-5px 10px auto auto;
-  vertical-align:middle;
-  background: #191b20;
-}
-
-
-
-.mrgn-left {
-  padding-left: 17px;
-  margin-bottom: 50px;
-}
-
-
-
-
-
-
-.ChangePw-FormNow {
-  color: #191b20;
-  font-size: 16px;
-  margin-top: 30px;
-  margin-bottom: 70px;
-  width: 700px;
-}
-
-
-
-
-/* 인풋 라벨 */
-.ChangePwFormNow label {
-  font-weight: lighter;
-  margin-bottom: 6px;
-  margin-top: 16px;
-}
-
-
-
-.ChangePw-contentBox button.form-btn {
-  margin-top: 20px;
-  width: 150px;
-  min-width: 110px;
-  height: 38px;
-  border: none;
-  padding: 0 10px;
-  border-radius: 7px;
-  background-color: #5EBF92;;
-  margin-bottom: 100px;
-}
-
-.ChangePw-contentBox button.form-btn:hover {
-  background-color: #03A65A;
-}
-
-
-@media screen and (max-width: 768px){
-  .ChangePw-contentBox {
-    width: 30%;
-    padding-left: 20px;
+/* PC Main CSS */
+@media screen and (min-width:768px) {
+  .ChangePw-wrap1 {
+    box-sizing: border-box;
   }
-
+  
+  /* contentBox */
+  .ChangePw-contentBox {
+    width: 40%;
+  }
+  
+  /* flex 정렬 */
+  .inner-box .flex-box {
+    display: flex;
+  }
+  
+  
+  /* contentBox title 공통 */
+  .ChangePw-contentBox .pageTitle {
+    color: #212529;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  /* contentBox sub-title 공통 */
+  .ChangePw-contentBox .ChangePw-subtitle {
+    font-size: 21px;
+    color: #191b20;
+  }
+  
+  .ChangePw-contentBox .ChangePw-subtitle::before {
+    content:'';
+    display:inline-block;
+    width:8px;
+    height:2px;
+    margin:-5px 10px auto auto;
+    vertical-align:middle;
+    background: #191b20;
+  }
+  
+  
+  
+  .mrgn-left {
+    padding-left: 17px;
+    margin-bottom: 50px;
+  }
+  
+  
+  
+  .ChangePw-FormNow {
+    color: #191b20;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    width: 700px;
+  }
+  
+  
+  
+  
+  /* 인풋 라벨 */
+  .ChangePwFormNow label {
+    font-weight: lighter;
+    margin-bottom: 6px;
+    margin-top: 16px;
+  }
+  
+  
+  
+  .ChangePw-contentBox button.form-btn {
+    margin-top: 20px;
+    width: 150px;
+    min-width: 110px;
+    height: 38px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 7px;
+    background-color: #5EBF92;;
+    margin-bottom: 100px;
+  }
+  
+  .ChangePw-contentBox button.form-btn:hover {
+    background-color: #03A65A;
+  }
 }
 
+/* 모바일 Main CSS */
+@media screen and (max-width:767px) {
+  
+}
 
