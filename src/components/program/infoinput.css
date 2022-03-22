@@ -19,7 +19,9 @@ th, td{
     border: 1px solid #f3f3f3;
 }
 
-.infoTable tbody tr td input[type=text] {
+.infoTable tbody tr td input[type=text],
+.infoTable tbody tr td input[type=tel],
+.infoTable tbody tr td input[type=email] {
     border: none;
     outline: none;
     width: 100%;
