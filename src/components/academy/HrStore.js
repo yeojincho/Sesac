@@ -84,15 +84,15 @@ export default function HrStore() {
 
   return (
     <div className=''>
+      <div className='orderPage-bigTitle'>
+        <h3 className='orderPage-h3'>
+          <b>HR샵</b>
+        </h3>
+        <span className='orderPage-span'>
+          __교육에 필요한 옵션 및 상품정보를 제공합니다.
+        </span>
+      </div>
       <div className='inner-box'>
-        <div className='orderPage-bigTitle'>
-          <h3 className='orderPage-h3'>
-            <b>HR샵</b>
-          </h3>
-          <span className='orderPage-span'>
-            __교육에 필요한 옵션 및 상품정보를 제공합니다.
-          </span>
-        </div>
         <ul class='cont-navi'>
           <li>
             <a href='#none' class='nav-home'>
@@ -111,14 +111,16 @@ export default function HrStore() {
             {menu.map((el, idx) => {
               return (
                 <li>
-                  <button
-                    key={el.content}
-                    className={currentTab === idx ? "btn on" : "btn"}
-                    onClick={() => handleMneu(idx)}
-                    type='button'
-                  >
-                    {el.name}
-                  </button>
+                  <Link to='/detail'>
+                    <button
+                      key={el.content}
+                      className={currentTab === idx ? "btn on" : "btn"}
+                      onClick={() => handleMneu(idx)}
+                      type='button'
+                    >
+                      {el.name}
+                    </button>
+                  </Link>
                 </li>
               );
             })}
