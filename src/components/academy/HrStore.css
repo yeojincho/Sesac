@@ -59,7 +59,7 @@ li {
   margin-top: 30px;
 }
 .hrItemList li a img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 1s;
   filter: brightness(70%);
 }
