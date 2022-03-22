@@ -29,47 +29,49 @@ const MyClassList = () => {
           <SideMenu />
           <div className="myClassList-contentBox">
             <h2 className="pageTitle">수강내역</h2>
-            <table className="myClassList-table">
-              <colgroup>
-                <col width={40} />
-                <col width={330} />
-                <col width={200} />
-                <col width={40} />
-                <col width={150} />
-                <col width={90} />
-                <col width={90} />
-              </colgroup>
-              <tr id="under">
-                <th scope="col">No</th>
-                <th scope="col">교육과정</th>
-                <th scope="col">교육일정</th>
-                <th scope="col">인원</th>
-                <th scope="col">교육비</th>
-                <th scope="col">상태</th>
-                <th scope="col" className="">
-                  수료증
-                </th>
-              </tr>
-
-              {myclass.map((list, idx) => (
-                <tr key={idx}>
-                  <td>{idx + 1}</td>
-                  <td>{list.title}</td>
-                  <td>{list.date}</td>
-                  <td>{list.numOfP}</td>
-                  <td>{list.cost} 원</td>
-                  <td>{list.status}</td>
-                  <td>
-                    <button
-                      className="down-btn"
-                      onClick={() => alert("다운로드 되었습니다.")}
-                    >
-                      다운로드
-                    </button>
-                  </td>
+            <div className="table-box">
+              <table className="myClassList-table">
+                <colgroup>
+                  <col width={40} />
+                  <col width={330} />
+                  <col width={200} />
+                  <col width={40} />
+                  <col width={150} />
+                  <col width={90} />
+                  <col width={90} />
+                </colgroup>
+                <tr id="under">
+                  <th scope="col">No</th>
+                  <th scope="col">교육과정</th>
+                  <th scope="col">교육일정</th>
+                  <th scope="col">인원</th>
+                  <th scope="col">교육비</th>
+                  <th scope="col">상태</th>
+                  <th scope="col" className="">
+                    수료증
+                  </th>
                 </tr>
-              ))}
-            </table>
+
+                {myclass.map((list, idx) => (
+                  <tr key={idx}>
+                    <td>{idx + 1}</td>
+                    <td>{list.title}</td>
+                    <td>{list.date}</td>
+                    <td>{list.numOfP}</td>
+                    <td>{list.cost} 원</td>
+                    <td>{list.status}</td>
+                    <td>
+                      <button
+                        className="down-btn"
+                        onClick={() => alert("다운로드 되었습니다.")}
+                      >
+                        다운로드
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </table>
+            </div>
             {/* <div className="notice-noClass on">
               <h3>교육내역이 없습니다.</h3>
               <p>
