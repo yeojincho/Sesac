@@ -1,21 +1,4 @@
 
-/* 메인 배너 */
-.main-banner{
-  /* position: relative; */
-}
-.main-banner .swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-.main-banner .swiper-pagination-bullet-active{
-  width: 50px;
-  border-radius: 50px;
-  transition: all .4s linear;
-}
-
-
 
 /* 과정 카테고리 */
 .program-contents {
@@ -41,7 +24,7 @@
   margin-bottom: 14px;
   padding: 5px 15px;
   border-radius: 18px;
-  background-color: #008000;
+  background-color: rgb(12, 150, 85);
   font-size: 17px;
   color: #fff;
   font-weight: bold;
@@ -236,134 +219,8 @@
   background-color: #03A65A;
 }
 
-.main-banner .swiper-slide:first-child::before{
-  /* background: url('/public/images/green.png') no-repeat; */
-  background-color: #C8E5B0;
-}
-.main-banner .swiper-slide:nth-child(2):before{
-  /* background: url('/public/images/main/blue-banner.jpg') no-repeat; */
-  background-color: #18222B;
-}
-.main-banner .swiper-slide:last-child::before{
-  background: url('/public/images/main/banner2.jpg') no-repeat;
-}
 /* PC Main CSS */
 @media screen and (min-width:768px){
-   /* 메인 배너 */
-   .main-frame{
-    position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 700px;
-      max-width: 98rem;
-      margin-right: auto;
-      margin-left: auto;
-      text-align: left;
-  }
-  .main-banner .swiper-slide::before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 400px;
-  }
- 
-  .main-banner .swiper-slide-active .panel-img{
-    transition: all 2.5s linear;
-    transform: scale(1.2);
-  }
-  .main-frame .panel-title{
-    font-size: 30px;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .main-frame .panel2-title{
-    font-size: 25px;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
-  
-  .main-frame .panel-desc{
-    font-size: 20px;
-  }
-  .main-frame .panel2-desc{
-    font-size: 20px;
-    color: #fff;
-  }
-  .main-frame .panel-top-title{
-    font-size: 50px;
-    font-weight: bold;
-    color: #2b2d36;
-  }
-  .main-frame .panel2-top-title{
-    font-size: 45px;
-    font-weight: bold;
-    color: #fff;
-  }
-  .panel-img{
-    width: 240px;
-    height:240px;
-    
-  }
-  
-  .main-banner .swiper-slide .banner-img{
-    width: 100%;
-    height: 400px;
-    border-radius: 0;
-  }
-  .main-banner .swiper::before{
-    content: '';
-    display: block;
-    position:absolute;
-    width: 50px;
-    height: 23px;
-    background-color: rgba(49,51,56,.6);
-    padding: 5px 14px;
-    border-radius: 18px;
-    top: 23px;
-    right: 18px;
-    z-index: 2;
-    box-sizing: content-box;
-  }
-  
-  .main-banner .swiper-button-prev::after,.swiper-button-next::after{
-    /* position: relative; */
-    display: none;
-  }
-  
-  .main-banner .swiper-button-prev{
-    position: absolute;
-    top: 40px;
-    left: unset;
-    right: 66px;
-    background: url('/public/images/main/left-chevron.png') no-repeat center ;
-    background-size: 24px 14px;
-  }
-  .main-banner .swiper-button-next{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    background: url('/public/images/main/right-chevron.png') no-repeat center ;
-    background-size: 24px 14px;
-  }
-  .main-banner .swiper-pause {
-    position: absolute;
-    top: 26px;
-    right: 49px;
-    z-index: 10;
-    cursor: pointer;
-  }
-  .main-banner .swiper-pause img{
-    width: 14px;
-    height: 15px;
-  
-  }
 
   /* 과정 카테고리 */
   .program-category,
@@ -377,9 +234,6 @@
   .main-text-box .nav-link{
     text-decoration: none;color:inherit;
     cursor: pointer;
-  }
-  .tab-pane{
-    animation: fadein .7s ease-in ;
   }
   @keyframes fadein {
     from {
@@ -403,94 +257,105 @@
     padding: 0;
     flex-wrap: wrap;
   }
+  @keyframes fade-in-fwd{0%{transform:translateZ(-80px);opacity:0}100%{transform:translateZ(0);opacity:1}}
   .main-program-img .program-item {
+    position: relative;
     vertical-align:top;
     margin-right: 40px;
     overflow: hidden;
     width: 240px;
-    animation: fadein .7s ease-in ;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+    /* animation: fadein .7s ease-in ; */
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
   }
   .main-program-img .program-item:nth-child(4n){
     margin-right: 0;
   }
-  .main-program-img .program-item .item-img {
-    position: relative;
-  }
-  .main-program-img .program-item .item-img:hover {
-    opacity:0.7;
-  }
   .main-program-img .program-item .item-img img{ 
     width: 240px;
     height: 140px;
-    border-radius: 7px;
-    cursor: pointer;
   }
-  .main-program-img .program-item .item-img .item-img-desc{
+  .main-program-img .program-item .item-img-desc{
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     padding: 15px;
     box-sizing: border-box;
-    background: rgba(0,0,0,0.9);
+    background: rgb(12, 150, 85);
     opacity: 0;
-    border-radius: 7px;
-    transition: height 0.35s ease-in-out;
     cursor: pointer;
     overflow: hidden;
     font-size: 14px;
+    box-sizing: border-box;
+    overflow:hidden;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
-  /* .main-program-img .program-item:nth-child(1) .item-img-desc{
-    background: rgba(0,0,0,0.9);
+  .main-program-img .program-item .item-img-desc> div{
+    position: absolute;
+    display: flex;
+    justify-content:space-around;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    width: 100%;
   }
-  .main-program-img .program-item:nth-child(2) .item-img-desc{
-    background: rgba(0,0,0,0.8);
+  .main-program-img .program-item .item-img-desc span:hover{
+    transform: skewX(-12deg);
+    transition-duration: 0.3s;
   }
-  .main-program-img .program-item:nth-child(3) .item-img-desc{
-    background: rgba(0,0,0,0.7);
+  .main-program-img .program-item .item-img-desc .viewBtn{
+    display: block;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #18222B;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
   }
-  .main-program-img .program-item:nth-child(4) .item-img-desc{
-    background: rgba(0,0,0,0.6);
+  .main-program-img .program-item .item-img-desc .appBtn{
+    display: block;
+    padding: 8px 15px;
+    background-color: #18222B;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
   }
-  .main-program-img .program-item:nth-child(5) .item-img-desc{
-    background: rgba(12, 150, 85, 0.9);
-  }
-  .main-program-img .program-item:nth-child(6) .item-img-desc{
-    background: rgba(12, 150, 85, 0.8);
-  }
-  .main-program-img .program-item:nth-child(7) .item-img-desc{
-    background: rgba(12, 150, 85, 0.7);
-  }
-  .main-program-img .program-item:nth-child(8) .item-img-desc{
-    background: rgba(12, 150, 85, 0.6);
-  } */
-  .main-program-img .program-item .item-img .item-img-desc p{
+  .main-program-img .program-item .item-img-desc p{
     color: #fff !important;
+    height: 70%;
+    overflow:hidden;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
-  .main-program-img .program-item .item-img:hover .item-img-desc{
+  .main-program-img .program-item:hover .item-img-desc{
     opacity:1;
-    height: 140px;
+    transition: opacity 0.5s ease-in-out;
   }
-  .main-program-img .program-item .item-img .item-img-desc p{
-    
-  }
+  
   .main-program-img{
     overflow: hidden;
   }
   .main-program-img .item-text{
-    margin-top: 10px;
-    margin-bottom: 28px;
+    padding: 10px;
     width: 100%;
-    box-sizing: border-box;
-    overflow:hidden;
-    word-wrap:break-word;
   }
   .main-program-img .item-text p {
     margin-bottom: 0;
-
+    overflow: hidden;
+    width: 100%;
+    word-wrap:break-word;
+    text-overflow: ellipsis; 
   }
   .main-program-img .item-title{
+    height: 50px;
     font-weight: bold;
     color: #424242;
   }
@@ -563,19 +428,27 @@
     margin: 0;
     padding: 0;
   }
+  .main-ex-img .ex-item{
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+  }
   .main-ex-img .ex-list .ex-item .item-img{
     overflow: hidden;
   }
   .main-ex-img .ex-list .ex-item .item-img img {
     width: 325px;
     height: 120px;
-    border-radius: 7px;
-    cursor: pointer;
-    
   }
-  .main-ex-img .ex-list .ex-item .item-img img:hover {
-    transition: all 0.2s linear;
+  .main-ex-img .ex-list .ex-item:hover .item-img img {
+    transition: all 0.5s linear;
     transform: scale(1.05);
+  }
+  .main-ex-img .item-text{
+    padding: 10px;
+    font-weight: bold;
   }
   
   /* 메인 중간배너 */
@@ -680,7 +553,7 @@
 
   /* 과정 카테고리 */
   .main-wrapper .program-category {
-    padding: 50px 15px;
+    margin: 50px 15px;
   }
   .main-text-box .p-title {
     display: block;
@@ -700,8 +573,10 @@
     width: 100%;
   }
   .main-program-img .program-item {
-    vertical-align:top;
     margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
 
   }
   .main-program-img .program-item .item-img {
@@ -709,13 +584,18 @@
   }
   .main-program-img .program-item .item-img img{ 
     width: 200px;
-    height: 150px;
-    border-radius: 7px;
+    height: 130px;
     cursor: pointer;
+  }
+  .main-program-img .program-item .item-text{
+    padding: 8px;
   }
   .main-program-img .program-item .item-img .item-img-desc,
   .main-program-img .item-text,
   .btn-more{
+    /* display: none; */
+  }
+  .main-program-img .item-img-desc, .btn-more{
     display: none;
   }
 

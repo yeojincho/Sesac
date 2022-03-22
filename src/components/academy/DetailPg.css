@@ -5,6 +5,7 @@
   flex-direction: column;
   row-gap: 20px;
   background-color: #70b592;
+  opacity: 0.9;
   padding-top: 100px;
   height: 1200px;
 }
@@ -19,14 +20,21 @@
 
 .DetailPg-accordion {
   margin: 120px;
-  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 900px;
+  height: 800px;
+  background-color: #dcdcdc;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 70px;
 }
 
 .accordion__item {
-  width: 50%;
+  margin-top: 20px;
+  width: 800px;
   max-height: 25px;
   padding: 40px 10px;
   border-bottom: 1px solid #c9c9c9;
@@ -36,6 +44,7 @@
 }
 
 .accordion__header {
+  width: 900px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,18 +74,21 @@
 .accordion__content {
   margin: 5px;
 }
-
-@media (min-width: 900px) {
-  .accordion__item {
-    width: 40%;
-  }
-}
-
-@media (max-width: 600px) {
+@media screen and (max-width: 767px) {
+  .DetailPg-main,
   .DetailPg-title {
-    font-size: 30px;
+    width: 100%;
   }
+
+  .accordion___header {
+    width: 70vw;
+  }
+  .qaContentsBox {
+    width: 100%;
+  }
+  .DetailPg-accordion,
+  .DetailPg-title,
   .accordion__item {
-    width: 80%;
+    width: 70vw;
   }
 }

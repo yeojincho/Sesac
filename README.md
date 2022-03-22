@@ -29,7 +29,9 @@ npm install bootstarp
 npm install swiper  
 npm install jquery  
 npm install react-responsive   
-npm install react-scroll   
+npm install react-scroll  
+npm install react-cookie    
+npm install react-draggable   
 
 ### 1depth 폴더명
 

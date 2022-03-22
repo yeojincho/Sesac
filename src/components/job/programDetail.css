@@ -1,113 +1,244 @@
-* {
-  color: #636363;
-}
-button {
-  background: transparent;
-  border: none;
-  outline: none;
-}
+/* 취업과정 programDetail 페이지 PC.ver */
+@media screen and (min-width: 768px) {
+  * {
+    color: #636363;
+  }
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
 
-.wrapper {
-  position: relative;
-}
-.jobTopDetailpage {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
-}
+  .jobTopDetailpage {
+    position: relative;
+  }
+  .jobTopDetailpage {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+  }
 
-.jobTopDetailpage .left {
-  display: flex;
-}
+  .jobTopDetailpage .left {
+    display: flex;
+  }
 
-.jobTopDetailpage .detailpageImg img {
-  border-radius: 10px;
-}
-.jobTopDetailpage .detailpageTxt {
-  padding-left: 50px;
-}
+  .jobTopDetailpage .detailpageImg img {
+    border-radius: 10px;
+    width: 500px;
+  }
+  .jobTopDetailpage .detailpageTxt {
+    padding-left: 50px;
+  }
 
-.jobTopDetailpage .detailpageTxt .detailpageTitle {
-  font-size: 35px;
-  font-weight: bold;
-  padding-bottom: 20px;
-}
+  .jobTopDetailpage .detailpageTxt .detailpageTitle {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
 
-.jobTopDetailpage .detailpageTxt .detailpageUl {
-  display: flex;
-}
+  .jobTopDetailpage .detailpageTxt .detailpageUl {
+    display: flex;
+  }
 
-.jobTopDetailpage .detailpageTxt .detailpageUl ul li {
-  padding-bottom: 10px;
-}
+  .jobTopDetailpage .detailpageTxt .detailpageUl ul li {
+    padding-bottom: 10px;
+  }
 
-.jobTopDetailpage .detailpageTxt .detailpageUl .subtitle {
-  font-weight: bold;
-  margin-right: 30px;
-}
+  .jobTopDetailpage .detailpageTxt .detailpageUl .subtitle {
+    font-weight: bold;
+    margin-right: 30px;
+  }
 
-.jobTopDetailpage .detailpageTxt .btnUl ul li {
-  display: inline-block;
-  padding: 5px 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  border: 1px solid #636363;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-}
+  .jobTopDetailpage .detailpageTxt .btnUl ul li {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 20px;
+  }
 
-.jobTopDetailpage .right .shareBtn {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+  .jobTopDetailpage .detailpageTxt .btnUl .jobShareBtn {
+    padding-left: 5px;
+    padding-right: 20px;
+    display: block;
+    background: url(/public/images/share.png) no-repeat 35px center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  .bottomSelectFix {
+    padding: 20px 0;
+    display: none;
+    position: absolute;
+    right: 15%;
+  }
 
-.jobTopDetailpage .right .shareBtn {
-  padding-left: 10px;
-  padding-right: 20px;
-  display: block;
-  font-size: 20px;
-  background: url(/public/images/share.png) no-repeat 50px center;
-  background-size: 20px;
-}
+  .bottomSelectFix.fix {
+    display: block;
+    position: fixed;
+    top: 71px;
+    z-index: 1001;
+    padding-top: 20px;
+  }
 
-.jobBottomDetailpage .category {
-  width: 100%;
-}
+  .bottomSelectFix button {
+    padding: 2px 30px;
+    margin-left: 20px;
+    margin-right: 30px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+  }
 
-.jobBottomDetailpage .category li {
-  border-radius: 15px;
-  background-color: #f4f4f4;
-  display: inline-block;
-  padding: 8px 30px;
-  margin-right: 20px;
-  font-size: 14px;
-}
-.jobBottomDetailpage .category li.scrollOn {
-  color: #fff;
-  background-color: #5ebf92;
-  font-weight: bold;
-  box-sizing: border-box;
-}
+  .jobBottomDetailpage .category {
+    width: 100%;
+    padding-bottom: 20px;
+  }
 
-/* 상단 고정탭 */
-.jobBottomDetailpage .category.fix {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  padding: 20px 0;
-  background-color: rgba(255, 255, 255, 0.9);
-}
+  .jobBottomDetailpage .category li {
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .jobBottomDetailpage .category li.scrollOn {
+    color: #fff;
+    background-color: #5ebf92;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
 
-.scrollTopBtn {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border: 0 none;
-  color: #fff;
-  background-color: #5ebf92;
+  /* 상단 고정탭 */
+  .jobBottomDetailpage .category.fix {
+    position: fixed;
+    top: 72px;
+    z-index: 1;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+/* 취업과정 programDetail 페이지 mobile.ver */
+@media screen and (max-width: 768px) {
+  * {
+    color: #636363;
+  }
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .jobTopDetailpage {
+    position: relative;
+  }
+  .jobTopDetailpage {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+  }
+
+  .jobTopDetailpage .left {
+    display: flex;
+  }
+
+  .jobTopDetailpage .detailpageImg img {
+    border-radius: 10px;
+    width: 300px;
+  }
+  .jobTopDetailpage .detailpageTxt {
+    padding-left: 30px;
+  }
+
+  .jobTopDetailpage .detailpageTxt .detailpageTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .jobTopDetailpage .detailpageTxt .detailpageUl {
+    display: flex;
+  }
+
+  .jobTopDetailpage .detailpageTxt .detailpageUl ul li {
+    padding-bottom: 5px;
+  }
+
+  .jobTopDetailpage .detailpageTxt .detailpageUl .subtitle {
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .jobTopDetailpage .detailpageTxt .btnUl ul li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  .jobTopDetailpage .detailpageTxt .btnUl .jobShareBtn {
+    padding-left: 5px;
+    padding-right: 20px;
+    display: block;
+    background: url(/public/images/share.png) no-repeat 35px center;
+    background-size: 16px;
+    cursor: pointer;
+  }
+  .bottomSelectFix {
+    padding: 20px 0;
+    display: none;
+    position: absolute;
+    right: 15%;
+  }
+
+  .bottomSelectFix.fix {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+    padding-top: 80px;
+  }
+
+  .bottomSelectFix button {
+    padding: 2px 30px;
+    margin-left: 20px;
+    margin-right: 30px;
+    border: 1px solid #636363;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .jobBottomDetailpage .category {
+    width: 100%;
+    height: 150px;
+
+    padding-bottom: 20px;
+  }
+
+  .jobBottomDetailpage .category li {
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    padding: 8px 30px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .jobBottomDetailpage .category li.scrollOn {
+    color: #fff;
+    background-color: #5ebf92;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+  /* 상단 고정탭 */
+  .jobBottomDetailpage .category.fix {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-left: 30px;
+  }
 }

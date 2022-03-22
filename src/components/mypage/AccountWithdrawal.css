@@ -138,3 +138,13 @@
 .account-contentBox label {
   display: block;
 }
+
+/* PC Main CSS */
+@media screen and (min-width:768px) {
+
+}
+
+/* 모바일 Main CSS */
+@media screen and (max-width:767px) {
+  
+}

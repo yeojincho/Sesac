@@ -155,6 +155,7 @@
     background-size: 24px 24px;
     position: absolute;
     top:25%;right:20px;
+    cursor: pointer;
   }
   /* 롤링 */
   .header-wrapper2 .top-rolling{
@@ -170,9 +171,9 @@
   }
   @keyframes scroll {
     0% {
-        transform: translateY(10px)
+        transform: translateY(20px)
     }
-    4% {
+    10% {
       transform: translateY(0px)
     }
     30%{
@@ -190,9 +191,9 @@
     90%{
       transform: translateY(-45px)
     }
-    /* 99.9%{
-      transform: translateY(-65px)
-    } */
+    99.9%{
+      transform: translateY(-68px)
+    }
     100% {
       transform: translateY(-68px)
     }

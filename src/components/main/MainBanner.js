@@ -36,7 +36,6 @@ export default function MainBanner() {
         }}
       >
         <SwiperSlide>
-          {/* <img src="/images/green.png" alt="재생" className="banner-img"/> */}
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel-top-title">Power BI</h1>
@@ -47,7 +46,6 @@ export default function MainBanner() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        {/* <img src="/images/main/blue-banner.jpg" alt="재생" className="banner-img"/> */}
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel2-top-title">사내강사 양성과정</h1>
@@ -57,8 +55,7 @@ export default function MainBanner() {
             <img src="/images/main/classroom.png" alt="Power BI" className="panel-img" style={{width:'240px',height:'240px'}}/>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-        {/* <img src="/images/main/banner2.jpg" alt="재생" className="banner-img"/> */}
+        {/* <SwiperSlide>
           <div className="main-frame">
             <div className="panel">
               <h1 className="panel2-top-title">Power BI</h1>
@@ -66,7 +63,7 @@ export default function MainBanner() {
               <h3 className="panel-title">누구나 쉽게 데이터 시각화!<br/>데이터 보고서 전문가처럼!</h3>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         
         <div className="swiper-pause" onClick={swiperPauseFn}>
           <img src="/images/main/pause.png" alt="재생" />

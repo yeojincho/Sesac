@@ -32,3 +32,13 @@
 .Partnership-topTitle {
   margin-top: 50px;
 }
+@media screen and (max-width: 767px) {
+  .orderPage-bigTitle h3,
+  span {
+    width: 40vw;
+  }
+
+  .orderPage-bigTitle span {
+    font-size: 14px;
+  }
+}
