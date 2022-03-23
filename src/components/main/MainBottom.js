@@ -55,7 +55,7 @@ export default function MainBottom() {
             </div>
             <div className="hr-list">
               <Swiper
-                spaceBetween={45}
+                spaceBetween={50}
                 slidesPerView={2}
                 scrollbar={{ draggable: true }}
                 navigation={true}

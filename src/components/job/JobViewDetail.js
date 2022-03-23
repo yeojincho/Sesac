@@ -1,6 +1,7 @@
 import '../common/common.css';
 import './jobViewDetail.css';
 import './mobileJobViewDetail.css';
+import { Link } from 'react-router-dom';
 
 //ViewDetail 컴포넌트 JobViewDetail로 복사
 
@@ -200,7 +201,7 @@ function JobViewDetail() {
                         <li>이메일 : open@exc.co.kr</li>
                         <li>카카오톡: 엑스퍼트아카데미</li>
                     </ul>
-                    <a href="#">문의하기</a>
+                    <Link to='/writing'>문의하기</Link>
                 </div>
             </div>{/* e: applyInfo */}
         </div>

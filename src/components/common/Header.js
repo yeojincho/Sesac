@@ -70,7 +70,7 @@ export default function NewHeader({ isLogin }) {
             onMouseLeave={() => setIsGnbOpen(false)}
           >
             <li className='depth1'>
-              <Link to='/' onClick={subMenuCloseFn}>
+              <Link to='/program' onClick={subMenuCloseFn}>
                 공개과정
               </Link>
               <ul className='depth2'>
@@ -80,27 +80,27 @@ export default function NewHeader({ isLogin }) {
                   </Link>
                 </li>
                 <li>
-                  <Link to='' onClick={subMenuCloseFn}>
+                  <Link to='/ProgramList' onClick={subMenuCloseFn}>
                     계층교육
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     직무역량
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     DX교육
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     진단
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     일반
                   </Link>
                 </li>
@@ -124,22 +124,22 @@ export default function NewHeader({ isLogin }) {
               </ul>
             </li>
             <li className='depth1'>
-              <Link to='/' onClick={subMenuCloseFn}>
+              <Link to='/ready' onClick={subMenuCloseFn}>
                 Ex콘텐츠
               </Link>
               <ul className='depth2'>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     이벤트
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     과정후기
                   </Link>
                 </li>
                 <li>
-                  <Link to='/' onClick={subMenuCloseFn}>
+                  <Link to='/ready' onClick={subMenuCloseFn}>
                     EXC뷰
                   </Link>
                 </li>

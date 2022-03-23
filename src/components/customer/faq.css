@@ -32,6 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
   }
 
   .fqaSubMenuList {
@@ -76,7 +78,7 @@
   /* FaqAcco.js */
 
   .accoBox {
-    margin-bottom: 150px;
+    margin: 0 50px 150px 50px;
   }
   .accoBox .accoImg {
     width: 25px;
@@ -89,6 +91,7 @@
   }
   .accoBox .questionBox p {
     padding-top: 20px;
+    padding-right: 10px;
     cursor: pointer;
   }
   .accoBox .questionBox p:hover {
@@ -102,6 +105,7 @@
 
   .accoBox .answerBox p {
     padding-top: 20px;
+    padding-right: 10px;
   }
 }
 
@@ -181,9 +185,8 @@
   /* FaqAcco.js */
 
   .accoBox {
-    font-size: 14px;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    font-size: 12px;
+    margin: 50px 50px 150px 50px;
   }
   .accoBox .accoImg {
     width: 20px;
@@ -196,6 +199,7 @@
   }
   .accoBox .questionBox p {
     padding-top: 15px;
+    padding-right: 10px;
     cursor: pointer;
   }
   .accoBox .questionBox p:hover {
@@ -208,5 +212,6 @@
 
   .accoBox .answerBox p {
     padding-top: 10px;
+    padding-right: 10px;
   }
 }

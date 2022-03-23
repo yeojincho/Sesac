@@ -17,19 +17,16 @@ import './main.css';
 import './banner.css';
 
 
-import Config from '../academy/Introduce/Config';
 import Popup from '../../components/common/Popup';
 
 export default function Main({isMobile}) {
+
   return (
     <div className="main-wrapper">
       {
         !isMobile ?
         (<>
-          <div className="main-banner-box">
-            <Config />
-            <MainBanner />
-          </div>
+          <MainBanner />
           <MainContents />
           <MainBottom />
           <Popup />

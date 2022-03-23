@@ -19,13 +19,15 @@ function Partnership() {
   return (
     <>
       <div className='orderPage-bigTitle'>
-        <h3 className='orderPage-h3'>
-          <b>제휴제안</b>
-        </h3>
-        <span className='orderPage-span'>
-          __엑스퍼트아카데미와 함께할 수 있는 컨텐츠/교육 서비스 관련 다양한
-          제안을 기다립니다.
-        </span>
+        <div className='inner-box'>
+          <h3 className='orderPage-h3'>
+            <b>제휴제안</b>
+          </h3>
+          <span className='orderPage-span'>
+            __엑스퍼트아카데미와 함께할 수 있는 컨텐츠/교육 서비스 관련 다양한
+            제안을 기다립니다.
+          </span>
+        </div>
       </div>
       <div className='recruit-wrap inner-box'>
         <ul class='cont-navi'>
