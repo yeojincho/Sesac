@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { label, FormGroup, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import HeadTitle from "./HeadTitle";
 import "./Management.css";
 import SideMenu from "./SideMenu";

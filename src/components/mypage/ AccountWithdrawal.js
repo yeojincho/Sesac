@@ -6,6 +6,14 @@ import SideMenu from "./SideMenu";
 
 function AccountWithdrawal() {
   const user1 = { name: "강동원", id: "expert", gender: "남" };
+
+  /* 로그아웃 */
+  const WithdrawalFn = () => {
+    alert("탈퇴완료");
+    // 로그인 세션 삭제
+    sessionStorage.removeItem("user_id");
+    document.location.replace("/");
+  };
   return (
     <div>
       <div className="inner-box account-wrap1">
@@ -55,7 +63,9 @@ function AccountWithdrawal() {
                 placeholder="비밀번호를 입력하세요"
               />
             </form>
-            <Button className="form-btn">탈퇴하기</Button>
+            <Button className="form-btn" onClick={WithdrawalFn}>
+              탈퇴하기
+            </Button>
           </div>
         </div>
       </div>
