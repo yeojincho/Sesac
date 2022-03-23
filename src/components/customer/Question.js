@@ -9,10 +9,27 @@ function Question({ children }) {
   return (
     <React.Fragment>
       <section className="visitTitle">
-        <h1>고객센터</h1>
-        <h2>— 무엇이든 물어보세요</h2>
+        <div className="inner-box">
+          <h1>고객센터</h1>
+          <h2>— 무엇이든 물어보세요</h2>
+        </div>
       </section>
       <section className="question-container">
+        <ul class="cont-navi">
+          <li>
+            <a href="#none" class="nav-home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="nav-sub">
+              고객센터
+            </a>
+          </li>
+          <li>
+            <span class="nav-sub">문의하기</span>
+          </li>
+        </ul>
         <Customer />
         <article className="question-table">
           <QuestionList children={children} />
