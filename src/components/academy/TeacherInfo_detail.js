@@ -3,14 +3,19 @@ import Menu_title from "./Menu_title";
 import "./TeacherInfo_detail.css";
 
 export default function TeacherInfo_detail({ name, edu, src, expertise }) {
+  function href(e) {
+    window.location.href = "https://youtu.be/w-HAjo8PhVo";
+  }
   return (
     <div className="t_infoContainer">
       <div className="t_img-box">
-        <a href="https://www.youtube.com/watch?v=w-HAjo8PhVo" target="_blank">
+        <a href="https://youtu.be/w-HAjo8PhVo" target="_blank">
           <img src={src} alt="강사이미지" className="t_img" />
         </a>
         <h2 className="t_name">{name}</h2>
-        <button className="t_btn">강사인터뷰</button>
+        <button className="t_btn" onClick={href}>
+          강사인터뷰
+        </button>
       </div>
       <div className="t_content-box">
         <div className="t_titleInfo">
