@@ -23,8 +23,21 @@ const MyClassList = () => {
   ];
   return (
     <div className="myClassList-container">
+      <HeadTitle />
       <div className="inner-box">
-        <HeadTitle />
+        <ul class="cont-navi">
+          <li>
+            <a href="#none" class="nav-home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <span class="nav-sub">마이페이지</span>
+          </li>
+          <li>
+            <span class="nav-sub">수강내역</span>
+          </li>
+        </ul>
         <div className="flex-box">
           <SideMenu />
           <div className="myClassList-contentBox">

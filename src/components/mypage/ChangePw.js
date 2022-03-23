@@ -6,8 +6,9 @@ import HeadTitle from "./HeadTitle";
 
 function ChangePw() {
   return (
-    <div>
-      <div className="inner-box ChangePw-wrap1">
+    <div className="ChangePw-wrap1">
+      <HeadTitle />
+      <div className="inner-box">
         <ul class="cont-navi">
           <li>
             <a href="#none" class="nav-home">
@@ -21,7 +22,6 @@ function ChangePw() {
             <span class="nav-sub">비밀번호 변경</span>
           </li>
         </ul>
-        <HeadTitle />
         <div className="flex-box">
           <SideMenu />
           <div className="ChangePw-contentBox">
@@ -55,7 +55,14 @@ function ChangePw() {
                 />
               </form>
 
-              <Button className="form-btn">확인</Button>
+              <Button
+                className="form-btn"
+                onClick={() => {
+                  alert("");
+                }}
+              >
+                확인
+              </Button>
             </div>
           </div>
         </div>

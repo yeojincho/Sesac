@@ -74,6 +74,7 @@ const RegiConfirm = () => {
 
   return (
     <div className="regiConfirm-container">
+      <HeadTitle />
       <div className="inner-box">
         <ul class="cont-navi">
           <li>
@@ -88,7 +89,6 @@ const RegiConfirm = () => {
             <span class="nav-sub">수강신청 확인/취소</span>
           </li>
         </ul>
-        <HeadTitle />
         <div className="flex-box">
           <SideMenu />
           <div className="classConfirm-contentBox">
