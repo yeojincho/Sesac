@@ -3,7 +3,6 @@ import HeadTitle from "./HeadTitle";
 import SideMenu from "./SideMenu";
 import "./regiConfirm.css";
 import CancelModal from "./CancelModal";
-import NoClass from "./NoClass";
 
 const RegiConfirm = () => {
   //클래스 리스트 더미 데이터
@@ -55,14 +54,15 @@ const RegiConfirm = () => {
   const openMdelarr = () => {
     let tableData = document.getElementById("classTable");
     let tableLeng = tableData.rows.length;
-    alert("행의 수" + tableLeng);
+
     for (let i = 0; i < tableLeng; i++) {
       let chkbox = tableData.rows[i].cells[0].childNodes[0].checked;
 
       if (chkbox) {
         tableData.deleteRow(i);
         i--;
-      } else if (tableLeng === 0) {
+      }
+      if (tableLeng === 1) {
         setIsClass(true);
       }
     }
@@ -96,106 +96,108 @@ const RegiConfirm = () => {
 
             {!isClass ? (
               <div>
-                <table className="myclass-table">
-                  <colgroup>
-                    <col width={40} />
-                    <col width={40} />
-                    <col width={350} />
-                    <col width={200} />
-                    <col width={40} />
-                    <col width={150} />
-                    <col width={80} />
-                    <col width={80} />
-                  </colgroup>
-                  <thead>
-                    <tr id="confirm-under">
-                      <th scope="col">선택</th>
-                      <th scope="col">No</th>
-                      <th scope="col">교육과정</th>
-                      <th scope="col">교육일정</th>
-                      <th scope="col">인원</th>
-                      <th scope="col">교육비</th>
-                      <th scope="col">상태</th>
-                      <th scope="col" className="">
-                        결제
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody id="classTable">
-                    <tr>
-                      <td>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          name="chkbox"
-                          value={myRegiClass[0].id}
-                          id="flexCheckDefault"
-                        />
-                      </td>
-                      <td>1</td>
-                      <td>{myRegiClass[0].title}</td>
-                      <td>{myRegiClass[0].date}</td>
-                      <td>{myRegiClass[0].numOfP}</td>
-                      <td>{myRegiClass[0].cost}</td>
-                      <td>{myRegiClass[0].status}</td>
-                      <td>{myRegiClass[0].payment}</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          name="chkbox"
-                          value={myRegiClass[1].id}
-                          id="flexCheckDefault"
-                        />
-                      </td>
-                      <td>2</td>
-                      <td>{myRegiClass[1].title}</td>
-                      <td>{myRegiClass[1].date}</td>
-                      <td>{myRegiClass[1].numOfP}</td>
-                      <td>{myRegiClass[1].cost}</td>
-                      <td>{myRegiClass[1].status}</td>
-                      <td>{myRegiClass[1].payment}</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          name="chkbox"
-                          value={myRegiClass[2].id}
-                          id="flexCheckDefault"
-                        />
-                      </td>
-                      <td>3</td>
-                      <td>{myRegiClass[2].title}</td>
-                      <td>{myRegiClass[2].date}</td>
-                      <td>{myRegiClass[2].numOfP}</td>
-                      <td>{myRegiClass[2].cost}</td>
-                      <td>{myRegiClass[2].status}</td>
-                      <td>{myRegiClass[2].payment}</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          name="chkbox"
-                          value={myRegiClass[3].id}
-                          id="flexCheckDefault"
-                        />
-                      </td>
-                      <td>4</td>
-                      <td>{myRegiClass[3].title}</td>
-                      <td>{myRegiClass[3].date}</td>
-                      <td>{myRegiClass[3].numOfP}</td>
-                      <td>{myRegiClass[3].cost}</td>
-                      <td>{myRegiClass[3].status}</td>
-                      <td>{myRegiClass[3].payment}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div className="table-box">
+                  <table className="myclass-table">
+                    <colgroup>
+                      <col width={40} />
+                      <col width={40} />
+                      <col width={330} />
+                      <col width={200} />
+                      <col width={40} />
+                      <col width={150} />
+                      <col width={80} />
+                      <col width={80} />
+                    </colgroup>
+                    <thead>
+                      <tr id="confirm-under">
+                        <th scope="col">선택</th>
+                        <th scope="col">No</th>
+                        <th scope="col">교육과정</th>
+                        <th scope="col">교육일정</th>
+                        <th scope="col">인원</th>
+                        <th scope="col">교육비</th>
+                        <th scope="col">상태</th>
+                        <th scope="col" className="">
+                          결제
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="classTable">
+                      <tr>
+                        <td>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="chkbox"
+                            value={myRegiClass[0].id}
+                            id="flexCheckDefault"
+                          />
+                        </td>
+                        <td>1</td>
+                        <td>{myRegiClass[0].title}</td>
+                        <td>{myRegiClass[0].date}</td>
+                        <td>{myRegiClass[0].numOfP}</td>
+                        <td>{myRegiClass[0].cost}</td>
+                        <td>{myRegiClass[0].status}</td>
+                        <td>{myRegiClass[0].payment}</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="chkbox"
+                            value={myRegiClass[1].id}
+                            id="flexCheckDefault"
+                          />
+                        </td>
+                        <td>2</td>
+                        <td>{myRegiClass[1].title}</td>
+                        <td>{myRegiClass[1].date}</td>
+                        <td>{myRegiClass[1].numOfP}</td>
+                        <td>{myRegiClass[1].cost}</td>
+                        <td>{myRegiClass[1].status}</td>
+                        <td>{myRegiClass[1].payment}</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="chkbox"
+                            value={myRegiClass[2].id}
+                            id="flexCheckDefault"
+                          />
+                        </td>
+                        <td>3</td>
+                        <td>{myRegiClass[2].title}</td>
+                        <td>{myRegiClass[2].date}</td>
+                        <td>{myRegiClass[2].numOfP}</td>
+                        <td>{myRegiClass[2].cost}</td>
+                        <td>{myRegiClass[2].status}</td>
+                        <td>{myRegiClass[2].payment}</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="chkbox"
+                            value={myRegiClass[3].id}
+                            id="flexCheckDefault"
+                          />
+                        </td>
+                        <td>4</td>
+                        <td>{myRegiClass[3].title}</td>
+                        <td>{myRegiClass[3].date}</td>
+                        <td>{myRegiClass[3].numOfP}</td>
+                        <td>{myRegiClass[3].cost}</td>
+                        <td>{myRegiClass[3].status}</td>
+                        <td>{myRegiClass[3].payment}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <button id="cancelBtn" onClick={openMdelarr}>
                   신청취소
@@ -205,7 +207,15 @@ const RegiConfirm = () => {
 
             <CancelModal open={modalOpen} close={closeM} />
 
-            {isClass ? <NoClass is={isClass} /> : null}
+            {isClass ? (
+              <div className="notice-noRegiClass thereisnoclass">
+                <h3>신청하신 교육과정이 없습니다.</h3>
+                <p>
+                  문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로
+                  연락 주십시오
+                </p>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
