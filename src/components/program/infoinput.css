@@ -39,10 +39,6 @@ th, td{
     margin-bottom: 100px;
 }
 
-.inputUlFlex {
-    /* display: flex; */
-}
-
 .infoItemDel {
     display: flex;
     align-items: center;
