@@ -1,151 +1,131 @@
 .t_infoContainer {
-  padding-bottom: 70px;
-  width: 400px;
-}
-.t_btn {
-  margin-top: 30px;
-  background-color: #5ebf92;
-  color: #fff;
-  border-radius: 34px;
-  width: 125px;
-  height: 35px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 14px;
-  margin-bottom: 20px;
-  border: none;
-  background-image: url("/public/images/play.png");
-  background-repeat: no-repeat;
-  background-position: right 6px top 7px;
-  background-size: 20px;
-}
-
-/* .t_btn::after {
-  background: url('');
-} */
-
-.imgBox {
+  box-sizing: border-box;
+  width: 590px;
+  padding: 40px 30px;
+  background-color: rgba(211, 211, 211, 0.2);
+  border-radius: 10px;
+  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 300px;
-  background-color: #e3e3e3;
-  margin-bottom: 13px;
-  border-radius: 15px;
-}
-.TopBanner {
-  width: 100%;
-  height: 100%;
 }
 
-.t_img {
-  padding: 10px 10px;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-}
 .t_infoContainer {
   overflow: hidden;
 }
-.t_img:hover {
+
+
+/* 왼쪽 박스 */
+
+/* 강사인터뷰 영상 이동 버튼 */
+.t_btn {
+  color: #212529;
+  border: 1px solid #212529;
+  border-radius: 12px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background-image: url('/public/images/main/ico_youtube.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  text-indent: -15px;
+}
+
+.t_btn:hover {
+  background-color: #eee;
+}
+
+
+.t_img-box {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t_img-box .t_img { 
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.t_img-box .t_name {
+  font-size: 20px;
+  letter-spacing: 1.2;
+  color: #212529;
+  font-weight: bold;
+}
+
+/* 사진아래 마진 */
+.t_img-box a {
+  margin-bottom: 20px;
+}
+
+.t_img-box .t_img:hover {
   opacity: 0.5;
 }
-.t_titleInfo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 13px;
-  position: relative;
+
+
+/* 오른쪽 박스 */
+.t_content-box .t_historyBox {
+  margin-bottom: 30px;
+}
+.t_content-box .t_historyBox h3 {
+  color: #212529;
 }
 
-.t_titleInfo h2 {
-  font-size: 26px;
-  font-weight: 800;
-  color: #6d6d6d;
+.t_content-box .t_historyBox p {
+  color: #212529;
+  font-weight:lighter;
 }
 
-.t_titleInfo .t_motto {
+.t_content-box .t_historyBox .t_history {
+  margin-bottom: 7px;
   font-size: 15px;
-  color: #5ebf92;
-  position: absolute;
-  right: 0;
 }
 
-.t_historyBox {
-  margin-bottom: 26px;
+.t_historyBox p::before {
+  content:'';
+  display:inline-block;
+  width:8px;
+  height:1px;
+  margin:-5px 10px auto auto;
+  vertical-align:middle;
+  background:#212529;
 }
 
-.t_historyBox .t_history {
-  color: #6d6d6d;
-  margin-bottom: 4px;
+.t_content-box .t_expertise {
+  color: #212529;
+  margin-bottom: 37px;
+}
+.t_content-box .t_expertise span {
+  color: #212529;
+  font-weight: lighter;
+  margin-left: 7px;
+  font-size: 15px;
 }
 
-.t_historyBox .t_history:last-child {
-  margin-bottom: 0;
-}
-
-.t_lectureBox {
-  display: flex;
-  align-items: center;
-}
 
 .t_lectureBox h3 {
-  font-size: 21px;
-  margin-right: 17px;
-  font-weight: 500;
-  color: #555;
+  color: #212529;
+  margin-bottom: 7px;
 }
 
-#lectureList {
-  width: 155px;
-  height: 28px;
-  background-color: #f4f4f4;
-  color: #898989;
-  border: none;
-  border-radius: 20px;
+.t_lectureBox #lectureList {
+  width: 100%;
+}
+.t_lectureBox #lectureList option {
   text-align: center;
 }
 
-/* #lectureList option:first-child:after {
-  content: "";
-  width: 1px;
-  height: 14px;
-  color: #777;
-  display: block;
-} */
 
-/* Tablet */
-@media screen and (max-width: 1023px) {
-  .t_titleInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 9px;
-  }
 
-  .t_titleInfo .t_motto {
-    position: static;
-    font-size: 17px;
-  }
 
-  .t_titleInfo h2 {
-    margin-bottom: 3px;
-    font-size: 38px;
-  }
 
-  .t_lectureBox h3 {
-    font-size: 25px;
-    margin-right: 23px;
-  }
-}
 
-/* mobile */
-@media screen and (max-width: 767px) {
-  .t_infoContainer {
-    width: 50vh;
-  }
-}
+
+
+
+
