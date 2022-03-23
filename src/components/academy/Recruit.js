@@ -17,12 +17,15 @@ function Recruit() {
   return (
     <>
       <div className='orderPage-bigTitle'>
-        <h3 className='orderPage-h3'>
-          <b>인재채용</b>
-        </h3>
-        <span className='orderPage-span'>
-          __엑스퍼트아카데미는 실력있는 강사님과 교육 전문 매니저를 선발 합니다.
-        </span>
+        <div className='inner-box'>
+          <h3 className='orderPage-h3'>
+            <b>인재채용</b>
+          </h3>
+          <span className='orderPage-span'>
+            __엑스퍼트아카데미는 실력있는 강사님과 교육 전문 매니저를 선발
+            합니다.
+          </span>
+        </div>
       </div>
       <div className='recruit-wrap inner-box'>
         <ul class='cont-navi'>

@@ -85,12 +85,14 @@ export default function HrStore() {
   return (
     <div className=''>
       <div className='orderPage-bigTitle'>
-        <h3 className='orderPage-h3'>
-          <b>HR샵</b>
-        </h3>
-        <span className='orderPage-span'>
-          __교육에 필요한 옵션 및 상품정보를 제공합니다.
-        </span>
+        <div className='inner-box'>
+          <h3 className='orderPage-h3'>
+            <b>HR샵</b>
+          </h3>
+          <span className='orderPage-span'>
+            __교육에 필요한 옵션 및 상품정보를 제공합니다.
+          </span>
+        </div>
       </div>
       <div className='inner-box'>
         <ul class='cont-navi'>
