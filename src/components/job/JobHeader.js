@@ -16,8 +16,10 @@ export default function jobHeader(){
     <>
 
     <section className='jobTitle'>
+    <div className="inner-box">
         <h1>취업과정</h1>
         <h2>— 취업 준비생들의 고충을 해결해 줄 엑스퍼트아카데미 취업과정을 소개합니다.</h2>
+      </div>
     </section>
     <ul class="cont-navi">
         <li><Link to="/" class="nav-home">HOME</Link></li>
