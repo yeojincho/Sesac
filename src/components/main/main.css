@@ -88,6 +88,7 @@
 }
 .main-bottom {
   display: flex;
+  width: 1085px;
   padding-top: 80px;
   padding-bottom: 80px;
   /* border-top: 1px solid #ababab; */
@@ -95,7 +96,6 @@
 }
 
 .main-bottom >div {
-  width: 55%;
   /* border:1px solid black; */
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
   border-radius: 4px;
@@ -140,7 +140,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 380px;
+  width: 350px;
 }
 .main-notice .main-notice-list li .main-notice-new{
   display: flex;
@@ -163,6 +163,7 @@
 }
 .main-bottom .main-hr {
   position: relative;
+  
 }
 .main-hr .text-box{
   padding: 50px 50px 0;
@@ -204,7 +205,7 @@
 .hr-list .swiper{
   justify-content: space-around;
   margin: 0 auto;
-  width: 600px;
+  width: 550px;
   height: 150px;
   padding: 0 50px;
 
