@@ -84,8 +84,8 @@ export default function HrStore() {
 
   return (
     <div className=''>
-      <div className='inner-box'>
-        <div className='orderPage-bigTlte'>
+      <div className='orderPage-bigTitle'>
+        <div className='inner-box'>
           <h3 className='orderPage-h3'>
             <b>HR샵</b>
           </h3>
@@ -93,19 +93,36 @@ export default function HrStore() {
             __교육에 필요한 옵션 및 상품정보를 제공합니다.
           </span>
         </div>
+      </div>
+      <div className='inner-box'>
+        <ul class='cont-navi'>
+          <li>
+            <a href='#none' class='nav-home'>
+              HOME
+            </a>
+          </li>
+          <li>
+            <span class='nav-sub'>아카데미</span>
+          </li>
+          <li>
+            <span class='nav-sub'>HR샵</span>
+          </li>
+        </ul>
         <div className='hrBox'>
           <ul className='btnBox'>
             {menu.map((el, idx) => {
               return (
                 <li>
-                  <button
-                    key={el.content}
-                    className={currentTab === idx ? "btn on" : "btn"}
-                    onClick={() => handleMneu(idx)}
-                    type='button'
-                  >
-                    {el.name}
-                  </button>
+                  <Link to='/detail'>
+                    <button
+                      key={el.content}
+                      className={currentTab === idx ? "btn on" : "btn"}
+                      onClick={() => handleMneu(idx)}
+                      type='button'
+                    >
+                      {el.name}
+                    </button>
+                  </Link>
                 </li>
               );
             })}

@@ -6,8 +6,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll"
 import $ from 'jquery';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function Curriculum(){
+    // window 객체에서 현재 url 가져오기 -> 이 데이터로 공유 버튼 클릭 시 주소를 클립보드에 복사
+    const currentUrl = window.location.href;
+
+    //좋아요 버튼
     const [like, setLike] = useState(0);
 
     //스크롤시 탭메뉴 고정
@@ -120,7 +125,11 @@ function Curriculum(){
                         </div>
                         <div className="btnUl">
                             <ul className="programBtn">
-                                <li><button>문의하기</button></li>
+                                <li>
+                                    <Link to='/question'>
+                                        <button>문의하기</button>
+                                    </Link>
+                                </li>
                                 <li>
                                     <button onClick={()=>{setLike(like+1); alert("좋아요 등록 완료")}}><span>{like} &hearts; </span>관심과정</button>
                                 </li>
@@ -134,9 +143,11 @@ function Curriculum(){
                     </div>
                 </div>
                 <div className='right'>
-                    <button className='shareBtn'>
-                        공유
-                    </button>
+                    <CopyToClipboard text={currentUrl}>
+                        <button className='shareBtn' onClick={()=>{alert("클립보드에 복사 완료")}}>
+                            공유
+                        </button>
+                    </CopyToClipboard>
                 </div>
             </div>
             <div className="bottomDetailpage">

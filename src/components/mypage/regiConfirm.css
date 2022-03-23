@@ -1,166 +1,245 @@
+/* PC  CSS */
+@media screen and (min-width:768px) {
 
-* {
-  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+
+  /* 페이지타이틀 */
+  .classConfirm-contentBox .pageTitle {
+    color: #212529;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  /* 사이드바 플렉스 공통 */
+  .regiConfirm-container .flexbox {
+    display: flex;
+  }
+
+
+  .regiConfirm-container #cancelBtn {
+    width: 150px;
+    min-width: 110px;
+    height: 38px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #5EBF92;
+  }
+
+  .regiConfirm-container #cancelBtn:hover {
+    background-color: #03A65A;
+  }
+
+
+  #confirm-under {
+    border-bottom: 1px solid #000;
+  }
+
+
+
+  /* 테이블 css */
+  .myclass-table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    color: #313338;
+  }
+  .myclass-table th, 
+  .myclass-table td {
+    border: 1px solid #eee;
+  }
+
+  .myclass-table th {
+    text-align: center;
+    font-weight: 500;
+    background-color: #eee;
+  }
+
+  .myclass-table tr {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .myclass-table td {
+    padding: 0 10px;
+    font-weight: 300;
+  }
+
+  .myclass-table tr td:nth-child(1) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(2) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(3) {
+    text-align: left;
+  }
+  .myclass-table tr td:nth-child(4) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(5) {
+    text-align: right;
+  }
+  .myclass-table tr td:nth-child(6) {
+    text-align: right;
+  }
+  .myclass-table tr td:nth-child(7) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(8) {
+    text-align: center;
+  }
+
+
+  /* 교육내역이 없는 경우 보여지는 페이지 */
+  .notice-noRegiClass  {
+    background-color: #eee;
+    border-radius: 40px;
+    padding: 40px 40px;
+    width: 550px;
+  }
+
+  .notice-noRegiClass h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .notice-noRegiClass p {
+    line-height: 25px;
+  } 
+
 }
 
-/* 페이지타이틀 */
-.classConfirm-contentBox .pageTitle {
-  color: #212529;
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 15px;
+/* 모바일  CSS */
+@media screen and (max-width:767px) {
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  /* 페이지타이틀 */
+  .classConfirm-contentBox .pageTitle {
+    color: #212529;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  /* 사이드바 플렉스 공통 */
+  .regiConfirm-container .flexbox {
+    display: flex;
+  }
+
+
+  .regiConfirm-container #cancelBtn {
+    width: 150px;
+    min-width: 110px;
+    height: 38px;
+    border: none;
+    padding: 0 10px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #5EBF92;
+  }
+
+  .regiConfirm-container #cancelBtn:hover {
+    background-color: #03A65A;
+  }
+
+
+  #confirm-under {
+    border-bottom: 1px solid #000;
+  }
+
+
+
+  /* 테이블 css */
+  .table-box {
+    width: 60vw;
+    overflow-x:auto;
+  }
+
+  .myclass-table {
+    table-layout:fixed;
+    width:100%;
+    min-width: 950px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    color: #313338;
+  }
+  .myclass-table th, 
+  .myclass-table td {
+    border: 1px solid #eee;
+  }
+
+  .myclass-table th {
+    text-align: center;
+    font-weight: 500;
+    background-color: #eee;
+  }
+
+  .myclass-table tr {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .myclass-table td {
+    padding: 0 10px;
+    font-weight: 300;
+  }
+
+  .myclass-table tr td:nth-child(1) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(2) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(3) {
+    text-align: left;
+  }
+  .myclass-table tr td:nth-child(4) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(5) {
+    text-align: right;
+  }
+  .myclass-table tr td:nth-child(6) {
+    text-align: right;
+  }
+  .myclass-table tr td:nth-child(7) {
+    text-align: center;
+  }
+  .myclass-table tr td:nth-child(8) {
+    text-align: center;
+  }
+
+
+  /* 교육내역이 없는 경우 보여지는 페이지 */
+  .notice-noRegiClass  {
+    background-color: #eee;
+    border-radius: 40px;
+    padding: 40px 40px;
+    width: 550px;
+  }
+
+  .notice-noRegiClass h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .notice-noRegiClass p {
+    line-height: 25px;
+  } 
 }
-
-/* 사이드바 플렉스 공통 */
-.regiConfirm-container .flexbox {
-  display: flex;
-}
-
-
-.regiConfirm-container #cancelBtn {
-  width: 150px;
-  min-width: 110px;
-  height: 38px;
-  border: none;
-  padding: 0 10px;
-  border-radius: 7px;
-  color: #fff;
-  background-color: #5EBF92;
-}
-
-.regiConfirm-container #cancelBtn:hover {
-  background-color: #03A65A;
-}
-
-
-#confirm-under {
-  border-bottom: 1px solid #000;
-}
-
-
-
-/* 테이블 css */
-.myclass-table {
-  border-collapse: collapse;
-  margin: 10px 0;
-  color: #313338;
-}
-.myclass-table th, 
-.myclass-table td {
-  border: 1px solid #eee;
-}
-
-.myclass-table th {
-  text-align: center;
-  font-weight: 500;
-  background-color: #eee;
-}
-
-.myclass-table tr {
-  height: 40px;
-  font-size: 15px;
-}
-
-.myclass-table td {
-  padding: 0 10px;
-  font-weight: 300;
-}
-
-.myclass-table tr td:nth-child(1) {
-  text-align: center;
-}
-.myclass-table tr td:nth-child(2) {
-  text-align: center;
-}
-.myclass-table tr td:nth-child(3) {
-  text-align: left;
-}
-.myclass-table tr td:nth-child(4) {
-  text-align: center;
-}
-.myclass-table tr td:nth-child(5) {
-  text-align: right;
-}
-.myclass-table tr td:nth-child(6) {
-  text-align: right;
-}
-.myclass-table tr td:nth-child(7) {
-  text-align: center;
-}
-.myclass-table tr td:nth-child(8) {
-  text-align: center;
-}
-
-
-/* 수강신청 취소버튼 클릭 후 팝업버튼 */
-.popup-cancel {
-  position: relative;
-  display: none;
-  color: #333;
-  background-color: #ddd;
-  border-radius: 30px;
-  padding: 40px 40px;
-  width: 400px;
-}
-
-/* on 클래스 붙이면 보임 */
-#popup-cancel {
-  /* display: none; */
-}
-
-.yes#popup-cancel {
-  display: block;
-}
-
-
-
-#popup-cancel .cancel-btn {
-  display: block;
-  padding: 5px 8px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  color: #212529;
-  font-size: 14px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.1s linear;
-}
-
-#popup-cancel .cancel-btn:hover{
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.1);
-}
-#popup-cancel .cancel-btn:active {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-
-/* 교육내역이 없는 경우 보여지는 페이지 */
-.notice-noRegiClass  {
-  background-color: #ddd;
-  border-radius: 40px;
-  padding: 40px 40px;
-  width: 550px;
-}
-
-.notice-noRegiClass h3 {
-  font-size: 20px;
-  font-weight: 800;
-  color: #444;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.notice-noRegiClass p {
-  line-height: 25px;
-} 
-
-
-
 
 

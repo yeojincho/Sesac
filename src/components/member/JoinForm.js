@@ -30,16 +30,24 @@ export default function JoinForm() {
 	}
 
 	/* 아이디 중복확인 */
+	const [userId,setUserId] = useState("");
 	const idChkFn = () => {
-		if($("#joinId").val() === "test" || $("#joinId").val() === ""){
-			//중복일경우
+		// 3~15자 영어+숫자 정규식
+		let regExp = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{3,15}$/;
+		if(userId === "test" || userId === ""){
+			//중복 & 공백
 			$("#memberIdError").removeClass("green");
 			$("#memberIdError").text("사용 불가능한 아이디입니다.").show();
-		}else if($("#joinId").val() != ""){
+			return;
+		}else if(!regExp.test(userId) ){
+			//정규식 false
+			$("#memberIdError").removeClass("green");
+			$("#memberIdError").text("아이디는 3~15자 영어 숫자 조합이여야 합니다.").show();
+			return;
+		}else{
 			$("#memberIdError").addClass("green");
 			$("#memberIdError").text("사용 가능한 아이디입니다.").show();
 		}
-
 	}
 
 	/* 이메일 선택 */
@@ -74,16 +82,19 @@ export default function JoinForm() {
 
   return (
     <div className="join-wrapper">
+			<div className='orderPage-bigTitle'>
+        <h3 className='orderPage-h3'>
+          <b>회원가입</b>
+        </h3>
+        <span className='orderPage-span'>
+          __엑스퍼트아카데미에 오신 것을 환영합니다.
+        </span>
+      </div>
       <div className="inner-box join-inner">
 				<ul class="cont-navi">
           <li><a href="#none" class="nav-home">HOME</a></li>
           <li><span class="nav-sub">회원가입</span></li>
         </ul>
-				<div className="top-title">
-          <h2>회원가입</h2>
-          <h3>__회원가입 정보</h3>
-        </div>
-
         <section>
           <div className="join-cont">
             <div className="join-step">
@@ -145,7 +156,7 @@ export default function JoinForm() {
 								<h2>필수정보</h2>	
 							</div>
 							<div className="ip-btn-wrap">
-								<input title="아이디 입력" type="text" id="joinId" placeholder="아이디 (영문/숫자 조합 3~15자)" maxLength="15" />
+								<input title="아이디 입력" type="text" id="joinId" placeholder="아이디 (영문/숫자 조합 3~15자)" maxLength="15" onChange={(e)=>setUserId(e.target.value)} />
 								<button className="btn-pos" type="button" id="duplicateCheckId" onClick={idChkFn}>중복확인</button>
 								<p className="error-msg" id="memberIdError" style={{display:'none'}}>아이디를 입력해주세요.</p>
 							</div>

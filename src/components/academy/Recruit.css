@@ -1,13 +1,12 @@
-.recruit-wrap{
- 
+.recruit-wrap {
 }
-.recruit-wrap .cont-form-box{
+.recruit-wrap .cont-form-box {
   margin-top: 15px;
-  width:800px;
+  width: 800px;
   margin: auto;
   margin-bottom: 50px;
 }
-.recruit-wrap .form-list{
+.recruit-wrap .form-list {
   border-top: 2px solid #ddd;
   padding: 0;
   margin: 0;
@@ -23,7 +22,8 @@
 .recruit-wrap .form-title {
   width: 190px;
 }
-.recruit-wrap .form-title, .recruit-wrap .form-cont {
+.recruit-wrap .form-title,
+.recruit-wrap .form-cont {
   display: table-cell;
   padding: 15px 30px 15px 0;
   font-size: 15px;
@@ -36,12 +36,14 @@
 }
 .recruit-wrap .form-title span.ess:after {
   position: absolute;
-  top: 2px;
-  right: -10px;
-  content: '*';
+  top: 8px;
+  right: -15px;
+  content: "";
   clear: both;
-  color: #ed3b46;
-  height: 10px;
+  background-color: #03a65a;
+  width: 8px;
+  height:8px;
+  border-radius: 50%;
 }
 .recruit-wrap .form-cont .count-input {
   position: relative;
@@ -49,7 +51,7 @@
   border-radius: 5px;
   background: #fff;
 }
-.recruit-wrap .form-cont input{
+.recruit-wrap .form-cont input {
   border: none;
 }
 .recruit-wrap .form-cont .count-input.inp .ipt-txt {
@@ -76,9 +78,9 @@
   padding: 10px 15px 10px;
 }
 .recruit-wrap .form-cont .file-upload {
-    position: relative;
-    margin-top: 10px;
-    display: flex;
+  position: relative;
+  margin-top: 10px;
+  display: flex;
 }
 .recruit-wrap .form-cont .file-upload .ipt-upload {
   width: 500px;
@@ -126,16 +128,16 @@
   padding-left: 40px;
   padding-right: 12px;
   margin-top: 22px;
-  background: url(/public/images/academy/ico_point_mark.png) #fff1d9 no-repeat 10px 9px;
+  background: url(/public/images/academy/ico_point_mark.png) #fff1d9 no-repeat
+    10px 9px;
   border-radius: 20px;
   font-size: 13px;
   line-height: 36px;
   color: #444;
 }
-.recruit-wrap .c-btn-box{
+.recruit-wrap .c-btn-box {
   text-align: center;
 }
-
 
 .recruit-wrap .form-cont .file-upload .file-delete.on {
   display: block;
@@ -155,36 +157,35 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-
-
-
+.recruit-box {
+  margin-top: 70px;
+}
 
 /* 반응형 웹 - PC  */
-@media screen and (min-width:768px) {
-  .recruit-wrap .recruit-lectureImg{
+@media screen and (min-width: 768px) {
+  .recruit-wrap .recruit-lectureImg {
     width: 400px;
     height: 400px;
   }
-  .recruit-wrap .recruit-Img{
+  .recruit-wrap .recruit-Img {
     width: 300px;
     height: 250px;
   }
-  .recruit-wrap .recruit-box{
+  .recruit-wrap .recruit-box {
     display: flex;
   }
 }
 /* 반응형 웹 - Mobile  */
-@media screen and (max-width:767px){
-  .recruit-wrap .cont-form-box{
+@media screen and (max-width: 767px) {
+  .recruit-wrap .cont-form-box {
     width: 600px;
   }
-  .recruit-wrap .recruit-lectureImg{
+  .recruit-wrap .recruit-lectureImg {
     width: 0;
     height: 0;
   }
-  .recruit-wrap .recruit-Img{
+  .recruit-wrap .recruit-Img {
     width: 0;
     height: 0;
   }
-	
 }

@@ -14,7 +14,10 @@ export default function Visit(){
     ]
     //서브메뉴 클릭시 색 변경
     const [currentMenu,setCurrentMenu] = useState(0)
-    const clickHandler = (index)=>{
+
+    const [currentCenter,setCurrentCenter] = useState(['송파','가락','문정'])
+
+    const clickMenuHandler = (index)=>{
         setCurrentMenu(index)
     }
 
@@ -33,11 +36,19 @@ export default function Visit(){
 
     return(
         <>
+            <section className='visitTitle'>
             <div className="inner-box">
-                <section className='visitTitle'>
                     <h1>고객센터</h1>
                     <h2>— 오시는 길</h2>
-                </section>
+            </div>
+            </section>
+            <div className="inner-box">
+            <ul class="cont-navi">
+                <li><a href="#none" class="nav-home">HOME</a></li>
+                <li><a href="#none" class="nav-sub">고객센터</a></li>
+                <li><span class="nav-sub">오시는 길</span></li>
+            </ul>
+                
                 
             <Customer />            
                 <div className="visitSubMenuBox">
@@ -47,7 +58,7 @@ export default function Visit(){
                                 <li
                                 key={index}
                                 className={currentMenu === index ? 'visitSubMenuList subOn' : 'visitSubMenuList'}
-                                onClick={()=>clickHandler(index)}
+                                onClick={()=>clickMenuHandler(index)}
                                 >
                                 {menu.title}    
                                 </li>
@@ -56,6 +67,7 @@ export default function Visit(){
                         })}
                     </ul>
                 </div>{/* e: submenu */}
+                <h3></h3>
                 <main className="visitInfo">                   
                     <div className="mapBox">
                         <div className='mapBoxTop'>
@@ -75,7 +87,7 @@ export default function Visit(){
                     </div>     
                 </main>{/* e: visitInfo */}
                 <div className="transport">
-                        <h4> <span>&gt;</span>교통편</h4>
+                        <h4>교통편</h4>
                     <div className="transportList">
                         <div className="car">
                             <p className="transportListTitle carTitle">승용차</p>
@@ -104,6 +116,9 @@ export default function Visit(){
                     </div>{/* e:transportList */}
                 </div>{/* e:transport */}
             </div>
+            <div className='visitBottomBanner'>
+            <img src="/images/academy/008.png" alt="배너이미지" />
+        </div>
         </>
     )
 }

@@ -1,8 +1,11 @@
 import '../common/common.css';
 import './jobViewDetail.css';
 import './mobileJobViewDetail.css';
+import { Link } from 'react-router-dom';
 
 //ViewDetail 컴포넌트 JobViewDetail로 복사
+
+
 
 function JobViewDetail() {
     return(
@@ -135,7 +138,7 @@ function JobViewDetail() {
                 <h4 className='detailTitle'>대표강사</h4>
                 <div className='mainTutorBox job'>
                     <div className='mainTutorLeft'>
-                    <img src="/images/moon.jpeg "alt="강사 이미지" />
+                    <img src="/images/kim.png "alt="강사 이미지" />
                         <a href="#"><p>강사 인터뷰</p></a>
                     </div>{/* e: mainTutorLeft */}
                     <div className='mainTutorRight'>
@@ -198,7 +201,7 @@ function JobViewDetail() {
                         <li>이메일 : open@exc.co.kr</li>
                         <li>카카오톡: 엑스퍼트아카데미</li>
                     </ul>
-                    <a href="#">문의하기</a>
+                    <Link to='/writing'>문의하기</Link>
                 </div>
             </div>{/* e: applyInfo */}
         </div>

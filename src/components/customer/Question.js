@@ -8,11 +8,11 @@ import QuestionList from "./QuestionList";
 function Question({ children }) {
   return (
     <React.Fragment>
+      <section className="visitTitle">
+        <h1>고객센터</h1>
+        <h2>— 무엇이든 물어보세요</h2>
+      </section>
       <section className="question-container">
-        <section className="question-title">
-          <h1>고객센터</h1>
-          <h2>— 무엇이든 물어보세요</h2>
-        </section>
         <Customer />
         <article className="question-table">
           <QuestionList children={children} />

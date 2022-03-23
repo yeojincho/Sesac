@@ -14,17 +14,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import './main.css';
+import './banner.css';
 
 
+import Popup from '../../components/common/Popup';
 
 export default function Main({isMobile}) {
+
   return (
     <div className="main-wrapper">
-      <MainBanner />
-      <MainContents />
       {
-        !isMobile && 
-        <MainBottom />
+        !isMobile ?
+        (<>
+          <MainBanner />
+          <MainContents />
+          <MainBottom />
+          <Popup />
+        </>)
+        :
+        (<>
+          <MainBanner />
+          <MainContents />
+        </>)
       }
     </div>
   )

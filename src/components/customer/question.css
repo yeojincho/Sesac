@@ -73,11 +73,11 @@
     top: 5px;
     left: 50px;
     content: "";
-    width: 10px;
+    width: 5px;
     background-color: #03a65a;
     border-radius: 50%;
     clear: both;
-    height: 10px;
+    height: 5px;
   }
 
   .question-btn-box {
@@ -222,11 +222,11 @@
     top: 5px;
     left: 50px;
     content: "";
-    width: 10px;
+    width: 5px;
     background-color: #03a65a;
     border-radius: 50%;
     clear: both;
-    height: 10px;
+    height: 5px;
   }
 
   .question-btn-box {

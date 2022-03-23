@@ -66,8 +66,10 @@ function NoticeList() {
           {sortedNotices.map((notice) => (
             <tr>
               <th scope="row">{notice.id}</th>
-              <td style={{ textAlign: "left" }}>{notice.content}</td>
-              <td>{notice.writer}</td>
+              <td style={{ textAlign: "left", textIndent: "2vw" }}>
+                {notice.content}
+              </td>
+              <td style={{ textAlign: "center" }}>{notice.writer}</td>
               <td style={{ textAlign: "center" }}>{notice.date}</td>
             </tr>
           ))}

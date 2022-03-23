@@ -1,109 +1,237 @@
+/* PC  CSS */
+@media screen and (min-width:768px) {
+  .myClassList-contentBox .pageTitle {
+    color: #212529;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .flex-box {
+    display: flex;
+  }
 
 
+  /* 테이블 css */
+  .myClassList-table {
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  th, td {
+    border: 1px solid #eee;
+  }
+
+  th {
+    text-align: center;
+    font-weight: 500;
+    background-color: #eee;
+  }
+
+  tr {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  td {
+    padding: 0 10px;
+    font-weight: 300;
+  }
+
+  tr td:nth-child(1) {
+    text-align: center;
+  }
+  tr td:nth-child(2) {
+    text-align: left;
+  }
+  tr td:nth-child(3) {
+    text-align: center;
+  }
+  tr td:nth-child(4) {
+    text-align: right;
+  }
+  tr td:nth-child(5) {
+    text-align: right;
+  }
+  tr td:nth-child(6) {
+    text-align: center;
+  }
+  tr td:nth-child(7) {
+    text-align: center;
+  }
+
+  tr td:nth-child(7) .down-btn {
+    min-width: 72px;
+    width: 15px;
+    height: 32px;
+    padding: 0 0px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #5EBF92;
+    border: none;
+    font-size: 14px;
+  }
+
+  tr td:nth-child(7) .down-btn:hover {
+    background-color: #03A65A;
+  }
 
 
+  /* 수강내역 없음 페이지 => 내역없을시 테이블 대신 보일 페이지*/
+  .myClassList-contentBox .notice-noClass {
+    display: none;
+    background-color: #ddd;
+    width: 700px;
+    padding: 40px 40px;
+    border-radius: 40px;
+  }
 
-.myClassList-contentBox .pageTitle {
-  color: #212529;
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 15px;
+  .notice-noClass.on {
+    display: block;
+  }
+
+
+  .notice-noClass h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #212529;
+    font-weight: 500;
+  }
+
+  .notice-noClass p {
+    text-align: center;
+    color: #212529;
+    font-weight: lighter;
+
+  }
+
+
 }
 
-.flex-box {
-  display: flex;
-}
+/* 모바일  CSS */
+@media screen and (max-width:767px) {
+  .myClassList-contentBox .pageTitle {
+    color: #212529;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .flex-box {
+    display: flex;
+  }
+  
+  
+  /* 테이블 css */
+  .table-box {
+    width: 60vw;
+    overflow-x: auto;
+  }
 
-
-/* 테이블 css */
-.myClassList-table {
-  border-collapse: collapse;
-  margin: 10px 0;
-}
-th, td {
-  border: 1px solid #eee;
-}
-
-th {
-  text-align: center;
-  font-weight: 500;
-  background-color: #eee;
-}
-
-tr {
-  height: 40px;
-  font-size: 15px;
-}
-
-td {
-  padding: 0 10px;
-  font-weight: 300;
-}
-
-tr td:nth-child(1) {
-  text-align: center;
-}
-tr td:nth-child(2) {
-  text-align: left;
-}
-tr td:nth-child(3) {
-  text-align: center;
-}
-tr td:nth-child(4) {
-  text-align: right;
-}
-tr td:nth-child(5) {
-  text-align: right;
-}
-tr td:nth-child(6) {
-  text-align: center;
-}
-tr td:nth-child(7) {
-  text-align: center;
-}
-
-tr td:nth-child(7) .down-btn {
-  min-width: 72px;
-  width: 15px;
-  height: 32px;
-  padding: 0 0px;
-  border-radius: 7px;
-  color: #fff;
-  background-color: #5EBF92;
-  border: none;
-  font-size: 14px;
-}
-
-tr td:nth-child(7) .down-btn:hover {
-  background-color: #03A65A;
-}
-
-
-/* 수강내역 없음 페이지 => 내역없을시 테이블 대신 보일 페이지*/
-.myClassList-contentBox .notice-noClass {
-  display: none;
-  background-color: #ddd;
-  width: 700px;
-  padding: 40px 40px;
-  border-radius: 40px;
-}
-
-.notice-noClass.on {
-  display: block;
-}
-
-
-.notice-noClass h3 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #212529;
-  font-weight: 500;
-}
-
-.notice-noClass p {
-  text-align: center;
-  color: #212529;
-  font-weight: lighter;
-
+  .myClassList-table {
+    table-layout:fixed;
+    width:100%;
+    min-width: 950px;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  .myClassList-table::after {
+    content: '표를 왼쪽으로 스크롤하세요';
+    display: block;
+    text-indent: 5px;
+    margin-top: 5px;
+    width: 950px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #06f;
+  }
+  
+  th, td {
+    border: 1px solid #eee;
+  }
+  
+  th {
+    text-align: center;
+    font-weight: 500;
+    background-color: #eee;
+  }
+  
+  tr {
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  td {
+    padding: 0 10px;
+    font-weight: 300;
+  }
+  
+  tr td:nth-child(1) {
+    text-align: center;
+  }
+  tr td:nth-child(2) {
+    text-align: left;
+  }
+  tr td:nth-child(3) {
+    text-align: center;
+  }
+  tr td:nth-child(4) {
+    text-align: right;
+  }
+  tr td:nth-child(5) {
+    text-align: right;
+  }
+  tr td:nth-child(6) {
+    text-align: center;
+  }
+  tr td:nth-child(7) {
+    text-align: center;
+  }
+  
+  tr td:nth-child(7) .down-btn {
+    min-width: 72px;
+    width: 15px;
+    height: 32px;
+    padding: 0 0px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: #5EBF92;
+    border: none;
+    font-size: 14px;
+  }
+  
+  tr td:nth-child(7) .down-btn:hover {
+    background-color: #03A65A;
+  }
+  
+  
+  /* 수강내역 없음 페이지 => 내역없을시 테이블 대신 보일 페이지*/
+  .myClassList-contentBox .notice-noClass {
+    display: none;
+    background-color: #ddd;
+    width: 700px;
+    padding: 40px 40px;
+    border-radius: 40px;
+  }
+  
+  .notice-noClass.on {
+    display: block;
+  }
+  
+  
+  .notice-noClass h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #212529;
+    font-weight: 500;
+  }
+  
+  .notice-noClass p {
+    text-align: center;
+    color: #212529;
+    font-weight: lighter;
+  
+  }
+  
 }

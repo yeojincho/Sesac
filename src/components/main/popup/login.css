@@ -8,10 +8,11 @@
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.modal button {
+.modal .login-close{
   outline: none;
   cursor: pointer;
   border: 0;
+  background-color: #fff;
 }
 .modal.openModal {
   display: flex;
@@ -62,6 +63,7 @@
 }
 .layerpopup-body .pop-title strong {
   font-weight:700;
+  color: #000;
 }
 .layerpopup-body .login-box {
   position:relative;

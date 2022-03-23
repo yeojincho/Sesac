@@ -60,13 +60,13 @@ function InfoInput_table({onAdd}) {
                             <label for="inputContact">연락처 &#40;ex.010-1111-1111&#41; *</label>
                         </th>
                         <td>
-                            <input type="text" id="inputContact" onChange={changeInput} value={contact} name="contact" required/>
+                            <input type="tel" id="inputContact" onChange={changeInput} value={contact} name="contact" required/>
                         </td>
                         <th>
                             <label for="inputEmail">E-mail *</label>
                         </th>
                         <td>
-                            <input type="text" id="inputEmail" onChange={changeInput} value={email} name="email" required/>
+                            <input type="email" id="inputEmail" onChange={changeInput} value={email} name="email" required/>
                         </td>
                     </tr>
                     <tr>
