@@ -57,7 +57,7 @@ function TermsOfUse(){
                     <div className='agree_box'>
                         <div className="c-inp-chk-box">
                             <input type="checkbox" id="dcList03" className="inp-chk" />
-                            <label htmlFor="dcList03">위 이용약관에 동의합니다</label>
+                            <label htmlFor="dcList03">위 이용약관에 모두 동의합니다</label>
                         </div>
                     </div>
                     <div className="ok_btn">
