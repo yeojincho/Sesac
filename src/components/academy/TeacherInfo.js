@@ -5,64 +5,64 @@ import TeacherInfo_detail from "./TeacherInfo_detail";
 export default function TeacherInfo() {
   const info = [
     {
-      name: "조여진",
+      name: "강재성 소장",
       src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
       edu: {
-        one: "척척건물 건물주",
-        two: "척척건물 건물주",
-        three: "척척건물 건물주",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "잠이 보약이다",
+      expertise: "직무/업무성과 영역",
     },
     {
-      name: "김세영",
+      name: "김미주 책임강사",
       src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98_1.PNG",
       edu: {
-        one: "인재원 회장",
-        two: "인재원 회장",
-        three: "인재원 회장",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "노력을 하면 된다",
+      expertise: "직무/업무성과 영역",
     },
     {
-      name: "박한솔",
+      name: "문제연 강사",
       src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98.JPG",
       edu: {
-        one: "개발원 대장",
-        two: "개발원 대장",
-        three: "개발원 대장",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "밥이 보약이다",
+      expertise: "직무/업무성과 영역",
     },
     {
-      name: "이승연",
+      name: "한주미 책임강사",
       src: "http://www.excacademy.co.kr/images/instructor_img/%ED%95%9C%EC%A3%BC%EB%AF%B8-%EA%B0%95%EC%82%AC%EC%86%8C%EA%B0%9C.jpg",
       edu: {
-        one: "척척대학교 박사",
-        two: "척척대학교 박사",
-        three: "척척대학교 박사",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "잘먹고 잘자야한다",
+      expertise: "직무/업무성과 영역",
     },
     {
-      name: "김미연",
-      src: "http://www.excacademy.co.kr/images/instructor_img/kang.jpg",
+      name: "박민우 소장",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%EB%B0%95%EB%AF%BC%EC%9A%B0-%EA%B0%95%EC%82%AC%EC%86%8C%EA%B0%9C.jpg",
       edu: {
-        one: "박사학원 설립자",
-        two: "박사학원 설립자",
-        three: "박사학원 설립자",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "강아지는 귀엽다",
+      expertise: "직무/업무성과 영역",
     },
     {
-      name: "안예지",
-      src: "http://www.excacademy.co.kr/images/instructor_img/%EC%BA%A1%EC%B2%98_1.PNG",
+      name: "배요한 강사",
+      src: "http://www.excacademy.co.kr/images/instructor_img/%EB%B0%B0%EC%9A%94%ED%95%9C%20(2).PNG",
       edu: {
-        one: "똑똑대학교 박사",
-        two: "똑똑대학교 박사",
-        three: "똑똑대학교 박사",
+        one: "한양 대학교 대학원 박사과정(산업 교육) 수료",
+        two: "LG 경영 개발원 인화원 팀장(경영, 진단, 임원)",
+        three: " 엑스퍼트컨설팅 책임 컨설턴트",
       },
-      moto: "고양이는 귀엽다",
+      expertise: "직무/업무성과 영역",
     },
   ];
 
@@ -72,27 +72,41 @@ export default function TeacherInfo() {
       name={data.name}
       edu={data.edu}
       src={data.src}
-      moto={data.moto}
+      expertise={data.expertise}
     />
   ));
 
   return (
-    <div className=''>
-      <div className='orderPage-bigTitle'>
-        <div className='inner-box'>
-          <h3 className='orderPage-h3'>
-            <b>강사정보</b>
-          </h3>
-          <span className='orderPage-span'>
-            __교육에 필요한 옵션 및 상품정보를 제공합니다.
-          </span>
+    <div className="teacherinfo-content">
+      <div className="inner-box">
+        <div className="orderPage-bigTitle">
+          <div className="inner-box">
+            <h3 className="orderPage-h3">
+              <b>강사정보</b>
+            </h3>
+            <span className="orderPage-span">
+              __교육에 필요한 옵션 및 상품정보를 제공합니다.
+            </span>
+          </div>
         </div>
-      </div>
-      <div className='inner-box '>
-        <ul className='teacher-list'>{namelist}</ul>
-      </div>
-      <div className='bottomBoxBanner'>
-        <img src='/images/academy/배너배너.png' alt='#' />
+        <ul class="cont-navi">
+          <li>
+            <a href="#none" class="nav-home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <span class="nav-sub">아카데미</span>
+          </li>
+          <li>
+            <span class="nav-sub">강사정보</span>
+          </li>
+        </ul>
+
+        <ul className="teacher-list">{namelist}</ul>
+        <div className="bottomBoxBanner">
+          <img src="/images/academy/배너배너.png" alt="#" />
+        </div>
       </div>
     </div>
   );
