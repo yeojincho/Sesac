@@ -15,7 +15,7 @@ th, td{
 
 .infoTable {
     margin: 100px auto;
-    width: 100%;
+    width: 80%;
     border: 1px solid #f3f3f3;
 }
 
@@ -78,8 +78,9 @@ th, td{
     font-weight: bold;
 }
 
-.inputBtnList {
+.inputAddBtn {
     text-align: right;
+    margin-right: 10%;
 }
 
 .inputBtn {
@@ -88,6 +89,10 @@ th, td{
 
 .checkSection {
     display: flex;
+}
+
+.checkSection .labelMargin {
+    margin-right: 20px;
 }
 
 .paymentNoti {

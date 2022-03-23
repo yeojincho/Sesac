@@ -1,5 +1,6 @@
 import '../common/common.css';
 import './curriculum.css';
+import './mobileViewDetail.css';
 import ViewDetail from './ViewDetail';
 
 import React, { useState, useEffect } from "react";

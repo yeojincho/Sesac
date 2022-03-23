@@ -25,19 +25,28 @@ function Program(){
     const [month, setMonth] = useState(3);
 
     return(
+        <>
+        <div className='orderPage-bigTitle'>
+            <div className="inner-box">
+                <h3 className='orderPage-h3'>
+                    <b>월간교육일정</b>
+                </h3>
+                <span className='orderPage-span'>
+                __엑스퍼트 아카데미 교육 프로그램의 월간 교육과정을 알려드립니다.
+                </span>
+            </div>
+        </div>
         <div className="wrapper inner-box">
             <ul class="cont-navi">
                 <li><Link to='/'><a href="#none" class="nav-home">HOME</a></Link></li>
                 <li><span class="nav-sub">공개과정</span></li>
             </ul>
-            <MainBanner />
+            <div className="mainBannerHeight">
+                <MainBanner />
+            </div>
             <div className="tableSection">
-                <div className="c-top-title">
-                    <h2>월간교육일정</h2>
-                    <h3>__엑스퍼트 아카데미 교육 프로그램의 월간 교육과정을 알려드립니다.</h3>
-                </div>
                 <div className="top">
-                    <button className='downloadBtn'>
+                    <button className='downloadBtn' onClick={()=>{alert("다운로드 완료")}}>
                         공개교육 연간일정표 다운로드
                     </button>
                     <div className='date'>
@@ -181,6 +190,7 @@ function Program(){
                 </table>
             </div>
         </div>
+        </>
     )
 }
 
