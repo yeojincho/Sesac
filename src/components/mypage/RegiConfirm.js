@@ -52,6 +52,7 @@ const RegiConfirm = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openMdelarr = () => {
+    setModalOpen(true);
     let tableData = document.getElementById("classTable");
     let tableLeng = tableData.rows.length;
 
@@ -66,7 +67,6 @@ const RegiConfirm = () => {
         setIsClass(true);
       }
     }
-    setModalOpen(true);
   };
   const closeM = () => {
     setModalOpen(false);
@@ -208,7 +208,7 @@ const RegiConfirm = () => {
             <CancelModal open={modalOpen} close={closeM} />
 
             {isClass ? (
-              <div className="notice-noRegiClass thereisnoclass">
+              <div className="notice-noRegiClass">
                 <h3>신청하신 교육과정이 없습니다.</h3>
                 <p>
                   문의사항이 있는 경우 문의하기 게시판이나 02-2152-3915~4으로

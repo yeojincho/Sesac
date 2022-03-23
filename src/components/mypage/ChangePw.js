@@ -58,7 +58,7 @@ function ChangePw() {
               <Button
                 className="form-btn"
                 onClick={() => {
-                  alert("");
+                  alert("비밀번호가 변경되었습니다");
                 }}
               >
                 확인
