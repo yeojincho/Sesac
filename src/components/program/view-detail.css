@@ -117,8 +117,12 @@
     height: 40%;
 }
 
+#processObjective .processObjective-right ul li {
+  text-align: center;
+}
+
 #processObjective .processObjective-right ul li img {
-  width: 100%;
+  width: 60%;
 }
 
 /* 교육대상 */

@@ -93,7 +93,6 @@ function Curriculum(){
             <div className="topDetailpage">
                 <div className="left">
                     <div className="detailpageImg">
-                        {/* <img src="http://www.excacademy.co.kr/images/banner_img/OVVK751N20210608123726J7PA1AB8.gif" alt="강의 메인 이미지" /> */}
                         <img src="/images/협업.jpg" alt="강의 이미지" />
                     </div>
                     <div className="detailpageTxt">

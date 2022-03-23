@@ -2,7 +2,7 @@ import React from "react";
 import './infoinput.css';
 
 const InfoInput_item = ({item, onDel}) => {
-    const {id, name, birth, contact, email, company, depart, position} = item
+    const {id, name, birth, contact, email, company, depart} = item
 
     return(
         <li className="mrgn-left infoItemDel">
@@ -15,8 +15,7 @@ const InfoInput_item = ({item, onDel}) => {
                     <li><p className="manage-userinfo">연락처: {contact} </p></li>
                     <li><p className="manage-userinfo">이메일: {email} </p></li>
                     <li><p className="manage-userinfo">회사명: {company} </p></li>
-                    <li><p className="manage-userinfo">부서명: {depart} </p></li>
-                    <li><p className="manage-userinfo">직위: {position} </p></li>
+                    <li><p className="manage-userinfo">부서명, 직위: {depart} </p></li>
                 </ul>
             </div>
         </li>
