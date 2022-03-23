@@ -33,6 +33,7 @@ import Question from "../../customer/Question";
 import Faq from "../../customer/Faq";
 import Visit from "../../customer/visit";
 import WritingQuestion from "../../customer/WritingQuestion";
+import QuestionView from "../../customer/QuestionView";
 import Management from "../../mypage/Management";
 import AccountWithdrawal from "../../mypage/ AccountWithdrawal";
 import ChangePw from "../../mypage/ChangePw";
@@ -102,6 +103,7 @@ export default function MobileLayout({ isMobile, isLogin }) {
           <Route exact path="/notice" component={Notice}></Route>
           <Route exact path="/question" component={Question}></Route>
           <Route exact path="/writing" component={WritingQuestion}></Route>
+          <Route exact path="/question/:id" component={QuestionView}></Route>
           <Route exact path="/faq" component={Faq}></Route>
           <Route exact path="/visit" component={Visit}></Route>
           {/* 아카데미 */}
