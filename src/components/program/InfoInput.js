@@ -101,19 +101,19 @@ function InfoInput(){
                                     </th>
                                     <td colSpan="2">
                                         <div className="checkSection">
-                                            <div className="c-inp-chk-box">
+                                            <div className="c-inp-chk-box labelMargin">
                                                 <input type="checkbox" id="dcList01" className="inp-chk" />
                                                 <label htmlFor="dcList01">현금입금&#40;계산서&#41;</label>
                                             </div>
-                                            <div className="c-inp-chk-box">
+                                            <div className="c-inp-chk-box labelMargin">
                                                 <input type="checkbox" id="dcList02" className="inp-chk" />
                                                 <label htmlFor="dcList02">카드결제&#40;문자전송&#41;</label>
                                             </div>
-                                            <div className="c-inp-chk-box">
+                                            <div className="c-inp-chk-box labelMargin">
                                                 <input type="checkbox" id="dcList03" className="inp-chk" />
                                                 <label htmlFor="dcList03">카드결제&#40;현장방문&#41;</label>
                                             </div>
-                                            <div className="c-inp-chk-box">
+                                            <div className="c-inp-chk-box labelMargin">
                                                 <input type="checkbox" id="dcList04" className="inp-chk" />
                                                 <label htmlFor="dcList04">무료교육</label>
                                             </div>

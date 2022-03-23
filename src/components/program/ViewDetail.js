@@ -1,5 +1,6 @@
 import '../common/common.css';
 import './view-detail.css';
+import { Link } from 'react-router-dom';
 
 // Curriculum.js 파일에 component 형식으로 들어갈 예정
 // 탭 아래 컨텐츠 부분만 작성
@@ -200,7 +201,7 @@ function ViewDetail() {
                         <li>이메일 : open@exc.co.kr</li>
                         <li>카카오톡: 엑스퍼트아카데미</li>
                     </ul>
-                    <a href="#">문의하기</a>
+                    <Link to='/writing'>문의하기</Link>
                 </div>
             </div>{/* e: applyInfo */}
         </div>
