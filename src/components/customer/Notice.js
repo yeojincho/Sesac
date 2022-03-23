@@ -8,10 +8,27 @@ function Notice() {
   return (
     <React.Fragment>
       <section className="visitTitle">
-        <h1>고객센터</h1>
-        <h2>— 엑스퍼트아카데미 공지사항 입니다</h2>
+        <div className="inner-box">
+          <h1>고객센터</h1>
+          <h2>— 엑스퍼트아카데미 공지사항 입니다</h2>
+        </div>
       </section>
       <section className="notice-container">
+        <ul class="cont-navi">
+          <li>
+            <a href="#none" class="nav-home">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="nav-sub">
+              고객센터
+            </a>
+          </li>
+          <li>
+            <span class="nav-sub">공지사항</span>
+          </li>
+        </ul>
         <Customer />
         <article className="notice-table">
           <NoticeList />
