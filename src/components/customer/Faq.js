@@ -26,18 +26,21 @@ export default function Faq() {
 
     return(
         <>
-        <section className='fqaTitle'>
-                <h1>고객센터</h1>
-                <h2>— 자주 질문해 주시는 내용을 모아 보다 편리하게 궁금증을 해결하실 수 있습니다.</h2>
+        
+            <section className='fqaTitle'>
+                <div className="inner-box">
+                    <h1>고객센터</h1>
+                    <h2>— 자주 질문해 주시는 내용을 모아 보다 편리하게 궁금증을 해결하실 수 있습니다.</h2>
+                </div>
             </section>
-        <div className="inner-box">
+            <div className="inner-box">
         
             
             <ul class="cont-navi">
-        <li><a href="#none" class="nav-home">HOME</a></li>
-        <li><a href="#none" class="nav-sub">고객센터</a></li>
-        <li><span class="nav-sub">자주 묻는 질문</span></li>
-      </ul>
+                <li><a href="#none" class="nav-home">HOME</a></li>
+                <li><a href="#none" class="nav-sub">고객센터</a></li>
+                <li><span class="nav-sub">자주 묻는 질문</span></li>
+             </ul>
                 
             <Customer />
             <div className="fqaSubMenuBox">
