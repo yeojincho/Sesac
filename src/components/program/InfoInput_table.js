@@ -32,11 +32,11 @@ function InfoInput_table({onAdd}) {
         nameRef.current.focus() //name란에 기본 focus
     }
 
-    const {name, birth, contact, email, company, depart, position} = form;
+    const {name, birth, contact, email, depart, position} = form;
     
     return(
         <form onSubmit={onSubmit}>
-            <div className="C-btn-box inputBtnList">
+            <div className="C-btn-box inputAddBtn">
                 <button className="btn-type1 small" onClick={onAdd} type="submit"><span>교육 인원 추가</span></button>
             </div>
             <table className='infoTable'>

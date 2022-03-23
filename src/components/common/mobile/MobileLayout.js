@@ -41,6 +41,15 @@ import MyClassList from "../../mypage/MyClassList";
 import RegiConfirm from "../../mypage/RegiConfirm";
 import SendPage from "../../academy/SendPages/SendPages";
 
+// 공개과정
+import Program from "../../program/Program";
+import ProgramList from "../../program/ProgramList";
+import Curriculum from "../../program/Curriculum";
+import TermsOfUse from "../../program/TermsOfUse";
+import InfoInput from "../../program/InfoInput";
+import Completed from "../../program/Completed";
+import Confirm from "../../program/Confirm";
+
 /* 
   신나는 반응형 웹 만들기
   1. 구조가 PC랑 너무 다르면 js새로 파는게 좋을듯^^ (css도 당연히 새로만들어야겠죠)
@@ -77,6 +86,13 @@ export default function MobileLayout({ isMobile, isLogin }) {
           <Route exact path="/join/form/:type" component={JoinForm}></Route>
           <Route exact path="/join/complete" component={JoinComplete}></Route>
           {/* 공개과정 */}
+          <Route exact path='/program' component={Program}></Route>
+          <Route exact path='/programlist' component={ProgramList}></Route>
+          <Route exact path='/curriculum' component={Curriculum}></Route>
+          <Route exact path='/termsOfUse' component={TermsOfUse}></Route>
+          <Route exact path='/infoInput' component={InfoInput}></Route>
+          <Route exact path='/completed' component={Completed}></Route>
+          <Route exact path='/confirm' component={Confirm}></Route>
           {/* 취업과정 */}
           <Route exact path="/job" component={Job}></Route>
           <Route exact path="/jobIntro" component={JobIntro}></Route>
