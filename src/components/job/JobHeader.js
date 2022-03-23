@@ -28,7 +28,7 @@ export default function jobHeader(){
         <ul className="jobMenuList">
             <li><NavLink to='/job' activeStyle={menuStyle}>소개</NavLink> </li>
             <li><NavLink to='/jobrecruit' activeStyle={menuStyle}>모집 중인 과정</NavLink> </li>
-            <li>과정 문의</li>
+            <li><NavLink to='/question' activeStyle={menuStyle}>과정 문의</NavLink></li>
         </ul>
     </div>
     </>
