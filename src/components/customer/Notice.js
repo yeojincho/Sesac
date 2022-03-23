@@ -7,11 +7,11 @@ import "./notice.css";
 function Notice() {
   return (
     <React.Fragment>
+      <section className="visitTitle">
+        <h1>고객센터</h1>
+        <h2>— 엑스퍼트아카데미 공지사항 입니다</h2>
+      </section>
       <section className="notice-container">
-        <section className="notice-title">
-          <h1>고객센터</h1>
-          <h2>— 엑스퍼트아카데미 공지사항 입니다</h2>
-        </section>
         <Customer />
         <article className="notice-table">
           <NoticeList />
