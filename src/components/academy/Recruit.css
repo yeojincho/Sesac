@@ -36,12 +36,14 @@
 }
 .recruit-wrap .form-title span.ess:after {
   position: absolute;
-  top: 2px;
-  right: -10px;
-  content: "*";
+  top: 8px;
+  right: -15px;
+  content: "";
   clear: both;
-  color: #ed3b46;
-  height: 10px;
+  background-color: #03a65a;
+  width: 8px;
+  height:8px;
+  border-radius: 50%;
 }
 .recruit-wrap .form-cont .count-input {
   position: relative;

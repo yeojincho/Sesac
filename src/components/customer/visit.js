@@ -37,8 +37,10 @@ export default function Visit(){
     return(
         <>
             <section className='visitTitle'>
+            <div className="inner-box">
                     <h1>고객센터</h1>
                     <h2>— 오시는 길</h2>
+            </div>
             </section>
             <div className="inner-box">
             <ul class="cont-navi">

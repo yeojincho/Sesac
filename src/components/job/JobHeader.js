@@ -16,8 +16,10 @@ export default function jobHeader(){
     <>
 
     <section className='jobTitle'>
+    <div className="inner-box">
         <h1>취업과정</h1>
         <h2>— 취업 준비생들의 고충을 해결해 줄 엑스퍼트아카데미 취업과정을 소개합니다.</h2>
+      </div>
     </section>
     <ul class="cont-navi">
         <li><Link to="/" class="nav-home">HOME</Link></li>
@@ -28,7 +30,7 @@ export default function jobHeader(){
         <ul className="jobMenuList">
             <li><NavLink to='/job' activeStyle={menuStyle}>소개</NavLink> </li>
             <li><NavLink to='/jobrecruit' activeStyle={menuStyle}>모집 중인 과정</NavLink> </li>
-            <li>과정 문의</li>
+            <li><NavLink to='/question' activeStyle={menuStyle}>과정 문의</NavLink></li>
         </ul>
     </div>
     </>

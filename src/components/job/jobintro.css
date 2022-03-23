@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    background: url("/public/images/job-search.png") no-repeat top left 120px;
+    background: url("/public/images/job-search.png") no-repeat top left 100px;
     background-size: 50px;
     margin-bottom: 30px;
   }
@@ -25,10 +25,9 @@
     border-radius: 7px;
     margin-bottom: 100px;
   }
-  .jobIntroBox::before {
+  /* .jobIntroBox::before {
     content: "";
-    background: url("/public/images/pixabay/KakaoTalk_20220319_225210294_08-min.png")
-      no-repeat;
+    background: #f4f4f4 no-repeat;
     background-size: 900px 500px;
     opacity: 0.35;
     position: absolute;
@@ -36,7 +35,7 @@
     left: 0;
     right: 0px;
     bottom: 0px;
-  }
+  } */
 
   .jobIntroContents {
     position: relative;
@@ -77,20 +76,8 @@
     padding: 20px 50px;
     border-radius: 7px;
     margin-bottom: 100px;
+    background: #f4f4f4;
   }
-  .jobIntroBox::before {
-    content: "";
-    background: url("/public/images/pixabay/KakaoTalk_20220319_225210294_08-min.png")
-      no-repeat;
-    background-size: 640px 500px;
-    opacity: 0.35;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0px;
-    bottom: 0px;
-  }
-
   .jobIntroContents {
     position: relative;
     text-align: center;

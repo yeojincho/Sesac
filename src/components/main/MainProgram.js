@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import $ from "jquery";
 
 import "./main.css";
@@ -100,8 +101,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                        <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -127,8 +128,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -154,8 +155,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -180,8 +181,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -207,8 +208,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -234,8 +235,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -261,8 +262,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -287,8 +288,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -315,8 +316,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -341,8 +342,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -367,8 +368,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -393,8 +394,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -441,8 +442,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -467,8 +468,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -493,8 +494,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -519,8 +520,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -545,8 +546,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -571,8 +572,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -597,8 +598,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -623,8 +624,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -651,8 +652,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -677,8 +678,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -703,8 +704,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
@@ -729,8 +730,8 @@ export default function MainProgram() {
                         사내강사 경험이 부족한 학습자에게 꼭 필요한 교수설계와 설득력을 높일 수 있는 스토리 텔링 기법 소개
                       </p>
                       <div>
-                        <span className="viewBtn">상세보기</span>
-                        <span className="appBtn">과정신청</span>
+                      <Link to="/Curriculum"><span className="viewBtn">상세보기</span></Link>
+                        <Link to="/TermsOfUse"><span className="appBtn">과정신청</span></Link>
                       </div>
                     </div>
                   </li>
