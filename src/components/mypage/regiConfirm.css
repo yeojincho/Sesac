@@ -99,7 +99,8 @@
     background-color: #eee;
     border-radius: 40px;
     padding: 40px 40px;
-    width: 550px;
+    width: 700px;
+    text-align: center;
   }
 
   .notice-noRegiClass h3 {
