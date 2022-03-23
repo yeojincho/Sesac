@@ -139,12 +139,12 @@
   display: block;
 }
 
-/* PC Main CSS */
+/* PC  CSS */
 @media screen and (min-width:768px) {
 
 }
 
-/* 모바일 Main CSS */
+/* 모바일  CSS */
 @media screen and (max-width:767px) {
   
 }

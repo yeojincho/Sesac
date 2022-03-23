@@ -82,13 +82,13 @@ function Program(){
                                 계층교육
                             </th>
                             <td>
-                                사내강사 양성과정
+                                사내강사 양성과정 {month}월 과정
                             </td>
                             <td>
                                 1DAY 8H
                             </td>
                             <td>
-                                3.19~3.20
+                                {month}.19~{month}.20
                             </td>
                             <td>
                                 290,000원
@@ -102,13 +102,13 @@ function Program(){
                                 DX교육
                             </th>
                             <td>
-                                사내강사 양성과정
+                                사내강사 양성과정 {month}월 과정
                             </td>
                             <td>
                                 1DAY 8H
                             </td>
                             <td>
-                                3.19
+                                {month}.19
                             </td>
                             <td>
                                 290,000원
@@ -122,13 +122,13 @@ function Program(){
                                 직무역량
                             </th>
                             <td>
-                                사내강사 양성과정
+                                사내강사 양성과정 {month}월 과정
                             </td>
                             <td>
                                 1DAY 8H
                             </td>
                             <td>
-                                3.20
+                                {month}.20
                             </td>
                             <td>
                                 290,000원
@@ -142,13 +142,13 @@ function Program(){
                                 진단
                             </th>
                             <td>
-                                사내강사 양성과정
+                                사내강사 양성과정 {month}월 과정
                             </td>
                             <td>
                                 1DAY 8H
                             </td>
                             <td>
-                                3.20
+                                {month}.20
                             </td>
                             <td>
                                 290,000원
@@ -162,13 +162,13 @@ function Program(){
                                 일반
                             </th>
                             <td>
-                                사내강사 양성과정
+                                사내강사 양성과정 {month}월 과정
                             </td>
                             <td>
                                 1DAY 8H
                             </td>
                             <td>
-                                3.20
+                                {month}.20
                             </td>
                             <td>
                                 290,000원
