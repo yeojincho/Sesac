@@ -80,10 +80,12 @@ export default function MainProgram() {
                 <ul className="inner-box program-list">
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_07-min.png"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -108,10 +110,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_12-min.jpg"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -135,10 +139,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_10-min.jpg"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -162,10 +168,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_08-min.png"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -188,10 +196,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_15-min.png"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -215,10 +225,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_13-min.jpg"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -242,10 +254,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_11-min.png"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">
@@ -269,10 +283,12 @@ export default function MainProgram() {
                   </li>
                   <li className="program-item">
                     <div className="item-img">
+                      <Link to="/Curriculum">
                       <img
                         src="/images/pixabay/KakaoTalk_20220319_225210294_14-min.jpg"
                         alt="강의"
                       />
+                      </Link>
                     </div>
                     <div className="item-text">
                       <ul className="item-top">

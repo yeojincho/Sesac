@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 767px) {
   .orderPage-bigTitle h3,
-  span {
+  .orderPage-bigTitle span {
     width: 40vw;
   }
 
