@@ -50,7 +50,12 @@ function QuestionView(question) {
             style={{ display: "flex", justifyContent: "end", padding: "10px" }}
           >
             <span style={{ width: "6.5vh" }}>작성자</span>
-            <p style={{ width: "6.5vh", borderRight: "1px solid #aaa" }}>
+            <p
+              style={{
+                width: "5vw",
+                borderRight: "1px solid #aaa",
+              }}
+            >
               {state.writer}
             </p>
             <span style={{ width: "6.5vh", marginLeft: "15px" }}>작성일</span>
