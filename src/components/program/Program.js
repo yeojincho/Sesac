@@ -6,14 +6,6 @@ import { Link } from "react-router-dom";
 import MainBanner from '../../components/main/MainBanner';
 
 function Program(){
-    // function monthBtn() {
-    //     if(month < 1){
-    //         month = 12;
-    //     } else if(month > 12) {
-            
-    //     }
-    // }
-
     // 강의 날짜 변경 버튼
     const onIncrease = () => {
         setMonth(month + 1);
@@ -55,12 +47,30 @@ function Program(){
                         <button className='btnNext' onClick={onIncrease}>next</button>
                     </div>
                     <div class="date-search-option programSearch">
-                        <div class="item-search">
+                        <div class="item-search programSearchBar">
                             <input type="text" placeholder="검색" class="ipt-search" />
                             <a href="#none" class="btn-search">검색</a>
                         </div>
                     </div>
                     {/* <input type="text" placeholder="Search" className="searchBox" /> */}
+                </div>
+                <div className="Mtop">
+                    <div className='Mdate'>
+                        <button className='btnPrev' onClick={onDecrease}>prev</button>
+                        <h3>2022년 {month}월</h3>
+                        <button className='btnNext' onClick={onIncrease}>next</button>
+                    </div>
+                    <div className='MtopSec'>
+                        <button className='MdownloadBtn' onClick={()=>{alert("다운로드 완료")}}>
+                            다운로드
+                        </button>
+                        <div class="date-search-option programSearch">
+                            <div class="item-search programSearchBar">
+                                <input type="text" placeholder="검색" class="ipt-search" />
+                                <a href="#none" class="btn-search">검색</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <table className='programTable'>
                     <thead>

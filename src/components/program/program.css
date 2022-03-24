@@ -40,6 +40,10 @@ th, td{
         font-weight: 300;
     }
 
+    .tableSection .top .MdownloadBtn {
+        display: none;
+    }
+
     .tableSection .top .date {
         font-size: 30px;
         text-align: center;
@@ -125,8 +129,59 @@ th, td{
 /* 모바일 */
 @media screen and (max-width:767px){
 
-    .tableSection {
-        
+    .tableSection .top {
+        display: none;
+    }
+
+    .Mdate {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Mdate button {
+        width: 50px;
+        display: inline-block;
+        border: none;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+
+    .Mdate .btnPrev {
+        background: url(../../../public/images/arrow_prev.png) no-repeat center;
+        background-size: 25px;
+        padding-top: 5px;
+    }
+
+    .Mdate .btnNext {
+        background: url(../../../public/images/arrow_next.png) no-repeat center;
+        background-size: 25px;
+        padding-top: 5px;
+    }
+
+    .Mdate h3 {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    
+    .MtopSec {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+
+    .MdownloadBtn {
+        font-size: 14px;
+        padding: 5px 15px;
+        border-radius: 10px;
+        border: 1px solid #bbb;
+        cursor: pointer;
+        font-weight: 300;
+    }
+
+    .programTable {
+        margin: 0 auto 40px;
+        width: 100%;
     }
 
 }
