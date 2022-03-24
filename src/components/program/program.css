@@ -40,7 +40,7 @@ th, td{
         font-weight: 300;
     }
 
-    .tableSection .top .MdownloadBtn {
+    .Mtop {
         display: none;
     }
 
@@ -131,6 +131,10 @@ th, td{
 
     .tableSection .top {
         display: none;
+    }
+
+    .Mtop {
+        display: block;
     }
 
     .Mdate {
