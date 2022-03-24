@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState, useEffect } from "react";
-import { Link ,useHistory ,useParams} from 'react-router-dom';
+import { useState } from "react";
+import { useHistory ,useParams} from 'react-router-dom';
 import $ from 'jquery';
 
 import './join.css';
@@ -77,7 +77,7 @@ export default function JoinForm() {
 		}
 		
 
-		document.location.href = '/join/complete';
+		history.push('/join/complete');
 	}
 
   return (
