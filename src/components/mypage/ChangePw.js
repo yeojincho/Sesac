@@ -5,6 +5,10 @@ import SideMenu from "./SideMenu";
 import HeadTitle from "./HeadTitle";
 
 function ChangePw() {
+  const alertmove = () => {
+    alert("비밀번호가 변경되었습니다");
+    window.location.href = "/manage";
+  };
   return (
     <div className="ChangePw-wrap1">
       <HeadTitle />
@@ -55,12 +59,7 @@ function ChangePw() {
                 />
               </form>
 
-              <Button
-                className="form-btn"
-                onClick={() => {
-                  alert("비밀번호가 변경되었습니다");
-                }}
-              >
+              <Button className="form-btn" onClick={alertmove}>
                 확인
               </Button>
             </div>

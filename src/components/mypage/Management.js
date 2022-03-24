@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Button } from "reactstrap";
 import HeadTitle from "./HeadTitle";
 import "./Management.css";
@@ -7,6 +7,7 @@ import SideMenu from "./SideMenu";
 import DaumPostcode from "react-daum-postcode";
 import PopupPostCode from "./PopupPostCode";
 import PopupDom from "./PopupDom";
+import $ from "jquery";
 
 function Management() {
   const user1 = { name: "강동원", id: "expert", gender: "남" };
@@ -27,6 +28,18 @@ function Management() {
     setIsPopupOpen(false);
   };
 
+  //회원구분 교육담당자는 부가정보2 필수 입력(true)
+  const [isRequire, setRequire] = useState(false);
+
+  const ImManager = (value) => {
+    if (value === "manager") {
+      setRequire(true);
+      $("#managerRequired").text(" * 필수입력입니다.").show();
+      $(".required").attr("required", true);
+    } else {
+      $("#managerRequired").text("").show();
+    }
+  };
   return (
     <div className="Management-wrap1">
       <HeadTitle />
@@ -99,11 +112,12 @@ function Management() {
                     class="form-select"
                     id="user-division"
                     aria-label="Default select example"
+                    onChange={(e) => ImManager(e.target.value)}
                   >
                     <option selected disabled>
                       회원구분
                     </option>
-                    <option value="teacher">교육담당자</option>
+                    <option value="manager">교육담당자</option>
                     <option value="user">일반</option>
                   </select>
 
@@ -119,20 +133,24 @@ function Management() {
                   <br />
                 </div>
 
-                <h3 className="Management-infoTitle">부가정보2</h3>
+                <h3 className="Management-infoTitle">
+                  부가정보2<span id="managerRequired"></span>
+                </h3>
+
                 <div className="mrgn-left">
                   <label htmlFor="company-name">회사명</label>
                   <input
-                    class="form-control"
+                    class="form-control required"
                     id="company-name"
                     type="text"
                     placeholder="소속된 회사를 입력해주세요"
                     aria-label="your company name"
+                    required
                   />
 
                   <label htmlFor="department"> 부서명 </label>
                   <input
-                    class="form-control"
+                    class="form-control required"
                     id="department"
                     type="text"
                     placeholder="소속된 부서를 입력해주세요"
@@ -141,7 +159,7 @@ function Management() {
 
                   <label htmlFor="job-title"> 직함 </label>
                   <input
-                    class="form-control"
+                    class="form-control required"
                     id="job-title"
                     type="text"
                     placeholder="직함을 입력해주세요"
@@ -150,7 +168,7 @@ function Management() {
 
                   <label htmlFor="company-phone"> 회사전화 </label>
                   <input
-                    class="form-control"
+                    class="form-control required"
                     id="company-phone"
                     type="tel"
                     placeholder="회사 전화번호를 입력해주세요"
@@ -160,7 +178,7 @@ function Management() {
                   <label htmlFor="roadAddrPart1"> 회사주소 </label>
                   <div className="zipBox">
                     <input
-                      class="form-control"
+                      class="form-control required"
                       id="roadAddrPart1"
                       type="text"
                       placeholder="주소를 검색하여 회사 주소를 입력하세요"
@@ -181,7 +199,7 @@ function Management() {
                       )}
                     </div>
                     <input
-                      class="form-control"
+                      class="form-control required"
                       id="roadAddrPart2"
                       type="text"
                       placeholder="상세주소를 입력하세요"
@@ -190,7 +208,12 @@ function Management() {
                   </div>
                 </div>
                 <div className="Management-bottomBtn flex-box">
-                  <Button id="check-btn">확인</Button>
+                  <Button
+                    id="check-btn"
+                    onClick={() => alert("회원정보가 추가되었습니다.")}
+                  >
+                    확인
+                  </Button>
                   <Link to="/manage/withdrawal" id="byeBtn">
                     회원탈퇴
                   </Link>
