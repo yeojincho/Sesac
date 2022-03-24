@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./program-list.css";
 import MainProgram from '../main/MainProgram';
 
 function ProgramList(){
