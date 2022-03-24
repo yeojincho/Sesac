@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Menu_title from "./Menu_title";
 import "./TeacherInfo_detail.css";
 
@@ -6,6 +7,11 @@ export default function TeacherInfo_detail({ name, edu, src, expertise }) {
   function href(e) {
     window.location.href = "https://youtu.be/w-HAjo8PhVo";
   }
+
+  const moveUrl = (value) => {
+    window.location.href = value;
+  };
+
   return (
     <div className="t_infoContainer">
       <div className="t_img-box">
@@ -31,12 +37,18 @@ export default function TeacherInfo_detail({ name, edu, src, expertise }) {
         </div>
         <div className="t_lectureBox">
           <h3>대표강의</h3>
-          <select name="lectureList" id="lectureList">
-            <option value="">--------------- 일정선택 ---------------</option>
-            <option value="1">HTML</option>
-            <option value="2">CSS</option>
-            <option value="3">javascript</option>
-            <option value="4">react</option>
+          <select
+            name="lectureList"
+            id="lectureList"
+            onChange={(e) => moveUrl(e.target.value)}
+          >
+            <option selected disabled="disabled">
+              --------------- 일정선택 ---------------
+            </option>
+            <option value="/programDetail">HTML</option>
+            <option value="/programDetail">CSS</option>
+            <option value="/programDetail">javascript</option>
+            <option value="/programDetail">react</option>
           </select>
         </div>
       </div>

@@ -9,7 +9,7 @@ function AccountWithdrawal() {
 
   /* 로그아웃 */
   const WithdrawalFn = () => {
-    alert("탈퇴완료");
+    alert("회원탈퇴가 완료되었습니다.");
     // 로그인 세션 삭제
     sessionStorage.removeItem("user_id");
     document.location.replace("/");
@@ -58,21 +58,20 @@ function AccountWithdrawal() {
               </div>
 
               <form className="form">
-                <h3>탈퇴사유</h3>
-                <div class="form-floating">
+                <div class="form">
+                  <label htmlFor="withdrawals">회원탈퇴</label>
                   <textarea
                     class="form-control"
-                    placeholder="간단하게 사유를 작성해 주세요."
-                    id="floatingTextarea2"
+                    placeholder="간단하게 사유를 작성해 주세요. 예시: 이용안함 / 서비스 불만족 / 재가입"
+                    id="withdrawal"
                     style={{ height: "200px" }}
                   ></textarea>
-                  <label for="floatingTextarea2">
-                    예시: 이용안함 / 서비스 불만족 / 재가입
-                  </label>
                 </div>
               </form>
               <form className="form">
-                <h3>탈퇴확인을 위한 비밀번호 입력</h3>
+                <label htmlFor="password-check">
+                  탈퇴확인을 위한 비밀번호 입력
+                </label>
                 <input
                   className="form-control"
                   id="password-check"

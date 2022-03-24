@@ -3,6 +3,7 @@ import HeadTitle from "./HeadTitle";
 import SideMenu from "./SideMenu";
 import "./regiConfirm.css";
 import CancelModal from "./CancelModal";
+import $ from "jquery";
 
 const RegiConfirm = () => {
   //클래스 리스트 더미 데이터

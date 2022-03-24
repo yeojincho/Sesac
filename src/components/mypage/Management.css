@@ -198,6 +198,14 @@
     font-weight: lighter;
     font-style: italic;
   }
+
+  #managerRequired {
+    color: #f01;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+
 }
 
 
