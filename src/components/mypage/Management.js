@@ -31,15 +31,47 @@ function Management() {
   //회원구분 교육담당자는 부가정보2 필수 입력(true)
   const [isRequire, setRequire] = useState(false);
 
+  //교육매니저 옵션 선택시 부가정보2 필수입력 안내
   const ImManager = (value) => {
     if (value === "manager") {
       setRequire(true);
       $("#managerRequired").text(" * 필수입력입니다.").show();
-      $(".required").attr("required", true);
-    } else {
-      $("#managerRequired").text("").show();
+      $("[name=required]").attr("required", true);
+    } else if (value === "user") {
+      $("#managerRequired").hide();
+      setRequire(false);
     }
   };
+
+  // 확인클릭시 필수입력 비어있으면 alert()
+  const requiredAlert = () => {
+    if (isRequire && $("#company-name").val() === "") {
+      $("#required-companyname").show();
+      return;
+    } else $("#required-companyname").hide();
+
+    if (isRequire && $("#department").val() === "") {
+      $("#required-department").show();
+      return;
+    } else $("#required-department").hide();
+
+    if (isRequire && $("#job-title").val() === "") {
+      $("#required-jobtitle").show();
+      return;
+    } else $("#required-jobtitle").hide();
+
+    if (isRequire && $("#company-phone").val() === "") {
+      $("#required-companyphone").show();
+      return;
+    } else $("#required-companyphone").hide();
+
+    if (isRequire && $("#roadAddrPart1").val() === "") {
+      $("#required-roadAddrPart1").show();
+      return;
+    } else $("#required-roadAddrPart1").hide();
+    alert("회원정보가 추가되었습니다.");
+  };
+
   return (
     <div className="Management-wrap1">
       <HeadTitle />
@@ -138,9 +170,15 @@ function Management() {
                 </h3>
 
                 <div className="mrgn-left">
-                  <label htmlFor="company-name">회사명</label>
+                  <label htmlFor="company-name">
+                    회사명
+                    <span id="required-companyname" className="requirespan">
+                      회사명을 입력하세요
+                    </span>
+                  </label>
                   <input
-                    class="form-control required"
+                    class="form-control"
+                    name="required"
                     id="company-name"
                     type="text"
                     placeholder="소속된 회사를 입력해주세요"
@@ -148,37 +186,61 @@ function Management() {
                     required
                   />
 
-                  <label htmlFor="department"> 부서명 </label>
+                  <label htmlFor="department">
+                    부서명
+                    <span id="required-department" className="requirespan">
+                      부서명을 입력하세요
+                    </span>
+                  </label>
                   <input
-                    class="form-control required"
+                    class="form-control"
+                    name="required"
                     id="department"
                     type="text"
                     placeholder="소속된 부서를 입력해주세요"
                     aria-label="your company name"
                   />
 
-                  <label htmlFor="job-title"> 직함 </label>
+                  <label htmlFor="job-title">
+                    직함
+                    <span id="required-jobtitle" className="requirespan">
+                      직함을 입력하세요
+                    </span>
+                  </label>
                   <input
-                    class="form-control required"
+                    class="form-control"
+                    name="required"
                     id="job-title"
                     type="text"
                     placeholder="직함을 입력해주세요"
                     aria-label="job title"
                   />
 
-                  <label htmlFor="company-phone"> 회사전화 </label>
+                  <label htmlFor="company-phone">
+                    회사전화
+                    <span id="required-companyphone" className="requirespan">
+                      회사전화를 입력하세요
+                    </span>
+                  </label>
                   <input
-                    class="form-control required"
+                    class="form-control"
+                    name="required"
                     id="company-phone"
                     type="tel"
                     placeholder="회사 전화번호를 입력해주세요"
                     aria-label="company phone number"
                   />
 
-                  <label htmlFor="roadAddrPart1"> 회사주소 </label>
+                  <label htmlFor="roadAddrPart1">
+                    회사주소
+                    <span id="required-roadAddrPart1" className="requirespan">
+                      회사주소를 입력하세요
+                    </span>
+                  </label>
                   <div className="zipBox">
                     <input
-                      class="form-control required"
+                      class="form-control"
+                      name="required"
                       id="roadAddrPart1"
                       type="text"
                       placeholder="주소를 검색하여 회사 주소를 입력하세요"
@@ -208,10 +270,7 @@ function Management() {
                   </div>
                 </div>
                 <div className="Management-bottomBtn flex-box">
-                  <Button
-                    id="check-btn"
-                    onClick={() => alert("회원정보가 추가되었습니다.")}
-                  >
+                  <Button id="check-btn" onClick={requiredAlert}>
                     확인
                   </Button>
                   <Link to="/manage/withdrawal" id="byeBtn">

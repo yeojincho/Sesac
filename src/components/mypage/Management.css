@@ -205,6 +205,18 @@
     margin-left: 10px;
   }
 
+  .requirespan {
+    color: #f01;
+    font-size: 10px;
+    margin-left: 10px;
+    display: none;
+  }
+
+  .requirespan::before {
+    content: '*';
+    display: inline-block;
+  }
+
 
 }
 
