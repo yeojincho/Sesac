@@ -1,9 +1,10 @@
 /*customer > FQA 페이지 */
 
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import './faq.css'
 import FaqAcco from './FaqAcco';
 import Customer from './Customer';
+import FaqStar from './FaqStar';
 
 
 export default function Faq() {
@@ -22,6 +23,9 @@ export default function Faq() {
     const clickHandler = (index)=>{
         setCurrentMenu(index)
     }
+
+
+
 
 
     return(
@@ -60,7 +64,7 @@ export default function Faq() {
             </div>{/* e: submenu */}
 
             <FaqAcco currentMenu={currentMenu}/>
-            
+            <FaqStar />
         </div>
         <div className='faqBottomBanner'>
             <img src="/images/academy/007.png" alt="배너이미지" />
