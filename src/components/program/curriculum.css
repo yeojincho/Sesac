@@ -82,7 +82,7 @@
         padding: 20px 0;
         display: none;
         position: absolute;
-        right: 15%;
+        right: 0;
     }
 
     .bottomSelectFix.fix {
