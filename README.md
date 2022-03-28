@@ -2,11 +2,17 @@
 
 - 리뉴얼 대상: [엑스퍼트 아카데미](http://www.excacademy.co.kr/)
 - 리뉴얼 페이지: [Click](http://expert002.cafe24.com/)
-- 리뉴얼 이유:
-SPA 웹사이트의 특성을 살려 리액트로 작업
-더 나은 사용자 경험을 위한 세세한 기능 구현 + 웹사이트 이용자와의 상호작용을 이끌어 내는 것에 중점을 두고 작업
-반응형 웹페이지 -> 다양한 디바이스 환경에서 안정적인 사용자 경험이 이루어질 수 있도록 편의성 제공
+<br>
 
+## 프로젝트 기능
+### ➡️  반응형웹
+다양한 디바이스의 환경에서 안정적인 사용자 경험이 이루어질 수 있도록 편의성 제공
+
+### ➡️  SPA(Single Page Application)
+새롭게 갱신되는 부분만 렌더링하기 때문에 새로고침이 발생하지 않아 화면 깜빡임 없이 빠른 화면 이동 가능
+
+### ➡️  InterAction디자인
+웹사이트 이용자와의 상호작용을 이끌어 내는 것에 중점을 두고 작업
 
 
 ## 📘Contents
@@ -20,7 +26,7 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 ## 🌈 Background
 [Notion](https://www.notion.so/Sesac-1c656fd978fd4196b04fb7728cb26293)
 ## 새싹디벨로퍼 팀원
-[미연](https://github.com/kalmtalyst) 
+[미연언니닉넴](https://github.com/kalmtalyst) 
 [세영](https://github.com/julie-kim-dev) 
 [한솔](https://github.com/hansol787897465121) 
 [예지](https://github.com/yeahhaaa) 
