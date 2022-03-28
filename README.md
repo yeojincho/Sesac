@@ -23,9 +23,30 @@
 
 <br>
 
+<p align="center">
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/logo.png" width="500" height="200"  ><img src="https://github.com/hansol787897465121/Sesac/blob/main/image/expert-qr.png" width="150" height="200" align="right">  
+</p>
+<br/>
+
+
+
+<br/>
+
+## 메뉴 구조도
+<p align="center">
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/menu1.png" width="800" height="400"  >
+</p>
+<br/>
+
+## 디자인
+
++ <a href="https://www.figma.com/file/0ymUxelp5Eg14UwOkOgD6c/sesac?node-id=0%3A1" target="_blank">Figma</a>
+
+<br/>
+
+
 ## 🌈 Background
 [Notion](https://www.notion.so/Sesac-1c656fd978fd4196b04fb7728cb26293)
-## 새싹디벨로퍼 팀원
 [미연언니닉넴](https://github.com/kalmtalyst) 
 [세영](https://github.com/julie-kim-dev) 
 [한솔](https://github.com/hansol787897465121) 
@@ -49,20 +70,7 @@
   ![](https://img.shields.io/badge/-CSS-orange?logo=CSS3)
   ![](https://img.shields.io/badge/-VScode-red)
   ![](https://img.shields.io/badge/-Figma-blueviolet?logo=Figma)
-  
-  <br>
-  
-React
-
-React Router
-
-Redux Toolkit
-
-Redux
-
-<br>   
-
-## 🔍 Preview
+ 
 
 <br>
 
@@ -89,37 +97,7 @@ Side bar
 <br>
 
 ## Main
-
-<br/>
-<br/>
-<p align="center">
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/logo.png" width="500" height="200"  ><img src="https://github.com/hansol787897465121/Sesac/blob/main/image/expert-qr.png" width="150" height="200" align="right">  
-</p>
-<br/>
-
-
-
-## 프로젝트 소개
-> 엑스퍼트 아카데미 홈페이지 리뉴얼 프로젝트
-```
-기존 홈페이지의 디자인 & 메뉴 개선, 반응협 웹 구축 등 사용자의 편의성 제공을 위한 리뉴얼 프로젝트
-```
-
-<br/>
-
-## 메뉴 구조도
-<p align="center">
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/menu1.png" width="800" height="400"  >
-</p>
-<br/>
-
-## 디자인
-
-+ <a href="https://www.figma.com/file/0ymUxelp5Eg14UwOkOgD6c/sesac?node-id=0%3A1" target="_blank">Figma</a>
-
-<br/>
-
-## 화면 소개
+### 화면 소개
 
 <details>
 <summary>메인 화면</summary>
