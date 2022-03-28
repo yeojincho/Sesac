@@ -19,7 +19,14 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 <br>
 
 ## 🌈 Background
-
+[Notion](https://www.notion.so/Sesac-1c656fd978fd4196b04fb7728cb26293)
+## 새싹디벨로퍼 팀원
+[미연](https://github.com/kalmtalyst) 
+[세영](https://github.com/julie-kim-dev) 
+[한솔](https://github.com/hansol787897465121) 
+[예지](https://github.com/yeahhaaa) 
+[승연](https://github.com/devSeung0v0)
+[여진](https://github.com/yeojincho)
 
 <br>
 
@@ -32,7 +39,14 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 <br>
 
 ## Skills
-
+  ![](https://img.shields.io/badge/-react-blue?logo=React)
+  ![](https://img.shields.io/badge/-JavaScript-yellow?logo=JavaScript)
+  ![](https://img.shields.io/badge/-CSS-orange?logo=CSS3)
+  ![](https://img.shields.io/badge/-VScode-red)
+  ![](https://img.shields.io/badge/-Figma-blueviolet?logo=Figma)
+  
+  <br>
+  
 React
 
 React Router
@@ -40,10 +54,6 @@ React Router
 Redux Toolkit
 
 Redux
-
-## Customer
-
-
 
 <br>   
 
@@ -71,6 +81,9 @@ npm install
 
 npm start
 
+## Customer
+
+<br>
 
 ## Academy 
 
