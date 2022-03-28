@@ -396,13 +396,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 - 값 스테이트화 했음 / +,- 버튼 구현
 </details>
 
-
-
-<br>
-  
-  ## mypage
-  
-  <details>
+<details>
 <summary>강사소개</summary>
 <div markdown="1">
 <p>
@@ -424,6 +418,19 @@ select의 각 option에 value값으로 해당 path값을 주어 선택시 window
 </div>
 </div>
 </details>
+  
+
+
+
+<br>
+  
+  ## mypage
+  ####  화면 소개
+- 엑스퍼트 아카데미 로그인 후 확인 가능한 마이페이지 카테고리입니다.
+- 회원정보수정 / 비밀번호변경 / 수강신청 확인&취소 / 수강내역 으로 메뉴가 구성되며, 회원정보수정 페이지를 통해 회원탈퇴 페이지로 연결됩니다.
+- 마이페이지의 title과 sidemenu 부분은 컴포넌트로 마이페이지 전체에 동일하게 적용됩니다. 
+  
+
 
 <details>
 <summary>회원정보관리</summary>
