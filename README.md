@@ -16,7 +16,13 @@
 
 
 ## 📘Contents
+
+- [📖 Contents](#contents)
+- [🌈 새싹디벨로퍼](#-새싹디벨로퍼)
+- [🔗 Link](#-link)
 - [Main](#main)
+- [공개과정](#공개과정)
+- [취업과정](#취업과정)
 - [Customer](#customer)   
 - [Academy](#academy)   
   
@@ -45,7 +51,7 @@
 <br/>
 
 
-## 🌈 Background
+## 🌈 새싹디벨로퍼
 [Notion](https://www.notion.so/Sesac-1c656fd978fd4196b04fb7728cb26293)
 [미연언니닉넴](https://github.com/kalmtalyst) 
 [세영](https://github.com/julie-kim-dev) 
@@ -168,9 +174,14 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 </div>
 </details>
 
+<br>
 
+## 공개과정
 
+<br>
 
+## 취업과정
+<br>
 
 ## Customer
 
@@ -205,15 +216,16 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 <br>
 
-## 문의하기
+## 02
 <img src="https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif" width="800" height="400">
 
 <br>
 
-## 이메일
+## orderpage
 
 <img src="https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif" width="800" height="400">
 <br>
+
 ## 🪛 Project Control
 - Version Control: Git, Github
 
