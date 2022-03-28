@@ -1,11 +1,16 @@
 ## Web renewal project 
+
+엑스퍼트 아카데미 홈페이지 리뉴얼 프로젝트
+
+기존 홈페이지의 디자인 & 메뉴 개선, 반응협 웹 구축 등 사용자의 편의성 제공을 위한 리뉴얼 프로젝트
 <br>
 
 ## 📘Contents
-1.  [🛠 Skills](#Skills)
+1.[🛠 Skills](#Skills)
+
 2.[ 🙋‍♀️살펴보기](#살펴보기)
-3. - [Customer](#customer)   
-    - [Academy](#academy)   
+- [Customer](#customer)   
+- [Academy](#academy)   
   
 
 <br>
@@ -41,20 +46,11 @@ JSX<br>
 
 <br>
 
-## 🛠 Features
+## 📌 Features
 Screen
 
 Side bar
-
-
-## Academy 
-
-#### IntroducePage
-<details><summary>
-</summary>
-- react-spring 활용해 글씨 / 제스쳐 애니메이션 구현
-</details>
-
+<br>
 ## ⚠️ Requirement
 최신 Chrome Browser 사용을 권장합니다.
 
@@ -69,6 +65,15 @@ cd client
 npm install
 
 npm start
+
+
+## Academy 
+
+#### IntroducePage
+<details><summary>
+</summary>
+- react-spring 활용해 글씨 / 제스쳐 애니메이션 구현
+</details>
 
 #### OrderPage
 <details><summary>
