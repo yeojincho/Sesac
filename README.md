@@ -1,9 +1,12 @@
 ## Web renewal project 
 
-엑스퍼트 아카데미 홈페이지 리뉴얼 프로젝트
+- 리뉴얼 대상: [엑스퍼트 아카데미](http://www.excacademy.co.kr/)
+- 리뉴얼 페이지: [Click](http://expert002.cafe24.com/)
+- 리뉴얼 이유:
+SPA 웹사이트의 특성을 살려 리액트로 작업
+더 나은 사용자 경험을 위한 세세한 기능 구현 + 웹사이트 이용자와의 상호작용을 이끌어 내는 것에 중점을 두고 작업
+반응형 웹페이지 -> 다양한 디바이스 환경에서 안정적인 사용자 경험이 이루어질 수 있도록 편의성 제공
 
-기존 홈페이지의 디자인 & 메뉴 개선, 반응협 웹 구축 등 사용자의 편의성 제공을 위한 리뉴얼 프로젝트
-<br>
 
 ## 📘Contents
 1.[🛠 Skills](#Skills)
@@ -25,6 +28,8 @@
 <br>
 ### Github Repositories
 [Click!!](https://github.com/Sesac20222202/Sesac)
+
+<br>
 
 ## 🛠 Skills
 <details><summary>
