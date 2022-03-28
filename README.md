@@ -8,10 +8,10 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 반응형 웹페이지 -> 다양한 디바이스 환경에서 안정적인 사용자 경험이 이루어질 수 있도록 편의성 제공
 
 
-## 📘Contents
-1.[🛠 Skills](#Skills)
 
-2.[ 🙋‍♀️살펴보기](#살펴보기)
+## Contents
+1. [ 🙋‍♀️살펴보기](#살펴보기)
+- [Main](#main)
 - [Customer](#customer)   
 - [Academy](#academy)   
   
@@ -31,18 +31,18 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 
 <br>
 
-## 🛠 Skills
-<details><summary>
-</summary>
-React<br>
-Redux<br>
-JSX<br>
-</details>
-   
+## Skills
 
-## 살펴보기
-1. Customer
-2. Academy
+React
+
+React Router
+
+Redux Toolkit
+
+Redux
+
+## Customer
+
 
 
 <br>   
@@ -97,17 +97,8 @@ npm start
 - 문의하기 페이지 - 자주묻는 질문으로 이동 → react-spring 활용해 애니메이션과 아코디언 폼 구현
 - 상태에따라 색상변경되도록 설정
 </details>
- 
-##  Skills
-ES2015+
 
-React
-
-React Router
-
-Redux Toolkit
-
-Redux
+<br>
 
 ## 🪛 Project Control
 - Version Control: Git, Github
