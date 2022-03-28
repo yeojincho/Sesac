@@ -9,8 +9,7 @@ SPA 웹사이트의 특성을 살려 리액트로 작업
 
 
 
-## Contents
-1. [ 🙋‍♀️살펴보기](#살펴보기)
+## 📘Contents
 - [Main](#main)
 - [Customer](#customer)   
 - [Academy](#academy)   
