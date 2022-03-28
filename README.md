@@ -4,7 +4,7 @@
 - 리뉴얼 페이지: [Click](http://expert002.cafe24.com/)
 <br>
 
-## 프로젝트 기능
+## 📌 프로젝트 기능
 #### ➡️  반응형웹
 다양한 디바이스의 환경에서 안정적인 사용자 경험이 이루어질 수 있도록 편의성 제공
 
@@ -20,6 +20,8 @@
 - [📖 Contents](#contents)
 - [🌈 새싹디벨로퍼](#-새싹디벨로퍼)
 - [🔗 Link](#-link)
+- [⚠️ Requirement](#%EF%B8%8F-requirement)
+- [⚙️ Installation](#%EF%B8%8F-installation)
 - [Main](#main)
 - [취업과정](#취업과정)
 - [고객센터](#고객센터)
@@ -80,17 +82,17 @@
 
 <br>
 
-## 📌 Features
-Screen
 
-Side bar
-<br>
 ## ⚠️ Requirement
 최신 Chrome Browser 사용을 권장합니다.
 
-## ⚙️ Installation
-#### Setup
+<br>
 
+## ⚙️ Installation
+
+<br>
+
+#### Setup
 
 `git clone https://github.com/Sesac22022202/Sesac`
 
@@ -177,8 +179,8 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 
 ## Customer
-## 취업과정
-### 화면 소개
+### 취업과정
+####  화면 소개
 - 엑스퍼트 아카데미의 취업과정 소개와 모집 중인 과정을 확인할 수 있는 카테고리입니다.
 - 소개 / 모집 중인 과정 / 과정 문의 로 2 depth 메뉴가 구성되며, 과정 문의 메뉴 클릭 시 고객센터의 문의하기 페이지로 이동합니다.
 - 과정 상세 페이지는 기업 측에서 제공받은 스토리 보드에 따라 공개 과정과 동일하게 적용하였습니다.
@@ -242,8 +244,8 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 
  
 
-## 고객센터 
-### 화면 소개
+### 고객센터 
+#### 화면 소개
 - 엑스퍼트 아카데미의 고객 서비스를 담당하는 메뉴입니다.
  
 <details>
@@ -364,43 +366,37 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 
 ## Academy
-     
+<details>
+  <summary> Hrshop</summary>
+        <div markdown="1">
+
+- 맵 써서 구현
+- 아이템 클릭시 주문페이지로 이동
+- 문의하기 페이지 - 자주묻는 질문으로 이동 → react-spring 활용해 애니메이션과 아코디언 폼 구현
+- 상태에따라 색상변경되도록 설정
+</details>     
+
 <details>
   <summary>IntroducePage</summary>
      <div markdown="1">
        <img src="https://user-images.githubusercontent.com/99670118/160332275-6830cd92-d89f-4d16-a000-0793a23ba694.gif" width="800" height="400">
- react-spring 활용해 글씨 / 제스쳐 애니메이션 구현  
+ ➡️ 사용자 경험을 높이기 위해 react-spring 활용해 interactive한 페이지 구현 
 </details>
 
 
 <details>
-  <summary>OrderPage</summary>
+  <summary>문의하기</summary>
       <div markdown="1">
   <img src="https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif" width="800" height="400">
- 
-- email 보내기 기능 / 자동답장기능
+<img src="https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif" width="800" height="400">
+ ➡️ email 보내기 기능 / 자동답장기능
+ ➡️ 다크모드 구현
 - 공유기능 /페이스북 트위터 카카오톡 url복사
 - swiperJS library사용해서 slider구현
 - 값 스테이트화 했음 / +,- 버튼 구현
 </details>
 
-<details>
-  <summary> Hrshop</summary>
-        <div markdown="1">
-  <img src="https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif" width="800" height="400">
-- 맵 써서 구현
-- 아이템 클릭시 주문페이지로 이동
-- 문의하기 페이지 - 자주묻는 질문으로 이동 → react-spring 활용해 애니메이션과 아코디언 폼 구현
-- 상태에따라 색상변경되도록 설정
-</details>
 
-
-<br>
-
-## orderpage
-
-<img src="https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif" width="800" height="400">
-<br>
 
 <br>
   
