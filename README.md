@@ -177,33 +177,44 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 
 ## Academy 
+> ![소개](https://user-images.githubusercontent.com/99670118/160332275-6830cd92-d89f-4d16-a000-0793a23ba694.gif)
 
-#### IntroducePage
-<details><summary>
+<details><summary>IntroducePage
 </summary>
-- react-spring 활용해 글씨 / 제스쳐 애니메이션 구현
+ <br>
+ react-spring 활용해 글씨 / 제스쳐 애니메이션 구현  
 </details>
 
-#### OrderPage
-<details><summary>
+
+<details><summary>OrderPage
 </summary>
+ 
 - email 보내기 기능 / 자동답장기능
 - 공유기능 /페이스북 트위터 카카오톡 url복사
 - swiperJS library사용해서 slider구현
 - 값 스테이트화 했음 / +,- 버튼 구현
 </details>
 
-#### Hrshop
-<details><summary>
+<details><summary> Hrshop
 </summary>
 - 맵 써서 구현
 - 아이템 클릭시 주문페이지로 이동
 - 문의하기 페이지 - 자주묻는 질문으로 이동 → react-spring 활용해 애니메이션과 아코디언 폼 구현
 - 상태에따라 색상변경되도록 설정
 </details>
+<br>
+<br>
+
+## 문의하기
+
+![문의하기](https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif)
 
 <br>
 
+## 이메일
+
+![문의01](https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif)
+<br>
 ## 🪛 Project Control
 - Version Control: Git, Github
 
@@ -216,6 +227,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 - [🙋‍♂️ Visit sesac's github](https://github.com/Sesac20222202)
    
 <br> 
+
 
 ## 마무리하며..
  
