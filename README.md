@@ -103,7 +103,7 @@ Side bar
 <summary>메인 화면</summary>
 <div markdown="1">
 <p>
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/main.png"   >
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/main.png" width="800" height="400">
 </p>
  <div>
 <p>:one: 메인 공지팝업</p>
@@ -151,7 +151,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <summary>회원가입 화면</summary>
 <div markdown="1">
 <p>
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/join2.png" >
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/join2.png" width="800" height="400">
 </p>
 <div>
 <p>:one: 아이디/비밀번호 유효성 검사</p>
@@ -177,7 +177,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 
 ## Academy 
-> ![소개](https://user-images.githubusercontent.com/99670118/160332275-6830cd92-d89f-4d16-a000-0793a23ba694.gif)
+<img src="https://user-images.githubusercontent.com/99670118/160332275-6830cd92-d89f-4d16-a000-0793a23ba694.gif" width="800" height="400">
 
 <details><summary>IntroducePage
 </summary>
@@ -206,14 +206,13 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <br>
 
 ## 문의하기
-
-![문의하기](https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif)
+<img src="https://user-images.githubusercontent.com/99670118/160332302-3cd03bb0-a99d-4bde-bb99-e3cf562b7b3f.gif" width="800" height="400">
 
 <br>
 
 ## 이메일
 
-![문의01](https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif)
+<img src="https://user-images.githubusercontent.com/99670118/160332910-8aa111f5-f52e-424f-ba61-ecdafdb6d6c2.gif" width="800" height="400">
 <br>
 ## 🪛 Project Control
 - Version Control: Git, Github
