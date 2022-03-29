@@ -78,17 +78,17 @@ export default function TeacherInfo() {
 
   return (
     <div className="teacherinfo-content">
-      <div className="inner-box">
-        <div className="orderPage-bigTitle">
-          <div className="inner-box">
-            <h3 className="orderPage-h3">
-              <b>강사정보</b>
-            </h3>
-            <span className="orderPage-span">
-              __교육에 필요한 옵션 및 상품정보를 제공합니다.
-            </span>
-          </div>
+      <div className="orderPage-bigTitle">
+        <div className="inner-box">
+          <h3 className="orderPage-h3">
+            <b>강사정보</b>
+          </h3>
+          <span className="orderPage-span">
+            __교육에 필요한 옵션 및 상품정보를 제공합니다.
+          </span>
         </div>
+      </div>
+      <div className="inner-box">
         <ul class="cont-navi">
           <li>
             <a href="#none" class="nav-home">
@@ -102,7 +102,6 @@ export default function TeacherInfo() {
             <span class="nav-sub">강사정보</span>
           </li>
         </ul>
-
         <ul className="teacher-list">{namelist}</ul>
         <div className="bottomBoxBanner">
           <img src="/images/academy/배너배너.png" alt="#" />
