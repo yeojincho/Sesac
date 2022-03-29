@@ -5,7 +5,7 @@ margin: 0;
 .t_bigTitle {
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 150px;
   background-color: #266f37;
   opacity: 0.9;
