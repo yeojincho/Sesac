@@ -78,12 +78,12 @@ export default function TeacherInfo() {
 
   return (
     <div className="teacherinfo-content">
-      <div className="orderPage-bigTitle">
+      <div className="t_bigTitle">
         <div className="inner-box">
-          <h3 className="orderPage-h3">
-            <b>강사정보</b>
+          <h3 className="t_h3">
+            <b>강사소개</b>
           </h3>
-          <span className="orderPage-span">
+          <span className="t_span">
             __교육에 필요한 옵션 및 상품정보를 제공합니다.
           </span>
         </div>
@@ -99,7 +99,7 @@ export default function TeacherInfo() {
             <span class="nav-sub">아카데미</span>
           </li>
           <li>
-            <span class="nav-sub">강사정보</span>
+            <span class="nav-sub">강사소개</span>
           </li>
         </ul>
         <ul className="teacher-list">{namelist}</ul>
