@@ -55,9 +55,9 @@
 
 ## 🌈 새싹디벨로퍼
 [Notion](https://www.notion.so/Sesac-1c656fd978fd4196b04fb7728cb26293)
-[미연언니닉넴](https://github.com/kalmtalyst) 
+[미연](https://github.com/kalmtalyst) 
 [세영](https://github.com/julie-kim-dev) 
-[한솔](https://github.com/hansol787897465121) 
+[한솔](https://github.com/hansol-FE) 
 [예지](https://github.com/yeahhaaa) 
 [승연](https://github.com/devSeung0v0)
 [여진](https://github.com/yeojincho)
@@ -112,7 +112,7 @@
 <summary>메인 화면</summary>
 <div markdown="1">
 <p>
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/main.png" width="800" height="700">
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/main.png" >
 </p>
  <div>
 <p>:one: 메인 공지팝업</p>
@@ -134,7 +134,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <summary>로그인 화면</summary>
 <div markdown="1">
 <p>
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/login.png" width="800" height="400"  >
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/login.png"  >
 </p>
 <div>
 <p>:one: 유효성 검사</p>
@@ -160,7 +160,7 @@ swiper 라이브러리를 사용하여 2초마다 배너가 슬라이딩 & 배�
 <summary>회원가입 화면</summary>
 <div markdown="1">
 <p>
-<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/join2.png" width="800" height="700">
+<img src="https://github.com/hansol787897465121/Sesac/blob/main/image/join2.png">
 </p>
 <div>
 <p>:one: 아이디/비밀번호 유효성 검사</p>
